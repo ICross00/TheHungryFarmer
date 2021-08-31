@@ -53,6 +53,39 @@ TextureImporter:
   - first:
       213: -6817577556657939810
     second: lightDirt_03
+  - first:
+      213: -789957569431557616
+    second: ui_health_bar
+  - first:
+      213: 5362084925166495948
+    second: ui_energy_bar
+  - first:
+      213: -8527319294260379677
+    second: ui_health_unit
+  - first:
+      213: -5641067850834542070
+    second: ui_energy_unit
+  - first:
+      213: -9155489754422746361
+    second: ui_time_display
+  - first:
+      213: -1707766248094150269
+    second: ui_inventory_full
+  - first:
+      213: -4599583093789418036
+    second: ui_slot_hat
+  - first:
+      213: 526132156857597068
+    second: ui_slot_shirt
+  - first:
+      213: -6865141136161392755
+    second: ui_slot_pants
+  - first:
+      213: -5075249074681467252
+    second: ui_slot_accessory
+  - first:
+      213: 3684942823052780573
+    second: ui_slot_shoes
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -494,6 +527,321 @@ TextureImporter:
       bones: []
       spriteID: e9a5ab255591361a0800000000000000
       internalID: -6817577556657939810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_gear
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 433
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4f08acc76c581c80800000000000000
+      internalID: -8351823908073631923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_deny
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 433
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8339d39a2afcfaba0800000000000000
+      internalID: -6075409074768473288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_star
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 434
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4b8237d0e3db4270800000000000000
+      internalID: 8235909306213632843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_heart
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 434
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2731f2b378aa7770800000000000000
+      internalID: 8609378852548982571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_health_bar
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 263
+        width: 25
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01aa666a6c18905f0800000000000000
+      internalID: -789957569431557616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_energy_bar
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 263
+        width: 25
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc8a60474d3f96a40800000000000000
+      internalID: 5362084925166495948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_health_unit
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 348
+        width: 7
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ef76431840e8a980800000000000000
+      internalID: -8527319294260379677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_energy_unit
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 332
+        width: 7
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0281256da6e6b1b0800000000000000
+      internalID: -5641067850834542070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_time_display
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 416
+        width: 57
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70367e2839a21f080800000000000000
+      internalID: -9155489754422746361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_inventory_full
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 330
+        width: 293
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38152fe35abcc48e0800000000000000
+      internalID: -1707766248094150269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_slot_hat
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 304
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccd1acbbb8ffa20c0800000000000000
+      internalID: -4599583093789418036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_slot_shirt
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 304
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8c386ab8623d4700800000000000000
+      internalID: 526132156857597068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_slot_pants
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 288
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d87bd2e728e1ab0a0800000000000000
+      internalID: -6865141136161392755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_slot_accessory
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 288
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8e2bfc3bd71199b0800000000000000
+      internalID: -5075249074681467252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_slot_shoes
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 272
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d14afa159fb832330800000000000000
+      internalID: 3684942823052780573
       vertices: []
       indices: 
       edges: []
