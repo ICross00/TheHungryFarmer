@@ -10,43 +10,43 @@ TextureImporter:
     second: lightDirt_01
   - first:
       213: -495735234126749927
-    second: grassCornerIn_01
+    second: grass_corner_in_01
   - first:
       213: -7575690588476004958
-    second: grassCornerIn_02
+    second: grass_corner_in_02
   - first:
       213: 7530553302836025607
     second: grassCenter_01
   - first:
       213: -8852230285008876594
-    second: grassEdge_01
+    second: grass_edge_01
   - first:
       213: 1221321562480697083
-    second: grassCornerIn_03
+    second: grass_corner_in_03
   - first:
       213: 7349257151706855826
-    second: grassEdge_02
+    second: grass_edge_02
   - first:
       213: 5223860843485128620
-    second: grassEdge_03
+    second: grass_edge_03
   - first:
       213: -4136744631716902068
-    second: grassEdge_04
+    second: grass_edge_04
   - first:
       213: -66824328462978852
-    second: grassCornerIn_04
+    second: grass_corner_in_04
   - first:
       213: -8981255313640272642
-    second: grassCornerOut_01
+    second: grass_corner_out_01
   - first:
       213: 631639871111138879
-    second: grassCornerOut_02
+    second: grass_corner_out_02
   - first:
       213: 8606429715869593580
-    second: grassCornerOut_03
+    second: grass_corner_out_03
   - first:
       213: 1804365897996605565
-    second: grassCornerOut_04
+    second: grass_corner_out_04
   - first:
       213: 8324639830159569643
     second: lightDirt_02
@@ -86,6 +86,45 @@ TextureImporter:
   - first:
       213: 3684942823052780573
     second: ui_slot_shoes
+  - first:
+      213: -4806947970186075433
+    second: water_tile_01
+  - first:
+      213: -9057864243758479482
+    second: water_corner_out_01
+  - first:
+      213: 4555595499433835635
+    second: water_corner_out_02
+  - first:
+      213: -2177526176269914247
+    second: water_corner_out_03
+  - first:
+      213: 6836640557277891566
+    second: water_corner_out_04
+  - first:
+      213: 487430829505763718
+    second: water_edge_01
+  - first:
+      213: 5341157898213105118
+    second: water_edge_02
+  - first:
+      213: 5020575695823788643
+    second: water_edge_03
+  - first:
+      213: 3725358224491186308
+    second: water_edge_04
+  - first:
+      213: -5305332420477302556
+    second: water_corner_in_01
+  - first:
+      213: -4295602985821539471
+    second: water_corner_in_02
+  - first:
+      213: 2134711220531829352
+    second: water_corner_in_03
+  - first:
+      213: -5273317508428635459
+    second: water_corner_in_04
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -217,7 +256,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grassCornerIn_01
+      name: grass_corner_in_01
       rect:
         serializedVersion: 2
         x: 96
@@ -238,7 +277,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grassCornerIn_02
+      name: grass_corner_in_02
       rect:
         serializedVersion: 2
         x: 112
@@ -280,7 +319,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grassEdge_01
+      name: grass_edge_01
       rect:
         serializedVersion: 2
         x: 128
@@ -301,7 +340,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grassCornerIn_03
+      name: grass_corner_in_03
       rect:
         serializedVersion: 2
         x: 144
@@ -322,7 +361,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grassEdge_02
+      name: grass_edge_02
       rect:
         serializedVersion: 2
         x: 144
@@ -343,7 +382,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grassEdge_03
+      name: grass_edge_03
       rect:
         serializedVersion: 2
         x: 160
@@ -364,7 +403,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grassEdge_04
+      name: grass_edge_04
       rect:
         serializedVersion: 2
         x: 112
@@ -385,7 +424,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grassCornerIn_04
+      name: grass_corner_in_04
       rect:
         serializedVersion: 2
         x: 80
@@ -406,7 +445,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grassCornerOut_01
+      name: grass_corner_out_01
       rect:
         serializedVersion: 2
         x: 128
@@ -427,7 +466,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grassCornerOut_02
+      name: grass_corner_out_02
       rect:
         serializedVersion: 2
         x: 160
@@ -448,7 +487,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grassCornerOut_03
+      name: grass_corner_out_03
       rect:
         serializedVersion: 2
         x: 176
@@ -469,7 +508,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grassCornerOut_04
+      name: grass_corner_out_04
       rect:
         serializedVersion: 2
         x: 192
@@ -540,7 +579,7 @@ TextureImporter:
         width: 14
         height: 14
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -561,7 +600,7 @@ TextureImporter:
         width: 14
         height: 14
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -582,7 +621,7 @@ TextureImporter:
         width: 14
         height: 14
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -603,7 +642,7 @@ TextureImporter:
         width: 14
         height: 12
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -624,7 +663,7 @@ TextureImporter:
         width: 25
         height: 105
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -645,7 +684,7 @@ TextureImporter:
         width: 25
         height: 105
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -666,7 +705,7 @@ TextureImporter:
         width: 7
         height: 4
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -687,7 +726,7 @@ TextureImporter:
         width: 7
         height: 4
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -708,7 +747,7 @@ TextureImporter:
         width: 57
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -729,7 +768,7 @@ TextureImporter:
         width: 293
         height: 117
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -750,7 +789,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -771,7 +810,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -792,7 +831,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -813,7 +852,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -834,7 +873,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -842,6 +881,279 @@ TextureImporter:
       bones: []
       spriteID: d14afa159fb832330800000000000000
       internalID: 3684942823052780573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_tile_01
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 304
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d226471a4a4a4db0800000000000000
+      internalID: -4806947970186075433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_corner_out_01
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 320
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 687401ff5700c4280800000000000000
+      internalID: -9057864243758479482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_corner_out_02
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 320
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37c3f1c58f9b83f30800000000000000
+      internalID: 4555595499433835635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_corner_out_03
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 320
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97f215eca7fd7c1e0800000000000000
+      internalID: -2177526176269914247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_corner_out_04
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 304
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eebc3916d50a0ee50800000000000000
+      internalID: 6836640557277891566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_edge_01
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 320
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 689d345c1c3b3c600800000000000000
+      internalID: 487430829505763718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_edge_02
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 320
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edd934c4fca9f1a40800000000000000
+      internalID: 5341157898213105118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_edge_03
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 304
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36a5985cefaaca540800000000000000
+      internalID: 5020575695823788643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_edge_04
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 304
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48880ef319123b330800000000000000
+      internalID: 3725358224491186308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_corner_in_01
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 304
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e8461eb54caf56b0800000000000000
+      internalID: -5305332420477302556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_corner_in_02
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 320
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 173fffde7d3f264c0800000000000000
+      internalID: -4295602985821539471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_corner_in_03
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 304
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86a17dd7b8400ad10800000000000000
+      internalID: 2134711220531829352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_corner_in_04
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 304
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db263425aa961d6b0800000000000000
+      internalID: -5273317508428635459
       vertices: []
       indices: 
       edges: []
