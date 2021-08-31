@@ -14,7 +14,7 @@ public class Inventory : MonoBehaviour
 
     Item RemoveItem()
     {
-        return;//Must return an item after items have been declared and can be returned.
+        return item[0];//Must return an item after items have been declared and can be returned.
     }
 
     void UpdateInventory()
