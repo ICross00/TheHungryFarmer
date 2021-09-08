@@ -2,13 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player : MonoBehaviour
+public class Player : Fighter
 {
     public int experience;
     public int energy;
     public Vector3 playerLocation;
     private BoxCollider2D boxCollider;
     private RaycastHit2D hit;
+
+    //Will be set in the fighter class in future.
+    private float xSpeed = 5.0f;
+    private float ySpeed = 4.01f;
 
     private void Start()
     {
@@ -20,8 +24,8 @@ public class Player : MonoBehaviour
         float x = Input.GetAxisRaw("Horizontal");
         float y = Input.GetAxisRaw("Vertical");
 
-        //Rest movedealta REPLACE NAME.
-        playerLocation = new Vector3(x, y, 0);
+        //Rest movedealta.
+        playerLocation = new Vector3(x * xSpeed, y * ySpeed, 0);
 
         //Changing direction sprite is facing (left or right)
         if (playerLocation.x > 0)
