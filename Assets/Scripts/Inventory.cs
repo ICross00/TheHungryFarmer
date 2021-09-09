@@ -2,23 +2,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Inventory : MonoBehaviour
 {
-    Item[] item;//Array size needs to be decalred properly. Left blank for now until item count is decided.
-    int size;
+    private List<Item> items;
 
-    void AddItem()
-    {
+    public Inventory() {
+        items = new List<Item>();
+        Debug.Log("Inventory initialized");
 
+        AddItem(new Item(Item.ItemType.Heart, 1));
+        AddItem(new Item(Item.ItemType.Star, 1));
+        //AddItem(new Item(Item.ItemType.Pot, 1));
+        Debug.Log(items.Count);
     }
 
-    Item RemoveItem()
-    {
-        return new Item();//Must return an item after items have been declared and can be returned.
+    public List<Item> GetItemList() {
+        return items;
     }
 
-    void UpdateInventory()
-    {
-
+    public void AddItem(Item item) {
+        items.Add(item);
     }
 }
