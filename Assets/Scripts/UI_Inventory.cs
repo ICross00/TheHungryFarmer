@@ -12,7 +12,7 @@ public class UI_Inventory : MonoBehaviour
     private void Awake() {
         itemSlotContainer = transform.Find("InventoryImage");
         itemSlotTemplate = itemSlotContainer.Find("SlotTemplate");
-        SetInventory(GameManager.instance.GetInventory());
+        SetInventory(GameManager.Instance.GetInventory());
     }
 
     public void SetInventory(Inventory inventory) {

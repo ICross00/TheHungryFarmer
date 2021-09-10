@@ -17,8 +17,18 @@ public class Player : Fighter
     private void Start()
     {
         boxCollider = GetComponent<BoxCollider2D>();
+        WorldItem.Spawn(new Vector3(1, 1), new Item(Item.ItemType.Heart, 1));
     }
 
+    private void OnTriggerEnter2D(Collider2D collider) {
+        WorldItem itemWorld = collider.GetComponent<WorldItem>();
+        //If we collided with an item, add it to the inventory
+        if(itemWorld != null) {
+            //Add it to the inventory here
+            Debug.Log("1");
+            itemWorld.DestroySelf();
+        }
+    }
     private void FixedUpdate()
     {
         float x = Input.GetAxisRaw("Horizontal");

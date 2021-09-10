@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Collectable : MonoBehaviour
 {
-    string type;
-    int stack;
-    Item item;
+    protected string type;
+    protected int stack;
+    protected Item item;
 }

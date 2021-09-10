@@ -4,20 +4,19 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public static GameManager instance;
+    Inventory playerInventory;
+
     int gameInt;
-    Inventory inventory;
     int restaurantRating;
 
-    private GameManager() {
-        this.inventory = new Inventory();
-    }
+    public static GameManager Instance {get; private set; }
 
     void Awake() {
-        instance = new GameManager();
+        Instance = this;
+        this.playerInventory = new Inventory(); //Later this will need to load the player's inventory from a saved state
     }
 
     public Inventory GetInventory() {
-        return instance.inventory;
+        return this.playerInventory;
     }
 }
