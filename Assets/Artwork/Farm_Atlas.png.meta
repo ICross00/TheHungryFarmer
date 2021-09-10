@@ -125,6 +125,24 @@ TextureImporter:
   - first:
       213: -5273317508428635459
     second: water_corner_in_04
+  - first:
+      213: -5299377852711370820
+    second: house_1_tier2
+  - first:
+      213: 322948128818159913
+    second: house_1_tier1
+  - first:
+      213: -397098519423749606
+    second: tree_01_shadow
+  - first:
+      213: 1814789367735495809
+    second: tree_01_shadowless
+  - first:
+      213: -5060849815826022191
+    second: tree_02_shadow
+  - first:
+      213: -4616171280885944119
+    second: tree_02_shadowless
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -1154,6 +1172,132 @@ TextureImporter:
       bones: []
       spriteID: db263425aa961d6b0800000000000000
       internalID: -5273317508428635459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: house_1_tier2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1296
+        width: 64
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbff0969be3d476b0800000000000000
+      internalID: -5299377852711370820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: house_1_tier1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1296
+        width: 56
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9216513bc975b7400800000000000000
+      internalID: 322948128818159913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_01_shadow
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 736
+        width: 32
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a12f9e020093d7af0800000000000000
+      internalID: -397098519423749606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_01_shadowless
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 704
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18ca706905d6f2910800000000000000
+      internalID: 1814789367735495809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_02_shadow
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 736
+        width: 31
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d0c612f7ef34c9b0800000000000000
+      internalID: -5060849815826022191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_02_shadowless
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 704
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c0fe647da010ffb0800000000000000
+      internalID: -4616171280885944119
       vertices: []
       indices: 
       edges: []
