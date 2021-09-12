@@ -14,7 +14,7 @@ public class ItemAssets : MonoBehaviour
         Instance = this;
     }
 
-    public Transform pfWorldItem; //prefab template for world items
+    public GameObject pfWorldItem; //prefab template for world items
 
     public Sprite HeartSprite;
     public Sprite StarSprite;

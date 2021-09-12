@@ -1,20 +1,17 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 
-public class Inventory
+public class Inventory : MonoBehaviour
 {
+    public event EventHandler OnItemListChanged;
     private List<Item> items;
 
-    public Inventory() {
+    void Awake() {
         items = new List<Item>();
         Debug.Log("Inventory initialized");
-
-        AddItem(new Item(Item.ItemType.Heart, 1));
-        AddItem(new Item(Item.ItemType.Star, 1));
-        //AddItem(new Item(Item.ItemType.Pot, 1));
-        Debug.Log(items.Count);
     }
 
     public List<Item> GetItemList() {
@@ -22,6 +19,21 @@ public class Inventory
     }
 
     public void AddItem(Item item) {
-        items.Add(item);
+        bool canStack = false;
+        //Check if the item can be stacked first
+        foreach(Item storeditem in items) {
+            if(storeditem.type == item.type) {
+                storeditem.amount += 1; //Increment the amount
+                canStack = true; 
+                break;
+            }
+        }
+
+        if(!canStack) { //If the item cannot be stacked, add it to the end of the inventory
+            items.Add(item);
+        }
+
+        //Notify any listeners that the inventory changed
+        OnItemListChanged?.Invoke(this, EventArgs.Empty);
     }
 }

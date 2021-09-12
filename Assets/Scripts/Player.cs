@@ -6,6 +6,7 @@ public class Player : Fighter
 {
     public int experience;
     public int energy;
+
     public Vector3 playerLocation;
     private BoxCollider2D boxCollider;
     private RaycastHit2D hit;
@@ -17,17 +18,19 @@ public class Player : Fighter
     private void Start()
     {
         boxCollider = GetComponent<BoxCollider2D>();
-        WorldItem.Spawn(new Vector3(1, 1), new Item(Item.ItemType.Heart, 1));
     }
 
     private void OnTriggerEnter2D(Collider2D collider) {
-        WorldItem itemWorld = collider.GetComponent<WorldItem>();
+        Collectable itemWorld = collider.GetComponent<Collectable>();
         //If we collided with an item, add it to the inventory
         if(itemWorld != null) {
-            //Add it to the inventory here
-            Debug.Log("1");
+            //Get the player's inventory
+            Inventory playerInventory = gameObject.GetComponent(typeof(Inventory)) as Inventory;
+            playerInventory.AddItem(itemWorld.GetItem());
             itemWorld.DestroySelf();
         }
+
+        //Handle other 2D trigger events here
     }
     private void FixedUpdate()
     {
