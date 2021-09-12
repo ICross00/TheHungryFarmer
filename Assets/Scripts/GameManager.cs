@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    Inventory playerInventory;
+
     int gameInt;
-    Inventory inventory;
     int restaurantRating;
 }
