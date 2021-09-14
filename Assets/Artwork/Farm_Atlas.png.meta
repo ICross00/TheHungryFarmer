@@ -143,6 +143,9 @@ TextureImporter:
   - first:
       213: -4616171280885944119
     second: tree_02_shadowless
+  - first:
+      213: 2628193245138320271
+    second: ui_inventory_hotbar
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -1227,7 +1230,7 @@ TextureImporter:
         width: 32
         height: 38
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1248,7 +1251,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1269,7 +1272,7 @@ TextureImporter:
         width: 31
         height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1290,7 +1293,7 @@ TextureImporter:
         width: 31
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1298,6 +1301,27 @@ TextureImporter:
       bones: []
       spriteID: 9c0fe647da010ffb0800000000000000
       internalID: -4616171280885944119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_inventory_hotbar
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 342
+        width: 189
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8bfc89e4d7397420800000000000000
+      internalID: 2628193245138320271
       vertices: []
       indices: 
       edges: []
