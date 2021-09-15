@@ -26,7 +26,8 @@ public class Fighter : Movable
             hitPoint -= dmg.damageAmount;
             pushDirection = (transform.position - dmg.origin).normalized * dmg.pushForce;
 
-            //TODO: Add text pop ups when attack is done to show player it was succesful.
+            //Shows the effect of damage being taken via text on screen.
+            GameManager.instance.ShowText(dmg.damageAmount.ToString(), 25, Color.red, transform.position, Vector3.up * 50, 3.0f);
 
             if(hitPoint <= 0)
             {
