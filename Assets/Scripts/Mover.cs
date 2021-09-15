@@ -45,6 +45,12 @@ public abstract class Mover : Fighter
         else if (playerLocation.x < 0)
             transform.localScale = new Vector3(-1, 1, 1);
 
+        //Add push vector if there are any.
+        playerLocation += pushDirection;
+
+        //Reduce push force every frame to prevent what has been pushed from going on FOREVER AND EVER AND EVER AN.....
+        pushDirection = Vector3.Lerp(pushDirection, Vector3.zero, pushRecoverySpeed);
+
         //Checking if a box is in the direction the payer is moving. If a box is there, the player will not be allowed to move there.
         hit = Physics2D.BoxCast(transform.position, boxCollider.size, 0, new Vector2(0, playerLocation.y), Mathf.Abs(playerLocation.y * Time.deltaTime), LayerMask.GetMask("Actor", "Blocking"));
         if (hit.collider == null)
