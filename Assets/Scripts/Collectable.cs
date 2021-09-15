@@ -39,5 +39,4 @@ public class Collectable : MonoBehaviour
     public void DestroySelf() {
         Destroy(this.gameObject);
     }
-
 }
