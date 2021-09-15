@@ -8,4 +8,5 @@ public class GameManager : MonoBehaviour
 
     int gameInt;
     int restaurantRating;
+    int gold;
 }
