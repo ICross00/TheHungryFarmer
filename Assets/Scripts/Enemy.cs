@@ -2,7 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy : Fighter
+public class Enemy : Mover
 {
-    private int xpValue;
+    //xpValue determines how much XP is dropped from killing an enemy.
+    public int xpValue = 1;
 }
