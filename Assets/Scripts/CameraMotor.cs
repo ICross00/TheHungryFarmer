@@ -2,19 +2,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Camera : MonoBehaviour
+public class CameraMotor : MonoBehaviour
 {
-    public Transform lookAt;
+    private Transform lookAt;
     public float boundX = 0.15f;
-    public float boundY = 0.05f;
+    public float boundY = 0.10f;
+
+    private void Start()
+    {
+        lookAt = GameObject.Find("Player_01").transform;
+    }
 
     private void LateUpdate()
     {
         Vector3 delta = Vector3.zero;
 
-        //Changes the camera position based on the player after moving 0.15 in the X diection
+        //This will check if we are inside the X axis boundaries.
         float deltaX = lookAt.position.x - transform.position.x;
-        if (deltaX > boundX || deltaX < -boundX)
+        if(deltaX > boundX || deltaX < -boundX)
         {
             if (transform.position.x < lookAt.position.x)
             {
@@ -26,9 +31,9 @@ public class Camera : MonoBehaviour
             }
         }
 
-        //Does the same as the X for the Y but the amount of movement for the camera to start moving is now 0.05.
+        //This will do the same as the last section except for Y's axis boundaries.
         float deltaY = lookAt.position.y - transform.position.y;
-        if (deltaY > boundY || deltaY < -boundY)
+        if(deltaY > boundY || deltaY < -boundY)
         {
             if (transform.position.y < lookAt.position.y)
             {
