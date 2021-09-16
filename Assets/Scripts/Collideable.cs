@@ -6,7 +6,7 @@ public class Collideable : Interactable
 {
     public ContactFilter2D filter;
     private BoxCollider2D boxCollider;
-    public Collider2D[] hits = new Collider2D[10];
+    private Collider2D[] hits = new Collider2D[10];
 
     protected virtual void Start()
     {
