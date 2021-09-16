@@ -147,6 +147,24 @@ TextureImporter:
       213: 2628193245138320271
     second: ui_inventory_hotbar
   - first:
+      213: 6647357402565405985
+    second: item_egg
+  - first:
+      213: -1742513348937851951
+    second: item_seeds_carrot
+  - first:
+      213: 5034380702231317304
+    second: item_seeds_tomato
+  - first:
+      213: -6449412298968507767
+    second: item_seeds_strawberry
+  - first:
+      213: -6662726404311003216
+    second: item_seeds_pumpkin
+  - first:
+      213: -7048821255290126596
+    second: building_market_open
+  - first:
       213: 6737347679698893167
     second: fence_wood_post
   - first:
@@ -880,7 +898,7 @@ TextureImporter:
         x: 210
         y: 330
         width: 293
-        height: 117
+        height: 92
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1407,6 +1425,15 @@ TextureImporter:
         width: 189
         height: 21
       alignment: 0
+      pivot: {x: 0, y: 0}
+      name: item_carrot
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 577
+        width: 14
+        height: 14
+      alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -1420,6 +1447,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: item_tomato
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 561
+        width: 14
+        height: 14
       name: fence_wood_post
       rect:
         serializedVersion: 2
@@ -1441,6 +1475,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: item_strawberry
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 545
+        width: 14
+        height: 14
       name: fence_wood_connect_up_down
       rect:
         serializedVersion: 2
@@ -1462,6 +1503,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: item_pumpkin
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 529
+        width: 14
+        height: 14
       name: fence_wood_connect_down
       rect:
         serializedVersion: 2
@@ -1483,6 +1531,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: item_corn
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 513
+        width: 14
+        height: 14
       name: fence_wood_connect_center
       rect:
         serializedVersion: 2
@@ -1504,6 +1559,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: item_potato
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 497
+        width: 14
+        height: 14
       name: fence_wood_connect_right
       rect:
         serializedVersion: 2
@@ -1525,6 +1587,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: item_melon
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 482
+        width: 14
+        height: 14
       name: fence_wood_connect_left
       rect:
         serializedVersion: 2
@@ -1546,6 +1615,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: item_radish
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 465
+        width: 14
+        height: 14
       name: grass_tuft_01
       rect:
         serializedVersion: 2
@@ -1567,6 +1643,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: item_diamond
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 593
+        width: 13
+        height: 13
       name: grass_tuft_02
       rect:
         serializedVersion: 2
@@ -1588,6 +1671,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: item_ruby
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 593
+        width: 13
+        height: 13
       name: path_stone_01
       rect:
         serializedVersion: 2
@@ -1609,6 +1699,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: item_emerald
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 609
+        width: 14
+        height: 14
       name: fence_wood_corner_bottom_right
       rect:
         serializedVersion: 2
@@ -1630,6 +1727,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: item_coin_silver
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 466
+        width: 13
+        height: 13
       name: fence_wood_corner_top_right
       rect:
         serializedVersion: 2
@@ -1651,6 +1755,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: item_coin_gold
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 466
+        width: 13
+        height: 13
       name: fence_wood_corner_top_left
       rect:
         serializedVersion: 2
@@ -1672,6 +1783,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: item_coin_copper
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 466
+        width: 13
+        height: 13
       name: fence_wood_corner_bottom_left
       rect:
         serializedVersion: 2
@@ -1693,6 +1811,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: ui_clock
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 433
+        width: 14
+        height: 14
       name: house_1_top_tier1
       rect:
         serializedVersion: 2
@@ -1714,6 +1839,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: item_egg
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 449
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       name: path_stone_end_top
       rect:
         serializedVersion: 2
@@ -1735,6 +1869,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: item_seeds_carrot
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 577
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       name: path_stone_end_bottom
       rect:
         serializedVersion: 2
@@ -1756,6 +1899,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: item_seeds_tomato
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 561
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       name: path_stone_edge_right
       rect:
         serializedVersion: 2
@@ -1777,6 +1929,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: item_seeds_strawberry
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 545
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       name: path_stone_edge_left
       rect:
         serializedVersion: 2
@@ -1798,6 +1959,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: item_seeds_pumpkin
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 529
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       name: path_stone_corner_top_left_01
       rect:
         serializedVersion: 2
@@ -1819,6 +1989,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: building_market_open
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 929
+        width: 72
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       name: path_stone_corner_top_right_01
       rect:
         serializedVersion: 2

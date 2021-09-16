@@ -15,7 +15,4 @@ public class ItemAssets : MonoBehaviour
     }
 
     public GameObject pfWorldItem; //prefab template for world items
-
-    public Sprite HeartSprite;
-    public Sprite StarSprite;
 }
