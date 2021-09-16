@@ -8,8 +8,6 @@ using UnityEngine.EventSystems;
 public class UI_Inventory : MonoBehaviour
 {
     private Inventory m_inventory; //The inventory object that this will display a UI for
-    private Fighter owner; //The owner of this inventory. This is used to determine a location from which to drop objects
-
     private Transform itemSlotContainer;
     private Transform itemSlotTemplate;
     private Transform itemSlotTooltip;
@@ -32,10 +30,6 @@ public class UI_Inventory : MonoBehaviour
     /**
         Sets the owner of this inventory, so that items can be dropped from the inventory at its location
     */
-
-    public void SetOwner(Fighter owner) {
-        this.owner = owner;
-    }
 
     /*
     Sets the inventory that this UI inventory object will display from
@@ -61,7 +55,7 @@ public class UI_Inventory : MonoBehaviour
     Makes the inventory gameobject appear visible
     If visible is true, the gameobject will appear. If visible is false, the game object will be hidden
     */
-    private void SetVisible(bool visible) {
+    public void SetVisible(bool visible) {
         isVisible = visible;
         GetComponent<Canvas>().enabled = isVisible;
         Refresh();

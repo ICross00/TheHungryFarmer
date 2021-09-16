@@ -25,7 +25,6 @@ public class Player : Fighter
 
         inventory = GetComponent<Inventory>();
         inventoryUI.SetInventory(inventory);
-        inventoryUI.SetOwner(this);
 
         //Setup callback functions for interacting with the inventory UI
         inventoryUI.onButtonLeftClicked.AddListener((int slotIndex) => {
@@ -51,6 +50,19 @@ public class Player : Fighter
             itemWorld.DestroySelf();
         }
         //Handle other 2D trigger events here
+        //Enter a shop trigger
+        Shop worldShop = collider.GetComponent<Shop>();
+        if(worldShop != null) {
+            worldShop.OpenShop(this);
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collider) {
+                //Exit a shop trigger
+        Shop worldShop = collider.GetComponent<Shop>();
+        if(worldShop != null) {
+            worldShop.CloseShop();
+        }
     }
 
     private void FixedUpdate()

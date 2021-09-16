@@ -27,8 +27,6 @@ public class Shop : MonoBehaviour
             Item soldItem = shopInventory.GetItemList()[slotIndex];
             SellItem(soldItem);
         });
-
-        OpenShop(playerCustomer);
     }
 
     /**
@@ -40,8 +38,15 @@ public class Shop : MonoBehaviour
         playerInventory = customer.GetComponent<Inventory>();
         playerInventoryUI = customer.inventoryUI;
 
-        shopUI.SetOwner(customer);
         shopUI.SetInventory(shopInventory);
+        shopUI.SetVisible(true);
+    }
+
+    /**
+    Closes the shop and removes the customer
+    */
+    public void CloseShop() {
+        shopUI.SetVisible(false);
     }
 
     /**
