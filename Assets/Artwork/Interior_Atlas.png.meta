@@ -40,7 +40,16 @@ TextureImporter:
     second: topper_edge_right
   - first:
       213: -8556869282148278907
-    second: topper_edge_left
+    second: topper_right_light_01
+  - first:
+      213: -5680169558241356081
+    second: item_present_1
+  - first:
+      213: 7705906331970232085
+    second: frame_white
+  - first:
+      213: 3933373157558141756
+    second: frame_white_large
   - first:
       213: -5680169558241356081
     second: kitchen_cupboard_01
@@ -478,6 +487,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: item_present_1
+      rect:
+        serializedVersion: 2
+        x: 1456
+        y: 543
+        width: 14
+        height: 14
       name: kitchen_cupboard_01
       rect:
         serializedVersion: 2
@@ -499,6 +515,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: frame_white
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 139
+        width: 26
+        height: 26
       name: kitchen_drawers_01
       rect:
         serializedVersion: 2
@@ -520,6 +543,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: frame_white_large
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
       name: kitchen_sink_01
       rect:
         serializedVersion: 2
