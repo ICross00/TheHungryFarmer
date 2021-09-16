@@ -6,10 +6,11 @@ using UnityEngine;
 public class Inventory : MonoBehaviour
 {
     public event EventHandler OnItemListChanged;
-    public List<Item> items;
+    [SerializeField]
+    private List<Item> items;
 
     /*
-        Returns the inventory as a list of items
+        Returns the inventory as a list of items test
     */
     public List<Item> GetItemList() {
         return items;
@@ -25,10 +26,10 @@ public class Inventory : MonoBehaviour
         for(int stack = 0; stack < newItem.amount; stack++) {
             bool canStack = false;
             //Check if the item can be stacked first
-            foreach(Item storeditem in items) {
+            foreach(Item storedItem in items) {
                 //If the items are of the same type and if the stored item is below the max stack size, then the item can be stacked
-                if(storeditem.GetItemType() == newItem.GetItemType() && storeditem.amount < storeditem.item.maxStack) {
-                    storeditem.amount += 1; //Increment the stack
+                if(storedItem.GetItemType() == newItem.GetItemType() && storedItem.amount < storedItem.item.maxStack) {
+                    storedItem.amount += 1; //Increment the stack
                     canStack = true;
                     break;
                 }
@@ -62,6 +63,32 @@ public class Inventory : MonoBehaviour
             Debug.Log(e.Message);
             throw new ArgumentOutOfRangeException("Tried to remove from an out of range inventory slot: " + slotIndex.ToString(), e);
         }
+    }
+
+    /**
+    Remove the first instance of an item from the inventory
+    @param Item The item to remove from the inventory
+    @return True if the item waas successfully removed, false if the item was not in the inventory or if there was not enough of the item to remove the provided amount
+    */
+    public bool RemoveItem(Item removedItem) {
+        int index = 0;
+        foreach(Item storedItem in items) {
+            //If the items are of the same type and if the amount of stored item is above the amount of the provided item, then the item can be removed
+            if(storedItem.GetItemType() == removedItem.GetItemType() && storedItem.amount >= removedItem.amount) {
+                storedItem.amount -= removedItem.amount;
+                Debug.Log(storedItem.amount);
+                Debug.Log(removedItem.amount);
+                if(storedItem.amount == 0) {
+                    items.RemoveAt(index);
+                }
+                //Indicate success
+                return true;
+            }
+
+            index++;
+        }
+
+        return false;
     }
 
     /**

@@ -15,5 +15,5 @@ MonoBehaviour:
   itemName: Diamond
   type: 3
   maxStack: 64
-  sellPrice: 1000
+  sellPrice: 80
   sprite: {fileID: 493101912258023577, guid: 1884b98184089f34184916226ef1b1c5, type: 3}

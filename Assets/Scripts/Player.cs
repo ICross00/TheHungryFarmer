@@ -12,6 +12,7 @@ public class Player : Fighter
     private BoxCollider2D boxCollider;
     private RaycastHit2D hit;
     private SpriteRenderer spriteRenderer;
+    private Inventory inventory;
 
     //Will be set in the fighter class in future.
     private float xSpeed = 5.0f;
@@ -21,8 +22,23 @@ public class Player : Fighter
     {
         boxCollider = GetComponent<BoxCollider2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
-        inventoryUI.SetInventory(GetComponent<Inventory>());
+
+        inventory = GetComponent<Inventory>();
+        inventoryUI.SetInventory(inventory);
         inventoryUI.SetOwner(this);
+
+        //Setup callback functions for interacting with the inventory UI
+        inventoryUI.onButtonLeftClicked.AddListener((int slotIndex) => {
+            Item clickedItem = inventory.GetItemList()[slotIndex];
+            UseItem(clickedItem);
+        });
+
+        inventoryUI.onButtonRightClicked.AddListener((int slotIndex) => {
+            Collectable spawnedItem = inventory.DropItem(transform.position, slotIndex);
+            //Apply a force to the spawned item
+            Rigidbody2D rb2d = spawnedItem.GetComponent<Rigidbody2D>();
+            rb2d.AddForce(Random.insideUnitCircle.normalized * 11, ForceMode2D.Impulse);
+        });
     }
 
     private void OnTriggerEnter2D(Collider2D collider) {

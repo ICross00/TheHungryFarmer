@@ -21,7 +21,7 @@ public class Item
 
     /* Gets the name of the item as a string */
     public string GetName() {
-        return item.type.ToString();
+        return item.itemName;
     }
 
     public Sprite GetSprite() {

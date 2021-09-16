@@ -12,13 +12,18 @@ public class UI_Inventory : MonoBehaviour
 
     private Transform itemSlotContainer;
     private Transform itemSlotTemplate;
+    private Transform itemSlotTooltip;
     private bool isVisible;
 
     public EventSystem eventSystem;
 
+    public UnityEvent<int> onButtonRightClicked; //Callback function run whenever the player left-clicks an item in the inventory
+    public UnityEvent<int> onButtonLeftClicked; //Callback function run whenever the player right-clicks an item in the inventory
+
     private void Start() {
         itemSlotContainer = transform.Find("InventoryImage");
         itemSlotTemplate = itemSlotContainer.Find("SlotTemplate");
+        itemSlotTooltip = itemSlotContainer.Find("Tooltip");
         isVisible = false;
 
         Refresh();
@@ -65,23 +70,46 @@ public class UI_Inventory : MonoBehaviour
     /**
     Callback function run whenever the player left-clicks an item in the inventory
     */
-    public void OnButtonLeftClicked(int slotIndex) {
-        Item clickedItem = m_inventory.items[slotIndex];
-        Player ownerAsPlayer = owner as Player;
-        ownerAsPlayer.UseItem(clickedItem);
+    private void OnButtonLeftClicked(int slotIndex) {
+        onButtonLeftClicked.Invoke(slotIndex);
+
+        Tooltip tooltip = itemSlotTooltip.GetComponent<Tooltip>();
+        tooltip.SetText(m_inventory.GetItemList()[slotIndex].GetName());
+        tooltip.ShowTooltip(false);
+        Refresh();
     }
 
     /**
     Callback function run whenever the player right-clicks an item in the inventory
-    This will drop the item
     */
-    public void OnButtonRightClicked(int slotIndex) {
-        Collectable spawnedItem = m_inventory.DropItem(owner.transform.position, slotIndex);
-        //Apply a force to the spawned item
-        Rigidbody2D rb2d = spawnedItem.GetComponent<Rigidbody2D>();
-        rb2d.AddForce(Random.insideUnitCircle.normalized * 11, ForceMode2D.Impulse);
+    private void OnButtonRightClicked(int slotIndex) {
+        onButtonRightClicked.Invoke(slotIndex);
 
+        Tooltip tooltip = itemSlotTooltip.GetComponent<Tooltip>();
+        tooltip.ShowTooltip(false);
         Refresh();
+    }
+
+    /**
+    Callback function run whenever the player's mouse hovers over an item in the inventory
+    */
+    private void OnButtonHover(int slotIndex) {
+        Item hoveredItem = m_inventory.GetItemList()[slotIndex];
+        string text = hoveredItem.GetName() + "\nPrice: " + hoveredItem.GetSellPrice().ToString();
+
+        Tooltip tooltip = itemSlotTooltip.GetComponent<Tooltip>();
+        tooltip.ShowTooltip(true);
+        tooltip.SetText(text);
+    }
+
+
+    /**
+    Callback function run whenever the player's mouse stops hovering over an item in the inventory
+    */
+    private void OnButtonHoverExit(int slotIndex) {
+        Tooltip tooltip = itemSlotTooltip.GetComponent<Tooltip>();
+        tooltip.ShowTooltip(false);
+        tooltip.SetText("");
     }
 
     /*
@@ -90,7 +118,7 @@ public class UI_Inventory : MonoBehaviour
     private void Refresh() {
         //Destroy old gameobjects
         foreach(Transform child in itemSlotContainer) {
-            if(child == itemSlotTemplate) continue;
+            if(child == itemSlotTemplate || child == itemSlotTooltip) continue;
             Destroy(child.gameObject);
         }
 
@@ -115,12 +143,14 @@ public class UI_Inventory : MonoBehaviour
             Text amountText = slotTf.Find("AmountText").GetComponent<Text>();
             amountText.text = item.amount > 1 ? item.amount.ToString() : "";
 
-            //Update use/drop button
+            //Update event listeners
             ClickableObject slotButton = slotTf.Find("ItemButton").GetComponent<ClickableObject>();
             slotButton.index = index;
             slotButton.RemoveAllListeners();
             slotButton.onRight.AddListener(OnButtonRightClicked);
             slotButton.onLeft.AddListener(OnButtonLeftClicked);
+            slotButton.onHover.AddListener(OnButtonHover);
+            slotButton.onExit.AddListener(OnButtonHoverExit);
 
             //Wrap around rows
             x++;
