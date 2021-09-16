@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: topper_edge_left
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: -8556869282148278907, guid: 34a50de278bdcd84e8d4e647ca2de89b,
+  m_Sprite: {fileID: 8010401527153246611, guid: 34a50de278bdcd84e8d4e647ca2de89b,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
