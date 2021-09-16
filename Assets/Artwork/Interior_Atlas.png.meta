@@ -125,6 +125,15 @@ TextureImporter:
   - first:
       213: 6072068750431383272
     second: wall_painted_top_01
+  - first:
+      213: -2464924506433625500
+    second: kitchen_cupboard_01
+  - first:
+      213: 5142562617018743663
+    second: kitchen_drawers_01
+  - first:
+      213: 7728431271694359525
+    second: kitchen_sink_01
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -494,13 +503,6 @@ TextureImporter:
         y: 543
         width: 14
         height: 14
-      name: kitchen_cupboard_01
-      rect:
-        serializedVersion: 2
-        x: 784
-        y: 912
-        width: 16
-        height: 18
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -522,13 +524,6 @@ TextureImporter:
         y: 139
         width: 26
         height: 26
-      name: kitchen_drawers_01
-      rect:
-        serializedVersion: 2
-        x: 800
-        y: 912
-        width: 16
-        height: 18
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -550,15 +545,6 @@ TextureImporter:
         y: 128
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      name: kitchen_sink_01
-      rect:
-        serializedVersion: 2
-        x: 816
-        y: 912
-        width: 16
-        height: 23
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1001,7 +987,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1022,7 +1008,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1030,6 +1016,69 @@ TextureImporter:
       bones: []
       spriteID: 8ee66397b52544450800000000000000
       internalID: 6072068750431383272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kitchen_cupboard_01
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 912
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4626edb9834dacdd0800000000000000
+      internalID: -2464924506433625500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kitchen_drawers_01
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 912
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6bfa96247d0e5740800000000000000
+      internalID: 5142562617018743663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kitchen_sink_01
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 912
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ebdc5c6b47e04b60800000000000000
+      internalID: 7728431271694359525
       vertices: []
       indices: 
       edges: []
