@@ -10058,7 +10058,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5a7478d4884f9348bb2ac0f7add19f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lookAt: {fileID: 748555682}
   boundX: 0.15
   boundY: 0.05
 --- !u!20 &519420031
@@ -10184,12 +10183,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &748555682 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2656197622055779293, guid: 304db6f5d8bf9bb4f8bc4ffa57b80521,
-    type: 3}
-  m_PrefabInstance: {fileID: 2656197622783620735}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2656197622783620735
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10255,7 +10248,7 @@ PrefabInstance:
     - target: {fileID: 2656197622055779295, guid: 304db6f5d8bf9bb4f8bc4ffa57b80521,
         type: 3}
       propertyPath: m_Name
-      value: Player
+      value: Player_01
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 304db6f5d8bf9bb4f8bc4ffa57b80521, type: 3}
