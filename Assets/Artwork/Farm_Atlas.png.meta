@@ -133,7 +133,7 @@ TextureImporter:
     second: house_1_bottom_tier1
   - first:
       213: -397098519423749606
-    second: tree_01_shadow
+    second: tree_01_shadow_bottom
   - first:
       213: 1814789367735495809
     second: tree_01_shadowless
@@ -314,6 +314,15 @@ TextureImporter:
   - first:
       213: -6586884739924326031
     second: fence_wood_connect_left_top
+  - first:
+      213: 7780714297917179822
+    second: grass_tuft_01
+  - first:
+      213: -4097094811159267296
+    second: grass_tuft_02
+  - first:
+      213: -6405573503932998901
+    second: tree_01_shadow_top
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -1390,13 +1399,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tree_01_shadow
+      name: tree_01_shadow_bottom
       rect:
         serializedVersion: 2
-        x: 240
+        x: 243
         y: 736
-        width: 32
-        height: 38
+        width: 26
+        height: 14
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2540,6 +2549,69 @@ TextureImporter:
       bones: []
       spriteID: 1798e545a3fa694a0800000000000000
       internalID: -6586884739924326031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass_tuft_01
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 464
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea708221e66aafb60800000000000000
+      internalID: 7780714297917179822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass_tuft_02
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 464
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02871c10af13427c0800000000000000
+      internalID: -4097094811159267296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_01_shadow_top
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 750
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0b5b6b16d4da17a0800000000000000
+      internalID: -6405573503932998901
       vertices: []
       indices: 
       edges: []
