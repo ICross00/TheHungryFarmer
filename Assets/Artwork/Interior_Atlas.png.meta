@@ -4,7 +4,7 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: 10006031408466426
-    second: topper_corner_light_01
+    second: topper_corner_inside_top_left
   - first:
       213: 8353013937751667749
     second: floor_wood_planks_01
@@ -28,19 +28,94 @@ TextureImporter:
     second: wall_wood_bottom_02
   - first:
       213: 5028457947795554814
-    second: topper_corner_light_02
+    second: topper_corner_inside_top_right
   - first:
       213: -8685091506850001820
-    second: topper_corner_light_03
+    second: topper_corner_inside_bottom_left
   - first:
       213: 5163299647595135248
-    second: topper_corner_light_04
+    second: topper_corner_inside_bottom_right
   - first:
       213: -7929670614244547829
-    second: topper_left_light_01
+    second: topper_edge_right
   - first:
       213: -8556869282148278907
-    second: topper_right_light_01
+    second: topper_edge_left
+  - first:
+      213: -5680169558241356081
+    second: kitchen_cupboard_01
+  - first:
+      213: 7705906331970232085
+    second: kitchen_drawers_01
+  - first:
+      213: 3933373157558141756
+    second: kitchen_sink_01
+  - first:
+      213: -3790273926136573406
+    second: kitchen_drawers_small_01
+  - first:
+      213: -3433824123777952764
+    second: kitchen_cabinet_01
+  - first:
+      213: 5296019158075381283
+    second: kitchen_cupboard_wall_01
+  - first:
+      213: -948192140481314285
+    second: chair_down_01
+  - first:
+      213: -7614651246628561451
+    second: chair_right_01
+  - first:
+      213: -8391713767011354159
+    second: chair_left_01
+  - first:
+      213: -8634963914297308527
+    second: chair_up_01
+  - first:
+      213: 8012544821445094091
+    second: table_rounded_01
+  - first:
+      213: -8898053871601833792
+    second: table_round_01
+  - first:
+      213: -558101281930127169
+    second: table_round_02
+  - first:
+      213: 8791563058354375319
+    second: painting_mushroom_01
+  - first:
+      213: -9022988472652682287
+    second: painting_rose_01
+  - first:
+      213: 3139908691281498487
+    second: bowl_empty_01
+  - first:
+      213: 4330940250518039227
+    second: topper_edge_top
+  - first:
+      213: 4032134293081830631
+    second: topper_edge_bottom
+  - first:
+      213: -1307213800793318310
+    second: topper_corner_outside_top_left
+  - first:
+      213: 6572483436426054338
+    second: topper_corner_outside_top_right
+  - first:
+      213: -3672486923874572819
+    second: topper_corner_outside_bottom_left
+  - first:
+      213: 8837607702243530652
+    second: topper_corner_outside_bottom_right
+  - first:
+      213: 2043375947642600839
+    second: floor_tile_checkered_01
+  - first:
+      213: -3232631491559899434
+    second: wall_painted_bottom_01
+  - first:
+      213: 6072068750431383272
+    second: wall_painted_top_01
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -277,7 +352,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: topper_corner_light_01
+      name: topper_corner_inside_top_left
       rect:
         serializedVersion: 2
         x: 224
@@ -298,7 +373,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: topper_corner_light_02
+      name: topper_corner_inside_top_right
       rect:
         serializedVersion: 2
         x: 240
@@ -319,7 +394,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: topper_corner_light_03
+      name: topper_corner_inside_bottom_left
       rect:
         serializedVersion: 2
         x: 224
@@ -340,7 +415,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: topper_corner_light_04
+      name: topper_corner_inside_bottom_right
       rect:
         serializedVersion: 2
         x: 240
@@ -361,10 +436,10 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: topper_left_light_01
+      name: topper_edge_right
       rect:
         serializedVersion: 2
-        x: 267
+        x: 256
         y: 192
         width: 16
         height: 16
@@ -382,10 +457,10 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: topper_right_light_01
+      name: topper_edge_left
       rect:
         serializedVersion: 2
-        x: 277
+        x: 288
         y: 192
         width: 16
         height: 16
@@ -398,6 +473,531 @@ TextureImporter:
       bones: []
       spriteID: 58d991069b4ef3980800000000000000
       internalID: -8556869282148278907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kitchen_cupboard_01
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 912
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc65901b1ebfb21b0800000000000000
+      internalID: -5680169558241356081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kitchen_drawers_01
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 912
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51fd4853bf0e0fa60800000000000000
+      internalID: 7705906331970232085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kitchen_sink_01
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 912
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c334f410c06269630800000000000000
+      internalID: 3933373157558141756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kitchen_drawers_small_01
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 912
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 222543722fd366bc0800000000000000
+      internalID: -3790273926136573406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kitchen_cabinet_01
+      rect:
+        serializedVersion: 2
+        x: 844
+        y: 912
+        width: 20
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4045c01172b9850d0800000000000000
+      internalID: -3433824123777952764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kitchen_cupboard_wall_01
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 944
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3261fb06d5d3f7940800000000000000
+      internalID: 5296019158075381283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chair_down_01
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 1072
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3124bcf954857d2f0800000000000000
+      internalID: -948192140481314285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chair_right_01
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 1072
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dd183c0903535690800000000000000
+      internalID: -7614651246628561451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chair_left_01
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 1072
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d978844ac4aa8b80800000000000000
+      internalID: -8391713767011354159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chair_up_01
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 1072
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19a0ef7e1127a2880800000000000000
+      internalID: -8634963914297308527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: table_rounded_01
+      rect:
+        serializedVersion: 2
+        x: 1252
+        y: 976
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bca61251017423f60800000000000000
+      internalID: 8012544821445094091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: table_round_01
+      rect:
+        serializedVersion: 2
+        x: 996
+        y: 1008
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c822eec523c38480800000000000000
+      internalID: -8898053871601833792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: table_round_02
+      rect:
+        serializedVersion: 2
+        x: 1028
+        y: 1008
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb85ddd47d93148f0800000000000000
+      internalID: -558101281930127169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: painting_mushroom_01
+      rect:
+        serializedVersion: 2
+        x: 1251
+        y: 760
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79ac8a99508e10a70800000000000000
+      internalID: 8791563058354375319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: painting_rose_01
+      rect:
+        serializedVersion: 2
+        x: 1329
+        y: 792
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dba71b3ac7e7c280800000000000000
+      internalID: -9022988472652682287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bowl_empty_01
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 784
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 771defa9152339b20800000000000000
+      internalID: 3139908691281498487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: topper_edge_top
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbaa19726379a1c30800000000000000
+      internalID: 4330940250518039227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: topper_edge_bottom
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e430d1c6c405f730800000000000000
+      internalID: 4032134293081830631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: topper_corner_outside_top_left
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5cd93e59f7dbdde0800000000000000
+      internalID: -1307213800793318310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: topper_corner_outside_top_right
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ca4058ecd6263b50800000000000000
+      internalID: 6572483436426054338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: topper_corner_outside_bottom_left
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de56034b994b80dc0800000000000000
+      internalID: -3672486923874572819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: topper_corner_outside_bottom_right
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c975b7ca16d75aa70800000000000000
+      internalID: 8837607702243530652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_tile_checkered_01
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 336
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78d70dd19978b5c10800000000000000
+      internalID: 2043375947642600839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_painted_bottom_01
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 1040
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6deb4df19c26323d0800000000000000
+      internalID: -3232631491559899434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_painted_top_01
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 1056
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ee66397b52544450800000000000000
+      internalID: 6072068750431383272
       vertices: []
       indices: 
       edges: []
