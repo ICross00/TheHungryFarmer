@@ -2744,7 +2744,7 @@ GameObject:
   - component: {fileID: 1779250071}
   - component: {fileID: 1779250070}
   m_Layer: 0
-  m_Name: Main_Screen_buttons
+  m_Name: Main_Screen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
