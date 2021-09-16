@@ -1,24 +1,39 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class Inventory : MonoBehaviour
 {
-    Item[] item;//Array size needs to be decalred properly. Left blank for now until item count is decided.
-    int size;
+    public event EventHandler OnItemListChanged;
+    private List<Item> items;
 
-    void AddItem()
-    {
-
+    void Awake() {
+        items = new List<Item>();
+        Debug.Log("Inventory initialized");
     }
 
-    Item RemoveItem()
-    {
-        return;//Must return an item after items have been declared and can be returned.
+    public List<Item> GetItemList() {
+        return items;
     }
 
-    void UpdateInventory()
-    {
+    public void AddItem(Item item) {
+        bool canStack = false;
+        //Check if the item can be stacked first
+        foreach(Item storeditem in items) {
+            if(storeditem.type == item.type) {
+                storeditem.amount += 1; //Increment the amount
+                canStack = true; 
+                break;
+            }
+        }
 
+        if(!canStack) { //If the item cannot be stacked, add it to the end of the inventory
+            items.Add(item);
+        }
+
+        //Notify any listeners that the inventory changed
+        OnItemListChanged?.Invoke(this, EventArgs.Empty);
     }
 }

@@ -1,0 +1,9 @@
+Now that you have created a new layer (click on a component and find the layers in the top right of the screen), you can stop the player from going specific places.
+
+1) Click in the tile palet (drawing the map) and make sure 'Active Tilemap' is set to 'Collision'.
+2) Choose a tile and draw on the scene where you do not want the player to go.
+3) The player should now be blocked from going where the tiles you did.
+4) To make the tile invisible, Under inpector: make sure the 'Tilemap Renderer' is not ticked.
+
+
+NOTE: Two parts the house will need top be added. A section that will be collidable and a section the player can move behind.
