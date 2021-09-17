@@ -56,6 +56,9 @@ public class Inventory : MonoBehaviour
             Item droppedItem = items[slotIndex];
             items.RemoveAt(slotIndex);
 
+            //Notify any listeners that the inventory changed
+            OnItemListChanged?.Invoke(this, EventArgs.Empty);
+
             return droppedItem;
         }
         catch (IndexOutOfRangeException e) 
@@ -72,6 +75,8 @@ public class Inventory : MonoBehaviour
     */
     public bool RemoveItem(Item removedItem) {
         int index = 0;
+        bool success = false;
+
         foreach(Item storedItem in items) {
             //If the items are of the same type and if the amount of stored item is above the amount of the provided item, then the item can be removed
             if(storedItem.GetItemType() == removedItem.GetItemType() && storedItem.amount >= removedItem.amount) {
@@ -80,13 +85,16 @@ public class Inventory : MonoBehaviour
                     items.RemoveAt(index);
                 }
                 //Indicate success
-                return true;
+                success = true;
+                break;
             }
 
             index++;
         }
 
-        return false;
+        //Notify any listeners that the inventory changed
+        OnItemListChanged?.Invoke(this, EventArgs.Empty);
+        return success;
     }
 
     /**

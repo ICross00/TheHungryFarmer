@@ -24,20 +24,20 @@ public class ItemTemplate : ScriptableObject
     public Sprite sprite;
 }
 
-    public enum ItemType {
-        Heart,
-        Star,
-        Gear,
-        Diamond,
-        Ruby,
-        Emerald,
-        Coin_Gold,
-        Coin_Silver,
-        Coin_Copper,
-        Tomato,
-        Strawberry,
-        Carrot,
-        Seeds_Tomato,
-        Seeds_Strawberry,
-        Seeds_Carrot
-    }
+public enum ItemType {
+    Heart,
+    Star,
+    Gear,
+    Diamond,
+    Ruby,
+    Emerald,
+    Coin_Gold,
+    Coin_Silver,
+    Coin_Copper,
+    Tomato,
+    Strawberry,
+    Carrot,
+    Seeds_Tomato,
+    Seeds_Strawberry,
+    Seeds_Carrot
+}

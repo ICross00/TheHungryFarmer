@@ -66,7 +66,8 @@ public class Shop : Interactable
     */
     public void SellItem(Item item) {
         if(playerInventory.RemoveItem(item)) {
-            playerInventory.AddItem(new Item { item = goldItem.item, amount = item.GetSellPrice() * item.amount });
+            int totalSaleAmount = item.GetSellPrice() * item.amount;
+            playerCustomer.ChangeGold(totalSaleAmount);
         }
     }
 }

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -20,6 +21,9 @@ public class GameManager : MonoBehaviour
 
     public void ChangeGold(int amount) {
         playerGold += amount;
+
+        Text playerGoldLabel = GameObject.Find("PlayerGold").GetComponent<Text>();
+        playerGoldLabel.text = "Gold: " + playerGold.ToString();
     }
 
     //Referencing floating text for later use

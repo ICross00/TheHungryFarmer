@@ -41,14 +41,29 @@ public class Player : Mover
         return inventory;
     }
 
+    //Wrapper function for the GameManager's ChangeGold function.
+    //This allows objects that the player interacts with (such as shops) to change the player's gold without needing to acquire a reference to the GameManager
+    public void ChangeGold(int amount) {
+        gameManager.ChangeGold(amount);
+    }
+
     protected override void OnTriggerEnter2D(Collider2D collider) {
         Debug.Log("Entered trigger");
 
         Collectable itemWorld = collider.GetComponent<Collectable>();
-        //If we collided with an item, add it to the inventory
+        //If we collided with a valid collectable...
         if(itemWorld != null) {
-            //Get the player's inventory
-            inventory.AddItem(itemWorld.GetItem());
+            Item collectedItem = itemWorld.GetItem();
+
+            if(collectedItem.GetItemType() == ItemType.Coin_Gold) {
+                 //Special case for gold, it should not be added to the inventory but used to increment the gold stored in the game manager
+                ChangeGold(collectedItem.amount);
+            } else {
+                //Otherwise, add the item to the inventory
+                inventory.AddItem(collectedItem);
+            }
+
+            //Destroy the collectable
             itemWorld.DestroySelf();
         }
 
