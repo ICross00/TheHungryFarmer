@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9cbc7e85fa3738c458d90a5a408acd80, type: 3}
   m_Name: Carrot Seed Packet
   m_EditorClassIdentifier: 
-  itemName: 
+  itemName: Carrot Seed Packet
   type: 14
   maxStack: 64
   sellPrice: 15
