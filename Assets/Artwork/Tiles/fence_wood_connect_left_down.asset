@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: path_stone_edge_left
+  m_Name: fence_wood_connect_left_down
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: -4001230903748862340, guid: 1884b98184089f34184916226ef1b1c5,
+  m_Sprite: {fileID: 9007443932476506988, guid: 1884b98184089f34184916226ef1b1c5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:

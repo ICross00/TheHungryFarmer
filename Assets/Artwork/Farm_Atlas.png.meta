@@ -133,7 +133,7 @@ TextureImporter:
     second: house_1_bottom_tier1
   - first:
       213: -397098519423749606
-    second: tree_01_shadow
+    second: tree_01_shadow_bottom
   - first:
       213: 1814789367735495809
     second: tree_01_shadowless
@@ -257,6 +257,72 @@ TextureImporter:
   - first:
       213: 7485097585727186645
     second: path_stone_corner_bottom_right_02
+  - first:
+      213: 2637396844281352407
+    second: enemy_ghost_01
+  - first:
+      213: -4024449534834090366
+    second: house_1_top_tier1
+  - first:
+      213: 3938068881995288813
+    second: path_stone_corner_top_left_01
+  - first:
+      213: -1647777637172961817
+    second: path_stone_end_top
+  - first:
+      213: 2907889818141976391
+    second: path_stone_corner_top_right_01
+  - first:
+      213: -8999901216327818199
+    second: path_stone_01
+  - first:
+      213: -4001230903748862340
+    second: path_stone_edge_left
+  - first:
+      213: 2566934919629765523
+    second: path_stone_edge_right
+  - first:
+      213: -8960694120633201128
+    second: path_stone_end_bottom
+  - first:
+      213: 1535561362792798348
+    second: fence_wood_post
+  - first:
+      213: 4814299558702472431
+    second: fence_wood_connect_right
+  - first:
+      213: 8122810166474796596
+    second: fence_wood_connect_center
+  - first:
+      213: -5234853295329881770
+    second: fence_wood_connect_left
+  - first:
+      213: -9060768261553439513
+    second: fence_wood_connect_right_down
+  - first:
+      213: -8392255138621593257
+    second: fence_wood_connect_right_top
+  - first:
+      213: 9007443932476506988
+    second: fence_wood_connect_left_down
+  - first:
+      213: -7325150695143809920
+    second: fence_wood_connect_down
+  - first:
+      213: -1609045035988873129
+    second: fence_wood_connect_up_down
+  - first:
+      213: -6586884739924326031
+    second: fence_wood_connect_left_top
+  - first:
+      213: 7780714297917179822
+    second: grass_tuft_01
+  - first:
+      213: -4097094811159267296
+    second: grass_tuft_02
+  - first:
+      213: -6405573503932998901
+    second: tree_01_shadow_top
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -1333,13 +1399,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tree_01_shadow
+      name: tree_01_shadow_bottom
       rect:
         serializedVersion: 2
-        x: 240
+        x: 243
         y: 736
-        width: 32
-        height: 38
+        width: 26
+        height: 14
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1425,15 +1491,6 @@ TextureImporter:
         width: 189
         height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
-      name: item_carrot
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 577
-        width: 14
-        height: 14
-      alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -1454,13 +1511,6 @@ TextureImporter:
         y: 561
         width: 14
         height: 14
-      name: fence_wood_post
-      rect:
-        serializedVersion: 2
-        x: 336
-        y: 752
-        width: 16
-        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1482,13 +1532,6 @@ TextureImporter:
         y: 545
         width: 14
         height: 14
-      name: fence_wood_connect_up_down
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 753
-        width: 16
-        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1510,13 +1553,6 @@ TextureImporter:
         y: 529
         width: 14
         height: 14
-      name: fence_wood_connect_down
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 769
-        width: 16
-        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1538,13 +1574,6 @@ TextureImporter:
         y: 513
         width: 14
         height: 14
-      name: fence_wood_connect_center
-      rect:
-        serializedVersion: 2
-        x: 352
-        y: 736
-        width: 16
-        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1566,13 +1595,6 @@ TextureImporter:
         y: 497
         width: 14
         height: 14
-      name: fence_wood_connect_right
-      rect:
-        serializedVersion: 2
-        x: 336
-        y: 736
-        width: 16
-        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1594,13 +1616,6 @@ TextureImporter:
         y: 482
         width: 14
         height: 14
-      name: fence_wood_connect_left
-      rect:
-        serializedVersion: 2
-        x: 368
-        y: 736
-        width: 16
-        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1622,13 +1637,6 @@ TextureImporter:
         y: 465
         width: 14
         height: 14
-      name: grass_tuft_01
-      rect:
-        serializedVersion: 2
-        x: 49
-        y: 464
-        width: 16
-        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1650,13 +1658,6 @@ TextureImporter:
         y: 593
         width: 13
         height: 13
-      name: grass_tuft_02
-      rect:
-        serializedVersion: 2
-        x: 65
-        y: 464
-        width: 16
-        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1678,13 +1679,6 @@ TextureImporter:
         y: 593
         width: 13
         height: 13
-      name: path_stone_01
-      rect:
-        serializedVersion: 2
-        x: 288
-        y: 704
-        width: 16
-        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1706,13 +1700,6 @@ TextureImporter:
         y: 609
         width: 14
         height: 14
-      name: fence_wood_corner_bottom_right
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 736
-        width: 16
-        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1734,13 +1721,6 @@ TextureImporter:
         y: 466
         width: 13
         height: 13
-      name: fence_wood_corner_top_right
-      rect:
-        serializedVersion: 2
-        x: 369
-        y: 768
-        width: 16
-        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1762,13 +1742,6 @@ TextureImporter:
         y: 466
         width: 13
         height: 13
-      name: fence_wood_corner_top_left
-      rect:
-        serializedVersion: 2
-        x: 352
-        y: 768
-        width: 16
-        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1790,13 +1763,6 @@ TextureImporter:
         y: 466
         width: 13
         height: 13
-      name: fence_wood_corner_bottom_left
-      rect:
-        serializedVersion: 2
-        x: 352
-        y: 752
-        width: 16
-        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1818,13 +1784,6 @@ TextureImporter:
         y: 433
         width: 14
         height: 14
-      name: house_1_top_tier1
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 1337
-        width: 56
-        height: 26
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1848,15 +1807,6 @@ TextureImporter:
         height: 13
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      name: path_stone_end_top
-      rect:
-        serializedVersion: 2
-        x: 288
-        y: 720
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1878,15 +1828,6 @@ TextureImporter:
         height: 14
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      name: path_stone_end_bottom
-      rect:
-        serializedVersion: 2
-        x: 288
-        y: 688
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1908,15 +1849,6 @@ TextureImporter:
         height: 14
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      name: path_stone_edge_right
-      rect:
-        serializedVersion: 2
-        x: 304
-        y: 704
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1938,15 +1870,6 @@ TextureImporter:
         height: 14
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      name: path_stone_edge_left
-      rect:
-        serializedVersion: 2
-        x: 272
-        y: 704
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1968,15 +1891,6 @@ TextureImporter:
         height: 14
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      name: path_stone_corner_top_left_01
-      rect:
-        serializedVersion: 2
-        x: 272
-        y: 720
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1998,15 +1912,6 @@ TextureImporter:
         height: 59
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      name: path_stone_corner_top_right_01
-      rect:
-        serializedVersion: 2
-        x: 304
-        y: 720
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2027,7 +1932,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2048,7 +1953,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2069,7 +1974,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2090,7 +1995,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2111,7 +2016,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2132,7 +2037,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2153,7 +2058,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2174,7 +2079,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2195,7 +2100,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2216,7 +2121,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2237,7 +2142,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2245,6 +2150,468 @@ TextureImporter:
       bones: []
       spriteID: 5d62762b89860e760800000000000000
       internalID: 7485097585727186645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_ghost_01
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 619
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d05023d47ae99420800000000000000
+      internalID: 2637396844281352407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: house_1_top_tier1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1337
+        width: 56
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28e5ab378784628c0800000000000000
+      internalID: -4024449534834090366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: path_stone_corner_top_left_01
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 720
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de0595c88c4d6a630800000000000000
+      internalID: 3938068881995288813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: path_stone_end_top
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 720
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ed197328fae129e0800000000000000
+      internalID: -1647777637172961817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: path_stone_corner_top_right_01
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 720
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 747e3580266ea5820800000000000000
+      internalID: 2907889818141976391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: path_stone_01
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 704
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 924ac2bf68de91380800000000000000
+      internalID: -8999901216327818199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: path_stone_edge_left
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 704
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7edbb541b5c878c0800000000000000
+      internalID: -4001230903748862340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: path_stone_edge_right
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 704
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39bf31e85b59f9320800000000000000
+      internalID: 2566934919629765523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: path_stone_end_bottom
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 688
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81e0abe4c2835a380800000000000000
+      internalID: -8960694120633201128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fence_wood_post
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 752
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8854187ce86f4510800000000000000
+      internalID: 1535561362792798348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fence_wood_connect_right
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 736
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fecd7cef0f3dfc240800000000000000
+      internalID: 4814299558702472431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fence_wood_connect_center
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 736
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43e69a65fc40ab070800000000000000
+      internalID: 8122810166474796596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fence_wood_connect_left
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 736
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6515490d9a01a57b0800000000000000
+      internalID: -5234853295329881770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fence_wood_connect_right_down
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 768
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ec39f9a54fa14280800000000000000
+      internalID: -9060768261553439513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fence_wood_connect_right_top
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 752
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 759630e5a68b88b80800000000000000
+      internalID: -8392255138621593257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fence_wood_connect_left_down
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 768
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c638289788ed00d70800000000000000
+      internalID: 9007443932476506988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fence_wood_connect_down
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 768
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08c5fb9c046d75a90800000000000000
+      internalID: -7325150695143809920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fence_wood_connect_up_down
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 752
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 750174a90168ba9e0800000000000000
+      internalID: -1609045035988873129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fence_wood_connect_left_top
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 736
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1798e545a3fa694a0800000000000000
+      internalID: -6586884739924326031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass_tuft_01
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 464
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea708221e66aafb60800000000000000
+      internalID: 7780714297917179822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass_tuft_02
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 464
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02871c10af13427c0800000000000000
+      internalID: -4097094811159267296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_01_shadow_top
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 750
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0b5b6b16d4da17a0800000000000000
+      internalID: -6405573503932998901
       vertices: []
       indices: 
       edges: []
