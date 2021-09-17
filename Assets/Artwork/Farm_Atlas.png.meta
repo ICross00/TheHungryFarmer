@@ -125,6 +125,243 @@ TextureImporter:
   - first:
       213: -5273317508428635459
     second: water_corner_in_04
+  - first:
+      213: -5299377852711370820
+    second: building_house_01_bottom
+  - first:
+      213: 322948128818159913
+    second: building_house_player_tier1_bottom
+  - first:
+      213: -397098519423749606
+    second: tree_01_shadow_bottom
+  - first:
+      213: 1814789367735495809
+    second: tree_01_shadowless
+  - first:
+      213: -5060849815826022191
+    second: tree_02_shadow
+  - first:
+      213: -4616171280885944119
+    second: tree_02_shadowless
+  - first:
+      213: 2628193245138320271
+    second: ui_inventory_hotbar
+  - first:
+      213: 6647357402565405985
+    second: item_egg
+  - first:
+      213: -1742513348937851951
+    second: item_seeds_carrot
+  - first:
+      213: 5034380702231317304
+    second: item_seeds_tomato
+  - first:
+      213: -6449412298968507767
+    second: item_seeds_strawberry
+  - first:
+      213: -6662726404311003216
+    second: item_seeds_pumpkin
+  - first:
+      213: -7048821255290126596
+    second: building_market_open
+  - first:
+      213: 6737347679698893167
+    second: fence_wood_post
+  - first:
+      213: -251302928660518202
+    second: fence_wood_connect_up_down
+  - first:
+      213: 5079299566936111203
+    second: fence_wood_connect_down
+  - first:
+      213: -4270818359475813303
+    second: fence_wood_connect_center
+  - first:
+      213: -198316270007725801
+    second: fence_wood_connect_right
+  - first:
+      213: -5589868780433789593
+    second: fence_wood_connect_left
+  - first:
+      213: 2745802220419698825
+    second: grass_tuft_01
+  - first:
+      213: -4505037873538534440
+    second: grass_tuft_02
+  - first:
+      213: 3738963642724817436
+    second: path_stone_01
+  - first:
+      213: 8864171989889093016
+    second: fence_wood_corner_bottom_right
+  - first:
+      213: -8286789910182532333
+    second: fence_wood_corner_top_right
+  - first:
+      213: 8677738475361178161
+    second: fence_wood_corner_top_left
+  - first:
+      213: -1708550471861389698
+    second: fence_wood_corner_bottom_left
+  - first:
+      213: -2228623059985793718
+    second: building_house_player_tier1_top
+  - first:
+      213: 6647357402565405985
+    second: path_stone_end_top
+  - first:
+      213: -1742513348937851951
+    second: path_stone_end_bottom
+  - first:
+      213: 5034380702231317304
+    second: path_stone_edge_right
+  - first:
+      213: -6449412298968507767
+    second: path_stone_edge_left
+  - first:
+      213: -6662726404311003216
+    second: path_stone_corner_top_left_01
+  - first:
+      213: -7048821255290126596
+    second: path_stone_corner_top_right_01
+  - first:
+      213: -7439521489379136677
+    second: path_stone_corner_bottom_left_01
+  - first:
+      213: 8838166459629395839
+    second: path_stone_corner_bottom_right_01
+  - first:
+      213: -5871829841657470123
+    second: path_stone_02
+  - first:
+      213: -2794344568251875198
+    second: path_stone_edge_top
+  - first:
+      213: -6888438370812094166
+    second: path_stone_edge_bottom
+  - first:
+      213: 1072548672214717731
+    second: path_stone_end_left
+  - first:
+      213: 6983194997113293608
+    second: path_stone_end_right
+  - first:
+      213: 809005589332159113
+    second: path_stone_corner_top_left_02
+  - first:
+      213: 8932747449328649017
+    second: path_stone_corner_top_right_02
+  - first:
+      213: 9006882977049995070
+    second: path_stone_corner_bottom_left_02
+  - first:
+      213: 7485097585727186645
+    second: path_stone_corner_bottom_right_02
+  - first:
+      213: 2637396844281352407
+    second: enemy_ghost_01
+  - first:
+      213: -4024449534834090366
+    second: building_house_player_tier1_top
+  - first:
+      213: 3938068881995288813
+    second: path_stone_corner_top_left_01
+  - first:
+      213: -1647777637172961817
+    second: path_stone_end_top
+  - first:
+      213: 2907889818141976391
+    second: path_stone_corner_top_right_01
+  - first:
+      213: -8999901216327818199
+    second: path_stone_01
+  - first:
+      213: -4001230903748862340
+    second: path_stone_edge_left
+  - first:
+      213: 2566934919629765523
+    second: path_stone_edge_right
+  - first:
+      213: -8960694120633201128
+    second: path_stone_end_bottom
+  - first:
+      213: 1535561362792798348
+    second: fence_wood_post
+  - first:
+      213: 4814299558702472431
+    second: fence_wood_connect_right
+  - first:
+      213: 8122810166474796596
+    second: fence_wood_connect_center
+  - first:
+      213: -5234853295329881770
+    second: fence_wood_connect_left
+  - first:
+      213: -9060768261553439513
+    second: fence_wood_connect_right_down
+  - first:
+      213: -8392255138621593257
+    second: fence_wood_connect_right_top
+  - first:
+      213: 9007443932476506988
+    second: fence_wood_connect_left_down
+  - first:
+      213: -7325150695143809920
+    second: fence_wood_connect_down
+  - first:
+      213: -1609045035988873129
+    second: fence_wood_connect_up_down
+  - first:
+      213: -6586884739924326031
+    second: fence_wood_connect_left_top
+  - first:
+      213: 7780714297917179822
+    second: grass_tuft_01
+  - first:
+      213: -4097094811159267296
+    second: grass_tuft_02
+  - first:
+      213: -6405573503932998901
+    second: tree_01_shadow_top
+  - first:
+      213: -2756050367512372818
+    second: building_hospital_bottom
+  - first:
+      213: -9174062611472603450
+    second: building_hospital_top
+  - first:
+      213: -2553164507254186847
+    second: building_house_02_bottom
+  - first:
+      213: 5870525190197170530
+    second: building_house_02_top
+  - first:
+      213: -6285199059370817948
+    second: building_house_03_bottom
+  - first:
+      213: 1929535864248644506
+    second: building_house_03_top
+  - first:
+      213: -332682012613991385
+    second: building_house_01_top
+  - first:
+      213: -5869115066752878460
+    second: building_house_04_bottom
+  - first:
+      213: -1512914847958878616
+    second: building_house_04_top
+  - first:
+      213: 5249115288025444095
+    second: building_church_bottom
+  - first:
+      213: -3437444848884687209
+    second: building_church_top
+  - first:
+      213: 2261849513394376222
+    second: building_market_bottom
+  - first:
+      213: 7095944624868113028
+    second: building_market_top
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -766,7 +1003,7 @@ TextureImporter:
         x: 210
         y: 330
         width: 293
-        height: 117
+        height: 92
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1154,6 +1391,1539 @@ TextureImporter:
       bones: []
       spriteID: db263425aa961d6b0800000000000000
       internalID: -5273317508428635459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: building_house_01_bottom
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 1216
+        width: 68
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbff0969be3d476b0800000000000000
+      internalID: -5299377852711370820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: building_house_player_tier1_bottom
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1296
+        width: 56
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9216513bc975b7400800000000000000
+      internalID: 322948128818159913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_01_shadow_bottom
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 736
+        width: 26
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a12f9e020093d7af0800000000000000
+      internalID: -397098519423749606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_01_shadowless
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 704
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18ca706905d6f2910800000000000000
+      internalID: 1814789367735495809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_02_shadow
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 736
+        width: 31
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d0c612f7ef34c9b0800000000000000
+      internalID: -5060849815826022191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_02_shadowless
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 704
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c0fe647da010ffb0800000000000000
+      internalID: -4616171280885944119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_inventory_hotbar
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 342
+        width: 189
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8bfc89e4d7397420800000000000000
+      internalID: 2628193245138320271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: item_tomato
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 561
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6931c8c40edf7d50800000000000000
+      internalID: 6737347679698893167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: item_strawberry
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 545
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6caac2e5151338cf0800000000000000
+      internalID: -251302928660518202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: item_pumpkin
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 529
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 368b50b7b0c4d7640800000000000000
+      internalID: 5079299566936111203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: item_corn
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 513
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9444a3f64510bb4c0800000000000000
+      internalID: -4270818359475813303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: item_potato
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 497
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 711520537607f3df0800000000000000
+      internalID: -198316270007725801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: item_melon
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 482
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76da239e5fbcc62b0800000000000000
+      internalID: -5589868780433789593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: item_radish
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 465
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9805893529c0b1620800000000000000
+      internalID: 2745802220419698825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: item_diamond
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 593
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d3fd083ce3ea71c0800000000000000
+      internalID: -4505037873538534440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: item_ruby
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 593
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1a96b88f9773e330800000000000000
+      internalID: 3738963642724817436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: item_emerald
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 609
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89d8e4dd57dd30b70800000000000000
+      internalID: 8864171989889093016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: item_coin_silver
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 466
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31b67436b786ffc80800000000000000
+      internalID: -8286789910182532333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: item_coin_gold
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 466
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13294adaa258d6870800000000000000
+      internalID: 8677738475361178161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: item_coin_copper
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 466
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7630ebe5620a48e0800000000000000
+      internalID: -1708550471861389698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_clock
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 433
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4d7d4b72275211e0800000000000000
+      internalID: -2228623059985793718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: item_egg
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 449
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12d69f2a658204c50800000000000000
+      internalID: 6647357402565405985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: item_seeds_carrot
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 577
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dbde24675951d7e0800000000000000
+      internalID: -1742513348937851951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: item_seeds_tomato
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 561
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83b449c4396bdd540800000000000000
+      internalID: 5034380702231317304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: item_seeds_strawberry
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 545
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98a52fd3fa51f76a0800000000000000
+      internalID: -6449412298968507767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: item_seeds_pumpkin
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 529
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bf4d6bc2ad3983a0800000000000000
+      internalID: -6662726404311003216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: building_market_open
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 929
+        width: 72
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfe75312a6e8d2e90800000000000000
+      internalID: -7048821255290126596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: path_stone_corner_bottom_left_01
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 688
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5beba62f9281c890800000000000000
+      internalID: -7439521489379136677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: path_stone_corner_bottom_right_01
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 688
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7f5bf3819977aa70800000000000000
+      internalID: 8838166459629395839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: path_stone_02
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 704
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 553e77a8ed1138ea0800000000000000
+      internalID: -5871829841657470123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: path_stone_edge_top
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 720
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2800e459b6e7839d0800000000000000
+      internalID: -2794344568251875198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: path_stone_edge_bottom
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 688
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a29139a5cc95760a0800000000000000
+      internalID: -6888438370812094166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: path_stone_end_left
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 704
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 325dca3b55572ee00800000000000000
+      internalID: 1072548672214717731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: path_stone_end_right
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 704
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82b0930f9da49e060800000000000000
+      internalID: 6983194997113293608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: path_stone_corner_top_left_02
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 720
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98ae2751c4a2a3b00800000000000000
+      internalID: 809005589332159113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: path_stone_corner_top_right_02
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 720
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 933c2893a7e77fb70800000000000000
+      internalID: 8932747449328649017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: path_stone_corner_bottom_left_02
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 688
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e37e39cd850eefc70800000000000000
+      internalID: 9006882977049995070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: path_stone_corner_bottom_right_02
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 688
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d62762b89860e760800000000000000
+      internalID: 7485097585727186645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_ghost_01
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 619
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d05023d47ae99420800000000000000
+      internalID: 2637396844281352407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: building_house_player_tier1_top
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1337
+        width: 56
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28e5ab378784628c0800000000000000
+      internalID: -4024449534834090366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: path_stone_corner_top_left_01
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 720
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de0595c88c4d6a630800000000000000
+      internalID: 3938068881995288813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: path_stone_end_top
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 720
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ed197328fae129e0800000000000000
+      internalID: -1647777637172961817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: path_stone_corner_top_right_01
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 720
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 747e3580266ea5820800000000000000
+      internalID: 2907889818141976391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: path_stone_01
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 704
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 924ac2bf68de91380800000000000000
+      internalID: -8999901216327818199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: path_stone_edge_left
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 704
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7edbb541b5c878c0800000000000000
+      internalID: -4001230903748862340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: path_stone_edge_right
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 704
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39bf31e85b59f9320800000000000000
+      internalID: 2566934919629765523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: path_stone_end_bottom
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 688
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81e0abe4c2835a380800000000000000
+      internalID: -8960694120633201128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fence_wood_post
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 752
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8854187ce86f4510800000000000000
+      internalID: 1535561362792798348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fence_wood_connect_right
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 736
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fecd7cef0f3dfc240800000000000000
+      internalID: 4814299558702472431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fence_wood_connect_center
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 736
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43e69a65fc40ab070800000000000000
+      internalID: 8122810166474796596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fence_wood_connect_left
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 736
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6515490d9a01a57b0800000000000000
+      internalID: -5234853295329881770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fence_wood_connect_right_down
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 768
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ec39f9a54fa14280800000000000000
+      internalID: -9060768261553439513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fence_wood_connect_right_top
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 752
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 759630e5a68b88b80800000000000000
+      internalID: -8392255138621593257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fence_wood_connect_left_down
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 768
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c638289788ed00d70800000000000000
+      internalID: 9007443932476506988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fence_wood_connect_down
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 768
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08c5fb9c046d75a90800000000000000
+      internalID: -7325150695143809920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fence_wood_connect_up_down
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 752
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 750174a90168ba9e0800000000000000
+      internalID: -1609045035988873129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fence_wood_connect_left_top
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 736
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1798e545a3fa694a0800000000000000
+      internalID: -6586884739924326031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass_tuft_01
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 464
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea708221e66aafb60800000000000000
+      internalID: 7780714297917179822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass_tuft_02
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 464
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02871c10af13427c0800000000000000
+      internalID: -4097094811159267296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_01_shadow_top
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 750
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0b5b6b16d4da17a0800000000000000
+      internalID: -6405573503932998901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: building_hospital_bottom
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 928
+        width: 112
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea9175dfaca80c9d0800000000000000
+      internalID: -2756050367512372818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: building_hospital_top
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 988
+        width: 79
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c6abff39ae2fa080800000000000000
+      internalID: -9174062611472603450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: building_house_02_bottom
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 1136
+        width: 77
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ac9afb6866519cd0800000000000000
+      internalID: -2553164507254186847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: building_house_02_top
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 1184
+        width: 71
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2615fae9e8b487150800000000000000
+      internalID: 5870525190197170530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: building_house_03_bottom
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 1216
+        width: 77
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 466459381cc76c8a0800000000000000
+      internalID: -6285199059370817948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: building_house_03_top
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 1264
+        width: 73
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a93bae935a617ca10800000000000000
+      internalID: 1929535864248644506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: building_house_01_top
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 1264
+        width: 62
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7242bfed873126bf0800000000000000
+      internalID: -332682012613991385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: building_house_04_bottom
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1072
+        width: 72
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4883d4451f6bc8ea0800000000000000
+      internalID: -5869115066752878460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: building_house_04_top
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 1120
+        width: 69
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8663ff726fb010be0800000000000000
+      internalID: -1512914847958878616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: building_church_bottom
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 1136
+        width: 66
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffe24df1b8a98d840800000000000000
+      internalID: 5249115288025444095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: building_church_top
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 1184
+        width: 58
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79e5b3f4f1ebb40d0800000000000000
+      internalID: -3437444848884687209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: building_market_bottom
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 929
+        width: 72
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1e034d0624b36f10800000000000000
+      internalID: 2261849513394376222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: building_market_top
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 977
+        width: 71
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48a3b175a0cd97260800000000000000
+      internalID: 7095944624868113028
       vertices: []
       indices: 
       edges: []
