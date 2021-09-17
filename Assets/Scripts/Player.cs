@@ -130,6 +130,13 @@ public class Player : Mover
             case ItemType.Seeds_Strawberry:
                 Debug.Log("Planted strawberry seeds");
             break;
+
+            case ItemType.Heart:
+                Debug.Log("Used a heart to heal");
+                hitPoint += 5; //Increase health by 5
+
+                inventory.RemoveItemSingle(item); //Remove one heart from the inventory
+            break;
         }
     }
 }

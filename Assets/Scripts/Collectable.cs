@@ -31,6 +31,7 @@ public class Collectable : MonoBehaviour
         collectableItem.pickupCooldown = cooldown;
         collectableItem.SetItem(item);
 
+
         //Disable collisions if a pickup cooldown was set
         if(cooldown > 0) {
             collectableItem.GetComponent<BoxCollider2D>().enabled = false;

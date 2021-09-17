@@ -70,8 +70,8 @@ public class Inventory : MonoBehaviour
 
     /**
     Remove the first instance of an item from the inventory
-    @param Item The item to remove from the inventory
-    @return True if the item waas successfully removed, false if the item was not in the inventory or if there was not enough of the item to remove the provided amount
+    @param removedItem The item to remove from the inventory
+    @return True if the item was successfully removed, false if the item was not in the inventory or if there was not enough of the item to remove the provided amount
     */
     public bool RemoveItem(Item removedItem) {
         int index = 0;
@@ -95,6 +95,16 @@ public class Inventory : MonoBehaviour
         //Notify any listeners that the inventory changed
         OnItemListChanged?.Invoke(this, EventArgs.Empty);
         return success;
+    }
+
+    /**
+    Removes a single instance of an item from the inventory
+    @param removedItem The item to remove from the inventory
+    @return True if the item was successfully removed, false if the item was not in the inventory
+    */
+    public bool RemoveItemSingle(Item removedItem) {
+        Item singleItem = new Item { item = removedItem.item, amount = 1 };
+        return RemoveItem(singleItem);
     }
 
     /**
