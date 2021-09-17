@@ -36,7 +36,7 @@ public abstract class Mover : Fighter
 
     protected virtual void UpdateMotor(Vector3 input)
     {
-        //Rest movedealta.
+        //Reset movedealta.
         playerLocation = new Vector3(input.x * xSpeed, input.y * ySpeed, 0);
 
         //Changing direction sprite is facing (left or right)

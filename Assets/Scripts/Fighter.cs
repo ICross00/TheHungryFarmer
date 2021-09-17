@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Fighter : Movable
+public class Fighter : MonoBehaviour
 {
     //Public fields
     public int hitPoint = 10;
