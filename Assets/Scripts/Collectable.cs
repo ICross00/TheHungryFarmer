@@ -7,9 +7,8 @@ using UnityEngine.UI;
 This class represents an item in the world that can be walked over by the player and picked up.
 
 You can use the provided static function Spawn() to spawn items in the world from any other class programmatically.
-To do this, call it using Collectable.Spawn(position, item).
 
-If you want to place items in the world from the inspector, please see the ItemSpawner class.
+If you want to place items in the world from the editor, please see the ItemSpawner class.
 */
 public class Collectable : MonoBehaviour
 {
@@ -17,7 +16,13 @@ public class Collectable : MonoBehaviour
     public float pickupCooldown = 0; //How long before this item can be picked up.
     public bool shouldCheckCooldown = false;
 
-    //Spawns an item in the world at the provided position and with the given item type and amount
+    /**
+    Spawns an item in the world
+
+    @param position The location to spawn the item at in the world
+    @param item The item to spawn
+    @param cooldown The time in seconds before this item can be picked up by the player
+    */
     public static Collectable Spawn(Vector3 position, Item item, float cooldown = 0) {
         GameObject tf = Instantiate(ItemAssets.Instance.pfWorldItem, position, Quaternion.identity);
         Collectable collectableItem = tf.GetComponent<Collectable>();
@@ -33,6 +38,19 @@ public class Collectable : MonoBehaviour
         }
 
         return collectableItem;
+    }
+
+    /**
+    Spawns an item in the world
+
+    @param position The location to spawn the item at in the world
+    @param name The name of the item to create. This must match the name of the item as found in the Resources/Items folder
+    @param amount The amount of item to include in the stack
+    @param cooldown The time in seconds before this item can be picked up by the player
+    */
+    public static Collectable Spawn(Vector3 position, string name, int amount, float cooldown = 0) {
+        Item spawnedItem = Item.CreateItem(name, amount);
+        return Spawn(position, spawnedItem, cooldown);
     }
 
     public void SetItem(Item item) {

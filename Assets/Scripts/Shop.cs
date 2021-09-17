@@ -7,16 +7,16 @@ using UnityEngine;
     When a player interacts with something that causes the shop to open, the player object should be received using the
     OpenShop function.
 */
-public class Shop : MonoBehaviour
+public class Shop : Interactable
 {
     //The items that this shop will sell
     public Inventory shopInventory;
     public UI_Inventory shopUI;
     public Item goldItem;
 
-    public Player playerCustomer;
+    private Player playerCustomer;
     private Inventory playerInventory;
-    private UI_Inventory playerInventoryUI;
+    private bool isShopOpen = false;
 
     void Awake() {
         shopUI.SetInventory(shopInventory);
@@ -35,11 +35,12 @@ public class Shop : MonoBehaviour
     */
     public void OpenShop(Player customer) {
         playerCustomer = customer;
-        playerInventory = customer.GetComponent<Inventory>();
-        playerInventoryUI = customer.inventoryUI;
+        playerInventory = customer.GetInventory();
 
         shopUI.SetInventory(shopInventory);
         shopUI.SetVisible(true);
+
+        isShopOpen = true;
     }
 
     /**
@@ -47,6 +48,15 @@ public class Shop : MonoBehaviour
     */
     public void CloseShop() {
         shopUI.SetVisible(false);
+        isShopOpen = false;
+    }
+
+    public override void Interact(Player triggerPlayer) {
+        if(isShopOpen) {
+            CloseShop();
+        } else {
+            OpenShop(triggerPlayer);
+        }
     }
 
     /**

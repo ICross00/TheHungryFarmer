@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1572281621546148054}
   - component: {fileID: 1572281621546148055}
-  - component: {fileID: 1572281621546148058}
   - component: {fileID: 1572281621546148059}
   - component: {fileID: 1572281621546148056}
   - component: {fileID: 1572281621546148057}
@@ -89,27 +88,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!50 &1572281621546148058
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1572281621546148052}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 7
 --- !u!61 &1572281621546148059
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -171,6 +149,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3279d706ec1de084488a27268ddefa1f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactionRadius: 2
   shopInventory: {fileID: 1572281621546148056}
   shopUI: {fileID: 8106299624365081970}
   goldItem:

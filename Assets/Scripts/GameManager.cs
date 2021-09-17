@@ -5,15 +5,22 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
+    Inventory playerInventory;
+
+    //For now these values are zero or uninitialized. They will need to be loaded from a save state in the future
+    int gameInt;
+    int restaurantRating;
+    int playerGold = 0;
+
     private void Awake()
     {
         instance = this;
+        playerInventory = GetComponent<Inventory>();
     }
 
-    Inventory playerInventory;
-
-    int gameInt;
-    int restaurantRating;
+    public void ChangeGold(int amount) {
+        playerGold += amount;
+    }
 
     //Referencing floating text for later use
     public FloatingTextManager floatingTextManager;
@@ -23,5 +30,4 @@ public class GameManager : MonoBehaviour
     {
         floatingTextManager.Show(msg, fontSize, color, position, motion, duration);
     }
-    int gold;
 }
