@@ -6,7 +6,7 @@ using UnityEngine;
 /*
 HOW TO USE THE ITEM SYSTEM:
 
-To add an entirely new item, navigate to the 'Items' folder under 'Assets'. Right click within the folder and go to Create > Items > Item Template.
+To add an entirely new item, navigate to the 'Items' folder under 'Assets/Resources'. Right click within the folder and go to Create > Items > Item Template.
 Add the name of the new item type to the 'ItemType' enum in the class below on a new line.
 
 This will create a new template item for which you must specify a sprite, type, maximum stack size, and a user-friendly name.
