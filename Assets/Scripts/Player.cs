@@ -4,11 +4,8 @@ using UnityEngine;
 
 public class Player : Mover
 {
-    public int experience;
-    public int energy;
     public UI_Inventory inventoryUI;
 
-    
     private SpriteRenderer spriteRenderer;
     private Inventory inventory;
 
@@ -21,11 +18,14 @@ public class Player : Mover
         inventoryUI.SetInventory(inventory);
 
         //Setup callback functions for interacting with the inventory UI
+
+        //This function will run when the player left clicks on an inventory slot in their own inventory
         inventoryUI.onButtonLeftClicked.AddListener((int slotIndex) => {
             Item clickedItem = inventory.GetItemList()[slotIndex];
             UseItem(clickedItem);
         });
 
+        //This function will run when the player right clicks on an inventory slot in their own inventory
         inventoryUI.onButtonRightClicked.AddListener((int slotIndex) => {
             Collectable spawnedItem = inventory.DropItem(transform.position, slotIndex);
             //Apply a force to the spawned item
@@ -35,6 +35,8 @@ public class Player : Mover
     }
 
     private void OnTriggerEnter2D(Collider2D collider) {
+        Debug.Log("Entered trigger");
+
         Collectable itemWorld = collider.GetComponent<Collectable>();
         //If we collided with an item, add it to the inventory
         if(itemWorld != null) {
@@ -43,7 +45,9 @@ public class Player : Mover
             playerInventory.AddItem(itemWorld.GetItem());
             itemWorld.DestroySelf();
         }
+
         //Handle other 2D trigger events here
+
         //Enter a shop trigger
         Shop worldShop = collider.GetComponent<Shop>();
         if(worldShop != null) {
@@ -52,7 +56,7 @@ public class Player : Mover
     }
 
     private void OnTriggerExit2D(Collider2D collider) {
-                //Exit a shop trigger
+        //Exit a shop trigger
         Shop worldShop = collider.GetComponent<Shop>();
         if(worldShop != null) {
             worldShop.CloseShop();

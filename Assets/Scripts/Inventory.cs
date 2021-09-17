@@ -76,8 +76,6 @@ public class Inventory : MonoBehaviour
             //If the items are of the same type and if the amount of stored item is above the amount of the provided item, then the item can be removed
             if(storedItem.GetItemType() == removedItem.GetItemType() && storedItem.amount >= removedItem.amount) {
                 storedItem.amount -= removedItem.amount;
-                Debug.Log(storedItem.amount);
-                Debug.Log(removedItem.amount);
                 if(storedItem.amount == 0) {
                     items.RemoveAt(index);
                 }
