@@ -12,15 +12,15 @@ using UnityEngine;
 public class Shop : Interactable
 {
     //The items that this shop will sell
-    public Inventory shopInventory;
+    private Inventory shopInventory;
     public UI_Inventory shopUI;
-    public Item goldItem;
 
     private Player playerCustomer;
     private Inventory playerInventory;
     private bool isShopOpen = false;
 
     void Awake() {
+        shopInventory = GetComponent<Inventory>();
         shopUI.SetInventory(shopInventory);
 
         //Set up callback functions for when an item is bought or sold
@@ -55,14 +55,17 @@ public class Shop : Interactable
     /**
     Closes the shop and removes the customer
     */
-    public void CloseShop() {
+    public override void Close(Player customer) {
+        playerCustomer = null;
+        playerInventory = null;
+
         shopUI.SetVisible(false);
         isShopOpen = false;
     }
 
     public override void Interact(Player triggerPlayer) {
         if(isShopOpen) {
-            CloseShop();
+            Close(triggerPlayer);
         } else {
             OpenShop(triggerPlayer);
         }

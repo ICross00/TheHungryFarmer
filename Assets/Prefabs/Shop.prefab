@@ -155,7 +155,6 @@ MonoBehaviour:
   goldItem:
     item: {fileID: 11400000, guid: 97557616a2d7d8446b9d1968490bacb4, type: 2}
     amount: 1
-  playerCustomer: {fileID: 0}
 --- !u!1001 &1572281621203722856
 PrefabInstance:
   m_ObjectHideFlags: 0

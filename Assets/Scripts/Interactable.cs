@@ -44,5 +44,5 @@ public class Interactable : MonoBehaviour
 
     @param triggerPlayer The Player that triggered this interaction. 
     */
-    public virtual void DisableInteract(Player triggerPlayer) { }
+    public virtual void Close(Player triggerPlayer) { }
 }

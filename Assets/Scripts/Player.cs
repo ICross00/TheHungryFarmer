@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Player : Mover
 {
@@ -8,6 +9,10 @@ public class Player : Mover
     private SpriteRenderer spriteRenderer;
     private Inventory inventory;
     private GameManager gameManager;
+
+    //Actions to store and use items. These may be temporarily overridden by other classes, so are stored so they may be reset
+    private UnityAction<int> dropItem;
+    private UnityAction<int> useItem;
 
     protected override void Start()
     {
@@ -21,19 +26,30 @@ public class Player : Mover
 
         //Setup callback functions for interacting with the inventory UI
 
-        //This function will run when the player left clicks on an inventory slot in their own inventory
-        inventoryUI.onButtonLeftClicked.AddListener((int slotIndex) => {
-            Item clickedItem = inventory.GetItemList()[slotIndex];
-            UseItem(clickedItem);
-        });
-
         //This function will run when the player right clicks on an inventory slot in their own inventory
-        inventoryUI.onButtonRightClicked.AddListener((int slotIndex) => {
+        dropItem = (int slotIndex) => {
             Collectable spawnedItem = inventory.DropItem(transform.position, slotIndex);
             //Apply a force to the spawned item
             Rigidbody2D rb2d = spawnedItem.GetComponent<Rigidbody2D>();
             rb2d.AddForce(Random.insideUnitCircle.normalized * 11, ForceMode2D.Impulse);
-        });
+        };
+
+        //This function will run when the player left clicks on an inventory slot in their own inventory
+        useItem = (int slotIndex) => {
+            Item clickedItem = inventory.GetItemList()[slotIndex];
+            UseItem(clickedItem);
+        };
+
+        //Attach the listeners
+        SetDefaultInventoryListeners();
+    }
+
+    //Sets the default actions for when the player interacts with inventory slots
+    public void SetDefaultInventoryListeners() {
+        inventoryUI.onButtonLeftClicked.RemoveAllListeners();
+        inventoryUI.onButtonLeftClicked.AddListener(useItem);
+        inventoryUI.onButtonRightClicked.RemoveAllListeners();
+        inventoryUI.onButtonRightClicked.AddListener(dropItem);
     }
 
     //Returns the player's inventory
@@ -77,10 +93,10 @@ public class Player : Mover
 
     protected override void OnTriggerExit2D(Collider2D collider) {
         Debug.Log("Exited trigger");
-        //Exit a shop trigger
-        Shop worldShop = collider.GetComponent<Shop>();
-        if(worldShop != null) {
-            worldShop.CloseShop();
+        //Exit a interactable trigger, close any dialogs or UI elements
+        Interactable worldInteractable = collider.GetComponent<Interactable>();
+        if(worldInteractable != null) {
+            worldInteractable.Close(this);
         }
     }
 

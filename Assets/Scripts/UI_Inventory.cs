@@ -110,6 +110,7 @@ public class UI_Inventory : MonoBehaviour
     Redraws the inventory by destroying all the slot gameobjects and recreating them from the current inventory state
     */
     private void Refresh() {
+        Debug.Log("Refreshing");
         //Destroy old gameobjects
         foreach(Transform child in itemSlotContainer) {
             if(child == itemSlotTemplate || child == itemSlotTooltip) continue;
