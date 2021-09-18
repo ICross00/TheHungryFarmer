@@ -36,8 +36,8 @@ public enum ItemType {
     Coin_Copper,
     Tomato,
     Strawberry,
-    Carrot,
     Seeds_Tomato,
     Seeds_Strawberry,
-    Seeds_Carrot
+    Seeds_Carrot,
+    Carrot
 }

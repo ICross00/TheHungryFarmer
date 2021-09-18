@@ -41,6 +41,11 @@ public class Player : Mover
         return inventory;
     }
 
+    //Returns the amount of gold held by the player
+    public int GetGold() {
+        return gameManager.GetGold();
+    }
+
     //Wrapper function for the GameManager's ChangeGold function.
     //This allows objects that the player interacts with (such as shops) to change the player's gold without needing to acquire a reference to the GameManager
     public void ChangeGold(int amount) {

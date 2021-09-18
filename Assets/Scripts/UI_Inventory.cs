@@ -89,7 +89,7 @@ public class UI_Inventory : MonoBehaviour
     */
     private void OnButtonHover(int slotIndex) {
         Item hoveredItem = m_inventory.GetItemList()[slotIndex];
-        string text = hoveredItem.GetName() + "\nPrice: " + hoveredItem.GetSellPrice().ToString();
+        string text = hoveredItem.GetName() + "\nUnit Price: " + hoveredItem.GetUnitSellPrice().ToString();
 
         Tooltip tooltip = itemSlotTooltip.GetComponent<Tooltip>();
         tooltip.ShowTooltip(true);

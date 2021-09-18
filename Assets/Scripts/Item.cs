@@ -25,6 +25,17 @@ public class Item
         return new Item { item = template, amount = itemAmount };
     }
 
+    /**
+    Creates a copy of an item. This is useful when purchasing an item from a shop. Items in shop inventories should not be copied by reference to the player's inventory,
+    as any modification to that reference will have unintended side effects the shop's inventory.
+
+    @param itemToCopy The item to copy
+    @return A copy of the item
+    */
+    public static Item CopyItem(Item itemToCopy) {
+        return new Item { item = itemToCopy.item, amount = itemToCopy.amount };
+    }
+
     /*
     Returns the type of this item, as one of the enumerations of the ItemType enum in the ItemTemplate class
     */
@@ -45,7 +56,11 @@ public class Item
         return item.maxStack;
     }
 
-    public int GetSellPrice() {
+    public int GetUnitSellPrice() {
         return item.sellPrice;
+    }
+
+    public int GetTotalSellPrice() {
+        return item.sellPrice * amount;
     }
 }

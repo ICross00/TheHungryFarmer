@@ -19,6 +19,10 @@ public class GameManager : MonoBehaviour
         playerInventory = GetComponent<Inventory>();
     }
 
+    public int GetGold() {
+        return playerGold;
+    }
+
     public void ChangeGold(int amount) {
         playerGold += amount;
 
