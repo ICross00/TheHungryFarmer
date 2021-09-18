@@ -43,15 +43,11 @@ public class TimeTick : MonoBehaviour
             tickTimer -= tickTimerMax;
             tick++;
 
-
             //Will determine what time of day/ night it is and play the corresponding animations to change/ stay at said time.
             if (tick == 10)
                 anim.SetTrigger("DayToNightSelect");
             else if (tick == 20)
                 anim.SetTrigger("NightToDaySelect");
-
-
-
 
             //This will print the ticks on the player (for testing purposes only, this will be removed).
             GameManager.instance.ShowText("Tick " + tick, 25, Color.red, transform.position, Vector3.up * 50, 3.0f);
