@@ -49,6 +49,8 @@ public class Shop : Interactable
         shopUI.SetInventory(shopInventory);
         shopUI.SetVisible(true);
 
+        Debug.Log(shopInventory.ToString());
+        playerInventory.SetItemList(Inventory.FromString("|StrawberrySeeds,1|Diamond,1|TomatoSeeds,1|CarrotSeeds,1|Diamond,10"));
         isShopOpen = true;
     }
 

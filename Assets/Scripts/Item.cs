@@ -63,4 +63,8 @@ public class Item
     public int GetTotalSellPrice() {
         return item.sellPrice * amount;
     }
+
+    public string GetInternalName() {
+        return item.name;
+    }
 }

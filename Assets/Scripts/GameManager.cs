@@ -10,17 +10,11 @@ public class GameManager : MonoBehaviour
     public Player player;
     public Inventory playerInventory;
     public int restaurantRating;
-    public FloatingTextManager floatingTextManager;
-    public int gold;
+    public FloatingTextManager floatingTextManager;  //Referencing floating text for later use
+    public int gold = 0;
     private string previousScene;
 
     public static GameManager instance;
-    Inventory playerInventory;
-
-    //For now these values are zero or uninitialized. They will need to be loaded from a save state in the future
-    int gameInt;
-    int restaurantRating;
-    int playerGold = 0;
 
     private void Awake()
     {
@@ -32,26 +26,22 @@ public class GameManager : MonoBehaviour
             return;
         }
 
+        SceneManager.sceneLoaded += LoadState;
+        DontDestroyOnLoad(gameObject);
+
         instance = this;
         playerInventory = GetComponent<Inventory>();
     }
 
     public int GetGold() {
-        return playerGold;
+        return gold;
     }
 
     public void ChangeGold(int amount) {
-        playerGold += amount;
+        gold += amount;
 
         Text playerGoldLabel = GameObject.Find("PlayerGold").GetComponent<Text>();
-        playerGoldLabel.text = "Gold: " + playerGold.ToString();
-    }
-
-    //Referencing floating text for later use
-    public FloatingTextManager floatingTextManager;
-
-        SceneManager.sceneLoaded += LoadState;
-        DontDestroyOnLoad(gameObject);
+        playerGoldLabel.text = "Gold: " + gold.ToString();
     }
 
     //Ability to display floating text after being called with parameters.

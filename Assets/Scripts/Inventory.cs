@@ -10,10 +10,21 @@ public class Inventory : MonoBehaviour
     private List<Item> items;
 
     /*
-        Returns the inventory as a list of items test
+    Returns the inventory as a list of items test
     */
     public List<Item> GetItemList() {
         return items;
+    }
+
+    /*
+    Overrides the inventory with a list of items
+    @param newItems The new items to override the inventory with
+    */
+    public void SetItemList(List<Item> newItems) {
+        items = newItems;
+
+        //Notify any listeners that the inventory changed
+        OnItemListChanged?.Invoke(this, EventArgs.Empty);
     }
 
     /*
@@ -117,6 +128,39 @@ public class Inventory : MonoBehaviour
         Item droppedItem = RemoveItem(slotIndex);
         Collectable spawnedItem = Collectable.Spawn(position, droppedItem, 1.5f);
         return spawnedItem;
+    }
+
+    /*
+        Converts the inventory into a serialized string
+        This can be deserialized into an List<Item>() object later
+    */
+    public override string ToString() {
+        string result = "";
+
+        foreach(Item storedItem in items) {
+            result += "|" + storedItem.GetInternalName() + "," + storedItem.amount;
+        }
+
+        //Remove the first | before returning
+        return result.Substring(1);
+    }
+
+    public static List<Item> FromString(string invAsString) {
+        List<Item> result = new List<Item>();
+
+        string[] itemsAsStr = invAsString.Split(new[] {'|'}, StringSplitOptions.RemoveEmptyEntries);
+        foreach(string item in itemsAsStr) {
+            string[] itemInfo = item.Split(',');
+
+
+            string _type = itemInfo[0];
+            int _amount = int.Parse(itemInfo[1]);
+
+            Item recreatedItem = Item.CreateItem(_type, _amount);
+            result.Add(recreatedItem);
+        }
+
+        return result;
     }
 
 }

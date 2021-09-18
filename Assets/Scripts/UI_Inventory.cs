@@ -89,7 +89,7 @@ public class UI_Inventory : MonoBehaviour
     */
     private void OnButtonHover(int slotIndex) {
         Item hoveredItem = m_inventory.GetItemList()[slotIndex];
-        string text = hoveredItem.GetName() + "\nUnit Price: " + hoveredItem.GetUnitSellPrice().ToString();
+        string text = hoveredItem.GetInternalName() + "\nUnit Price: " + hoveredItem.GetUnitSellPrice().ToString();
 
         Tooltip tooltip = itemSlotTooltip.GetComponent<Tooltip>();
         tooltip.ShowTooltip(true);
@@ -131,7 +131,7 @@ public class UI_Inventory : MonoBehaviour
             slotTf.anchoredPosition = templateTf.anchoredPosition + new Vector2(x * cellSize + cellMargin, y * cellSize + cellMargin);
 
             //Update sprite
-            Image image = slotTf.Find("Item").GetComponent<Image>();
+            Image image = slotTf.Find("ItemIcon").GetComponent<Image>();
             image.sprite = item.GetSprite();
 
             //Update quantity text
