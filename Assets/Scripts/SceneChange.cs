@@ -10,7 +10,7 @@ public class SceneChange : Collideable
         if (coll.name == "Player_01")
         {
             //Teleport the player
-            //To add later: GameManager.instance.SaveState();
+            GameManager.instance.SaveState();
             string sceneName = sceneNames[Random.Range(0, sceneNames.Length)];
             UnityEngine.SceneManagement.SceneManager.LoadScene(sceneName);
         }
