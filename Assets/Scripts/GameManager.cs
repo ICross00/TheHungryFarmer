@@ -37,11 +37,16 @@ public class GameManager : MonoBehaviour
         return gold;
     }
 
+    /**
+    Updates the player's gold, will also update a PlayerGold text label if it exists in the scene
+    */
     public void ChangeGold(int amount) {
         gold += amount;
 
         Text playerGoldLabel = GameObject.Find("PlayerGold").GetComponent<Text>();
-        playerGoldLabel.text = "Gold: " + gold.ToString();
+        if(playerGoldLabel != null) {
+            playerGoldLabel.text = "Gold: " + gold.ToString();
+        }
     }
 
     //Ability to display floating text after being called with parameters.

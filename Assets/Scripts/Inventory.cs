@@ -160,8 +160,6 @@ public class Inventory : MonoBehaviour
         string[] itemsAsStr = invAsString.Split(new[] {'|'}, StringSplitOptions.RemoveEmptyEntries);
         foreach(string item in itemsAsStr) {
             string[] itemInfo = item.Split(',');
-
-
             string _type = itemInfo[0];
             int _amount = int.Parse(itemInfo[1]);
 

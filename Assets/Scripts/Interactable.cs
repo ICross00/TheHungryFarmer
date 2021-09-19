@@ -40,7 +40,8 @@ public class Interactable : MonoBehaviour
 
     /**
     This function should be called on an Interactable object whenever the programmer
-    wants to trigger its interactable behaviour.
+    wants to disable its interactable behaviour. This is useful for closing interactable
+    dialogs like inventory screens or popups when the player walks too far away.
 
     @param triggerPlayer The Player that triggered this interaction. 
     */
