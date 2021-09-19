@@ -239,8 +239,8 @@ Transform:
   m_Father: {fileID: 1409538725}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &163436548
-BoxCollider2D:
+--- !u!19719996 &163436548
+TilemapCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -252,19 +252,9 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -5.9986525, y: 14.49839}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 41.890907, y: 0.9917526}
-  m_EdgeRadius: 0
+  m_Offset: {x: 0, y: 0}
+  m_MaximumTileChangeCount: 1000
+  m_ExtrusionFactor: 0.00001
 --- !u!483693784 &163436549
 TilemapRenderer:
   m_ObjectHideFlags: 0
@@ -35097,7 +35087,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1709735660}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.02, y: 0.02, z: 0}
+  m_LocalPosition: {x: -8.53, y: 8.33, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -35181,7 +35171,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1409050593}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: -8.48, y: 8.24, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -35264,7 +35254,7 @@ PrefabInstance:
     - target: {fileID: 2656197622055779291, guid: 304db6f5d8bf9bb4f8bc4ffa57b80521,
         type: 3}
       propertyPath: m_Size.y
-      value: 1.2448478
+      value: 0.6913557
       objectReference: {fileID: 0}
     - target: {fileID: 2656197622055779291, guid: 304db6f5d8bf9bb4f8bc4ffa57b80521,
         type: 3}
@@ -35274,7 +35264,7 @@ PrefabInstance:
     - target: {fileID: 2656197622055779291, guid: 304db6f5d8bf9bb4f8bc4ffa57b80521,
         type: 3}
       propertyPath: m_Offset.y
-      value: 0.0011358261
+      value: -0.28620768
       objectReference: {fileID: 0}
     - target: {fileID: 2656197622055779293, guid: 304db6f5d8bf9bb4f8bc4ffa57b80521,
         type: 3}
@@ -35284,12 +35274,12 @@ PrefabInstance:
     - target: {fileID: 2656197622055779293, guid: 304db6f5d8bf9bb4f8bc4ffa57b80521,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.02
+      value: -8.53
       objectReference: {fileID: 0}
     - target: {fileID: 2656197622055779293, guid: 304db6f5d8bf9bb4f8bc4ffa57b80521,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.02
+      value: 8.33
       objectReference: {fileID: 0}
     - target: {fileID: 2656197622055779293, guid: 304db6f5d8bf9bb4f8bc4ffa57b80521,
         type: 3}
@@ -35334,7 +35324,7 @@ PrefabInstance:
     - target: {fileID: 2656197622055779295, guid: 304db6f5d8bf9bb4f8bc4ffa57b80521,
         type: 3}
       propertyPath: m_Name
-      value: Player_01
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 2656197622055779295, guid: 304db6f5d8bf9bb4f8bc4ffa57b80521,
         type: 3}
@@ -35363,7 +35353,7 @@ GameObject:
   - component: {fileID: 1709735662}
   - component: {fileID: 1709735661}
   m_Layer: 9
-  m_Name: Player_01
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -35383,7 +35373,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.004118681, y: 0.0011358261}
+  m_Offset: {x: -0.004118681, y: -0.28620768}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -35394,7 +35384,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.8764403, y: 1.2448478}
+  m_Size: {x: 0.8764403, y: 0.6913557}
   m_EdgeRadius: 0
 --- !u!114 &1709735662
 MonoBehaviour:
@@ -35412,9 +35402,6 @@ MonoBehaviour:
   hitPoint: 10
   maxHitPoint: 10
   pushRecoverySpeed: 0.2
-  hp: 0
-  experience: 0
-  energy: 0
   experience: 0
   energy: 0
   inventoryUI: {fileID: 0}
@@ -35502,9 +35489,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6794c892fd7b374282252233208e81f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  position: {x: 0, y: 0, z: 0}
-  size: {x: 0, y: 0, z: 0}
-  sprite: {x: 0, y: 0, z: 0}
+  interactionRadius: 1
   filter:
     useTriggers: 0
     useLayerMask: 0
@@ -35531,7 +35516,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   sceneNames:
-  - Restaurant
+  - Crossroads
 --- !u!61 &1764640706
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -38427,6 +38412,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2114591232}
   - component: {fileID: 2114591233}
+  - component: {fileID: 2114591234}
   m_Layer: 8
   m_Name: house
   m_TagString: Untagged
@@ -38475,6 +38461,32 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 2.8661451, y: 2.5642452}
+  m_EdgeRadius: 0
+--- !u!61 &2114591234
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2114591231}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.001430273, y: 0.5640771}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.500318, y: 1.4414293}
   m_EdgeRadius: 0
 --- !u!1 &2117887997
 GameObject:

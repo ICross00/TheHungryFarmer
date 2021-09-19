@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
 {
     //References
     public Player player;
-    public Inventory playerInventory;
+    //public Inventory playerInventory;
     public int restaurantRating;
     public FloatingTextManager floatingTextManager;  //Referencing floating text for later use
     public int gold = 0;
@@ -30,7 +30,7 @@ public class GameManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
 
         instance = this;
-        playerInventory = GetComponent<Inventory>();
+        //playerInventory = GetComponent<Inventory>();
     }
 
     public int GetGold() {
@@ -59,6 +59,7 @@ public class GameManager : MonoBehaviour
 
     //STRING previousScene
     //INT gold
+    //STRING playerInventory
     public void SaveState()
     {
         string s = "";
@@ -66,6 +67,7 @@ public class GameManager : MonoBehaviour
         //Attach saved values to the string here, separated by '|'
         s += (SceneManager.GetActiveScene().name + "|");
         s += (gold + "|");
+        //s += (playerInventory + "|");
 
         PlayerPrefs.SetString("SaveState", s);
         Debug.Log("SaveState");
@@ -84,6 +86,10 @@ public class GameManager : MonoBehaviour
         // Set player gold
         gold = int.Parse(data[1]);
 
-        player.transform.position = GameObject.Find("SpawnPoint").transform.position;
+        //Set Player Inventory
+        List<Item> tempInventory = Inventory.FromString(data[2]);
+        //playerInventory.SetItemList(tempInventory);
+
+        player.transform.position = GameObject.Find(previousScene+"SpawnPoint").transform.position;
     }
 }
