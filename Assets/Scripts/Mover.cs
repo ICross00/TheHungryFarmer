@@ -19,20 +19,11 @@ public abstract class Mover : Fighter
         boxCollider = GetComponent<BoxCollider2D>();
     }
 
-    private void OnTriggerEnter2D(Collider2D collider)
-    {
-        Collectable itemWorld = collider.GetComponent<Collectable>();
-        //If we collided with an item, add it to the inventory
-        if (itemWorld != null)
-        {
-            //Get the player's inventory
-            Inventory playerInventory = gameObject.GetComponent(typeof(Inventory)) as Inventory;
-            playerInventory.AddItem(itemWorld.GetItem());
-            itemWorld.DestroySelf();
-        }
+    //Handle 2D trigger enter events in this function inside derived classes
+    protected virtual void OnTriggerEnter2D(Collider2D collider) { }
 
-        //Handle other 2D trigger events here
-    }
+    //Handle 2D trigger exit events in this function inside derived classes
+    protected virtual void OnTriggerExit2D(Collider2D collider) { }
 
     protected virtual void UpdateMotor(Vector3 input)
     {
