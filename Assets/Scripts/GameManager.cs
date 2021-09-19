@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
@@ -9,11 +10,12 @@ public class GameManager : MonoBehaviour
     public Player player;
     public Inventory playerInventory;
     public int restaurantRating;
-    public FloatingTextManager floatingTextManager;
-    public int gold;
+    public FloatingTextManager floatingTextManager;  //Referencing floating text for later use
+    public int gold = 0;
     private string previousScene;
 
     public static GameManager instance;
+
     private void Awake()
     {
         if (GameManager.instance != null)
@@ -24,9 +26,27 @@ public class GameManager : MonoBehaviour
             return;
         }
 
-        instance = this;
         SceneManager.sceneLoaded += LoadState;
         DontDestroyOnLoad(gameObject);
+
+        instance = this;
+        playerInventory = GetComponent<Inventory>();
+    }
+
+    public int GetGold() {
+        return gold;
+    }
+
+    /**
+    Updates the player's gold, will also update a PlayerGold text label if it exists in the scene
+    */
+    public void ChangeGold(int amount) {
+        gold += amount;
+
+        Text playerGoldLabel = GameObject.Find("PlayerGold").GetComponent<Text>();
+        if(playerGoldLabel != null) {
+            playerGoldLabel.text = "Gold: " + gold.ToString();
+        }
     }
 
     //Ability to display floating text after being called with parameters.

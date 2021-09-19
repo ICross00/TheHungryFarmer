@@ -179,6 +179,7 @@ MonoBehaviour:
     item: {fileID: 0}
     amount: 0
   pickupCooldown: 0
+  shouldCheckCooldown: 0
 --- !u!222 &2426293727569613393
 CanvasRenderer:
   m_ObjectHideFlags: 0
