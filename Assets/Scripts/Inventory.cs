@@ -138,7 +138,7 @@ public class Inventory : MonoBehaviour
         string result = "";
 
         foreach(Item storedItem in items) {
-            result += "|" + storedItem.GetInternalName() + "," + storedItem.amount;
+            result += ":" + storedItem.GetInternalName() + "," + storedItem.amount;
         }
 
         //Remove the first | before returning
@@ -157,7 +157,7 @@ public class Inventory : MonoBehaviour
     public static List<Item> FromString(string invAsString) {
         List<Item> result = new List<Item>();
 
-        string[] itemsAsStr = invAsString.Split(new[] {'|'}, StringSplitOptions.RemoveEmptyEntries);
+        string[] itemsAsStr = invAsString.Split(new[] {':'}, StringSplitOptions.RemoveEmptyEntries);
         foreach(string item in itemsAsStr) {
             string[] itemInfo = item.Split(',');
             string _type = itemInfo[0];
