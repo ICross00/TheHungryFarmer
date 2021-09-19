@@ -10311,7 +10311,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdeff621ca37091438c9a0438a2d85b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  playerInventory: {fileID: 0}
+  restaurantRating: 0
   floatingTextManager: {fileID: 492610051}
+  gold: 0
 --- !u!4 &568324943
 Transform:
   m_ObjectHideFlags: 0
@@ -10462,9 +10466,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6797d9d07cfe7f3498bbd24a5dca3684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  position: {x: 0, y: 0, z: 0}
-  size: {x: 0, y: 0, z: 0}
-  sprite: {x: 0, y: 0, z: 0}
+  interactionRadius: 1
   filter:
     useTriggers: 0
     useLayerMask: 0
@@ -10567,7 +10569,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 548339005812361326, guid: 79f8de8060aa69649ae0e7b6e7a45391,
         type: 3}
+      propertyPath: maxTicks
+      value: 1140
+      objectReference: {fileID: 0}
+    - target: {fileID: 548339005812361326, guid: 79f8de8060aa69649ae0e7b6e7a45391,
+        type: 3}
+      propertyPath: tickStart
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 548339005812361326, guid: 79f8de8060aa69649ae0e7b6e7a45391,
+        type: 3}
       propertyPath: currentTick
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 548339005812361326, guid: 79f8de8060aa69649ae0e7b6e7a45391,
+        type: 3}
+      propertyPath: tickStartValue
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
