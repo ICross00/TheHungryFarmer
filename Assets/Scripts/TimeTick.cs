@@ -9,6 +9,9 @@ public class TimeTick : MonoBehaviour
     private float tickTimer;
     public int maxTicks;
     public int currentTick;
+    public int tickToHours;
+    public int hours;
+    public int days;
     private Animator anim;
 
     //This will determine where the tick will start before counting up.
@@ -17,6 +20,7 @@ public class TimeTick : MonoBehaviour
     {
         tick = currentTick;
         anim = GetComponent<Animator>();
+        //TODO: Add Tick to hours and hours variables to start from where they left off at some point.
 
         if (tick >= 1 && tick <= 15)
             anim.SetTrigger("IdleDaySelect");
@@ -33,15 +37,24 @@ public class TimeTick : MonoBehaviour
         //Thill will reset the ticks backs to zero after they reach maxTick value.
         if (tick == maxTicks)
         {
-            tick = 1;
+            tick = 0;
+            days++;
         }
 
         //This will update the tick every second (to change time they are updated, update the tickTimer value).
         tickTimer += Time.deltaTime;
         if(tickTimer > tickTimerMax)
         {
+            if (tickToHours == 10)
+            {
+                hours++;
+                tickToHours = 0;
+                GameManager.instance.ShowText("Tick " + hours, 25, Color.green, transform.position, Vector3.up * 50, 3.0f);
+            }
+
             tickTimer -= tickTimerMax;
             tick++;
+            tickToHours++;
 
             //Will determine what time of day/ night it is and play the corresponding animations to change/ stay at said time.
             if (tick == 10)

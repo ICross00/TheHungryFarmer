@@ -8,7 +8,7 @@ public class Player : Mover
     public int energy;
     public UI_Inventory inventoryUI;
 
-    
+
     private SpriteRenderer spriteRenderer;
     private Inventory inventory;
 
