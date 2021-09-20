@@ -6,13 +6,13 @@ public abstract class Mover : Fighter
 {
     public int experience;
     public int energy;
-
+    
     protected Vector3 playerLocation;
     protected BoxCollider2D boxCollider;
     protected RaycastHit2D hit;
     //Controls movement speed.
-    protected float ySpeed = 4f;
-    protected float xSpeed = 5f;
+    public float ySpeed = 4f;
+    public float xSpeed = 5f;
 
     protected virtual void Start()
     {
