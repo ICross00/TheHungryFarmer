@@ -16,8 +16,10 @@ public class Player : Mover
 
     protected override void Start()
     {
-        boxCollider = GetComponent<BoxCollider2D>();
+        base.Start();
         spriteRenderer = GetComponent<SpriteRenderer>();
+
+        DontDestroyOnLoad(gameObject);
 
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         inventory = GameObject.Find("GameManager").GetComponent<Inventory>();
