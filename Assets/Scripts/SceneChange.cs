@@ -7,7 +7,7 @@ public class SceneChange : Collideable
     public string[] sceneNames;
     protected override void OnCollide(Collider2D coll)
     {
-        if (coll.name == "Player_01")
+        if (coll.name == "Player")
         {
             //Teleport the player
             GameManager.instance.SaveState();

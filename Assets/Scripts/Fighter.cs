@@ -9,8 +9,6 @@ public class Fighter : MonoBehaviour
     public int maxHitPoint = 10;
     public float pushRecoverySpeed = 0.2f;
 
-    public int hp;//Still need to find a use for this value.
-
     protected float immuneTime = 1.0f;
     protected float lastImmune;
 
