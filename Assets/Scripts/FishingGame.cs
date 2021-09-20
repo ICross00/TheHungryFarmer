@@ -13,10 +13,10 @@ public class FishingGame : MonoBehaviour
     float fishDestination;
 
     float fishTimer;
-    [SerializeField] private const float timerMultiplicator = 8f;
+    [SerializeField] private const float timerMultiplicator = 6f;
 
     float fishSpeed;
-    [SerializeField] private const float smoothMotion = 2f;
+    [SerializeField] private const float smoothMotion = 1.5f;
 
     [SerializeField] Transform hook;
     float hookPosition;
@@ -78,7 +78,7 @@ public class FishingGame : MonoBehaviour
         {
             hookPullVelocity = 0f;
         }
-        hookPosition = Mathf.Clamp(hookPosition, hookSize / 2, 1 - hookSize / 2);
+        hookPosition = Mathf.Clamp(hookPosition, hookSize, 1 - (hookSize/2));
         hook.position = Vector3.Lerp(Bottom.position, Top.position, hookPosition);
     }
 
