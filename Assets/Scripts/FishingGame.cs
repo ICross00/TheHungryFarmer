@@ -13,27 +13,27 @@ public class FishingGame : MonoBehaviour
     float fishDestination;
 
     float fishTimer;
-    [SerializeField] float timerMultiplicator = 3f;
+    [SerializeField] private const float timerMultiplicator = 8f;
 
     float fishSpeed;
-    [SerializeField] float smoothMotion = 1f;
+    [SerializeField] private const float smoothMotion = 2f;
 
     [SerializeField] Transform hook;
     float hookPosition;
-    [SerializeField] float hookSize = 1f;
-    [SerializeField] float hookPower = 5f;
+    [SerializeField] private const float hookSize = 0.1f;
+    [SerializeField] private const float hookPower = 0.5f;
     float hookProgress;
     float hookPullVelocity;
-    [SerializeField] float hookPullPower = 0.01f;
-    [SerializeField] float hookGravityPower = 0.005f;
-    [SerializeField] float hookProgressDegradationPower = 0.1f;
+    [SerializeField] private const float hookPullPower = 0.01f;
+    [SerializeField] private const float hookGravityPower = 0.005f;
+    [SerializeField] private const float hookProgressDegradationPower = 0.1f;
 
-    [SerializeField] SpriteRenderer hookSpriteRenderer;
+    [SerializeField] public SpriteRenderer hookSpriteRenderer;
 
-    [SerializeField] Transform ProgressBarContainer;
+    [SerializeField] public Transform ProgressBarContainer;
 
     bool pause = false;
-    [SerializeField] float failTimer = 10f;
+    [SerializeField] public float failTimer = 10f;
 
     private void Update()
     {
