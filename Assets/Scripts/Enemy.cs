@@ -25,7 +25,7 @@ public class Enemy : Mover
     protected override void Start()
     {
         base.Start();
-        playerTransform = GameObject.Find("Player_01").transform;
+        playerTransform = GameObject.Find("Player").transform;
         startingPosition = transform.position;
         hitBox = transform.GetChild(0).GetComponent<BoxCollider2D>();
     }
@@ -67,7 +67,7 @@ public class Enemy : Mover
             if (hits[num] == null)
                 continue;
 
-            if (hits[num].tag == "Fighter" && hits[num].name == "Player_01")
+            if (hits[num].tag == "Fighter" && hits[num].name == "Player")
             {
                 collidingWithPlayer = true;
             }
