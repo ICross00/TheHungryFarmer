@@ -16,7 +16,7 @@ TagManager:
   - 
   - Blocking
   - Actor
-  - 
+  - DayOrNight
   - 
   - 
   - 
@@ -59,4 +59,7 @@ TagManager:
     locked: 0
   - name: Collision
     uniqueID: 1345228121
+    locked: 0
+  - name: Night&Day
+    uniqueID: 295485271
     locked: 0
