@@ -1,82 +1,33 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class Enemy : Mover
 {
     //xpValue determines how much XP is dropped from killing an enemy.
     public int xpValue = 1;
-
-    //Trigger length determines the distance before the enemy starts chasing the player.
-    //Chase lengths determines how far the enemy will chase the player.
-    public float triggerLength = 1;
-    public float chaseLength = 5;
-
-    private bool chasing;
-    private bool collidingWithPlayer;
-    private Transform playerTransform;
+    //Below are the variables required to make the Nav Mesh work and the enemies starting position.
+    [SerializeField] Transform target;
+    NavMeshAgent agent;
     private Vector3 startingPosition;
-
-    // Hitbox. This will duplicate collideable class due to not being able to inherit multiple classes.
-    private BoxCollider2D hitBox;
-    private Collider2D[] hits = new Collider2D[10];
-    public ContactFilter2D filter;
+    private Vector3 destination;
 
     protected override void Start()
     {
         base.Start();
-        playerTransform = GameObject.Find("Player").transform;
+        target = GameObject.Find("Player").transform;
         startingPosition = transform.position;
-        hitBox = transform.GetChild(0).GetComponent<BoxCollider2D>();
+
+        //This will stop a bug with Nav Mesh. These settings are required to be true with 3D games only.
+        agent = GetComponent<NavMeshAgent>();
+        agent.updateRotation = false;
+        agent.updateUpAxis = false;
     }
 
     private void FixedUpdate()
     {
-        //Is the player within range.
-        if (Vector3.Distance(playerTransform.position, startingPosition) < chaseLength)
-        {
-            if (Vector3.Distance(playerTransform.position, startingPosition) < triggerLength)
-                chasing = true;
-
-
-
-            if (chasing)
-            {
-                if (!collidingWithPlayer)
-                {
-                    UpdateMotor((playerTransform.position - transform.position).normalized);
-                }
-            }
-            else
-            {
-                UpdateMotor(startingPosition - transform.position);
-            }
-        }
-        else
-        {
-            UpdateMotor(startingPosition - transform.position);
-            chasing = false;
-        }
-
-        // Checking for any overlaps
-        collidingWithPlayer = false;
-        //Work for collision
-        boxCollider.OverlapCollider(filter, hits);
-        for (int num = 0; num < hits.Length; num++)
-        {
-            if (hits[num] == null)
-                continue;
-
-            if (hits[num].tag == "Fighter" && hits[num].name == "Player")
-            {
-                collidingWithPlayer = true;
-            }
-
-            //Clean array after process
-            hits[num] = null;
-        }
-
-        UpdateMotor(Vector3.zero);
+        agent.SetDestination(target.position);
     }
 
     protected override void Death()
