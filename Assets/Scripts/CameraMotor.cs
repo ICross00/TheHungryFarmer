@@ -4,47 +4,27 @@ using UnityEngine;
 
 public class CameraMotor : MonoBehaviour
 {
-    private Transform lookAt;
-    public float boundX = 0.15f;
-    public float boundY = 0.10f;
+    public Transform target;
+    Camera myCamera;
+    public float speed;
+    protected BoxCollider2D boxCollider;
+    protected RaycastHit2D hit;
 
     private void Start()
     {
-        lookAt = GameObject.Find("Player").transform;
+        myCamera = GetComponent<Camera>();
+        boxCollider = GetComponent<BoxCollider2D>();
     }
 
-    private void LateUpdate()
+    private void FixedUpdate()
     {
-        Vector3 delta = Vector3.zero;
+        //This will allow the game to run accross multiple devices and have the scale of the game work its self out.
+        myCamera.orthographicSize = (Screen.height / 100f) / 0.5f;
 
-        //This will check if we are inside the X axis boundaries.
-        float deltaX = lookAt.position.x - transform.position.x;
-        if (deltaX > boundX || deltaX < -boundX)
+        //This will allow the camera to move as the player moves.
+        if (target)
         {
-            if (transform.position.x < lookAt.position.x)
-            {
-                delta.x = deltaX - boundX;
-            }
-            else
-            {
-                delta.x = deltaX + boundX;
-            }
+            transform.position = Vector3.Lerp(transform.position, target.position, speed) + new Vector3(0, 0, -10);
         }
-
-        //This will do the same as the last section except for Y's axis boundaries.
-        float deltaY = lookAt.position.y - transform.position.y;
-        if (deltaY > boundY || deltaY < -boundY)
-        {
-            if (transform.position.y < lookAt.position.y)
-            {
-                delta.y = deltaY - boundY;
-            }
-            else
-            {
-                delta.y = deltaY + boundY;
-            }
-        }
-
-        transform.position += new Vector3(delta.x, delta.y, 0);
     }
 }
