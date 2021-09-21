@@ -11,7 +11,6 @@ public class Enemy : Mover
     [SerializeField] Transform target;
     NavMeshAgent agent;
     private Vector3 startingPosition;
-    private Vector3 destination;
 
     protected override void Start()
     {
