@@ -90,6 +90,7 @@ public class GameManager : MonoBehaviour
         List<Item> tempInventory = Inventory.FromString(data[2]);
         //playerInventory.SetItemList(tempInventory);
 
-        player.transform.position = GameObject.Find(previousScene+"SpawnPoint").transform.position;
+        player.transform.position = GameObject.Find(previousScene + "SpawnPoint").transform.position;
+        GameObject.Find("Main Camera").transform.position = player.transform.position;
     }
 }
