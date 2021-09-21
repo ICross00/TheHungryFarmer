@@ -78,7 +78,7 @@ public class FishingGame : MonoBehaviour
         {
             hookPullVelocity = 0f;
         }
-        hookPosition = Mathf.Clamp(hookPosition, hookSize, 1 - (hookSize/2));
+        hookPosition = Mathf.Clamp(hookPosition, hookSize / 2, 1 - (hookSize/2));
         hook.position = Vector3.Lerp(Bottom.position, Top.position, hookPosition);
     }
 
