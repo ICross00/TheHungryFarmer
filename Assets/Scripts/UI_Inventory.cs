@@ -89,7 +89,7 @@ public class UI_Inventory : MonoBehaviour
     */
     private void OnButtonHover(int slotIndex) {
         Item hoveredItem = m_inventory.GetItemList()[slotIndex];
-        string text = hoveredItem.GetName() + "\nPrice: " + hoveredItem.GetSellPrice().ToString();
+        string text = hoveredItem.GetInternalName() + "\nUnit Price: " + hoveredItem.GetUnitSellPrice().ToString();
 
         Tooltip tooltip = itemSlotTooltip.GetComponent<Tooltip>();
         tooltip.ShowTooltip(true);
@@ -110,6 +110,7 @@ public class UI_Inventory : MonoBehaviour
     Redraws the inventory by destroying all the slot gameobjects and recreating them from the current inventory state
     */
     private void Refresh() {
+        Debug.Log("Refreshing");
         //Destroy old gameobjects
         foreach(Transform child in itemSlotContainer) {
             if(child == itemSlotTemplate || child == itemSlotTooltip) continue;
@@ -130,7 +131,7 @@ public class UI_Inventory : MonoBehaviour
             slotTf.anchoredPosition = templateTf.anchoredPosition + new Vector2(x * cellSize + cellMargin, y * cellSize + cellMargin);
 
             //Update sprite
-            Image image = slotTf.Find("Item").GetComponent<Image>();
+            Image image = slotTf.Find("ItemIcon").GetComponent<Image>();
             image.sprite = item.GetSprite();
 
             //Update quantity text

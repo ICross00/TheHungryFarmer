@@ -28,7 +28,7 @@ public class Weapon : Collideable
     {
         base.Update();
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Mouse0))
         {
             if(Time.time - lastSwing > cooldown)
             {
@@ -42,7 +42,7 @@ public class Weapon : Collideable
     {
         if(coll.tag == "Fighter")
         {
-            if(coll.name == "Player_01")
+            if(coll.name == "Player")
                 return;
 
             // Creates a new damage object and sends it to the fighter using hit.
