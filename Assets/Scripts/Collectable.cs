@@ -24,7 +24,8 @@ public class Collectable : MonoBehaviour
     @param cooldown The time in seconds before this item can be picked up by the player
     */
     public static Collectable Spawn(Vector3 position, Item item, float cooldown = 0) {
-        GameObject tf = Instantiate(ItemAssets.Instance.pfWorldItem, position, Quaternion.identity);
+        GameObject collectablePrefab = Resources.Load<GameObject>("Items/pfCollectable");
+        GameObject tf = Instantiate(collectablePrefab, position, Quaternion.identity);
         Collectable collectableItem = tf.GetComponent<Collectable>();
         SpriteRenderer renderer = tf.GetComponent<SpriteRenderer>();
 
