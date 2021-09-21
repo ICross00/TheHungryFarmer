@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CameraMotor : MonoBehaviour
 {
+    private Transform lookAt;
     public Transform target;
     Camera myCamera;
     public float speed;
@@ -14,6 +15,7 @@ public class CameraMotor : MonoBehaviour
     {
         myCamera = GetComponent<Camera>();
         boxCollider = GetComponent<BoxCollider2D>();
+        lookAt = GameObject.Find("Player").transform;
     }
 
     private void FixedUpdate()
