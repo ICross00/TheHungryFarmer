@@ -58,7 +58,7 @@ public class Storage : Interactable
     Closes the storage and removes the player
     Resets the UI inventory callback functions for the player
     */
-    public override void Close(Player triggerPlayer) {
+    protected override void OnClose(Player triggerPlayer) {
         triggerPlayer.SetDefaultInventoryListeners();
 
         player = null;
@@ -68,7 +68,7 @@ public class Storage : Interactable
         isStorageOpen = false;
     }
 
-    public override void Interact(Player triggerPlayer) {
+    protected override void OnInteract(Player triggerPlayer) {
         if(isStorageOpen) {
             Close(triggerPlayer);
         } else {
@@ -105,4 +105,5 @@ public class Storage : Interactable
 
         return false;
     }
+
 }

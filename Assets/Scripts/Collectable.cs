@@ -17,6 +17,24 @@ public class Collectable : MonoBehaviour
     public bool shouldCheckCooldown = false;
 
     /**
+    Allows a player to collect the item associated with this collectable. The item will be added to the player's inventory,
+    or if the item is gold, their gold will be incremented.
+    @param collector The player who picked up this collectable
+    */
+    public void Collect(Player collector) {
+        if(item.GetItemType() == ItemType.Coin_Gold) {
+            //Special case for gold, it should not be added to the inventory but used to increment the gold stored in the game manager
+            collector.ChangeGold(item.amount); 
+        } else {
+            Inventory playerInventory = collector.GetInventory();
+            playerInventory.AddItem(item);
+        }
+
+        //Destroy the collectable
+        Destroy(this.gameObject);
+    }
+
+    /**
     Spawns an item in the world
 
     @param position The location to spawn the item at in the world
@@ -72,8 +90,13 @@ public class Collectable : MonoBehaviour
         return this.item;
     }
 
-    public void DestroySelf() {
-        Destroy(this.gameObject);
+    void OnTriggerEnter2D(Collider2D other) {
+        Player ply = other.GetComponent<Player>();
+
+        //If this collision was caused by a player, then trigger collectable behaviour
+        if(ply != null) { 
+            Collect(ply);
+        }
     }
 
     void Update() {

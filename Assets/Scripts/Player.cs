@@ -24,7 +24,7 @@ public class Player : Mover
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         inventory = GameObject.Find("GameManager").GetComponent<Inventory>();
 
-        //inventoryUI.SetInventory(inventory);
+        inventoryUI.SetInventory(inventory);
 
         //Setup callback functions for interacting with the inventory UI
 
@@ -68,38 +68,6 @@ public class Player : Mover
     //This allows objects that the player interacts with (such as shops) to change the player's gold without needing to acquire a reference to the GameManager
     public void ChangeGold(int amount) {
         gameManager.ChangeGold(amount);
-    }
-
-    protected override void OnTriggerEnter2D(Collider2D collider) {
-        Debug.Log("Entered trigger");
-
-        Collectable itemWorld = collider.GetComponent<Collectable>();
-        //If we collided with a valid collectable...
-        if(itemWorld != null) {
-            Item collectedItem = itemWorld.GetItem();
-
-            if(collectedItem.GetItemType() == ItemType.Coin_Gold) {
-                 //Special case for gold, it should not be added to the inventory but used to increment the gold stored in the game manager
-                ChangeGold(collectedItem.amount);
-            } else {
-                //Otherwise, add the item to the inventory
-                inventory.AddItem(collectedItem);
-            }
-
-            //Destroy the collectable
-            itemWorld.DestroySelf();
-        }
-
-        //Handle other 2D trigger events here
-    }
-
-    protected override void OnTriggerExit2D(Collider2D collider) {
-        Debug.Log("Exited trigger");
-        //Exit a interactable trigger, close any dialogs or UI elements
-        Interactable worldInteractable = collider.GetComponent<Interactable>();
-        if(worldInteractable != null) {
-            worldInteractable.Close(this);
-        }
     }
 
     private void FixedUpdate()

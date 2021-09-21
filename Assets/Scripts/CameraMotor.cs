@@ -20,7 +20,7 @@ public class CameraMotor : MonoBehaviour
     private void FixedUpdate()
     {
         //This will allow the game to run accross multiple devices and have the scale of the game work its self out.
-        myCamera.orthographicSize = (Screen.height / 100f) / 2f;
+        myCamera.orthographicSize = (Screen.height / 100f) / 1.0f;
 
         //This will allow the camera to move as the player moves.
         if (target)
