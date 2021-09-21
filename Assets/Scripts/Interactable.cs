@@ -8,7 +8,6 @@ public class Interactable : MonoBehaviour
     private static float COLLISION_CHECK_INTERVAL = 0.1f;
     private static float cCheckTime;
 
-    public float interactionRadius = 1.0f;
     protected Player interactingPlayer; //The player that this interactable is currently in interaction with
 
     void Start() {
@@ -17,17 +16,18 @@ public class Interactable : MonoBehaviour
     }
 
     /**
-        Finds all of the Interactable objects whose collider components overlap the provided position,
-        and returns them all as a List<Interactable>
+        Finds all of the Interactable objects whose collider components overlap the provided circle,
+        defiend by the position and radius, and returns them all as a List<Interactable>
 
         @param position The position to check for Interactable objects at
+        @param searchRadius The radius around the position to search for Interactable objects in
         @return A list containing all of the found Interactable objects
     */
-    public static List<Interactable> GetInteractablesAtPoint(Vector2 position) {
+    public static List<Interactable> GetInteractablesInRadius(Vector2 position, float searchRadius) {
         List<Interactable> results = new List<Interactable>();
 
         //Get all of the colliders at this point
-        Collider2D[] collidersAtPoint = Physics2D.OverlapCircleAll(position, 0.25f);
+        Collider2D[] collidersAtPoint = Physics2D.OverlapCircleAll(position, searchRadius);
         if(collidersAtPoint.Length > 0) {
             foreach(Collider2D collider in collidersAtPoint) { //Iterate over each collider and find those that are Interactables
                 Interactable interactable = collider.GetComponent<Interactable>();
@@ -78,11 +78,9 @@ public class Interactable : MonoBehaviour
                 Collider2D playerCollider = interactingPlayer.GetComponent<Collider2D>();
                 Collider2D interactableCollider = GetComponent<Collider2D>();
 
-                bool isTouching = playerCollider.bounds.Intersects(interactableCollider.bounds);
-                Debug.Log(isTouching);
-
+                float distance = interactableCollider.Distance(playerCollider).distance;
                 //If they are not, trigger the onclose behaviour
-                if(!isTouching) {
+                if(distance > 1.0f) {
                     Debug.Log("Exited Interactable");
                     Close(interactingPlayer);
                 }

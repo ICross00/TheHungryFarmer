@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: StrawberrySeeds
   m_EditorClassIdentifier: 
   itemName: Strawberry Seed Packet
-  type: 13
+  type: 12
   maxStack: 64
   sellPrice: 15
   sprite: {fileID: -6449412298968507767, guid: 1884b98184089f34184916226ef1b1c5, type: 3}
