@@ -4,10 +4,9 @@ using UnityEngine;
 
 public class CameraMotor : MonoBehaviour
 {
-    private Transform lookAt;
-    public Transform target;
+    private Transform target;
     Camera myCamera;
-    public float speed;
+    public float speed = 0.1f;
     protected BoxCollider2D boxCollider;
     protected RaycastHit2D hit;
 
@@ -15,13 +14,13 @@ public class CameraMotor : MonoBehaviour
     {
         myCamera = GetComponent<Camera>();
         boxCollider = GetComponent<BoxCollider2D>();
-        lookAt = GameObject.Find("Player").transform;
+        target = GameObject.Find("Player").transform;
     }
 
     private void FixedUpdate()
     {
         //This will allow the game to run accross multiple devices and have the scale of the game work its self out.
-        myCamera.orthographicSize = (Screen.height / 100f) / 0.5f;
+        myCamera.orthographicSize = (Screen.height / 100f) / 0.8f;
 
         //This will allow the camera to move as the player moves.
         if (target)
