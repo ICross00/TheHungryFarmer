@@ -13,11 +13,9 @@ public class PlayerAnimator : MonoBehaviour
 
     private void Update()
     {
-        anim.SetBool("idleKeys", true);
         if (Input.GetKey(KeyCode.D))
         {
             anim.SetBool("isMoveRight", true);
-            anim.SetBool("idleKeys", false);
         }
         else
         {
@@ -27,7 +25,6 @@ public class PlayerAnimator : MonoBehaviour
         if (Input.GetKey(KeyCode.A))
         {
             anim.SetBool("isMoveLeft", true);
-            anim.SetBool("idleKeys", false);
         }
         else
         {
@@ -37,7 +34,6 @@ public class PlayerAnimator : MonoBehaviour
         if (Input.GetKey(KeyCode.S) && !(Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D)))
         {
             anim.SetBool("isMoveDown", true);
-            anim.SetBool("idleKeys", false);
         }
         else
         {
@@ -47,7 +43,6 @@ public class PlayerAnimator : MonoBehaviour
         if (Input.GetKey(KeyCode.W) && !(Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D)))
         {
             anim.SetBool("isMoveUp", true);
-            anim.SetBool("idleKeys", false);
         }
         else
         {
