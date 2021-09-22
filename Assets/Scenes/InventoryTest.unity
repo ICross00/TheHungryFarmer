@@ -1196,6 +1196,7 @@ MonoBehaviour:
   energy: 0
   ySpeed: 4
   xSpeed: 5
+  interactionRadius: 1.2
   inventoryUI: {fileID: 1927071159}
 --- !u!61 &1289275290
 BoxCollider2D:
@@ -1221,7 +1222,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.9, y: 0.9}
   m_EdgeRadius: 0
 --- !u!212 &1289275291
 SpriteRenderer:
@@ -9126,6 +9127,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7852911883396219796, guid: 8cd17a042734e454a97ec30f87cd5400,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.3809178
+      objectReference: {fileID: 0}
+    - target: {fileID: 7852911883396219796, guid: 8cd17a042734e454a97ec30f87cd5400,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: 0.3095411
+      objectReference: {fileID: 0}
     - target: {fileID: 7852911883396219799, guid: 8cd17a042734e454a97ec30f87cd5400,
         type: 3}
       propertyPath: m_Name
