@@ -134,6 +134,27 @@ TextureImporter:
   - first:
       213: 7728431271694359525
     second: kitchen_sink_01
+  - first:
+      213: -7802718104145471319
+    second: bedroom_bed_single_wood
+  - first:
+      213: -7904817760828239983
+    second: bedroom_bedcover_single_green
+  - first:
+      213: -8295148524803593043
+    second: bedroom_wardrobe_wood_01
+  - first:
+      213: -8860477605547937667
+    second: livingroom_firepit_blue_01
+  - first:
+      213: -1674573079546371969
+    second: livingroom_couch_blue_01
+  - first:
+      213: 121064835805985279
+    second: livingroom_couch_blue_02
+  - first:
+      213: -4956757594518254573
+    second: livingroom_coffeetable_01
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -1029,7 +1050,7 @@ TextureImporter:
         width: 16
         height: 18
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1050,7 +1071,7 @@ TextureImporter:
         width: 16
         height: 18
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1071,7 +1092,7 @@ TextureImporter:
         width: 16
         height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1079,6 +1100,153 @@ TextureImporter:
       bones: []
       spriteID: 5ebdc5c6b47e04b60800000000000000
       internalID: 7728431271694359525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bedroom_bed_single_wood
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 239
+        width: 21
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a856ef893d27b390800000000000000
+      internalID: -7802718104145471319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bedroom_bedcover_single_green
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 176
+        width: 25
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19f42a7c0227c4290800000000000000
+      internalID: -7904817760828239983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bedroom_wardrobe_wood_01
+      rect:
+        serializedVersion: 2
+        x: 773
+        y: 384
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dace9f3cd56b1ec80800000000000000
+      internalID: -8295148524803593043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: livingroom_firepit_blue_01
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 480
+        width: 21
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d70f2050092490580800000000000000
+      internalID: -8860477605547937667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: livingroom_couch_blue_01
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 752
+        width: 31
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f70e43b08a8b2c8e0800000000000000
+      internalID: -1674573079546371969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: livingroom_couch_blue_02
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 752
+        width: 14
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff9b105a3db1ea100800000000000000
+      internalID: 121064835805985279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: livingroom_coffeetable_01
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 736
+        width: 19
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31c0505da3f063bb0800000000000000
+      internalID: -4956757594518254573
       vertices: []
       indices: 
       edges: []
