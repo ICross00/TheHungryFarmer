@@ -17,6 +17,7 @@ public class ClickableObject: MonoBehaviour, IPointerClickHandler, IPointerEnter
 
     void Start() {
         image = GetComponent<Image>();
+        SetImageAlpha(0f);
     }
 
     //Detect if the cursor clicks on the gameobject
@@ -35,15 +36,23 @@ public class ClickableObject: MonoBehaviour, IPointerClickHandler, IPointerEnter
     //Detect if the cursor starts to pass over the gameobject
     public void OnPointerEnter(PointerEventData pointerEventData)
     {
-        image.color = new Color(image.color.r, image.color.g, image.color.b, 0.44f);
+        SetImageAlpha(0.44f);
         onHover.Invoke(index);
     }
 
     //Detect when cursor leaves the gameobject
     public void OnPointerExit(PointerEventData pointerEventData)
     {
-        image.color = new Color(image.color.r, image.color.g, image.color.b, 0f);
+        SetImageAlpha(0f);
         onExit.Invoke(index);
+    }
+
+    /*
+    Sets the alpha component of the ClickableObject's Image
+    @param alpha The new alpha to set, ranging between 0 and 1
+    */
+    public void SetImageAlpha(float alpha) {
+        image.color = new Color(image.color.r, image.color.g, image.color.b, alpha);
     }
 
     public void RemoveAllListeners() {

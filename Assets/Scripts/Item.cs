@@ -67,4 +67,39 @@ public class Item
     public string GetInternalName() {
         return item.name;
     }
+
+    /*
+        Uses an item. The player should be passed in so that additional information is available.
+        For example, the position of the player can be used in this function, or the player's
+        inventory can be accessed if you want to remove an item to make it a consumable.
+
+        To define new item behaviour, add a new switch case corresponding to the enum in ItemType (see ItemTemplate.cs) you want to define behaviour for.
+
+        @param item The item to use
+        @param user The player who used this item
+    */
+    public static void UseItem(Item item, Player user)  {
+        Inventory inventory = user.GetInventory();
+
+        switch(item.GetItemType()) {
+            case ItemType.Seeds_Tomato:
+                Debug.Log("Planted tomato seeds");
+            break;
+
+            case ItemType.Seeds_Carrot:
+                Debug.Log("Planted carrot seeds");
+            break;
+
+            case ItemType.Seeds_Strawberry:
+                Debug.Log("Planted strawberry seeds");
+            break;
+
+            case ItemType.Heart:
+                Debug.Log("Used a heart to heal");
+                user.hitPoint += 5; //Increase health by 5
+
+                inventory.RemoveItemSingle(item); //Remove one heart from the inventory
+            break;
+        }
+    }
 }

@@ -8,12 +8,22 @@ public class Inventory : MonoBehaviour
     public event EventHandler OnItemListChanged;
     [SerializeField]
     private List<Item> items;
+    private List<Item> hotbar;
 
     /*
     Returns the inventory as a list of items test
     */
     public List<Item> GetItemList() {
         return items;
+    }
+
+    /*
+    Gets a specific item from the item list
+    @param index The index of the item to retrieve
+    @return The item at that index, or null if there was no item
+    */
+    public Item GetItem(int index) {
+        return items[index];
     }
 
     /*
