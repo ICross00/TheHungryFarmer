@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9cbc7e85fa3738c458d90a5a408acd80, type: 3}
-  m_Name: StrawberrySeeds
+  m_Name: Seeds_Carrot
   m_EditorClassIdentifier: 
-  itemName: Strawberry Seed Packet
-  type: 12
+  itemName: Carrot Seed Packet
+  type: 13
   maxStack: 64
-  sellPrice: 15
-  sprite: {fileID: -6449412298968507767, guid: 1884b98184089f34184916226ef1b1c5, type: 3}
+  sellPrice: 4
+  sprite: {fileID: -1742513348937851951, guid: 1884b98184089f34184916226ef1b1c5, type: 3}
