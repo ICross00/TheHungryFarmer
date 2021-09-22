@@ -13,7 +13,7 @@ public class Player : Mover
 
     private Item selectedItem;
 
-    //Actions to store and selec items. These may be temporarily overridden by other classes, so are stored so they may be reset
+    //Actions to store and select items. These may be temporarily overridden by other classes, so are stored so they may be reset
     private UnityAction<int> dropItem;
     private UnityAction<int> selectItem;
 
