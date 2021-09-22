@@ -74,6 +74,15 @@ public class Collectable : MonoBehaviour
         return Spawn(position, spawnedItem, cooldown);
     }
 
+    /*
+    Applies a force in a random direction to the collectable
+    @param scalar The scale of the force
+    */
+    public void ApplyRandomForce(float scalar) {
+        Rigidbody2D rb2d = GetComponent<Rigidbody2D>();
+        rb2d.AddForce(Random.insideUnitCircle.normalized * scalar, ForceMode2D.Impulse);
+    }
+
     public void SetItem(Item item) {
         this.item = item;
 

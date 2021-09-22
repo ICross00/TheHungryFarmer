@@ -34,10 +34,6 @@ public class UI_Inventory : MonoBehaviour
         Refresh();
     }
 
-    /**
-        Sets the owner of this inventory, so that items can be dropped from the inventory at its location
-    */
-
     /*
     Sets the inventory that this UI inventory object will display from
     */

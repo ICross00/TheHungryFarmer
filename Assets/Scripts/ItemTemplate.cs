@@ -17,7 +17,7 @@ This will create a new template item for which you must specify a sprite, type, 
 [CreateAssetMenu(fileName = "New Item Template", menuName = "Items/Item Template")]
 public class ItemTemplate : ScriptableObject
 {
-    public string itemName;
+    public string itemName; //User-friendly name. Access the internal name using the name field
     public ItemType type;
     public int maxStack;
     public int sellPrice;

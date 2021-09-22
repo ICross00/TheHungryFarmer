@@ -83,15 +83,15 @@ public class Item
 
         switch(item.GetItemType()) {
             case ItemType.Seeds_Tomato:
-                Debug.Log("Planted tomato seeds");
-            break;
-
             case ItemType.Seeds_Carrot:
-                Debug.Log("Planted carrot seeds");
-            break;
-
             case ItemType.Seeds_Strawberry:
-                Debug.Log("Planted strawberry seeds");
+                Debug.Log("Planted crop: " + item.GetInternalName());
+                GameObject pfCrop = Resources.Load<GameObject>("Items/pfPlantedCrop");
+                PlantedCrop crop = GameObject.Instantiate(pfCrop, user.transform.position, Quaternion.identity).GetComponent<PlantedCrop>();
+                crop.cropTemplate = item.item;
+
+                //Consume the item
+                inventory.RemoveItemSingle(item);
             break;
 
             case ItemType.Heart:
