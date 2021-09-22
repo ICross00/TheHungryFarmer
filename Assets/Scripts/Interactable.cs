@@ -17,7 +17,7 @@ public class Interactable : MonoBehaviour
         List<Interactable> results = new List<Interactable>();
 
         //Get all of the colliders at this point
-        Collider2D[] collidersAtPoint = Physics2D.OverlapCircleAll(position, .05f);
+        Collider2D[] collidersAtPoint = Physics2D.OverlapCircleAll(position, 1f);
         if(collidersAtPoint.Length > 0) {
             foreach(Collider2D collider in collidersAtPoint) { //Iterate over each collider and find those that are Interactables
                 Interactable interactable = collider.GetComponent<Collider2D>().GetComponent<Interactable>();

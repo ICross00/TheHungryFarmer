@@ -24,7 +24,7 @@ public class Player : Mover
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         inventory = GameObject.Find("GameManager").GetComponent<Inventory>();
 
-        inventoryUI.SetInventory(inventory);
+        //inventoryUI.SetInventory(inventory);
 
         //Setup callback functions for interacting with the inventory UI
 
