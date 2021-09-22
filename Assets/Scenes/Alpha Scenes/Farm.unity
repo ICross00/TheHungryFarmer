@@ -2260,7 +2260,7 @@ Transform:
   m_Children:
   - {fileID: 1705359637}
   m_Father: {fileID: 1409538725}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &192519392
 GameObject:
@@ -2290,7 +2290,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1409538725}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &380276900
 GameObject:
@@ -2336,7 +2336,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6794c892fd7b374282252233208e81f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionRadius: 1
   filter:
     useTriggers: 0
     useLayerMask: 0
@@ -2418,7 +2417,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1409538725}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &700062106
 GameObject:
@@ -35236,6 +35235,37 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &1163996635
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1163996636}
+  m_Layer: 0
+  m_Name: FarmDirt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1163996636
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1163996635}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -6.701973, y: -3.4360101, z: -132.8024}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1409549748}
+  m_Father: {fileID: 1409538725}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1409050593
 GameObject:
   m_ObjectHideFlags: 0
@@ -35376,6 +35406,7 @@ Transform:
   - {fileID: 700062107}
   - {fileID: 1962332356}
   - {fileID: 163436547}
+  - {fileID: 1163996636}
   - {fileID: 2114591232}
   - {fileID: 192519393}
   - {fileID: 189007483}
@@ -35383,6 +35414,36 @@ Transform:
   - {fileID: 661644186}
   m_Father: {fileID: 0}
   m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1409549747
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1409549748}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1409549748
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1409549747}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1163996636}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1705359637 stripped
 Transform:
@@ -35420,7 +35481,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6794c892fd7b374282252233208e81f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionRadius: 1
   filter:
     useTriggers: 0
     useLayerMask: 0
@@ -35486,7 +35546,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1409538725}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1861758264
 GameObject:
@@ -38366,7 +38426,7 @@ Transform:
   - {fileID: 150534829}
   - {fileID: 380276901}
   m_Father: {fileID: 1409538725}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &2114591233
 BoxCollider2D:
