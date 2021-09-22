@@ -1,361 +1,349 @@
 fileFormatVersion: 2
-guid: 1fa8dfe9635678b469a3fb7d62494d0d
+guid: dc0bb372c006dbd4eab82db057c19314
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7624724514338613183
+      213: 5688194559832894734
     second: down_01
   - first:
-      213: -8222369410930855044
+      213: 2483437515683085827
     second: down_02
   - first:
-      213: -2838013895068875206
+      213: -7383818979222349208
     second: down_03
   - first:
-      213: -3447824022885662257
+      213: 5902342464600605961
     second: down_04
   - first:
-      213: 6312976651636590038
+      213: -8941871593459271005
     second: down_05
   - first:
-      213: 1643958083758421759
+      213: -1802542723845178464
     second: down_06
   - first:
-      213: 8526283897926228697
+      213: 2981912299402993492
     second: down_07
   - first:
-      213: 8202272470616246226
+      213: 5076061357081507214
     second: down_08
   - first:
-      213: -1343208954775655600
+      213: -288861374768729332
     second: up_01
   - first:
-      213: 7742563697974721249
+      213: -8653575931827507392
     second: up_02
   - first:
-      213: -885222569699850043
+      213: -788874025804185202
     second: up_03
   - first:
-      213: -2973699704478336299
+      213: -6297066195170118620
     second: up_04
   - first:
-      213: 1076102958517561935
+      213: -2614675064821998472
     second: up_05
   - first:
-      213: -4822738691045651572
+      213: 5170207382337956979
     second: up_06
   - first:
-      213: 8483176939121872531
+      213: 5597483786182044900
     second: up_07
   - first:
-      213: 8219573260589163662
+      213: -385115893087832898
     second: up_08
   - first:
-      213: 7801862768409197852
+      213: 3074541441966543869
     second: right_01
   - first:
-      213: 6180574142507054555
+      213: 7074853150815148138
     second: right_02
   - first:
-      213: 3740491174654615985
+      213: -8967966082338104819
     second: right_03
   - first:
-      213: -7612724030524522840
+      213: 1573493446566633710
     second: right_04
   - first:
-      213: 1959213835530219620
+      213: -8269322358114317539
     second: right_05
   - first:
-      213: 7214755616046793544
+      213: 947915248569054875
     second: right_06
   - first:
-      213: 4401863894501062219
+      213: 6630619762215983440
     second: right_07
   - first:
-      213: 9134814629051994587
+      213: 7785949021163328920
     second: right_08
   - first:
-      213: -6769726694895982274
+      213: 1248146005942279557
     second: left_01
   - first:
-      213: 5461915372797673108
+      213: 1050703135308654048
     second: left_02
   - first:
-      213: -1249766244277535683
+      213: -4737228268664659165
     second: left_03
   - first:
-      213: 57429941940190336
+      213: -8652309961473678712
     second: left_04
   - first:
-      213: 332664926458344935
+      213: 3332019351483388093
     second: left_05
   - first:
-      213: -1244229084149284039
+      213: -8307003732274916633
     second: left_06
   - first:
-      213: 314804985499743131
+      213: -8830827435865462299
     second: left_07
   - first:
-      213: -3182123788900155361
+      213: -6462099896434977031
     second: left_08
   - first:
-      213: -2211976963731707295
-    second: holding_down_01
+      213: 5462261475869799757
+    second: shoes_black_32
   - first:
-      213: 2982189813707140337
-    second: holding_down_02
+      213: 1266576055209156125
+    second: shoes_black_33
   - first:
-      213: -3629819089220064795
-    second: holding_down_03
+      213: 3668388916110947786
+    second: shoes_black_34
   - first:
-      213: -7785873970452873809
-    second: holding_down_04
+      213: -4166679714959064926
+    second: shoes_black_35
   - first:
-      213: 3501448060443863882
-    second: holding_down_05
+      213: 4884549540145533922
+    second: shoes_black_36
   - first:
-      213: 1508113386067220631
-    second: holding_down_06
+      213: 158753349001164308
+    second: shoes_black_37
   - first:
-      213: -1347944257074097810
-    second: holding_down_07
+      213: -8280864384419229133
+    second: shoes_black_38
   - first:
-      213: 8684556054045582825
-    second: holding_down_08
+      213: 2170203148371219775
+    second: shoes_black_39
   - first:
-      213: 1515024229165889911
-    second: holding_up_01
+      213: 1725310414175856785
+    second: shoes_black_40
   - first:
-      213: -3866286425081277614
-    second: holding_up_02
+      213: -2834809684267937904
+    second: shoes_black_41
   - first:
-      213: -3695247860881804313
-    second: holding_up_03
+      213: -6144400015438495422
+    second: shoes_black_42
   - first:
-      213: -7556981611430343211
-    second: holding_up_04
+      213: 659037086522474363
+    second: shoes_black_43
   - first:
-      213: -8983080766687136008
-    second: holding_up_05
+      213: -5504808011520078894
+    second: shoes_black_44
   - first:
-      213: 1863328121570553708
-    second: holding_up_06
+      213: 7824101340689854593
+    second: shoes_black_45
   - first:
-      213: -8838550936156841303
-    second: holding_up_07
+      213: 2195554405858311504
+    second: shoes_black_46
   - first:
-      213: -3129587894825857627
-    second: holding_up_08
+      213: 6346069585556998651
+    second: shoes_black_47
   - first:
-      213: -3091531714873835275
-    second: holding_right_01
+      213: 2656568771844723921
+    second: shoes_black_48
   - first:
-      213: -8490679343477937997
-    second: holding_right_02
+      213: 7292810220982799211
+    second: shoes_black_49
   - first:
-      213: -3824456702019780702
-    second: holding_right_03
+      213: 8340958340749971519
+    second: shoes_black_50
   - first:
-      213: 6277560034498090052
-    second: holding_right_04
+      213: -8883435696587317069
+    second: shoes_black_51
   - first:
-      213: 1450423404186541534
-    second: holding_right_05
+      213: 8168418948152097925
+    second: shoes_black_52
   - first:
-      213: 5086403034456356717
-    second: holding_right_06
+      213: 5352500378641895855
+    second: shoes_black_53
   - first:
-      213: 2458553384659569434
-    second: holding_right_07
+      213: -7426009316807890191
+    second: shoes_black_54
   - first:
-      213: -6154895897433435023
-    second: holding_right_08
+      213: -3414085907982879453
+    second: shoes_black_55
   - first:
-      213: -6576720819163183957
-    second: holding_left_01
+      213: 9185369489856877693
+    second: shoes_black_56
   - first:
-      213: -643163391587647824
-    second: holding_left_02
+      213: -1447967110377142184
+    second: shoes_black_57
   - first:
-      213: 9111474923467534859
-    second: holding_left_03
+      213: 2357833347198706177
+    second: shoes_black_58
   - first:
-      213: -2764903291077937221
-    second: holding_left_04
+      213: -1410943724504039207
+    second: shoes_black_59
   - first:
-      213: 4072788297378157151
-    second: holding_left_05
+      213: -3824421432990129072
+    second: shoes_black_60
   - first:
-      213: -9029732035088801679
-    second: holding_left_06
+      213: -1713454922641343308
+    second: shoes_black_61
   - first:
-      213: 4795802294335708524
-    second: holding_left_07
+      213: 8340660549300838078
+    second: shoes_black_62
   - first:
-      213: 2951419021041263496
-    second: holding_left_08
+      213: -8713751435832638127
+    second: shoes_black_63
   - first:
-      213: -8776722387749885507
-    second: jump_down_01
+      213: -1570575827622938186
+    second: shoes_black_64
   - first:
-      213: -425991979131060797
-    second: jump_down_02
+      213: -5407540700337480754
+    second: shoes_black_65
   - first:
-      213: -4810163710971848373
-    second: jump_down_03
+      213: 4550176331161807863
+    second: shoes_black_66
   - first:
-      213: -6115722963844947320
-    second: jump_down_04
+      213: -7882094366277632161
+    second: shoes_black_67
   - first:
-      213: -6500369013044430130
-    second: jump_down_05
+      213: -1158990650900770855
+    second: shoes_black_68
   - first:
-      213: -162722621057031288
-    second: jumping_up_01
+      213: 2925798468753020829
+    second: shoes_black_69
   - first:
-      213: -1837670201768531118
-    second: jumping_up_02
+      213: 6262523197462628116
+    second: shoes_black_70
   - first:
-      213: -6973140413379547006
-    second: jumping_up_03
+      213: -7288712117087700837
+    second: shoes_black_71
   - first:
-      213: -5827906750506978988
-    second: jumping_up_04
+      213: 9078506510322149395
+    second: shoes_black_72
   - first:
-      213: 4324958404142276009
-    second: jumping_up_05
+      213: 111720591195528175
+    second: shoes_black_73
   - first:
-      213: 3447713223697452245
-    second: jumping_right_01
+      213: -7653061362189681083
+    second: shoes_black_74
   - first:
-      213: -4521598571859064797
-    second: jumping_right_02
+      213: 4321926374387572163
+    second: shoes_black_75
   - first:
-      213: -5510029654044794093
-    second: jumping_right_03
+      213: -6397585575829701781
+    second: shoes_black_76
   - first:
-      213: -6219446348517834521
-    second: jumping_right_04
+      213: -6171967076049162361
+    second: shoes_black_77
   - first:
-      213: 5074585680922607493
-    second: jumping_right_05
+      213: 7620921452335610400
+    second: shoes_black_78
   - first:
-      213: -8928786088317669542
-    second: jumping_left_01
+      213: 4670770639078022806
+    second: shoes_black_79
   - first:
-      213: -8696714836559446009
-    second: jumping_left_02
+      213: 8559717620962089615
+    second: shoes_black_80
   - first:
-      213: -730995597815940417
-    second: jumping_left_03
+      213: 1874717688835445751
+    second: shoes_black_81
   - first:
-      213: -8040803251858659585
-    second: jumping_left_04
+      213: 8125874686748726554
+    second: shoes_black_82
   - first:
-      213: -6479350795096293831
-    second: jumping_left_05
+      213: 9168027477767399087
+    second: shoes_black_83
   - first:
-      213: 8908137908580673451
-    second: sitting_down
+      213: -8532806076812513847
+    second: shoes_black_84
   - first:
-      213: -3566358785921714537
-    second: sitting_up
+      213: -340850344244988357
+    second: shoes_black_85
   - first:
-      213: 7577170844553108246
-    second: sitting_right
+      213: -2155111724918885437
+    second: shoes_black_86
   - first:
-      213: 7152789423551503451
-    second: sitting_left
+      213: 1040751302940152442
+    second: shoes_black_87
   - first:
-      213: 3969247143685854617
-    second: lying_01
+      213: -5188092700253681203
+    second: shoes_black_88
   - first:
-      213: -4257273876721431278
-    second: lying_02
+      213: 548889537649141225
+    second: shoes_black_89
   - first:
-      213: -8687666868148760623
-    second: watering_down_01
+      213: 537976156647175496
+    second: shoes_black_90
   - first:
-      213: 1712815888242556200
-    second: watering_down_02
+      213: -3532883364411669161
+    second: shoes_black_91
   - first:
-      213: 363177944215429763
-    second: watering_up_01
+      213: 5891313899883387297
+    second: shoes_black_92
   - first:
-      213: -2951052486521250461
-    second: watering_up_02
+      213: -8766646124909801586
+    second: shoes_black_93
   - first:
-      213: -8658859542497943760
-    second: watering_right_01
+      213: -4854146230978485332
+    second: shoes_black_94
   - first:
-      213: -6851873813538908565
-    second: watering_right_02
+      213: -7911404890308886217
+    second: shoes_black_95
   - first:
-      213: -7803347307161323665
-    second: watering_left_01
+      213: 6330030518384873131
+    second: shoes_black_96
   - first:
-      213: -1371450205921376848
-    second: watering_left_02
+      213: -2410526204226538285
+    second: shoes_black_97
   - first:
-      213: 2749812243450063329
-    second: mining_down_01
+      213: 3721979816063045638
+    second: shoes_black_98
   - first:
-      213: -9084569105015405385
-    second: mining_down_02
+      213: 5208772086922856404
+    second: shoes_black_99
   - first:
-      213: 1874659633689772799
-    second: mining_down_03
+      213: -3388876616482357549
+    second: shoes_black_100
   - first:
-      213: -3960741513766056021
-    second: mining_down_04
+      213: -6014467226103184476
+    second: shoes_black_101
   - first:
-      213: 7376481926427907023
-    second: mining_down_05
+      213: -2466090121451839343
+    second: shoes_black_102
   - first:
-      213: 5775467388750720112
-    second: mining_up_01
+      213: -4961509161638646993
+    second: shoes_black_103
   - first:
-      213: 3959067243867311196
-    second: mining_up_02
+      213: 2928773552614495215
+    second: shoes_black_104
   - first:
-      213: 2020531577058057688
-    second: mining_up_03
+      213: 7839722677104514172
+    second: shoes_black_105
   - first:
-      213: -320326866240245047
-    second: mining_up_04
+      213: 2489712939325146307
+    second: shoes_black_106
   - first:
-      213: -8535199960789375884
-    second: mining_up_05
+      213: -4564949769824870886
+    second: shoes_black_107
   - first:
-      213: -7554014782770250417
-    second: mining_right_01
+      213: -2593562334888304174
+    second: shoes_black_108
   - first:
-      213: 91649036065477933
-    second: mining_right_02
+      213: -8844572295027896266
+    second: shoes_black_109
   - first:
-      213: -5159935893206062516
-    second: mining_right_03
+      213: 6351607785171692050
+    second: shoes_black_110
   - first:
-      213: -5640785104691332115
-    second: mining_right_04
+      213: -1932037132739644378
+    second: shoes_black_111
   - first:
-      213: 6386336574556217302
-    second: mining_right_05
+      213: -9070215017479518666
+    second: shoes_black_112
   - first:
-      213: -2840972213873391491
-    second: mining_left_01
-  - first:
-      213: -2096979767401876691
-    second: mining_left_02
-  - first:
-      213: 1233084913716284797
-    second: mining_left_03
-  - first:
-      213: -3052453965630124999
-    second: mining_left_04
-  - first:
-      213: -6205432338260485331
-    second: mining_left_05
+      213: -6465701314904762351
+    second: shoes_black_113
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -459,8 +447,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 14852a4a3798f2690800000000000000
-      internalID: -7624724514338613183
+      spriteID: e0d262890d680fe40800000000000000
+      internalID: 5688194559832894734
       vertices: []
       indices: 
       edges: []
@@ -480,8 +468,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c73bd61b59644ed80800000000000000
-      internalID: -8222369410930855044
+      spriteID: 30e3b204341f67220800000000000000
+      internalID: 2483437515683085827
       vertices: []
       indices: 
       edges: []
@@ -501,8 +489,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a360ccc16695d98d0800000000000000
-      internalID: -2838013895068875206
+      spriteID: 86a1aa172c7678990800000000000000
+      internalID: -7383818979222349208
       vertices: []
       indices: 
       edges: []
@@ -522,8 +510,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fc187db815ed620d0800000000000000
-      internalID: -3447824022885662257
+      spriteID: 9050939133559e150800000000000000
+      internalID: 5902342464600605961
       vertices: []
       indices: 
       edges: []
@@ -543,8 +531,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6d5422c21d23c9750800000000000000
-      internalID: 6312976651636590038
+      spriteID: 3aa34bc692718e380800000000000000
+      internalID: -8941871593459271005
       vertices: []
       indices: 
       edges: []
@@ -564,8 +552,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff67d08ca2380d610800000000000000
-      internalID: 1643958083758421759
+      spriteID: 0ab3eb461f41cf6e0800000000000000
+      internalID: -1802542723845178464
       vertices: []
       indices: 
       edges: []
@@ -585,8 +573,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9da960ee702735670800000000000000
-      internalID: 8526283897926228697
+      spriteID: 45f984dff61e16920800000000000000
+      internalID: 2981912299402993492
       vertices: []
       indices: 
       edges: []
@@ -606,8 +594,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2d70c02ca5354d170800000000000000
-      internalID: 8202272470616246226
+      spriteID: e853eeef8eac17640800000000000000
+      internalID: 5076061357081507214
       vertices: []
       indices: 
       edges: []
@@ -627,8 +615,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 05b297f7296fb5de0800000000000000
-      internalID: -1343208954775655600
+      spriteID: c03349f2c12cdfbf0800000000000000
+      internalID: -288861374768729332
       vertices: []
       indices: 
       edges: []
@@ -648,8 +636,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1ea3e9459ac137b60800000000000000
-      internalID: 7742563697974721249
+      spriteID: 04f2d82e98258e780800000000000000
+      internalID: -8653575931827507392
       vertices: []
       indices: 
       edges: []
@@ -669,8 +657,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5c8c1e153ce07b3f0800000000000000
-      internalID: -885222569699850043
+      spriteID: e81c86fc04b5d05f0800000000000000
+      internalID: -788874025804185202
       vertices: []
       indices: 
       edges: []
@@ -690,8 +678,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5da72e5cfdb4bb6d0800000000000000
-      internalID: -2973699704478336299
+      spriteID: 424b3c5a8a35c98a0800000000000000
+      internalID: -6297066195170118620
       vertices: []
       indices: 
       edges: []
@@ -711,8 +699,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f4aaf2870f51fee00800000000000000
-      internalID: 1076102958517561935
+      spriteID: 87c9636b1eec6bbd0800000000000000
+      internalID: -2614675064821998472
       vertices: []
       indices: 
       edges: []
@@ -732,8 +720,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c8b01b366b0321db0800000000000000
-      internalID: -4822738691045651572
+      spriteID: 37c2b57a83440c740800000000000000
+      internalID: 5170207382337956979
       vertices: []
       indices: 
       edges: []
@@ -753,8 +741,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 39e0527fa7c4ab570800000000000000
-      internalID: 8483176939121872531
+      spriteID: 4eca367c8d14ead40800000000000000
+      internalID: 5597483786182044900
       vertices: []
       indices: 
       edges: []
@@ -774,8 +762,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e8467b2d45ac11270800000000000000
-      internalID: 8219573260589163662
+      spriteID: eb4742bb22bc7aaf0800000000000000
+      internalID: -385115893087832898
       vertices: []
       indices: 
       edges: []
@@ -795,8 +783,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c1d30611ad8c54c60800000000000000
-      internalID: 7801862768409197852
+      spriteID: df312afd627faaa20800000000000000
+      internalID: 3074541441966543869
       vertices: []
       indices: 
       edges: []
@@ -816,8 +804,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bd5f810cf6fc5c550800000000000000
-      internalID: 6180574142507054555
+      spriteID: a68d36cd47dee2260800000000000000
+      internalID: 7074853150815148138
       vertices: []
       indices: 
       edges: []
@@ -837,8 +825,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1b1a5c6c7e4e8e330800000000000000
-      internalID: 3740491174654615985
+      spriteID: d0a5c78cc526b8380800000000000000
+      internalID: -8967966082338104819
       vertices: []
       indices: 
       edges: []
@@ -858,8 +846,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8ae718304db2a5690800000000000000
-      internalID: -7612724030524522840
+      spriteID: ee06203f3fb26d510800000000000000
+      internalID: 1573493446566633710
       vertices: []
       indices: 
       edges: []
@@ -879,8 +867,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4603fc16a96803b10800000000000000
-      internalID: 1959213835530219620
+      spriteID: d1b8667c0277d3d80800000000000000
+      internalID: -8269322358114317539
       vertices: []
       indices: 
       edges: []
@@ -900,8 +888,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 84349b3e106ff1460800000000000000
-      internalID: 7214755616046793544
+      spriteID: b96722475eba72d00800000000000000
+      internalID: 947915248569054875
       vertices: []
       indices: 
       edges: []
@@ -921,8 +909,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b467a55d3ef861d30800000000000000
-      internalID: 4401863894501062219
+      spriteID: 059919f0b81b40c50800000000000000
+      internalID: 6630619762215983440
       vertices: []
       indices: 
       edges: []
@@ -942,8 +930,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bd19fadb18165ce70800000000000000
-      internalID: 9134814629051994587
+      spriteID: 8959dbd026f3d0c60800000000000000
+      internalID: 7785949021163328920
       vertices: []
       indices: 
       edges: []
@@ -963,8 +951,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e39ee3440791d02a0800000000000000
-      internalID: -6769726694895982274
+      spriteID: 58d1300fd2e425110800000000000000
+      internalID: 1248146005942279557
       vertices: []
       indices: 
       edges: []
@@ -984,8 +972,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 49eb9d4d71f9ccb40800000000000000
-      internalID: 5461915372797673108
+      spriteID: 0e526784fe8d49e00800000000000000
+      internalID: 1050703135308654048
       vertices: []
       indices: 
       edges: []
@@ -1005,8 +993,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d3c309de830f7aee0800000000000000
-      internalID: -1249766244277535683
+      spriteID: 323ed421dfbf14eb0800000000000000
+      internalID: -4737228268664659165
       vertices: []
       indices: 
       edges: []
@@ -1026,8 +1014,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 08cf0d85a380cc000800000000000000
-      internalID: 57429941940190336
+      spriteID: 882a9c39ee1dce780800000000000000
+      internalID: -8652309961473678712
       vertices: []
       indices: 
       edges: []
@@ -1047,8 +1035,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7e5f7c2fcfcdd9400800000000000000
-      internalID: 332664926458344935
+      spriteID: db015e542f5bd3e20800000000000000
+      internalID: 3332019351483388093
       vertices: []
       indices: 
       edges: []
@@ -1068,8 +1056,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 933821c7d3c9bbee0800000000000000
-      internalID: -1244229084149284039
+      spriteID: 7e2d8ed2e1897bc80800000000000000
+      internalID: -8307003732274916633
       vertices: []
       indices: 
       edges: []
@@ -1089,8 +1077,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b93fb3667796e5400800000000000000
-      internalID: 314804985499743131
+      spriteID: 5e9277c1c39927580800000000000000
+      internalID: -8830827435865462299
       vertices: []
       indices: 
       edges: []
@@ -1110,14 +1098,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f10494b0643d6d3d0800000000000000
-      internalID: -3182123788900155361
+      spriteID: 9f697e1c1620256a0800000000000000
+      internalID: -6462099896434977031
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: holding_down_01
+      name: shoes_black_32
       rect:
         serializedVersion: 2
         x: 0
@@ -1131,14 +1119,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 16aac69cbaa7d41e0800000000000000
-      internalID: -2211976963731707295
+      spriteID: d45358b3fd9ddcb40800000000000000
+      internalID: 5462261475869799757
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: holding_down_02
+      name: shoes_black_33
       rect:
         serializedVersion: 2
         x: 32
@@ -1152,14 +1140,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1fc6dc2d5ddd26920800000000000000
-      internalID: 2982189813707140337
+      spriteID: d1ed1cb2638c39110800000000000000
+      internalID: 1266576055209156125
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: holding_down_03
+      name: shoes_black_34
       rect:
         serializedVersion: 2
         x: 64
@@ -1173,14 +1161,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5e92b1c15ca40adc0800000000000000
-      internalID: -3629819089220064795
+      spriteID: ac5f5c2884cb8e230800000000000000
+      internalID: 3668388916110947786
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: holding_down_04
+      name: shoes_black_35
       rect:
         serializedVersion: 2
         x: 96
@@ -1194,14 +1182,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fad323d00e403f390800000000000000
-      internalID: -7785873970452873809
+      spriteID: 2a00a0110eafc26c0800000000000000
+      internalID: -4166679714959064926
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: holding_down_05
+      name: shoes_black_36
       rect:
         serializedVersion: 2
         x: 128
@@ -1215,14 +1203,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a4bac32a574a79030800000000000000
-      internalID: 3501448060443863882
+      spriteID: 2e31c246de769c340800000000000000
+      internalID: 4884549540145533922
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: holding_down_06
+      name: shoes_black_37
       rect:
         serializedVersion: 2
         x: 160
@@ -1236,14 +1224,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7985c816225ede410800000000000000
-      internalID: 1508113386067220631
+      spriteID: 4163e1e6451043200800000000000000
+      internalID: 158753349001164308
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: holding_down_07
+      name: shoes_black_38
       rect:
         serializedVersion: 2
         x: 192
@@ -1257,14 +1245,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e61121407d32b4de0800000000000000
-      internalID: -1347944257074097810
+      spriteID: 332128d57b5741d80800000000000000
+      internalID: -8280864384419229133
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: holding_down_08
+      name: shoes_black_39
       rect:
         serializedVersion: 2
         x: 224
@@ -1278,14 +1266,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9e5ea59e7bdb58870800000000000000
-      internalID: 8684556054045582825
+      spriteID: f35d915e34c1e1e10800000000000000
+      internalID: 2170203148371219775
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: holding_up_01
+      name: shoes_black_40
       rect:
         serializedVersion: 2
         x: 0
@@ -1299,14 +1287,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 779fa8d6282760510800000000000000
-      internalID: 1515024229165889911
+      spriteID: 198eb3c3ea881f710800000000000000
+      internalID: 1725310414175856785
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: holding_up_02
+      name: shoes_black_41
       rect:
         serializedVersion: 2
         x: 32
@@ -1320,14 +1308,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2539d191bf0385ac0800000000000000
-      internalID: -3866286425081277614
+      spriteID: 09f4f539c9bb8a8d0800000000000000
+      internalID: -2834809684267937904
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: holding_up_03
+      name: shoes_black_42
       rect:
         serializedVersion: 2
         x: 64
@@ -1341,14 +1329,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7e33e1716a7d7bcc0800000000000000
-      internalID: -3695247860881804313
+      spriteID: 24142e98db4babaa0800000000000000
+      internalID: -6144400015438495422
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: holding_up_04
+      name: shoes_black_43
       rect:
         serializedVersion: 2
         x: 96
@@ -1362,14 +1350,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5dd09845345302790800000000000000
-      internalID: -7556981611430343211
+      spriteID: b7ffafb0dbe552900800000000000000
+      internalID: 659037086522474363
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: holding_up_05
+      name: shoes_black_44
       rect:
         serializedVersion: 2
         x: 128
@@ -1383,14 +1371,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8f638f813afa55380800000000000000
-      internalID: -8983080766687136008
+      spriteID: 2db0f9c774efa93b0800000000000000
+      internalID: -5504808011520078894
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: holding_up_06
+      name: shoes_black_45
       rect:
         serializedVersion: 2
         x: 160
@@ -1404,14 +1392,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c6f6532ed0fdbd910800000000000000
-      internalID: 1863328121570553708
+      spriteID: 180f97a27bac49c60800000000000000
+      internalID: 7824101340689854593
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: holding_up_07
+      name: shoes_black_46
       rect:
         serializedVersion: 2
         x: 192
@@ -1425,14 +1413,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9aadc2190c8275580800000000000000
-      internalID: -8838550936156841303
+      spriteID: 05d7a3e791d287e10800000000000000
+      internalID: 2195554405858311504
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: holding_up_08
+      name: shoes_black_47
       rect:
         serializedVersion: 2
         x: 224
@@ -1446,14 +1434,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5adca8314687194d0800000000000000
-      internalID: -3129587894825857627
+      spriteID: bf909074aa4c11850800000000000000
+      internalID: 6346069585556998651
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: holding_right_01
+      name: shoes_black_48
       rect:
         serializedVersion: 2
         x: 0
@@ -1467,14 +1455,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5f04713f84ca815d0800000000000000
-      internalID: -3091531714873835275
+      spriteID: 1d4533f09370ed420800000000000000
+      internalID: 2656568771844723921
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: holding_right_02
+      name: shoes_black_49
       rect:
         serializedVersion: 2
         x: 32
@@ -1488,14 +1476,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3b820466f1c0b2a80800000000000000
-      internalID: -8490679343477937997
+      spriteID: b6b840cc144453560800000000000000
+      internalID: 7292810220982799211
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: holding_right_03
+      name: shoes_black_50
       rect:
         serializedVersion: 2
         x: 64
@@ -1509,14 +1497,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2afbf3174eccceac0800000000000000
-      internalID: -3824456702019780702
+      spriteID: f30dbba2b6901c370800000000000000
+      internalID: 8340958340749971519
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: holding_right_04
+      name: shoes_black_51
       rect:
         serializedVersion: 2
         x: 96
@@ -1530,14 +1518,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4449278679f5e1750800000000000000
-      internalID: 6277560034498090052
+      spriteID: 3b063e7ec42b7b480800000000000000
+      internalID: -8883435696587317069
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: holding_right_05
+      name: shoes_black_52
       rect:
         serializedVersion: 2
         x: 128
@@ -1551,14 +1539,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: edd9374c660f02410800000000000000
-      internalID: 1450423404186541534
+      spriteID: 58cfc2551cd0c5170800000000000000
+      internalID: 8168418948152097925
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: holding_right_06
+      name: shoes_black_53
       rect:
         serializedVersion: 2
         x: 160
@@ -1572,14 +1560,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d677d356c98869640800000000000000
-      internalID: 5086403034456356717
+      spriteID: fa118115cb6e74a40800000000000000
+      internalID: 5352500378641895855
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: holding_right_07
+      name: shoes_black_54
       rect:
         serializedVersion: 2
         x: 192
@@ -1593,14 +1581,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a1bc7f107498e1220800000000000000
-      internalID: 2458553384659569434
+      spriteID: 1faacecfed381f890800000000000000
+      internalID: -7426009316807890191
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: holding_right_08
+      name: shoes_black_55
       rect:
         serializedVersion: 2
         x: 224
@@ -1614,14 +1602,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 17498f39aca659aa0800000000000000
-      internalID: -6154895897433435023
+      spriteID: 325730e84fabe90d0800000000000000
+      internalID: -3414085907982879453
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: holding_left_01
+      name: shoes_black_56
       rect:
         serializedVersion: 2
         x: 0
@@ -1635,14 +1623,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ba4ccda824bcab4a0800000000000000
-      internalID: -6576720819163183957
+      spriteID: d7451a582ecf87f70800000000000000
+      internalID: 9185369489856877693
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: holding_left_02
+      name: shoes_black_57
       rect:
         serializedVersion: 2
         x: 32
@@ -1656,14 +1644,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0bef1ef8d460317f0800000000000000
-      internalID: -643163391587647824
+      spriteID: 8588583b599c7ebe0800000000000000
+      internalID: -1447967110377142184
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: holding_left_03
+      name: shoes_black_58
       rect:
         serializedVersion: 2
         x: 64
@@ -1677,14 +1665,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b0279211b26727e70800000000000000
-      internalID: 9111474923467534859
+      spriteID: 102695bdfe4b8b020800000000000000
+      internalID: 2357833347198706177
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: holding_left_04
+      name: shoes_black_59
       rect:
         serializedVersion: 2
         x: 96
@@ -1698,14 +1686,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bb7bdf81b1711a9d0800000000000000
-      internalID: -2764903291077937221
+      spriteID: 9d0ced678225b6ce0800000000000000
+      internalID: -1410943724504039207
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: holding_left_05
+      name: shoes_black_60
       rect:
         serializedVersion: 2
         x: 128
@@ -1719,14 +1707,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f52d79eb063758830800000000000000
-      internalID: 4072788297378157151
+      spriteID: 054ab3728fceceac0800000000000000
+      internalID: -3824421432990129072
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: holding_left_06
+      name: shoes_black_61
       rect:
         serializedVersion: 2
         x: 160
@@ -1740,14 +1728,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 170219f3e82ffa280800000000000000
-      internalID: -9029732035088801679
+      spriteID: 4bc715d73d59838e0800000000000000
+      internalID: -1713454922641343308
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: holding_left_07
+      name: shoes_black_62
       rect:
         serializedVersion: 2
         x: 192
@@ -1761,14 +1749,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c6d12e607cc1e8240800000000000000
-      internalID: 4795802294335708524
+      spriteID: ebed031349affb370800000000000000
+      internalID: 8340660549300838078
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: holding_left_08
+      name: shoes_black_63
       rect:
         serializedVersion: 2
         x: 224
@@ -1782,14 +1770,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 883ee7c56fb85f820800000000000000
-      internalID: 2951419021041263496
+      spriteID: 155452e8c39821780800000000000000
+      internalID: -8713751435832638127
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump_down_01
+      name: shoes_black_64
       rect:
         serializedVersion: 2
         x: 0
@@ -1803,14 +1791,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: db923f94d71d23680800000000000000
-      internalID: -8776722387749885507
+      spriteID: 6b938b52b91343ae0800000000000000
+      internalID: -1570575827622938186
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump_down_02
+      name: shoes_black_65
       rect:
         serializedVersion: 2
         x: 32
@@ -1824,14 +1812,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3cd3abe4d82961af0800000000000000
-      internalID: -425991979131060797
+      spriteID: ecbdae7226e84f4b0800000000000000
+      internalID: -5407540700337480754
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump_down_03
+      name: shoes_black_66
       rect:
         serializedVersion: 2
         x: 64
@@ -1845,14 +1833,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b495c08179dde3db0800000000000000
-      internalID: -4810163710971848373
+      spriteID: 7fb2a4ce349752f30800000000000000
+      internalID: 4550176331161807863
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump_down_04
+      name: shoes_black_67
       rect:
         serializedVersion: 2
         x: 96
@@ -1866,14 +1854,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 882a25bed56902ba0800000000000000
-      internalID: -6115722963844947320
+      spriteID: f5ff9eb5fec2d9290800000000000000
+      internalID: -7882094366277632161
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump_down_05
+      name: shoes_black_68
       rect:
         serializedVersion: 2
         x: 128
@@ -1887,14 +1875,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ecab784b2dc0ac5a0800000000000000
-      internalID: -6500369013044430130
+      spriteID: 9df8f03c4207aefe0800000000000000
+      internalID: -1158990650900770855
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jumping_up_01
+      name: shoes_black_69
       rect:
         serializedVersion: 2
         x: 0
@@ -1908,14 +1896,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 883a9f663a4edbdf0800000000000000
-      internalID: -162722621057031288
+      spriteID: d97d76ea4368a9820800000000000000
+      internalID: 2925798468753020829
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jumping_up_02
+      name: shoes_black_70
       rect:
         serializedVersion: 2
         x: 32
@@ -1929,14 +1917,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 25b244910b84f76e0800000000000000
-      internalID: -1837670201768531118
+      spriteID: 4174766faa3f8e650800000000000000
+      internalID: 6262523197462628116
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jumping_up_03
+      name: shoes_black_71
       rect:
         serializedVersion: 2
         x: 64
@@ -1950,14 +1938,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 28077934dbd6a3f90800000000000000
-      internalID: -6973140413379547006
+      spriteID: b98f6ee52fa49da90800000000000000
+      internalID: -7288712117087700837
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jumping_up_04
+      name: shoes_black_72
       rect:
         serializedVersion: 2
         x: 96
@@ -1971,14 +1959,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4513eef10bd1f1fa0800000000000000
-      internalID: -5827906750506978988
+      spriteID: 318a2d632955dfd70800000000000000
+      internalID: 9078506510322149395
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jumping_up_05
+      name: shoes_black_73
       rect:
         serializedVersion: 2
         x: 128
@@ -1992,14 +1980,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9ad9d3301c6550c30800000000000000
-      internalID: 4324958404142276009
+      spriteID: feb5e482949ec8100800000000000000
+      internalID: 111720591195528175
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jumping_right_01
+      name: shoes_black_74
       rect:
         serializedVersion: 2
         x: 0
@@ -2013,14 +2001,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5dc47e109ecb8df20800000000000000
-      internalID: 3447713223697452245
+      spriteID: 54eba6e1d3ddac590800000000000000
+      internalID: -7653061362189681083
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jumping_right_02
+      name: shoes_black_75
       rect:
         serializedVersion: 2
         x: 32
@@ -2034,14 +2022,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3284d6b2e0e0041c0800000000000000
-      internalID: -4521598571859064797
+      spriteID: 3cd53c293219afb30800000000000000
+      internalID: 4321926374387572163
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jumping_right_03
+      name: shoes_black_76
       rect:
         serializedVersion: 2
         x: 64
@@ -2055,14 +2043,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 313aac819317883b0800000000000000
-      internalID: -5510029654044794093
+      spriteID: b6bf18c80d53737a0800000000000000
+      internalID: -6397585575829701781
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jumping_right_04
+      name: shoes_black_77
       rect:
         serializedVersion: 2
         x: 96
@@ -2076,14 +2064,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7e08ef08f7610b9a0800000000000000
-      internalID: -6219446348517834521
+      spriteID: 78feea215a4c85aa0800000000000000
+      internalID: -6171967076049162361
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jumping_right_05
+      name: shoes_black_78
       rect:
         serializedVersion: 2
         x: 128
@@ -2097,14 +2085,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 58ffcad5acc8c6640800000000000000
-      internalID: 5074585680922607493
+      spriteID: 02a3e9bfea3f2c960800000000000000
+      internalID: 7620921452335610400
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jumping_left_01
+      name: shoes_black_79
       rect:
         serializedVersion: 2
         x: 0
@@ -2118,14 +2106,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a5f20620c54961480800000000000000
-      internalID: -8928786088317669542
+      spriteID: 69ed1914629e1d040800000000000000
+      internalID: 4670770639078022806
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jumping_left_02
+      name: shoes_black_80
       rect:
         serializedVersion: 2
         x: 32
@@ -2139,14 +2127,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 700410eeeef0f4780800000000000000
-      internalID: -8696714836559446009
+      spriteID: f8ad81f23d93ac670800000000000000
+      internalID: 8559717620962089615
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jumping_left_03
+      name: shoes_black_81
       rect:
         serializedVersion: 2
         x: 64
@@ -2160,14 +2148,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fba7ec3706bfad5f0800000000000000
-      internalID: -730995597815940417
+      spriteID: 7f39d292ec5540a10800000000000000
+      internalID: 1874717688835445751
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jumping_left_04
+      name: shoes_black_82
       rect:
         serializedVersion: 2
         x: 96
@@ -2181,14 +2169,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff6a8206b04596090800000000000000
-      internalID: -8040803251858659585
+      spriteID: a151ff099f7e4c070800000000000000
+      internalID: 8125874686748726554
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jumping_left_05
+      name: shoes_black_83
       rect:
         serializedVersion: 2
         x: 128
@@ -2202,14 +2190,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 93ef32be7c8b416a0800000000000000
-      internalID: -6479350795096293831
+      spriteID: fa6a85faa606b3f70800000000000000
+      internalID: 9168027477767399087
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sitting_down
+      name: shoes_black_84
       rect:
         serializedVersion: 2
         x: 0
@@ -2223,35 +2211,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ba764230b3010ab70800000000000000
-      internalID: 8908137908580673451
+      spriteID: 9cdab46f412659980800000000000000
+      internalID: -8532806076812513847
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sitting_up
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 288
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 796fa8f549fb18ec0800000000000000
-      internalID: -3566358785921714537
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sitting_right
+      name: shoes_black_85
       rect:
         serializedVersion: 2
         x: 64
@@ -2265,14 +2232,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 61bd800dcb4872960800000000000000
-      internalID: 7577170844553108246
+      spriteID: b3635b5fa6e054bf0800000000000000
+      internalID: -340850344244988357
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sitting_left
+      name: shoes_black_86
       rect:
         serializedVersion: 2
         x: 96
@@ -2286,14 +2253,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b5c55f76510d34360800000000000000
-      internalID: 7152789423551503451
+      spriteID: 3c33ee0fd418712e0800000000000000
+      internalID: -2155111724918885437
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lying_01
+      name: shoes_black_87
       rect:
         serializedVersion: 2
         x: 0
@@ -2307,14 +2274,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 99511294f39951730800000000000000
-      internalID: 3969247143685854617
+      spriteID: a72d54fbbcd717e00800000000000000
+      internalID: 1040751302940152442
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lying_02
+      name: shoes_black_88
       rect:
         serializedVersion: 2
         x: 32
@@ -2328,56 +2295,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 21d087217ff1be4c0800000000000000
-      internalID: -4257273876721431278
+      spriteID: dc905934d213008b0800000000000000
+      internalID: -5188092700253681203
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: watering_down_01
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 224
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1df001d33053f6780800000000000000
-      internalID: -8687666868148760623
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: watering_down_02
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 224
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 82db758b9f425c710800000000000000
-      internalID: 1712815888242556200
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: watering_up_01
+      name: shoes_black_89
       rect:
         serializedVersion: 2
         x: 0
@@ -2391,14 +2316,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 382a7338a644a0500800000000000000
-      internalID: 363177944215429763
+      spriteID: 9e56188502c0e9700800000000000000
+      internalID: 548889537649141225
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: watering_up_02
+      name: shoes_black_90
       rect:
         serializedVersion: 2
         x: 32
@@ -2412,14 +2337,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 36d1e5b1661cb07d0800000000000000
-      internalID: -2951052486521250461
+      spriteID: 845b592d676477700800000000000000
+      internalID: 537976156647175496
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: watering_right_01
+      name: shoes_black_91
       rect:
         serializedVersion: 2
         x: 0
@@ -2433,14 +2358,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 03f98696f1d85d780800000000000000
-      internalID: -8658859542497943760
+      spriteID: 7550b5f4c4da8fec0800000000000000
+      internalID: -3532883364411669161
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: watering_right_02
+      name: shoes_black_92
       rect:
         serializedVersion: 2
         x: 32
@@ -2454,14 +2379,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b665632c11149e0a0800000000000000
-      internalID: -6851873813538908565
+      spriteID: 1a9ded647c622c150800000000000000
+      internalID: 5891313899883387297
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: watering_left_01
+      name: shoes_black_93
       rect:
         serializedVersion: 2
         x: 0
@@ -2475,14 +2400,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f67f5a1d7f0f4b390800000000000000
-      internalID: -7803347307161323665
+      spriteID: e8f423d0ccd965680800000000000000
+      internalID: -8766646124909801586
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: watering_left_02
+      name: shoes_black_94
       rect:
         serializedVersion: 2
         x: 32
@@ -2496,14 +2421,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0b58be0dd41a7fce0800000000000000
-      internalID: -1371450205921376848
+      spriteID: ca3e9b6a8bb92acb0800000000000000
+      internalID: -4854146230978485332
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mining_down_01
+      name: shoes_black_95
       rect:
         serializedVersion: 2
         x: 0
@@ -2517,14 +2442,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1e96cd19aab492620800000000000000
-      internalID: 2749812243450063329
+      spriteID: 731c9de2b2b053290800000000000000
+      internalID: -7911404890308886217
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mining_down_02
+      name: shoes_black_96
       rect:
         serializedVersion: 2
         x: 32
@@ -2538,14 +2463,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7b48116f7802de180800000000000000
-      internalID: -9084569105015405385
+      spriteID: bae46b1f739c8d750800000000000000
+      internalID: 6330030518384873131
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mining_down_03
+      name: shoes_black_97
       rect:
         serializedVersion: 2
         x: 64
@@ -2559,14 +2484,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff2c7d42101240a10800000000000000
-      internalID: 1874659633689772799
+      spriteID: 3d47e4350371c8ed0800000000000000
+      internalID: -2410526204226538285
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mining_down_04
+      name: shoes_black_98
       rect:
         serializedVersion: 2
         x: 96
@@ -2580,14 +2505,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bafc4d0049e9809c0800000000000000
-      internalID: -3960741513766056021
+      spriteID: 6009c9d3ce027a330800000000000000
+      internalID: 3721979816063045638
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mining_down_05
+      name: shoes_black_99
       rect:
         serializedVersion: 2
         x: 128
@@ -2601,14 +2526,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fc313d4da378e5660800000000000000
-      internalID: 7376481926427907023
+      spriteID: 4d7c105ad96494840800000000000000
+      internalID: 5208772086922856404
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mining_up_01
+      name: shoes_black_100
       rect:
         serializedVersion: 2
         x: 0
@@ -2622,14 +2547,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 07ce6568df4962050800000000000000
-      internalID: 5775467388750720112
+      spriteID: 3def0fe1caa48f0d0800000000000000
+      internalID: -3388876616482357549
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mining_up_02
+      name: shoes_black_101
       rect:
         serializedVersion: 2
         x: 32
@@ -2643,14 +2568,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c5c8898aeae61f630800000000000000
-      internalID: 3959067243867311196
+      spriteID: 4a304e28ce1588ca0800000000000000
+      internalID: -6014467226103184476
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mining_up_03
+      name: shoes_black_102
       rect:
         serializedVersion: 2
         x: 64
@@ -2664,14 +2589,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8dd510c93ce5a0c10800000000000000
-      internalID: 2020531577058057688
+      spriteID: 19063c6b910b6cdd0800000000000000
+      internalID: -2466090121451839343
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mining_up_04
+      name: shoes_black_103
       rect:
         serializedVersion: 2
         x: 96
@@ -2685,35 +2610,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9c27cbd8968fd8bf0800000000000000
-      internalID: -320326866240245047
+      spriteID: f2baea664bd252bb0800000000000000
+      internalID: -4961509161638646993
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mining_up_05
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 64
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 474a83a6bd0ec8980800000000000000
-      internalID: -8535199960789375884
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: mining_right_01
+      name: shoes_black_104
       rect:
         serializedVersion: 2
         x: 0
@@ -2727,14 +2631,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f4dfde4f39fba2790800000000000000
-      internalID: -7554014782770250417
+      spriteID: fe3552f570815a820800000000000000
+      internalID: 2928773552614495215
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mining_right_02
+      name: shoes_black_105
       rect:
         serializedVersion: 2
         x: 32
@@ -2748,14 +2652,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d2590be005a954100800000000000000
-      internalID: 91649036065477933
+      spriteID: c74936afc3a4ccc60800000000000000
+      internalID: 7839722677104514172
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mining_right_03
+      name: shoes_black_106
       rect:
         serializedVersion: 2
         x: 64
@@ -2769,14 +2673,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c4a2aa5c4a93468b0800000000000000
-      internalID: -5159935893206062516
+      spriteID: 3c44b2d2abc3d8220800000000000000
+      internalID: 2489712939325146307
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mining_right_04
+      name: shoes_black_107
       rect:
         serializedVersion: 2
         x: 96
@@ -2790,14 +2694,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: debfe8c55d7e7b1b0800000000000000
-      internalID: -5640785104691332115
+      spriteID: a1e5618de5a06a0c0800000000000000
+      internalID: -4564949769824870886
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mining_right_05
+      name: shoes_black_108
       rect:
         serializedVersion: 2
         x: 128
@@ -2811,14 +2715,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6df128e3743d0a850800000000000000
-      internalID: 6386336574556217302
+      spriteID: 2d166263cc0d10cd0800000000000000
+      internalID: -2593562334888304174
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mining_left_01
+      name: shoes_black_109
       rect:
         serializedVersion: 2
         x: 0
@@ -2832,14 +2736,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d784257d2d6d298d0800000000000000
-      internalID: -2840972213873391491
+      spriteID: 630d994bb54c14580800000000000000
+      internalID: -8844572295027896266
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mining_left_02
+      name: shoes_black_110
       rect:
         serializedVersion: 2
         x: 32
@@ -2853,14 +2757,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d2374d6030806e2e0800000000000000
-      internalID: -2096979767401876691
+      spriteID: 21aa3cbd0a1752850800000000000000
+      internalID: 6351607785171692050
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mining_left_03
+      name: shoes_black_111
       rect:
         serializedVersion: 2
         x: 64
@@ -2874,14 +2778,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d7dc3f3223ccc1110800000000000000
-      internalID: 1233084913716284797
+      spriteID: 6247032d6760035e0800000000000000
+      internalID: -1932037132739644378
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mining_left_04
+      name: shoes_black_112
       rect:
         serializedVersion: 2
         x: 96
@@ -2895,14 +2799,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 93c42657a4183a5d0800000000000000
-      internalID: -3052453965630124999
+      spriteID: 63648b66f7f102280800000000000000
+      internalID: -9070215017479518666
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mining_left_05
+      name: shoes_black_113
       rect:
         serializedVersion: 2
         x: 128
@@ -2916,8 +2820,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d2b13488a20e1e9a0800000000000000
-      internalID: -6205432338260485331
+      spriteID: 118535d29e63546a0800000000000000
+      internalID: -6465701314904762351
       vertices: []
       indices: 
       edges: []

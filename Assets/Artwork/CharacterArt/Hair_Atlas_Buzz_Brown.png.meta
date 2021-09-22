@@ -1,361 +1,361 @@
 fileFormatVersion: 2
-guid: 1fa8dfe9635678b469a3fb7d62494d0d
+guid: f68380801ac25d649b928b69f517547a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7624724514338613183
+      213: -6919409597104070534
     second: down_01
   - first:
-      213: -8222369410930855044
+      213: 6699218994379448002
     second: down_02
   - first:
-      213: -2838013895068875206
+      213: 6525459388264050159
     second: down_03
   - first:
-      213: -3447824022885662257
+      213: -8621430905418877411
     second: down_04
   - first:
-      213: 6312976651636590038
+      213: 7920932501501973822
     second: down_05
   - first:
-      213: 1643958083758421759
+      213: -75749439610040056
     second: down_06
   - first:
-      213: 8526283897926228697
+      213: 202577634579060234
     second: down_07
   - first:
-      213: 8202272470616246226
+      213: -4540039827285282063
     second: down_08
   - first:
-      213: -1343208954775655600
+      213: 8178282866730936844
     second: up_01
   - first:
-      213: 7742563697974721249
+      213: -556041847408802903
     second: up_02
   - first:
-      213: -885222569699850043
+      213: 5153480445171842599
     second: up_03
   - first:
-      213: -2973699704478336299
+      213: -8720660435315875902
     second: up_04
   - first:
-      213: 1076102958517561935
+      213: -8180149879726124331
     second: up_05
   - first:
-      213: -4822738691045651572
+      213: -6591749195587910465
     second: up_06
   - first:
-      213: 8483176939121872531
+      213: -6251157649421260271
     second: up_07
   - first:
-      213: 8219573260589163662
+      213: -8066151189613426611
     second: up_08
   - first:
-      213: 7801862768409197852
+      213: -8505235918694731119
     second: right_01
   - first:
-      213: 6180574142507054555
+      213: 2872283511472677176
     second: right_02
   - first:
-      213: 3740491174654615985
+      213: -1316532279092561411
     second: right_03
   - first:
-      213: -7612724030524522840
+      213: -8097659004251869746
     second: right_04
   - first:
-      213: 1959213835530219620
+      213: -4263272434961514829
     second: right_05
   - first:
-      213: 7214755616046793544
+      213: -5180952918974181617
     second: right_06
   - first:
-      213: 4401863894501062219
+      213: 2437062451829499714
     second: right_07
   - first:
-      213: 9134814629051994587
+      213: -8325625678242935017
     second: right_08
   - first:
-      213: -6769726694895982274
+      213: 1856501560635578873
     second: left_01
   - first:
-      213: 5461915372797673108
+      213: -242736818357502492
     second: left_02
   - first:
-      213: -1249766244277535683
+      213: 1007174613852810815
     second: left_03
   - first:
-      213: 57429941940190336
+      213: 8130968248577021488
     second: left_04
   - first:
-      213: 332664926458344935
+      213: -4346395180163493175
     second: left_05
   - first:
-      213: -1244229084149284039
+      213: -1148357873246729360
     second: left_06
   - first:
-      213: 314804985499743131
+      213: -7528733518761417782
     second: left_07
   - first:
-      213: -3182123788900155361
+      213: 5079358013499692788
     second: left_08
   - first:
-      213: -2211976963731707295
-    second: holding_down_01
+      213: 1384851719678460770
+    second: Hair_Atlas_Buzz_Brown_32
   - first:
-      213: 2982189813707140337
-    second: holding_down_02
+      213: -8175886614156022372
+    second: Hair_Atlas_Buzz_Brown_33
   - first:
-      213: -3629819089220064795
-    second: holding_down_03
+      213: -7311937408607597599
+    second: Hair_Atlas_Buzz_Brown_34
   - first:
-      213: -7785873970452873809
-    second: holding_down_04
+      213: 2951413728119630295
+    second: Hair_Atlas_Buzz_Brown_35
   - first:
-      213: 3501448060443863882
-    second: holding_down_05
+      213: 1801065993525515643
+    second: Hair_Atlas_Buzz_Brown_36
   - first:
-      213: 1508113386067220631
-    second: holding_down_06
+      213: 2331649804368920131
+    second: Hair_Atlas_Buzz_Brown_37
   - first:
-      213: -1347944257074097810
-    second: holding_down_07
+      213: -5143952783961256290
+    second: Hair_Atlas_Buzz_Brown_38
   - first:
-      213: 8684556054045582825
-    second: holding_down_08
+      213: 7784381411755239815
+    second: Hair_Atlas_Buzz_Brown_39
   - first:
-      213: 1515024229165889911
-    second: holding_up_01
+      213: 215994966776953654
+    second: Hair_Atlas_Buzz_Brown_40
   - first:
-      213: -3866286425081277614
-    second: holding_up_02
+      213: 2001554465889867623
+    second: Hair_Atlas_Buzz_Brown_41
   - first:
-      213: -3695247860881804313
-    second: holding_up_03
+      213: 313796312130499761
+    second: Hair_Atlas_Buzz_Brown_42
   - first:
-      213: -7556981611430343211
-    second: holding_up_04
+      213: 5220193941804988357
+    second: Hair_Atlas_Buzz_Brown_43
   - first:
-      213: -8983080766687136008
-    second: holding_up_05
+      213: -1608353826748547847
+    second: Hair_Atlas_Buzz_Brown_44
   - first:
-      213: 1863328121570553708
-    second: holding_up_06
+      213: -7090727848064881506
+    second: Hair_Atlas_Buzz_Brown_45
   - first:
-      213: -8838550936156841303
-    second: holding_up_07
+      213: -6625620255254579160
+    second: Hair_Atlas_Buzz_Brown_46
   - first:
-      213: -3129587894825857627
-    second: holding_up_08
+      213: 3918860593568890493
+    second: Hair_Atlas_Buzz_Brown_47
   - first:
-      213: -3091531714873835275
-    second: holding_right_01
+      213: 3027081155801588408
+    second: Hair_Atlas_Buzz_Brown_48
   - first:
-      213: -8490679343477937997
-    second: holding_right_02
+      213: -7465177917742508465
+    second: Hair_Atlas_Buzz_Brown_49
   - first:
-      213: -3824456702019780702
-    second: holding_right_03
+      213: 2048325417315770340
+    second: Hair_Atlas_Buzz_Brown_50
   - first:
-      213: 6277560034498090052
-    second: holding_right_04
+      213: 15446702676218460
+    second: Hair_Atlas_Buzz_Brown_51
   - first:
-      213: 1450423404186541534
-    second: holding_right_05
+      213: 5663471254181686656
+    second: Hair_Atlas_Buzz_Brown_52
   - first:
-      213: 5086403034456356717
-    second: holding_right_06
+      213: -428541311457892136
+    second: Hair_Atlas_Buzz_Brown_53
   - first:
-      213: 2458553384659569434
-    second: holding_right_07
+      213: 863068021953347880
+    second: Hair_Atlas_Buzz_Brown_54
   - first:
-      213: -6154895897433435023
-    second: holding_right_08
+      213: -2909870325191938773
+    second: Hair_Atlas_Buzz_Brown_55
   - first:
-      213: -6576720819163183957
-    second: holding_left_01
+      213: -1099027190494436282
+    second: Hair_Atlas_Buzz_Brown_56
   - first:
-      213: -643163391587647824
-    second: holding_left_02
+      213: -6005945099512629375
+    second: Hair_Atlas_Buzz_Brown_57
   - first:
-      213: 9111474923467534859
-    second: holding_left_03
+      213: 4087190493091671818
+    second: Hair_Atlas_Buzz_Brown_58
   - first:
-      213: -2764903291077937221
-    second: holding_left_04
+      213: 4854134296623238221
+    second: Hair_Atlas_Buzz_Brown_59
   - first:
-      213: 4072788297378157151
-    second: holding_left_05
+      213: -1651818945561657882
+    second: Hair_Atlas_Buzz_Brown_60
   - first:
-      213: -9029732035088801679
-    second: holding_left_06
+      213: -3039898134154808377
+    second: Hair_Atlas_Buzz_Brown_61
   - first:
-      213: 4795802294335708524
-    second: holding_left_07
+      213: 3169131924114129335
+    second: Hair_Atlas_Buzz_Brown_62
   - first:
-      213: 2951419021041263496
-    second: holding_left_08
+      213: 4285506002268100275
+    second: Hair_Atlas_Buzz_Brown_63
   - first:
-      213: -8776722387749885507
-    second: jump_down_01
+      213: -823764539096417586
+    second: Hair_Atlas_Buzz_Brown_64
   - first:
-      213: -425991979131060797
-    second: jump_down_02
+      213: -5407802180815406980
+    second: Hair_Atlas_Buzz_Brown_65
   - first:
-      213: -4810163710971848373
-    second: jump_down_03
+      213: -1170299232811121627
+    second: Hair_Atlas_Buzz_Brown_66
   - first:
-      213: -6115722963844947320
-    second: jump_down_04
+      213: 1493555439857423374
+    second: Hair_Atlas_Buzz_Brown_67
   - first:
-      213: -6500369013044430130
-    second: jump_down_05
+      213: 6146819715395094462
+    second: Hair_Atlas_Buzz_Brown_68
   - first:
-      213: -162722621057031288
-    second: jumping_up_01
+      213: 3669166574047123533
+    second: Hair_Atlas_Buzz_Brown_69
   - first:
-      213: -1837670201768531118
-    second: jumping_up_02
+      213: -299961572332985800
+    second: Hair_Atlas_Buzz_Brown_70
   - first:
-      213: -6973140413379547006
-    second: jumping_up_03
+      213: -8056720008973856692
+    second: Hair_Atlas_Buzz_Brown_71
   - first:
-      213: -5827906750506978988
-    second: jumping_up_04
+      213: 2981423786157789381
+    second: Hair_Atlas_Buzz_Brown_72
   - first:
-      213: 4324958404142276009
-    second: jumping_up_05
+      213: -691591337709531249
+    second: Hair_Atlas_Buzz_Brown_73
   - first:
-      213: 3447713223697452245
-    second: jumping_right_01
+      213: -5582981776815416566
+    second: Hair_Atlas_Buzz_Brown_74
   - first:
-      213: -4521598571859064797
-    second: jumping_right_02
+      213: 716057082750225501
+    second: Hair_Atlas_Buzz_Brown_75
   - first:
-      213: -5510029654044794093
-    second: jumping_right_03
+      213: -2849757647430320001
+    second: Hair_Atlas_Buzz_Brown_76
   - first:
-      213: -6219446348517834521
-    second: jumping_right_04
+      213: 4599243969733673713
+    second: Hair_Atlas_Buzz_Brown_77
   - first:
-      213: 5074585680922607493
-    second: jumping_right_05
+      213: 7549259809441975435
+    second: Hair_Atlas_Buzz_Brown_78
   - first:
-      213: -8928786088317669542
-    second: jumping_left_01
+      213: -5211871937520544692
+    second: Hair_Atlas_Buzz_Brown_79
   - first:
-      213: -8696714836559446009
-    second: jumping_left_02
+      213: -6727495001121926607
+    second: Hair_Atlas_Buzz_Brown_80
   - first:
-      213: -730995597815940417
-    second: jumping_left_03
+      213: 8305305095924673321
+    second: Hair_Atlas_Buzz_Brown_81
   - first:
-      213: -8040803251858659585
-    second: jumping_left_04
+      213: 3209737701904030721
+    second: Hair_Atlas_Buzz_Brown_82
   - first:
-      213: -6479350795096293831
-    second: jumping_left_05
+      213: -9088885569818091924
+    second: Hair_Atlas_Buzz_Brown_83
   - first:
-      213: 8908137908580673451
-    second: sitting_down
+      213: 4203735269782797115
+    second: Hair_Atlas_Buzz_Brown_84
   - first:
-      213: -3566358785921714537
-    second: sitting_up
+      213: -6869497312509315668
+    second: Hair_Atlas_Buzz_Brown_85
   - first:
-      213: 7577170844553108246
-    second: sitting_right
+      213: 425419008426686123
+    second: Hair_Atlas_Buzz_Brown_86
   - first:
-      213: 7152789423551503451
-    second: sitting_left
+      213: 4386137409547155375
+    second: Hair_Atlas_Buzz_Brown_87
   - first:
-      213: 3969247143685854617
-    second: lying_01
+      213: -3622383336058726882
+    second: Hair_Atlas_Buzz_Brown_88
   - first:
-      213: -4257273876721431278
-    second: lying_02
+      213: 3863686601729510375
+    second: Hair_Atlas_Buzz_Brown_89
   - first:
-      213: -8687666868148760623
-    second: watering_down_01
+      213: 6410755779957378925
+    second: Hair_Atlas_Buzz_Brown_90
   - first:
-      213: 1712815888242556200
-    second: watering_down_02
+      213: -6930774753318794736
+    second: Hair_Atlas_Buzz_Brown_91
   - first:
-      213: 363177944215429763
-    second: watering_up_01
+      213: 4693246748992489745
+    second: Hair_Atlas_Buzz_Brown_92
   - first:
-      213: -2951052486521250461
-    second: watering_up_02
+      213: -1469656088016706774
+    second: Hair_Atlas_Buzz_Brown_93
   - first:
-      213: -8658859542497943760
-    second: watering_right_01
+      213: -3501386820505974789
+    second: Hair_Atlas_Buzz_Brown_94
   - first:
-      213: -6851873813538908565
-    second: watering_right_02
+      213: 4071924978460887085
+    second: Hair_Atlas_Buzz_Brown_95
   - first:
-      213: -7803347307161323665
-    second: watering_left_01
+      213: -2617225958020639253
+    second: Hair_Atlas_Buzz_Brown_96
   - first:
-      213: -1371450205921376848
-    second: watering_left_02
+      213: 4617722341344130828
+    second: Hair_Atlas_Buzz_Brown_97
   - first:
-      213: 2749812243450063329
-    second: mining_down_01
+      213: 6135511848991461586
+    second: Hair_Atlas_Buzz_Brown_98
   - first:
-      213: -9084569105015405385
-    second: mining_down_02
+      213: -8239495265396952708
+    second: Hair_Atlas_Buzz_Brown_99
   - first:
-      213: 1874659633689772799
-    second: mining_down_03
+      213: 4928152570688639019
+    second: Hair_Atlas_Buzz_Brown_100
   - first:
-      213: -3960741513766056021
-    second: mining_down_04
+      213: 5369007580679378728
+    second: Hair_Atlas_Buzz_Brown_101
   - first:
-      213: 7376481926427907023
-    second: mining_down_05
+      213: 428730996523880830
+    second: Hair_Atlas_Buzz_Brown_102
   - first:
-      213: 5775467388750720112
-    second: mining_up_01
+      213: -7884778760134534947
+    second: Hair_Atlas_Buzz_Brown_103
   - first:
-      213: 3959067243867311196
-    second: mining_up_02
+      213: -4390290119212169936
+    second: Hair_Atlas_Buzz_Brown_104
   - first:
-      213: 2020531577058057688
-    second: mining_up_03
+      213: 535916479594946717
+    second: Hair_Atlas_Buzz_Brown_105
   - first:
-      213: -320326866240245047
-    second: mining_up_04
+      213: -6173877014977868502
+    second: Hair_Atlas_Buzz_Brown_106
   - first:
-      213: -8535199960789375884
-    second: mining_up_05
+      213: -3966636869674276457
+    second: Hair_Atlas_Buzz_Brown_107
   - first:
-      213: -7554014782770250417
-    second: mining_right_01
+      213: -8899189034409665754
+    second: Hair_Atlas_Buzz_Brown_108
   - first:
-      213: 91649036065477933
-    second: mining_right_02
+      213: -7413298981820702924
+    second: Hair_Atlas_Buzz_Brown_109
   - first:
-      213: -5159935893206062516
-    second: mining_right_03
+      213: -7335076112119303581
+    second: Hair_Atlas_Buzz_Brown_110
   - first:
-      213: -5640785104691332115
-    second: mining_right_04
+      213: 2487671369884357385
+    second: Hair_Atlas_Buzz_Brown_111
   - first:
-      213: 6386336574556217302
-    second: mining_right_05
+      213: 7506022336933538474
+    second: Hair_Atlas_Buzz_Brown_112
   - first:
-      213: -2840972213873391491
-    second: mining_left_01
+      213: 5862138840200070841
+    second: Hair_Atlas_Buzz_Brown_113
   - first:
-      213: -2096979767401876691
-    second: mining_left_02
+      213: -2071988410433607793
+    second: Hair_Atlas_Buzz_Brown_114
   - first:
-      213: 1233084913716284797
-    second: mining_left_03
+      213: 3596096728701492060
+    second: Hair_Atlas_Buzz_Brown_115
   - first:
-      213: -3052453965630124999
-    second: mining_left_04
+      213: 6998109158276705105
+    second: Hair_Atlas_Buzz_Brown_116
   - first:
-      213: -6205432338260485331
-    second: mining_left_05
+      213: -2310740088501820318
+    second: Hair_Atlas_Buzz_Brown_117
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -459,8 +459,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 14852a4a3798f2690800000000000000
-      internalID: -7624724514338613183
+      spriteID: a70ee2dc1a159ff90800000000000000
+      internalID: -6919409597104070534
       vertices: []
       indices: 
       edges: []
@@ -480,8 +480,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c73bd61b59644ed80800000000000000
-      internalID: -8222369410930855044
+      spriteID: 2ce59807e2868fc50800000000000000
+      internalID: 6699218994379448002
       vertices: []
       indices: 
       edges: []
@@ -501,8 +501,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a360ccc16695d98d0800000000000000
-      internalID: -2838013895068875206
+      spriteID: fed67b18db61f8a50800000000000000
+      internalID: 6525459388264050159
       vertices: []
       indices: 
       edges: []
@@ -522,8 +522,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fc187db815ed620d0800000000000000
-      internalID: -3447824022885662257
+      spriteID: d16fee215468a5880800000000000000
+      internalID: -8621430905418877411
       vertices: []
       indices: 
       edges: []
@@ -543,8 +543,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6d5422c21d23c9750800000000000000
-      internalID: 6312976651636590038
+      spriteID: e351fd9a42ecced60800000000000000
+      internalID: 7920932501501973822
       vertices: []
       indices: 
       edges: []
@@ -564,8 +564,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff67d08ca2380d610800000000000000
-      internalID: 1643958083758421759
+      spriteID: 801db183942e2fef0800000000000000
+      internalID: -75749439610040056
       vertices: []
       indices: 
       edges: []
@@ -585,8 +585,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9da960ee702735670800000000000000
-      internalID: 8526283897926228697
+      spriteID: a06168c0943bfc200800000000000000
+      internalID: 202577634579060234
       vertices: []
       indices: 
       edges: []
@@ -606,8 +606,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2d70c02ca5354d170800000000000000
-      internalID: 8202272470616246226
+      spriteID: 1f2f88cc4d98ef0c0800000000000000
+      internalID: -4540039827285282063
       vertices: []
       indices: 
       edges: []
@@ -627,8 +627,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 05b297f7296fb5de0800000000000000
-      internalID: -1343208954775655600
+      spriteID: c0a2928dfe81f7170800000000000000
+      internalID: 8178282866730936844
       vertices: []
       indices: 
       edges: []
@@ -648,8 +648,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1ea3e9459ac137b60800000000000000
-      internalID: 7742563697974721249
+      spriteID: 9a342f4c2ea8848f0800000000000000
+      internalID: -556041847408802903
       vertices: []
       indices: 
       edges: []
@@ -669,8 +669,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5c8c1e153ce07b3f0800000000000000
-      internalID: -885222569699850043
+      spriteID: 72eb36b1927d48740800000000000000
+      internalID: 5153480445171842599
       vertices: []
       indices: 
       edges: []
@@ -690,8 +690,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5da72e5cfdb4bb6d0800000000000000
-      internalID: -2973699704478336299
+      spriteID: 2cf9132c98df9f680800000000000000
+      internalID: -8720660435315875902
       vertices: []
       indices: 
       edges: []
@@ -711,8 +711,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f4aaf2870f51fee00800000000000000
-      internalID: 1076102958517561935
+      spriteID: 5d2587156054a7e80800000000000000
+      internalID: -8180149879726124331
       vertices: []
       indices: 
       edges: []
@@ -732,8 +732,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c8b01b366b0321db0800000000000000
-      internalID: -4822738691045651572
+      spriteID: fb4048cf7076584a0800000000000000
+      internalID: -6591749195587910465
       vertices: []
       indices: 
       edges: []
@@ -753,8 +753,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 39e0527fa7c4ab570800000000000000
-      internalID: 8483176939121872531
+      spriteID: 11aa747ec3d6f39a0800000000000000
+      internalID: -6251157649421260271
       vertices: []
       indices: 
       edges: []
@@ -774,8 +774,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e8467b2d45ac11270800000000000000
-      internalID: 8219573260589163662
+      spriteID: d484f76ba364f0090800000000000000
+      internalID: -8066151189613426611
       vertices: []
       indices: 
       edges: []
@@ -795,8 +795,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c1d30611ad8c54c60800000000000000
-      internalID: 7801862768409197852
+      spriteID: 192be4f9ef457f980800000000000000
+      internalID: -8505235918694731119
       vertices: []
       indices: 
       edges: []
@@ -816,8 +816,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bd5f810cf6fc5c550800000000000000
-      internalID: 6180574142507054555
+      spriteID: 8316a8bb2a66cd720800000000000000
+      internalID: 2872283511472677176
       vertices: []
       indices: 
       edges: []
@@ -837,8 +837,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1b1a5c6c7e4e8e330800000000000000
-      internalID: 3740491174654615985
+      spriteID: df93a511edcbabde0800000000000000
+      internalID: -1316532279092561411
       vertices: []
       indices: 
       edges: []
@@ -858,8 +858,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8ae718304db2a5690800000000000000
-      internalID: -7612724030524522840
+      spriteID: ecde253f9065f9f80800000000000000
+      internalID: -8097659004251869746
       vertices: []
       indices: 
       edges: []
@@ -879,8 +879,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4603fc16a96803b10800000000000000
-      internalID: 1959213835530219620
+      spriteID: 3be7765ee40d5d4c0800000000000000
+      internalID: -4263272434961514829
       vertices: []
       indices: 
       edges: []
@@ -900,8 +900,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 84349b3e106ff1460800000000000000
-      internalID: 7214755616046793544
+      spriteID: f0f458225ce8918b0800000000000000
+      internalID: -5180952918974181617
       vertices: []
       indices: 
       edges: []
@@ -921,8 +921,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b467a55d3ef861d30800000000000000
-      internalID: 4401863894501062219
+      spriteID: 2476db8436f22d120800000000000000
+      internalID: 2437062451829499714
       vertices: []
       indices: 
       edges: []
@@ -942,8 +942,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bd19fadb18165ce70800000000000000
-      internalID: 9134814629051994587
+      spriteID: 71f85738e8f657c80800000000000000
+      internalID: -8325625678242935017
       vertices: []
       indices: 
       edges: []
@@ -963,8 +963,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e39ee3440791d02a0800000000000000
-      internalID: -6769726694895982274
+      spriteID: 9f954ae455e93c910800000000000000
+      internalID: 1856501560635578873
       vertices: []
       indices: 
       edges: []
@@ -984,8 +984,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 49eb9d4d71f9ccb40800000000000000
-      internalID: 5461915372797673108
+      spriteID: 4ed74e75620a1acf0800000000000000
+      internalID: -242736818357502492
       vertices: []
       indices: 
       edges: []
@@ -1005,8 +1005,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d3c309de830f7aee0800000000000000
-      internalID: -1249766244277535683
+      spriteID: f3eec7d99f33afd00800000000000000
+      internalID: 1007174613852810815
       vertices: []
       indices: 
       edges: []
@@ -1026,8 +1026,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 08cf0d85a380cc000800000000000000
-      internalID: 57429941940190336
+      spriteID: 036d968da8007d070800000000000000
+      internalID: 8130968248577021488
       vertices: []
       indices: 
       edges: []
@@ -1047,8 +1047,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7e5f7c2fcfcdd9400800000000000000
-      internalID: 332664926458344935
+      spriteID: 9c292e0ac908ea3c0800000000000000
+      internalID: -4346395180163493175
       vertices: []
       indices: 
       edges: []
@@ -1068,8 +1068,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 933821c7d3c9bbee0800000000000000
-      internalID: -1244229084149284039
+      spriteID: 07b0b1a39963010f0800000000000000
+      internalID: -1148357873246729360
       vertices: []
       indices: 
       edges: []
@@ -1089,8 +1089,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b93fb3667796e5400800000000000000
-      internalID: 314804985499743131
+      spriteID: ac326ade0c0948790800000000000000
+      internalID: -7528733518761417782
       vertices: []
       indices: 
       edges: []
@@ -1110,14 +1110,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f10494b0643d6d3d0800000000000000
-      internalID: -3182123788900155361
+      spriteID: 4f6dea1a3318d7640800000000000000
+      internalID: 5079358013499692788
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: holding_down_01
+      name: Hair_Atlas_Buzz_Brown_32
       rect:
         serializedVersion: 2
         x: 0
@@ -1131,14 +1131,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 16aac69cbaa7d41e0800000000000000
-      internalID: -2211976963731707295
+      spriteID: 26306024d4bf73310800000000000000
+      internalID: 1384851719678460770
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: holding_down_02
+      name: Hair_Atlas_Buzz_Brown_33
       rect:
         serializedVersion: 2
         x: 32
@@ -1152,14 +1152,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1fc6dc2d5ddd26920800000000000000
-      internalID: 2982189813707140337
+      spriteID: c9deb5f217a698e80800000000000000
+      internalID: -8175886614156022372
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: holding_down_03
+      name: Hair_Atlas_Buzz_Brown_34
       rect:
         serializedVersion: 2
         x: 64
@@ -1173,14 +1173,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5e92b1c15ca40adc0800000000000000
-      internalID: -3629819089220064795
+      spriteID: 1ebcd0ccaa7c68a90800000000000000
+      internalID: -7311937408607597599
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: holding_down_04
+      name: Hair_Atlas_Buzz_Brown_35
       rect:
         serializedVersion: 2
         x: 96
@@ -1194,14 +1194,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fad323d00e403f390800000000000000
-      internalID: -7785873970452873809
+      spriteID: 7d928c1062785f820800000000000000
+      internalID: 2951413728119630295
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: holding_down_05
+      name: Hair_Atlas_Buzz_Brown_36
       rect:
         serializedVersion: 2
         x: 128
@@ -1215,14 +1215,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a4bac32a574a79030800000000000000
-      internalID: 3501448060443863882
+      spriteID: b75df198afbaef810800000000000000
+      internalID: 1801065993525515643
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: holding_down_06
+      name: Hair_Atlas_Buzz_Brown_37
       rect:
         serializedVersion: 2
         x: 160
@@ -1236,14 +1236,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7985c816225ede410800000000000000
-      internalID: 1508113386067220631
+      spriteID: 34eb40ab42fab5020800000000000000
+      internalID: 2331649804368920131
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: holding_down_07
+      name: Hair_Atlas_Buzz_Brown_38
       rect:
         serializedVersion: 2
         x: 192
@@ -1257,14 +1257,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e61121407d32b4de0800000000000000
-      internalID: -1347944257074097810
+      spriteID: e9e8b9262320d98b0800000000000000
+      internalID: -5143952783961256290
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: holding_down_08
+      name: Hair_Atlas_Buzz_Brown_39
       rect:
         serializedVersion: 2
         x: 224
@@ -1278,14 +1278,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9e5ea59e7bdb58870800000000000000
-      internalID: 8684556054045582825
+      spriteID: 78923db86ada70c60800000000000000
+      internalID: 7784381411755239815
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: holding_up_01
+      name: Hair_Atlas_Buzz_Brown_40
       rect:
         serializedVersion: 2
         x: 0
@@ -1299,14 +1299,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 779fa8d6282760510800000000000000
-      internalID: 1515024229165889911
+      spriteID: 63b3304274e5ff200800000000000000
+      internalID: 215994966776953654
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: holding_up_02
+      name: Hair_Atlas_Buzz_Brown_41
       rect:
         serializedVersion: 2
         x: 32
@@ -1320,14 +1320,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2539d191bf0385ac0800000000000000
-      internalID: -3866286425081277614
+      spriteID: 76756f99e23f6cb10800000000000000
+      internalID: 2001554465889867623
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: holding_up_03
+      name: Hair_Atlas_Buzz_Brown_42
       rect:
         serializedVersion: 2
         x: 64
@@ -1341,14 +1341,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7e33e1716a7d7bcc0800000000000000
-      internalID: -3695247860881804313
+      spriteID: 1b4bd545514da5400800000000000000
+      internalID: 313796312130499761
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: holding_up_04
+      name: Hair_Atlas_Buzz_Brown_43
       rect:
         serializedVersion: 2
         x: 96
@@ -1362,14 +1362,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5dd09845345302790800000000000000
-      internalID: -7556981611430343211
+      spriteID: 5c7bee77bbad17840800000000000000
+      internalID: 5220193941804988357
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: holding_up_05
+      name: Hair_Atlas_Buzz_Brown_44
       rect:
         serializedVersion: 2
         x: 128
@@ -1383,14 +1383,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8f638f813afa55380800000000000000
-      internalID: -8983080766687136008
+      spriteID: 9fc338b47bafda9e0800000000000000
+      internalID: -1608353826748547847
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: holding_up_06
+      name: Hair_Atlas_Buzz_Brown_45
       rect:
         serializedVersion: 2
         x: 160
@@ -1404,14 +1404,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c6f6532ed0fdbd910800000000000000
-      internalID: 1863328121570553708
+      spriteID: e9c6f19279ca89d90800000000000000
+      internalID: -7090727848064881506
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: holding_up_07
+      name: Hair_Atlas_Buzz_Brown_46
       rect:
         serializedVersion: 2
         x: 192
@@ -1425,14 +1425,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9aadc2190c8275580800000000000000
-      internalID: -8838550936156841303
+      spriteID: 828faec5b711d04a0800000000000000
+      internalID: -6625620255254579160
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: holding_up_08
+      name: Hair_Atlas_Buzz_Brown_47
       rect:
         serializedVersion: 2
         x: 224
@@ -1446,14 +1446,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5adca8314687194d0800000000000000
-      internalID: -3129587894825857627
+      spriteID: d7e33f362f6926630800000000000000
+      internalID: 3918860593568890493
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: holding_right_01
+      name: Hair_Atlas_Buzz_Brown_48
       rect:
         serializedVersion: 2
         x: 0
@@ -1467,14 +1467,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5f04713f84ca815d0800000000000000
-      internalID: -3091531714873835275
+      spriteID: 8b225d5e54a520a20800000000000000
+      internalID: 3027081155801588408
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: holding_right_02
+      name: Hair_Atlas_Buzz_Brown_49
       rect:
         serializedVersion: 2
         x: 32
@@ -1488,14 +1488,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3b820466f1c0b2a80800000000000000
-      internalID: -8490679343477937997
+      spriteID: f461edb6c3c566890800000000000000
+      internalID: -7465177917742508465
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: holding_right_03
+      name: Hair_Atlas_Buzz_Brown_50
       rect:
         serializedVersion: 2
         x: 64
@@ -1509,14 +1509,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2afbf3174eccceac0800000000000000
-      internalID: -3824456702019780702
+      spriteID: 4ef92835d1d1d6c10800000000000000
+      internalID: 2048325417315770340
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: holding_right_04
+      name: Hair_Atlas_Buzz_Brown_51
       rect:
         serializedVersion: 2
         x: 96
@@ -1530,14 +1530,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4449278679f5e1750800000000000000
-      internalID: 6277560034498090052
+      spriteID: c5297f9b1b0e63000800000000000000
+      internalID: 15446702676218460
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: holding_right_05
+      name: Hair_Atlas_Buzz_Brown_52
       rect:
         serializedVersion: 2
         x: 128
@@ -1551,14 +1551,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: edd9374c660f02410800000000000000
-      internalID: 1450423404186541534
+      spriteID: 08da22d6911b89e40800000000000000
+      internalID: 5663471254181686656
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: holding_right_06
+      name: Hair_Atlas_Buzz_Brown_53
       rect:
         serializedVersion: 2
         x: 160
@@ -1572,14 +1572,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d677d356c98869640800000000000000
-      internalID: 5086403034456356717
+      spriteID: 8d8e8fe92f38d0af0800000000000000
+      internalID: -428541311457892136
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: holding_right_07
+      name: Hair_Atlas_Buzz_Brown_54
       rect:
         serializedVersion: 2
         x: 192
@@ -1593,14 +1593,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a1bc7f107498e1220800000000000000
-      internalID: 2458553384659569434
+      spriteID: 82147811bcb3afb00800000000000000
+      internalID: 863068021953347880
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: holding_right_08
+      name: Hair_Atlas_Buzz_Brown_55
       rect:
         serializedVersion: 2
         x: 224
@@ -1614,14 +1614,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 17498f39aca659aa0800000000000000
-      internalID: -6154895897433435023
+      spriteID: b2deb7c3b501e97d0800000000000000
+      internalID: -2909870325191938773
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: holding_left_01
+      name: Hair_Atlas_Buzz_Brown_56
       rect:
         serializedVersion: 2
         x: 0
@@ -1635,14 +1635,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ba4ccda824bcab4a0800000000000000
-      internalID: -6576720819163183957
+      spriteID: 6446518d7987fb0f0800000000000000
+      internalID: -1099027190494436282
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: holding_left_02
+      name: Hair_Atlas_Buzz_Brown_57
       rect:
         serializedVersion: 2
         x: 32
@@ -1656,14 +1656,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0bef1ef8d460317f0800000000000000
-      internalID: -643163391587647824
+      spriteID: 1873d0bb0c896aca0800000000000000
+      internalID: -6005945099512629375
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: holding_left_03
+      name: Hair_Atlas_Buzz_Brown_58
       rect:
         serializedVersion: 2
         x: 64
@@ -1677,14 +1677,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b0279211b26727e70800000000000000
-      internalID: 9111474923467534859
+      spriteID: a0f251e391e98b830800000000000000
+      internalID: 4087190493091671818
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: holding_left_04
+      name: Hair_Atlas_Buzz_Brown_59
       rect:
         serializedVersion: 2
         x: 96
@@ -1698,14 +1698,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bb7bdf81b1711a9d0800000000000000
-      internalID: -2764903291077937221
+      spriteID: d4cc44aac695d5340800000000000000
+      internalID: 4854134296623238221
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: holding_left_05
+      name: Hair_Atlas_Buzz_Brown_60
       rect:
         serializedVersion: 2
         x: 128
@@ -1719,14 +1719,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f52d79eb063758830800000000000000
-      internalID: 4072788297378157151
+      spriteID: 6ed7984bb6f8319e0800000000000000
+      internalID: -1651818945561657882
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: holding_left_06
+      name: Hair_Atlas_Buzz_Brown_61
       rect:
         serializedVersion: 2
         x: 160
@@ -1740,14 +1740,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 170219f3e82ffa280800000000000000
-      internalID: -9029732035088801679
+      spriteID: 7c37458c0cc10d5d0800000000000000
+      internalID: -3039898134154808377
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: holding_left_07
+      name: Hair_Atlas_Buzz_Brown_62
       rect:
         serializedVersion: 2
         x: 192
@@ -1761,14 +1761,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c6d12e607cc1e8240800000000000000
-      internalID: 4795802294335708524
+      spriteID: 7b14c27b1b40bfb20800000000000000
+      internalID: 3169131924114129335
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: holding_left_08
+      name: Hair_Atlas_Buzz_Brown_63
       rect:
         serializedVersion: 2
         x: 224
@@ -1782,14 +1782,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 883ee7c56fb85f820800000000000000
-      internalID: 2951419021041263496
+      spriteID: 3b69ef3e00d297b30800000000000000
+      internalID: 4285506002268100275
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump_down_01
+      name: Hair_Atlas_Buzz_Brown_64
       rect:
         serializedVersion: 2
         x: 0
@@ -1803,14 +1803,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: db923f94d71d23680800000000000000
-      internalID: -8776722387749885507
+      spriteID: eca389424866194f0800000000000000
+      internalID: -823764539096417586
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump_down_02
+      name: Hair_Atlas_Buzz_Brown_65
       rect:
         serializedVersion: 2
         x: 32
@@ -1824,14 +1824,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3cd3abe4d82961af0800000000000000
-      internalID: -425991979131060797
+      spriteID: c783aec7190a3f4b0800000000000000
+      internalID: -5407802180815406980
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump_down_03
+      name: Hair_Atlas_Buzz_Brown_66
       rect:
         serializedVersion: 2
         x: 64
@@ -1845,14 +1845,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b495c08179dde3db0800000000000000
-      internalID: -4810163710971848373
+      spriteID: 524816b5c0342cfe0800000000000000
+      internalID: -1170299232811121627
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump_down_04
+      name: Hair_Atlas_Buzz_Brown_67
       rect:
         serializedVersion: 2
         x: 96
@@ -1866,14 +1866,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 882a25bed56902ba0800000000000000
-      internalID: -6115722963844947320
+      spriteID: e04dd0562cc2ab410800000000000000
+      internalID: 1493555439857423374
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump_down_05
+      name: Hair_Atlas_Buzz_Brown_68
       rect:
         serializedVersion: 2
         x: 128
@@ -1887,14 +1887,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ecab784b2dc0ac5a0800000000000000
-      internalID: -6500369013044430130
+      spriteID: eb70e72c6f3ed4550800000000000000
+      internalID: 6146819715395094462
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jumping_up_01
+      name: Hair_Atlas_Buzz_Brown_69
       rect:
         serializedVersion: 2
         x: 0
@@ -1908,14 +1908,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 883a9f663a4edbdf0800000000000000
-      internalID: -162722621057031288
+      spriteID: d48d0db1f8f7be230800000000000000
+      internalID: 3669166574047123533
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jumping_up_02
+      name: Hair_Atlas_Buzz_Brown_70
       rect:
         serializedVersion: 2
         x: 32
@@ -1929,14 +1929,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 25b244910b84f76e0800000000000000
-      internalID: -1837670201768531118
+      spriteID: 83223da0a8256dbf0800000000000000
+      internalID: -299961572332985800
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jumping_up_03
+      name: Hair_Atlas_Buzz_Brown_71
       rect:
         serializedVersion: 2
         x: 64
@@ -1950,14 +1950,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 28077934dbd6a3f90800000000000000
-      internalID: -6973140413379547006
+      spriteID: c40d45296d7c03090800000000000000
+      internalID: -8056720008973856692
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jumping_up_04
+      name: Hair_Atlas_Buzz_Brown_72
       rect:
         serializedVersion: 2
         x: 96
@@ -1971,14 +1971,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4513eef10bd1f1fa0800000000000000
-      internalID: -5827906750506978988
+      spriteID: 5c0d5d22325206920800000000000000
+      internalID: 2981423786157789381
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jumping_up_05
+      name: Hair_Atlas_Buzz_Brown_73
       rect:
         serializedVersion: 2
         x: 128
@@ -1992,14 +1992,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9ad9d3301c6550c30800000000000000
-      internalID: 4324958404142276009
+      spriteID: f8f0612b759f666f0800000000000000
+      internalID: -691591337709531249
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jumping_right_01
+      name: Hair_Atlas_Buzz_Brown_74
       rect:
         serializedVersion: 2
         x: 0
@@ -2013,14 +2013,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5dc47e109ecb8df20800000000000000
-      internalID: 3447713223697452245
+      spriteID: a0b107567a34582b0800000000000000
+      internalID: -5582981776815416566
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jumping_right_02
+      name: Hair_Atlas_Buzz_Brown_75
       rect:
         serializedVersion: 2
         x: 32
@@ -2034,14 +2034,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3284d6b2e0e0041c0800000000000000
-      internalID: -4521598571859064797
+      spriteID: d5cca387f12ffe900800000000000000
+      internalID: 716057082750225501
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jumping_right_03
+      name: Hair_Atlas_Buzz_Brown_76
       rect:
         serializedVersion: 2
         x: 64
@@ -2055,14 +2055,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 313aac819317883b0800000000000000
-      internalID: -5510029654044794093
+      spriteID: f7086f0b480a378d0800000000000000
+      internalID: -2849757647430320001
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jumping_right_04
+      name: Hair_Atlas_Buzz_Brown_77
       rect:
         serializedVersion: 2
         x: 96
@@ -2076,14 +2076,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7e08ef08f7610b9a0800000000000000
-      internalID: -6219446348517834521
+      spriteID: 1f2455bc50cc3df30800000000000000
+      internalID: 4599243969733673713
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jumping_right_05
+      name: Hair_Atlas_Buzz_Brown_78
       rect:
         serializedVersion: 2
         x: 128
@@ -2097,14 +2097,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 58ffcad5acc8c6640800000000000000
-      internalID: 5074585680922607493
+      spriteID: b8c0cea8ccb54c860800000000000000
+      internalID: 7549259809441975435
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jumping_left_01
+      name: Hair_Atlas_Buzz_Brown_79
       rect:
         serializedVersion: 2
         x: 0
@@ -2118,14 +2118,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a5f20620c54961480800000000000000
-      internalID: -8928786088317669542
+      spriteID: c44d2452616bba7b0800000000000000
+      internalID: -5211871937520544692
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jumping_left_02
+      name: Hair_Atlas_Buzz_Brown_80
       rect:
         serializedVersion: 2
         x: 32
@@ -2139,14 +2139,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 700410eeeef0f4780800000000000000
-      internalID: -8696714836559446009
+      spriteID: 13259e5b0f223a2a0800000000000000
+      internalID: -6727495001121926607
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jumping_left_03
+      name: Hair_Atlas_Buzz_Brown_81
       rect:
         serializedVersion: 2
         x: 64
@@ -2160,14 +2160,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fba7ec3706bfad5f0800000000000000
-      internalID: -730995597815940417
+      spriteID: 92be4d93bfe524370800000000000000
+      internalID: 8305305095924673321
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jumping_left_04
+      name: Hair_Atlas_Buzz_Brown_82
       rect:
         serializedVersion: 2
         x: 96
@@ -2181,14 +2181,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff6a8206b04596090800000000000000
-      internalID: -8040803251858659585
+      spriteID: 10c1b281f674b8c20800000000000000
+      internalID: 3209737701904030721
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jumping_left_05
+      name: Hair_Atlas_Buzz_Brown_83
       rect:
         serializedVersion: 2
         x: 128
@@ -2202,14 +2202,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 93ef32be7c8b416a0800000000000000
-      internalID: -6479350795096293831
+      spriteID: c6e91deaabacdd180800000000000000
+      internalID: -9088885569818091924
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sitting_down
+      name: Hair_Atlas_Buzz_Brown_84
       rect:
         serializedVersion: 2
         x: 0
@@ -2223,14 +2223,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ba764230b3010ab70800000000000000
-      internalID: 8908137908580673451
+      spriteID: b3b3f2d94faa65a30800000000000000
+      internalID: 4203735269782797115
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sitting_up
+      name: Hair_Atlas_Buzz_Brown_85
       rect:
         serializedVersion: 2
         x: 32
@@ -2244,14 +2244,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 796fa8f549fb18ec0800000000000000
-      internalID: -3566358785921714537
+      spriteID: ca5b1662794aaa0a0800000000000000
+      internalID: -6869497312509315668
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sitting_right
+      name: Hair_Atlas_Buzz_Brown_86
       rect:
         serializedVersion: 2
         x: 64
@@ -2265,14 +2265,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 61bd800dcb4872960800000000000000
-      internalID: 7577170844553108246
+      spriteID: ba6b8fd855467e500800000000000000
+      internalID: 425419008426686123
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sitting_left
+      name: Hair_Atlas_Buzz_Brown_87
       rect:
         serializedVersion: 2
         x: 96
@@ -2286,14 +2286,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b5c55f76510d34360800000000000000
-      internalID: 7152789423551503451
+      spriteID: fa73c183cb0bedc30800000000000000
+      internalID: 4386137409547155375
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lying_01
+      name: Hair_Atlas_Buzz_Brown_88
       rect:
         serializedVersion: 2
         x: 0
@@ -2307,14 +2307,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 99511294f39951730800000000000000
-      internalID: 3969247143685854617
+      spriteID: e16dced4c85babdc0800000000000000
+      internalID: -3622383336058726882
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lying_02
+      name: Hair_Atlas_Buzz_Brown_89
       rect:
         serializedVersion: 2
         x: 32
@@ -2328,14 +2328,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 21d087217ff1be4c0800000000000000
-      internalID: -4257273876721431278
+      spriteID: 7eb068b5e729e9530800000000000000
+      internalID: 3863686601729510375
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: watering_down_01
+      name: Hair_Atlas_Buzz_Brown_90
       rect:
         serializedVersion: 2
         x: 0
@@ -2349,14 +2349,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1df001d33053f6780800000000000000
-      internalID: -8687666868148760623
+      spriteID: d6f442e8a6497f850800000000000000
+      internalID: 6410755779957378925
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: watering_down_02
+      name: Hair_Atlas_Buzz_Brown_91
       rect:
         serializedVersion: 2
         x: 32
@@ -2370,14 +2370,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 82db758b9f425c710800000000000000
-      internalID: 1712815888242556200
+      spriteID: 01a003a2511f0df90800000000000000
+      internalID: -6930774753318794736
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: watering_up_01
+      name: Hair_Atlas_Buzz_Brown_92
       rect:
         serializedVersion: 2
         x: 0
@@ -2391,14 +2391,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 382a7338a644a0500800000000000000
-      internalID: 363177944215429763
+      spriteID: 11944f46d03c12140800000000000000
+      internalID: 4693246748992489745
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: watering_up_02
+      name: Hair_Atlas_Buzz_Brown_93
       rect:
         serializedVersion: 2
         x: 32
@@ -2412,14 +2412,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 36d1e5b1661cb07d0800000000000000
-      internalID: -2951052486521250461
+      spriteID: a2326c3139bba9be0800000000000000
+      internalID: -1469656088016706774
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: watering_right_01
+      name: Hair_Atlas_Buzz_Brown_94
       rect:
         serializedVersion: 2
         x: 0
@@ -2433,14 +2433,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 03f98696f1d85d780800000000000000
-      internalID: -8658859542497943760
+      spriteID: bf7c186ec33986fc0800000000000000
+      internalID: -3501386820505974789
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: watering_right_02
+      name: Hair_Atlas_Buzz_Brown_95
       rect:
         serializedVersion: 2
         x: 32
@@ -2454,14 +2454,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b665632c11149e0a0800000000000000
-      internalID: -6851873813538908565
+      spriteID: d288335a132628830800000000000000
+      internalID: 4071924978460887085
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: watering_left_01
+      name: Hair_Atlas_Buzz_Brown_96
       rect:
         serializedVersion: 2
         x: 0
@@ -2475,14 +2475,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f67f5a1d7f0f4b390800000000000000
-      internalID: -7803347307161323665
+      spriteID: be59f3b9bdebdabd0800000000000000
+      internalID: -2617225958020639253
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: watering_left_02
+      name: Hair_Atlas_Buzz_Brown_97
       rect:
         serializedVersion: 2
         x: 32
@@ -2496,14 +2496,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0b58be0dd41a7fce0800000000000000
-      internalID: -1371450205921376848
+      spriteID: c07b333f002751040800000000000000
+      internalID: 4617722341344130828
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mining_down_01
+      name: Hair_Atlas_Buzz_Brown_98
       rect:
         serializedVersion: 2
         x: 0
@@ -2517,14 +2517,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1e96cd19aab492620800000000000000
-      internalID: 2749812243450063329
+      spriteID: 2d01652f487b52550800000000000000
+      internalID: 6135511848991461586
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mining_down_02
+      name: Hair_Atlas_Buzz_Brown_99
       rect:
         serializedVersion: 2
         x: 32
@@ -2538,14 +2538,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7b48116f7802de180800000000000000
-      internalID: -9084569105015405385
+      spriteID: c717089f5be67ad80800000000000000
+      internalID: -8239495265396952708
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mining_down_03
+      name: Hair_Atlas_Buzz_Brown_100
       rect:
         serializedVersion: 2
         x: 64
@@ -2559,14 +2559,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff2c7d42101240a10800000000000000
-      internalID: 1874659633689772799
+      spriteID: b2013de07a0546440800000000000000
+      internalID: 4928152570688639019
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mining_down_04
+      name: Hair_Atlas_Buzz_Brown_101
       rect:
         serializedVersion: 2
         x: 96
@@ -2580,14 +2580,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bafc4d0049e9809c0800000000000000
-      internalID: -3960741513766056021
+      spriteID: 82716cac2fb828a40800000000000000
+      internalID: 5369007580679378728
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mining_down_05
+      name: Hair_Atlas_Buzz_Brown_102
       rect:
         serializedVersion: 2
         x: 128
@@ -2601,14 +2601,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fc313d4da378e5660800000000000000
-      internalID: 7376481926427907023
+      spriteID: e715100e19823f500800000000000000
+      internalID: 428730996523880830
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mining_up_01
+      name: Hair_Atlas_Buzz_Brown_103
       rect:
         serializedVersion: 2
         x: 0
@@ -2622,14 +2622,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 07ce6568df4962050800000000000000
-      internalID: 5775467388750720112
+      spriteID: dd8d2a53e73a39290800000000000000
+      internalID: -7884778760134534947
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mining_up_02
+      name: Hair_Atlas_Buzz_Brown_104
       rect:
         serializedVersion: 2
         x: 32
@@ -2643,14 +2643,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c5c8898aeae61f630800000000000000
-      internalID: 3959067243867311196
+      spriteID: 0358377b56e8213c0800000000000000
+      internalID: -4390290119212169936
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mining_up_03
+      name: Hair_Atlas_Buzz_Brown_105
       rect:
         serializedVersion: 2
         x: 64
@@ -2664,14 +2664,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8dd510c93ce5a0c10800000000000000
-      internalID: 2020531577058057688
+      spriteID: d90e883e235ff6700800000000000000
+      internalID: 535916479594946717
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mining_up_04
+      name: Hair_Atlas_Buzz_Brown_106
       rect:
         serializedVersion: 2
         x: 96
@@ -2685,14 +2685,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9c27cbd8968fd8bf0800000000000000
-      internalID: -320326866240245047
+      spriteID: a2d8b43c09bf15aa0800000000000000
+      internalID: -6173877014977868502
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mining_up_05
+      name: Hair_Atlas_Buzz_Brown_107
       rect:
         serializedVersion: 2
         x: 128
@@ -2706,14 +2706,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 474a83a6bd0ec8980800000000000000
-      internalID: -8535199960789375884
+      spriteID: 799e81e78cca3f8c0800000000000000
+      internalID: -3966636869674276457
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mining_right_01
+      name: Hair_Atlas_Buzz_Brown_108
       rect:
         serializedVersion: 2
         x: 0
@@ -2727,14 +2727,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f4dfde4f39fba2790800000000000000
-      internalID: -7554014782770250417
+      spriteID: 62bd5fe19babf7480800000000000000
+      internalID: -8899189034409665754
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mining_right_02
+      name: Hair_Atlas_Buzz_Brown_109
       rect:
         serializedVersion: 2
         x: 32
@@ -2748,14 +2748,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d2590be005a954100800000000000000
-      internalID: 91649036065477933
+      spriteID: 43fdfc67adbae1990800000000000000
+      internalID: -7413298981820702924
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mining_right_03
+      name: Hair_Atlas_Buzz_Brown_110
       rect:
         serializedVersion: 2
         x: 64
@@ -2769,14 +2769,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c4a2aa5c4a93468b0800000000000000
-      internalID: -5159935893206062516
+      spriteID: 362fca09323943a90800000000000000
+      internalID: -7335076112119303581
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mining_right_04
+      name: Hair_Atlas_Buzz_Brown_111
       rect:
         serializedVersion: 2
         x: 96
@@ -2790,14 +2790,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: debfe8c55d7e7b1b0800000000000000
-      internalID: -5640785104691332115
+      spriteID: 903dddf3eebf58220800000000000000
+      internalID: 2487671369884357385
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mining_right_05
+      name: Hair_Atlas_Buzz_Brown_112
       rect:
         serializedVersion: 2
         x: 128
@@ -2811,14 +2811,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6df128e3743d0a850800000000000000
-      internalID: 6386336574556217302
+      spriteID: aaa221dfb8fba2860800000000000000
+      internalID: 7506022336933538474
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mining_left_01
+      name: Hair_Atlas_Buzz_Brown_113
       rect:
         serializedVersion: 2
         x: 0
@@ -2832,14 +2832,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d784257d2d6d298d0800000000000000
-      internalID: -2840972213873391491
+      spriteID: 9b6452a57308a5150800000000000000
+      internalID: 5862138840200070841
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mining_left_02
+      name: Hair_Atlas_Buzz_Brown_114
       rect:
         serializedVersion: 2
         x: 32
@@ -2853,14 +2853,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d2374d6030806e2e0800000000000000
-      internalID: -2096979767401876691
+      spriteID: f87e061c481de33e0800000000000000
+      internalID: -2071988410433607793
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mining_left_03
+      name: Hair_Atlas_Buzz_Brown_115
       rect:
         serializedVersion: 2
         x: 64
@@ -2874,14 +2874,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d7dc3f3223ccc1110800000000000000
-      internalID: 1233084913716284797
+      spriteID: c5b523cfbe6e7e130800000000000000
+      internalID: 3596096728701492060
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mining_left_04
+      name: Hair_Atlas_Buzz_Brown_116
       rect:
         serializedVersion: 2
         x: 96
@@ -2895,14 +2895,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 93c42657a4183a5d0800000000000000
-      internalID: -3052453965630124999
+      spriteID: 15bad7ea3374e1160800000000000000
+      internalID: 6998109158276705105
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mining_left_05
+      name: Hair_Atlas_Buzz_Brown_117
       rect:
         serializedVersion: 2
         x: 128
@@ -2916,8 +2916,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d2b13488a20e1e9a0800000000000000
-      internalID: -6205432338260485331
+      spriteID: 2642890e12a9eefd0800000000000000
+      internalID: -2310740088501820318
       vertices: []
       indices: 
       edges: []

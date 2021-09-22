@@ -10,7 +10,9 @@ public class UI_Inventory : MonoBehaviour
     private Inventory m_inventory; //The inventory object that this will display a UI for
     private Transform itemSlotContainer;
     private Transform itemSlotTemplate;
-    private Transform itemSlotTooltip;
+    private Tooltip tooltip;
+    private int selectedIndex;
+
     private bool isVisible;
 
     public EventSystem eventSystem;
@@ -21,7 +23,7 @@ public class UI_Inventory : MonoBehaviour
     private void Start() {
         itemSlotContainer = transform.Find("InventoryImage");
         itemSlotTemplate = itemSlotContainer.Find("SlotTemplate");
-        itemSlotTooltip = itemSlotContainer.Find("Tooltip");
+        tooltip = itemSlotContainer.Find("Tooltip").GetComponent<Tooltip>();
         isVisible = false;
 
         Refresh();
@@ -67,9 +69,11 @@ public class UI_Inventory : MonoBehaviour
     private void OnButtonLeftClicked(int slotIndex) {
         onButtonLeftClicked.Invoke(slotIndex);
 
-        Tooltip tooltip = itemSlotTooltip.GetComponent<Tooltip>();
         tooltip.SetText(m_inventory.GetItemList()[slotIndex].GetName());
         tooltip.ShowTooltip(false);
+
+        //Select the item
+        selectedIndex = slotIndex;
         Refresh();
     }
 
@@ -78,9 +82,11 @@ public class UI_Inventory : MonoBehaviour
     */
     private void OnButtonRightClicked(int slotIndex) {
         onButtonRightClicked.Invoke(slotIndex);
-
-        Tooltip tooltip = itemSlotTooltip.GetComponent<Tooltip>();
         tooltip.ShowTooltip(false);
+
+        //Deselect the item
+        selectedIndex = -1;
+
         Refresh();
     }
 
@@ -89,9 +95,8 @@ public class UI_Inventory : MonoBehaviour
     */
     private void OnButtonHover(int slotIndex) {
         Item hoveredItem = m_inventory.GetItemList()[slotIndex];
-        string text = hoveredItem.GetInternalName() + "\nUnit Price: " + hoveredItem.GetUnitSellPrice().ToString();
+        string text = hoveredItem.GetName() + "\nUnit Price: " + hoveredItem.GetUnitSellPrice().ToString();
 
-        Tooltip tooltip = itemSlotTooltip.GetComponent<Tooltip>();
         tooltip.ShowTooltip(true);
         tooltip.SetText(text);
     }
@@ -101,9 +106,20 @@ public class UI_Inventory : MonoBehaviour
     Callback function run whenever the player's mouse stops hovering over an item in the inventory
     */
     private void OnButtonHoverExit(int slotIndex) {
-        Tooltip tooltip = itemSlotTooltip.GetComponent<Tooltip>();
         tooltip.ShowTooltip(false);
         tooltip.SetText("");
+    }
+
+    /*
+    Refreshes all of the event listeners to default for a provided item slot
+    @param slotItem The ClickableObject associated with the item slot for which event listeners will be reset
+    */
+    private void RefreshListeners(ClickableObject slotButton) {
+        slotButton.RemoveAllListeners();
+        slotButton.onRight.AddListener(OnButtonRightClicked);
+        slotButton.onLeft.AddListener(OnButtonLeftClicked);
+        slotButton.onHover.AddListener(OnButtonHover);
+        slotButton.onExit.AddListener(OnButtonHoverExit);
     }
 
     /*
@@ -113,7 +129,7 @@ public class UI_Inventory : MonoBehaviour
         Debug.Log("Refreshing");
         //Destroy old gameobjects
         foreach(Transform child in itemSlotContainer) {
-            if(child == itemSlotTemplate || child == itemSlotTooltip) continue;
+            if(child == itemSlotTemplate || child == tooltip.transform) continue;
             Destroy(child.gameObject);
         }
 
@@ -134,6 +150,13 @@ public class UI_Inventory : MonoBehaviour
             Image image = slotTf.Find("ItemIcon").GetComponent<Image>();
             image.sprite = item.GetSprite();
 
+            //Scale up the image if it is selected
+            if(selectedIndex >= 0 && selectedIndex == index) {
+                image.rectTransform.sizeDelta = new Vector2(16, 16);
+            } else {
+                image.rectTransform.sizeDelta = new Vector2(12, 12);
+            }
+
             //Update quantity text
             Text amountText = slotTf.Find("AmountText").GetComponent<Text>();
             amountText.text = item.amount > 1 ? item.amount.ToString() : "";
@@ -141,11 +164,7 @@ public class UI_Inventory : MonoBehaviour
             //Update event listeners
             ClickableObject slotButton = slotTf.Find("ItemButton").GetComponent<ClickableObject>();
             slotButton.index = index;
-            slotButton.RemoveAllListeners();
-            slotButton.onRight.AddListener(OnButtonRightClicked);
-            slotButton.onLeft.AddListener(OnButtonLeftClicked);
-            slotButton.onHover.AddListener(OnButtonHover);
-            slotButton.onExit.AddListener(OnButtonHoverExit);
+            RefreshListeners(slotButton);
 
             //Wrap around rows
             x++;

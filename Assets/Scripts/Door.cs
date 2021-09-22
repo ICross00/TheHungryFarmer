@@ -30,7 +30,7 @@ public class Door : Interactable
     }
 
     //Interact function - open/close the door by toggling
-    public override void Interact(Player triggerPlayer) {
+    protected override void OnInteract(Player triggerPlayer) {
         SetDoorOpen(!isOpen);
     }
 }

@@ -55,7 +55,7 @@ public class Shop : Interactable
     /**
     Closes the shop and removes the customer
     */
-    public override void Close(Player customer) {
+    protected override void OnClose(Player customer) {
         playerCustomer = null;
         playerInventory = null;
 
@@ -63,7 +63,7 @@ public class Shop : Interactable
         isShopOpen = false;
     }
 
-    public override void Interact(Player triggerPlayer) {
+    protected override void OnInteract(Player triggerPlayer) {
         if(isShopOpen) {
             Close(triggerPlayer);
         } else {

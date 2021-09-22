@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: CarrotSeeds
   m_EditorClassIdentifier: 
   itemName: Carrot Seed Packet
-  type: 14
+  type: 13
   maxStack: 64
   sellPrice: 15
   sprite: {fileID: -1742513348937851951, guid: 1884b98184089f34184916226ef1b1c5, type: 3}
