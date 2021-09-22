@@ -36,6 +36,18 @@ public class Weapon : Collideable
                 Swing();
             }
         }
+
+        //TODO: Add another swing in the opposite direction you are facing. This is so you can attack while running away.
+        //This will swing in the opposite direction to where the player usually attacks.
+        //P.s. Mouse1 == Right clicking mouse.
+        if (Input.GetKeyDown(KeyCode.Mouse1))
+        {
+            if (Time.time - lastSwing > cooldown)
+            {
+                lastSwing = Time.time;
+                Swing();
+            }
+        }
     }
 
     protected override void OnCollide(Collider2D coll)
