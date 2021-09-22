@@ -55,10 +55,10 @@ TextureImporter:
     second: lightDirt_03
   - first:
       213: -789957569431557616
-    second: ui_health_bar
+    second: ui_health_bar_01
   - first:
       213: 5362084925166495948
-    second: ui_energy_bar
+    second: ui_energy_bar_01
   - first:
       213: -8527319294260379677
     second: ui_health_unit
@@ -368,6 +368,15 @@ TextureImporter:
   - first:
       213: 8015546670464259135
     second: building_restaurant_top
+  - first:
+      213: 9102136129325419051
+    second: Sun
+  - first:
+      213: 1666924224620861248
+    second: ui_energy_bar_02
+  - first:
+      213: 1155421917473274402
+    second: ui_health_bar_02
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -898,7 +907,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ui_health_bar
+      name: ui_health_bar_01
       rect:
         serializedVersion: 2
         x: 512
@@ -919,7 +928,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ui_energy_bar
+      name: ui_energy_bar_01
       rect:
         serializedVersion: 2
         x: 538
@@ -2943,7 +2952,7 @@ TextureImporter:
         width: 113
         height: 80
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2964,7 +2973,7 @@ TextureImporter:
         width: 113
         height: 22
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2972,6 +2981,69 @@ TextureImporter:
       bones: []
       spriteID: f3456958a31fc3f60800000000000000
       internalID: 8015546670464259135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sun
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 1184
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2ac0bd9598415e70800000000000000
+      internalID: 9102136129325419051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_energy_bar_02
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 368
+        width: 107
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 047150420ca122710800000000000000
+      internalID: 1666924224620861248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_health_bar_02
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 393
+        width: 108
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22af1bcbc12e80010800000000000000
+      internalID: 1155421917473274402
       vertices: []
       indices: 
       edges: []
