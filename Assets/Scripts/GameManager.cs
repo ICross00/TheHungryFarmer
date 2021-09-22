@@ -43,9 +43,9 @@ public class GameManager : MonoBehaviour
     public void ChangeGold(int amount) {
         gold += amount;
 
-        Text playerGoldLabel = GameObject.Find("PlayerGold").GetComponent<Text>();
+        GameObject playerGoldLabel = GameObject.Find("PlayerGold");
         if(playerGoldLabel != null) {
-            playerGoldLabel.text = "Gold: " + gold.ToString();
+            playerGoldLabel.GetComponent<Text>().text = "Gold: " + gold.ToString();
         }
     }
 
@@ -90,7 +90,12 @@ public class GameManager : MonoBehaviour
         List<Item> tempInventory = Inventory.FromString(data[2]);
         //playerInventory.SetItemList(tempInventory);
 
-        player.transform.position = GameObject.Find(previousScene + "SpawnPoint").transform.position;
+        //Update the position if we entered this scene from another scene
+        GameObject previousSceneSpawnPoint = GameObject.Find(previousScene + "SpawnPoint");
+        if(previousSceneSpawnPoint != null) {
+            player.transform.position =  previousSceneSpawnPoint.transform.position;
+        }
+
         GameObject.Find("Main Camera").transform.position = player.transform.position;
     }
 }

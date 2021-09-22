@@ -23,9 +23,14 @@ public class UI_Inventory : MonoBehaviour
     private void Start() {
         itemSlotContainer = transform.Find("InventoryImage");
         itemSlotTemplate = itemSlotContainer.Find("SlotTemplate");
+
         tooltip = itemSlotContainer.Find("Tooltip").GetComponent<Tooltip>();
         isVisible = false;
 
+        //Set the render camera
+        Camera mainCamera = GameObject.Find("Main Camera").GetComponent<Camera>();
+        Canvas uiCanvas = GetComponent<Canvas>();
+        uiCanvas.worldCamera = mainCamera;
         Refresh();
     }
 
@@ -60,6 +65,7 @@ public class UI_Inventory : MonoBehaviour
     public void SetVisible(bool visible) {
         isVisible = visible;
         GetComponent<Canvas>().enabled = isVisible;
+        tooltip.ShowTooltip(false);
         Refresh();
     }
 
@@ -72,8 +78,8 @@ public class UI_Inventory : MonoBehaviour
         tooltip.SetText(m_inventory.GetItemList()[slotIndex].GetName());
         tooltip.ShowTooltip(false);
 
-        //Select the item
-        selectedIndex = slotIndex;
+        //Select the item, if it was already selected then deselect it
+        selectedIndex = (slotIndex == selectedIndex) ? -1 : slotIndex;
         Refresh();
     }
 
@@ -126,6 +132,9 @@ public class UI_Inventory : MonoBehaviour
     Redraws the inventory by destroying all the slot gameobjects and recreating them from the current inventory state
     */
     private void Refresh() {
+        if(m_inventory == null) 
+            return;
+
         Debug.Log("Refreshing");
         //Destroy old gameobjects
         foreach(Transform child in itemSlotContainer) {
