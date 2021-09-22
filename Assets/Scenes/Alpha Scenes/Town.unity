@@ -3384,7 +3384,7 @@ MonoBehaviour:
   player: {fileID: 173280991}
   restaurantRating: 0
   floatingTextManager: {fileID: 0}
-  gold: 5
+  gold: 0
 --- !u!4 &860906199
 Transform:
   m_ObjectHideFlags: 0
@@ -3458,7 +3458,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6794c892fd7b374282252233208e81f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionRadius: 1
   filter:
     useTriggers: 0
     useLayerMask: 0
@@ -52492,7 +52491,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6794c892fd7b374282252233208e81f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionRadius: 1
   filter:
     useTriggers: 0
     useLayerMask: 0
