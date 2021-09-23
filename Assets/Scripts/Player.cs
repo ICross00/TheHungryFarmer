@@ -34,9 +34,7 @@ public class Player : Mover
         //This function will run when the player right clicks on an inventory slot in their own inventory
         dropItem = (int slotIndex) => {
             Collectable spawnedItem = inventory.DropItem(transform.position, slotIndex);
-            //Apply a force to the spawned item
-            Rigidbody2D rb2d = spawnedItem.GetComponent<Rigidbody2D>();
-            rb2d.AddForce(Random.insideUnitCircle.normalized * 11, ForceMode2D.Impulse);
+            spawnedItem.ApplyRandomForce(11.0f);
         };
 
         //This function will run when the player left clicks on an inventory slot in their own inventory
@@ -97,6 +95,8 @@ public class Player : Mover
         if(Input.GetKeyDown(KeyCode.E)) {
             if(selectedItem != null) {
                 Item.UseItem(selectedItem, this);
+                if(selectedItem.amount <= 0) //Deselect the item
+                    selectedItem = null;
             }
         }
 
