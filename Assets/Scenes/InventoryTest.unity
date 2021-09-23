@@ -463,7 +463,7 @@ GameObject:
   - component: {fileID: 505841388}
   - component: {fileID: 505841387}
   m_Layer: 0
-  m_Name: Grid (1)
+  m_Name: Grid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1218,6 +1218,10 @@ MonoBehaviour:
   ySpeed: 1
   interactionRadius: 1.2
   inventoryUI: {fileID: 1927071159}
+  selectedItem:
+    itemTemplate: {fileID: 0}
+    amount: 0
+    activeItem: 0
 --- !u!61 &1289275290
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1284,7 +1288,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 3
   m_Sprite: {fileID: 9065668564441762842, guid: 1884b98184089f34184916226ef1b1c5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1383,7 +1387,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba1b64b7f1cfb8e48a1b8c1b02ea602d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  items: []
+  items:
+  - itemTemplate: {fileID: 11400000, guid: dfdf0ebd969daad43aa1e1368ec03365, type: 2}
+    amount: 0
+    activeItem: 0
 --- !u!4 &1511672664 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 616954447680219470, guid: 50ecf1e8269a3cf4f8cc7a025e87d811,
@@ -1837,7 +1844,7 @@ GameObject:
   - component: {fileID: 1701047313}
   - component: {fileID: 1701047315}
   - component: {fileID: 1701047314}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}

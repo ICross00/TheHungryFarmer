@@ -93,11 +93,17 @@ public class Item
             case ItemType.Seeds_Strawberry:
                 Debug.Log("Planted crop: " + item.GetInternalName());
                 GameObject pfCrop = Resources.Load<GameObject>("Prefabs/pfPlantedCrop");
-                PlantedCrop crop = GameObject.Instantiate(pfCrop, user.transform.position, Quaternion.identity).GetComponent<PlantedCrop>();
-                crop.cropTemplate = item.itemTemplate;
+                Transform plantableGrid = GameObject.Find("Grid").transform;
 
-                //Consume the item
-                inventory.RemoveItemSingle(item);
+                if(PlantedCrop.CanPlant(user.transform.position)) {
+                    PlantedCrop crop = GameObject.Instantiate(pfCrop, user.transform.position, Quaternion.identity, plantableGrid).GetComponent<PlantedCrop>();
+                    crop.cropTemplate = item.itemTemplate;
+
+                    //Consume the item
+                    inventory.RemoveItemSingle(item);
+                } else {
+                    Debug.Log("Tried to plant in an occupied cell");
+                }
             break;
 
             case ItemType.Heart:
