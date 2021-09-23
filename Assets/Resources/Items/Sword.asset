@@ -10,10 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9cbc7e85fa3738c458d90a5a408acd80, type: 3}
-  m_Name: TomatoSeeds
+  m_Name: Sword
   m_EditorClassIdentifier: 
-  itemName: Tomato Seed Packet
-  type: 11
-  maxStack: 64
-  sellPrice: 15
-  sprite: {fileID: 5034380702231317304, guid: 1884b98184089f34184916226ef1b1c5, type: 3}
+  itemName: Sword
+  type: 15
+  maxStack: 1
+  sellPrice: 0
+  sprite: {fileID: -547464473201054382, guid: 0a0b0de405e53224d9e15edaec2a0be9, type: 3}
+  isEquippable: 1
+  tags:
+  - key: Damage
+    value: 1
+  - key: Knockback
+    value: 5

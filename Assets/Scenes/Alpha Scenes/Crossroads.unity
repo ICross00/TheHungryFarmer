@@ -249,8 +249,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5a7478d4884f9348bb2ac0f7add19f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boundX: 0.15
-  boundY: 0.1
+  speed: 0.1
 --- !u!1001 &499023880
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2762,7 +2761,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6794c892fd7b374282252233208e81f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionRadius: 1
   filter:
     useTriggers: 0
     useLayerMask: 0
@@ -2935,7 +2933,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6794c892fd7b374282252233208e81f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionRadius: 1
   filter:
     useTriggers: 0
     useLayerMask: 0
@@ -3118,7 +3115,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1448581518}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.5, y: -19.5, z: 0}
+  m_LocalPosition: {x: -2.5, y: -18.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 617700640}
@@ -3324,7 +3321,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6794c892fd7b374282252233208e81f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionRadius: 1
   filter:
     useTriggers: 0
     useLayerMask: 0

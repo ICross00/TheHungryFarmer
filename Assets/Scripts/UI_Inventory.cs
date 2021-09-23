@@ -23,15 +23,16 @@ public class UI_Inventory : MonoBehaviour
     private void Start() {
         itemSlotContainer = transform.Find("InventoryImage");
         itemSlotTemplate = itemSlotContainer.Find("SlotTemplate");
+
         tooltip = itemSlotContainer.Find("Tooltip").GetComponent<Tooltip>();
         isVisible = false;
 
+        //Set the render camera
+        Camera mainCamera = GameObject.Find("Main Camera").GetComponent<Camera>();
+        Canvas uiCanvas = GetComponent<Canvas>();
+        uiCanvas.worldCamera = mainCamera;
         Refresh();
     }
-
-    /**
-        Sets the owner of this inventory, so that items can be dropped from the inventory at its location
-    */
 
     /*
     Sets the inventory that this UI inventory object will display from
@@ -60,6 +61,7 @@ public class UI_Inventory : MonoBehaviour
     public void SetVisible(bool visible) {
         isVisible = visible;
         GetComponent<Canvas>().enabled = isVisible;
+        tooltip.ShowTooltip(false);
         Refresh();
     }
 
@@ -72,8 +74,8 @@ public class UI_Inventory : MonoBehaviour
         tooltip.SetText(m_inventory.GetItemList()[slotIndex].GetName());
         tooltip.ShowTooltip(false);
 
-        //Select the item
-        selectedIndex = slotIndex;
+        //Select the item, if it was already selected then deselect it
+        selectedIndex = (slotIndex == selectedIndex) ? -1 : slotIndex;
         Refresh();
     }
 
@@ -126,8 +128,11 @@ public class UI_Inventory : MonoBehaviour
     Redraws the inventory by destroying all the slot gameobjects and recreating them from the current inventory state
     */
     private void Refresh() {
-        Debug.Log("Refreshing");
+        if(m_inventory == null) 
+            return;
+
         //Destroy old gameobjects
+        tooltip.ShowTooltip(false);
         foreach(Transform child in itemSlotContainer) {
             if(child == itemSlotTemplate || child == tooltip.transform) continue;
             Destroy(child.gameObject);
@@ -146,17 +151,16 @@ public class UI_Inventory : MonoBehaviour
             RectTransform templateTf = itemSlotTemplate.GetComponent<RectTransform>();
             slotTf.anchoredPosition = templateTf.anchoredPosition + new Vector2(x * cellSize + cellMargin, y * cellSize + cellMargin);
 
-            //Update sprite
             Image image = slotTf.Find("ItemIcon").GetComponent<Image>();
             image.sprite = item.GetSprite();
 
             //Scale up the image if it is selected
             if(selectedIndex >= 0 && selectedIndex == index) {
-                image.rectTransform.sizeDelta = new Vector2(16, 16);
+                image.rectTransform.sizeDelta = new Vector2(18, 18);
             } else {
-                image.rectTransform.sizeDelta = new Vector2(12, 12);
+                image.rectTransform.sizeDelta = new Vector2(16, 16);
             }
-
+    
             //Update quantity text
             Text amountText = slotTf.Find("AmountText").GetComponent<Text>();
             amountText.text = item.amount > 1 ? item.amount.ToString() : "";

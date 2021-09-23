@@ -43,7 +43,7 @@ public class Collectable : MonoBehaviour
     @param cooldown The time in seconds before this item can be picked up by the player
     */
     public static Collectable Spawn(Vector3 position, Item item, float cooldown = 0) {
-        GameObject collectablePrefab = Resources.Load<GameObject>("Items/pfCollectable");
+        GameObject collectablePrefab = Resources.Load<GameObject>("Prefabs/pfCollectable");
         GameObject tf = Instantiate(collectablePrefab, position, Quaternion.identity);
         Collectable collectableItem = tf.GetComponent<Collectable>();
         SpriteRenderer renderer = tf.GetComponent<SpriteRenderer>();
@@ -72,6 +72,15 @@ public class Collectable : MonoBehaviour
     public static Collectable Spawn(Vector3 position, string name, int amount, float cooldown = 0) {
         Item spawnedItem = Item.CreateItem(name, amount);
         return Spawn(position, spawnedItem, cooldown);
+    }
+
+    /*
+    Applies a force in a random direction to the collectable
+    @param scalar The scale of the force
+    */
+    public void ApplyRandomForce(float scalar) {
+        Rigidbody2D rb2d = GetComponent<Rigidbody2D>();
+        rb2d.AddForce(Random.insideUnitCircle.normalized * scalar, ForceMode2D.Impulse);
     }
 
     public void SetItem(Item item) {

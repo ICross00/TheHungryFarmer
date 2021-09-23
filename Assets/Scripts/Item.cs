@@ -9,8 +9,9 @@ using UnityEngine;
 [System.Serializable]
 public class Item
 {
-    public ItemTemplate item;
+    public ItemTemplate itemTemplate;
     public int amount;
+    public bool activeItem;
 
     /**
     Creates an instance of an item that can be added to an inventory.
@@ -22,50 +23,55 @@ public class Item
 
     public static Item CreateItem(string name, int itemAmount) {
         ItemTemplate template = Resources.Load<ItemTemplate>("Items/"+name);
-        return new Item { item = template, amount = itemAmount };
+        return new Item { itemTemplate = template, amount = itemAmount };
     }
 
     /**
     Creates a copy of an item. This is useful when purchasing an item from a shop. Items in shop inventories should not be copied by reference to the player's inventory,
-    as any modification to that reference will have unintended side effects the shop's inventory.
+    as any modification to that reference will have unintended side effects on the shop's inventory.
 
     @param itemToCopy The item to copy
     @return A copy of the item
     */
     public static Item CopyItem(Item itemToCopy) {
-        return new Item { item = itemToCopy.item, amount = itemToCopy.amount };
+        return new Item { itemTemplate = itemToCopy.itemTemplate, amount = itemToCopy.amount };
     }
 
     /*
     Returns the type of this item, as one of the enumerations of the ItemType enum in the ItemTemplate class
     */
     public ItemType GetItemType() {
-        return item.type;
+        return itemTemplate.type;
     }
 
     /* Gets the name of the item as a string */
     public string GetName() {
-        return item.itemName;
+        return itemTemplate.itemName;
     }
 
     public Sprite GetSprite() {
-        return item.sprite;
+        return itemTemplate.sprite;
     }
 
     public int GetMaxStack() {
-        return item.maxStack;
+        return itemTemplate.maxStack;
     }
 
     public int GetUnitSellPrice() {
-        return item.sellPrice;
+        return itemTemplate.sellPrice;
     }
 
     public int GetTotalSellPrice() {
-        return item.sellPrice * amount;
+        return itemTemplate.sellPrice * amount;
     }
 
     public string GetInternalName() {
-        return item.name;
+        return itemTemplate.name;
+    }
+
+    //Access the set value of a tag from a given key
+    public string GetItemTagValue(string key) {
+        return itemTemplate.GetTagValue(key);
     }
 
     /*
@@ -83,15 +89,21 @@ public class Item
 
         switch(item.GetItemType()) {
             case ItemType.Seeds_Tomato:
-                Debug.Log("Planted tomato seeds");
-            break;
-
             case ItemType.Seeds_Carrot:
-                Debug.Log("Planted carrot seeds");
-            break;
-
             case ItemType.Seeds_Strawberry:
-                Debug.Log("Planted strawberry seeds");
+                Debug.Log("Planted crop: " + item.GetInternalName());
+                GameObject pfCrop = Resources.Load<GameObject>("Prefabs/pfPlantedCrop");
+                Transform plantableGrid = GameObject.Find("Grid").transform;
+
+                if(PlantedCrop.CanPlant(user.transform.position)) {
+                    PlantedCrop crop = GameObject.Instantiate(pfCrop, user.transform.position, Quaternion.identity, plantableGrid).GetComponent<PlantedCrop>();
+                    crop.cropTemplate = item.itemTemplate;
+
+                    //Consume the item
+                    inventory.RemoveItemSingle(item);
+                } else {
+                    Debug.Log("Tried to plant in an occupied cell");
+                }
             break;
 
             case ItemType.Heart:
