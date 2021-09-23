@@ -55,16 +55,16 @@ TextureImporter:
     second: lightDirt_03
   - first:
       213: -789957569431557616
-    second: ui_health_bar
+    second: ui_health_bar_01
   - first:
       213: 5362084925166495948
-    second: ui_energy_bar
+    second: ui_energy_bar_01
   - first:
       213: -8527319294260379677
-    second: ui_health_unit
+    second: ui_health_unit_01
   - first:
       213: -5641067850834542070
-    second: ui_energy_unit
+    second: ui_energy_unit_01
   - first:
       213: -9155489754422746361
     second: ui_time_display
@@ -407,6 +407,24 @@ TextureImporter:
   - first:
       213: -5524412188343902071
     second: item_carrot
+  - first:
+      213: 6143032858664878800
+    second: ui_energy_bar_02
+  - first:
+      213: 8257569978211034523
+    second: ui_health_bar_02
+  - first:
+      213: 8304886744329573643
+    second: ui_health_unit_02
+  - first:
+      213: -990485181152779184
+    second: ui_energy_unit_02
+  - first:
+      213: -27669701846434901
+    second: sun
+  - first:
+      213: 997522269480643604
+    second: ui_inventory
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -937,7 +955,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ui_health_bar
+      name: ui_health_bar_01
       rect:
         serializedVersion: 2
         x: 512
@@ -958,7 +976,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ui_energy_bar
+      name: ui_energy_bar_01
       rect:
         serializedVersion: 2
         x: 538
@@ -979,7 +997,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ui_health_unit
+      name: ui_health_unit_01
       rect:
         serializedVersion: 2
         x: 585
@@ -1000,7 +1018,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ui_energy_unit
+      name: ui_energy_unit_01
       rect:
         serializedVersion: 2
         x: 585
@@ -3276,7 +3294,7 @@ TextureImporter:
         width: 15
         height: 15
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3284,6 +3302,132 @@ TextureImporter:
       bones: []
       spriteID: 9806ce062685553b0800000000000000
       internalID: -5524412188343902071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_energy_bar_02
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 369
+        width: 107
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d2c54876df604550800000000000000
+      internalID: 6143032858664878800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_health_bar_02
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 393
+        width: 107
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b95e23b0528c89270800000000000000
+      internalID: 8257569978211034523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_health_unit_02
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 409
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b055d972e72e04370800000000000000
+      internalID: 8304886744329573643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_energy_unit_02
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 377
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 054a91eb9f61142f0800000000000000
+      internalID: -990485181152779184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sun
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 1184
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: babf6628d82bd9ff0800000000000000
+      internalID: -27669701846434901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_inventory
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 328
+        width: 293
+        height: 119
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41c6fef0839e7dd00800000000000000
+      internalID: 997522269480643604
       vertices: []
       indices: 
       edges: []
