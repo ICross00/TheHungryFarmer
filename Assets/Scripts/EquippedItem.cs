@@ -4,25 +4,28 @@ using UnityEngine;
 
 public class EquippedItem : MonoBehaviour
 {
-    private SpriteRenderer activeSprite;
-    private Item activeItem;
+    private SpriteRenderer equippedSprite;
+    private Item equippedItem;
 
     void Start()
     {
-        activeSprite = this.GetComponent<SpriteRenderer>();
+        equippedSprite = this.GetComponent<SpriteRenderer>();
     }
 
-    public void updateActiveItem(Item newItem)
+    public void updateEquippedItem(Item newItem)
     {
-        if (newItem.itemTemplate.isEquippable)
+        if (newItem != null)
         {
-            activeSprite.sprite = newItem.GetSprite();
-            activeItem = newItem;
+            if ((newItem.itemTemplate.isEquippable))
+            {
+                equippedSprite.sprite = newItem.GetSprite();
+                equippedItem = newItem;
+            }
         }
         else
         {
-            activeSprite.sprite = null;
-            activeItem = null;
+            equippedSprite.sprite = null;
+            equippedItem = null;
         }
     }
 }

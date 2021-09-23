@@ -350,6 +350,10 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: -0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 2132655801, guid: b069c17624560dd49bce2081d080c332, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 173280991}
     - target: {fileID: 295756234940369031, guid: b069c17624560dd49bce2081d080c332,
         type: 3}
       propertyPath: m_Sprite
@@ -494,6 +498,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EquippedItem
+      objectReference: {fileID: 0}
+    - target: {fileID: 8956849195213982516, guid: b069c17624560dd49bce2081d080c332,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8956849195213982516, guid: b069c17624560dd49bce2081d080c332,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8956849195213982516, guid: b069c17624560dd49bce2081d080c332,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -220714063
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b069c17624560dd49bce2081d080c332, type: 3}
@@ -1475,6 +1494,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 860906199}
     m_Modifications:
+    - target: {fileID: 7326935766934476555, guid: 7466939bbde03b244a7a2cc072318158,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7326935767796406951, guid: 7466939bbde03b244a7a2cc072318158,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -3511,9 +3535,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   items:
-  - itemTemplate: {fileID: 0}
+  - itemTemplate: {fileID: 11400000, guid: 4022f1b71a46c3d49977088fa1e57f47, type: 2}
     amount: 1
     activeItem: 0
+  - itemTemplate: {fileID: 11400000, guid: 7fe54323e33903e4485d2115788fb6c8, type: 2}
+    amount: 1
+    activeItem: 1
 --- !u!1 &868580926
 GameObject:
   m_ObjectHideFlags: 0
