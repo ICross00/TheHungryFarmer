@@ -68,6 +68,10 @@ public class Weapon : Collideable
             coll.SendMessage("ReceiveDamage", dmg);
             
         }
+
+        if(coll.tag == "crop") {
+            coll.SendMessage("HarvestCrop");
+        }
     }
 
     private void Swing()
