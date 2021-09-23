@@ -100,100 +100,100 @@ TextureImporter:
     second: left_08
   - first:
       213: 5462261475869799757
-    second: shoes_black_32
+    second: holding_down_01
   - first:
       213: 1266576055209156125
-    second: shoes_black_33
+    second: holding_down_02
   - first:
       213: 3668388916110947786
-    second: shoes_black_34
+    second: holding_down_03
   - first:
       213: -4166679714959064926
-    second: shoes_black_35
+    second: holding_down_04
   - first:
       213: 4884549540145533922
-    second: shoes_black_36
+    second: holding_down_05
   - first:
       213: 158753349001164308
-    second: shoes_black_37
+    second: holding_down_06
   - first:
       213: -8280864384419229133
-    second: shoes_black_38
+    second: holding_down_07
   - first:
       213: 2170203148371219775
-    second: shoes_black_39
+    second: holding_down_08
   - first:
       213: 1725310414175856785
-    second: shoes_black_40
+    second: holding_up_01
   - first:
       213: -2834809684267937904
-    second: shoes_black_41
+    second: holding_up_02
   - first:
       213: -6144400015438495422
-    second: shoes_black_42
+    second: holding_up_03
   - first:
       213: 659037086522474363
-    second: shoes_black_43
+    second: holding_up_04
   - first:
       213: -5504808011520078894
-    second: shoes_black_44
+    second: holding_up_05
   - first:
       213: 7824101340689854593
-    second: shoes_black_45
+    second: holding_up_06
   - first:
       213: 2195554405858311504
-    second: shoes_black_46
+    second: holding_up_07
   - first:
       213: 6346069585556998651
-    second: shoes_black_47
+    second: holding_up_08
   - first:
       213: 2656568771844723921
-    second: shoes_black_48
+    second: holding_right_01
   - first:
       213: 7292810220982799211
-    second: shoes_black_49
+    second: holding_right_02
   - first:
       213: 8340958340749971519
-    second: shoes_black_50
+    second: holding_right_03
   - first:
       213: -8883435696587317069
-    second: shoes_black_51
+    second: holding_right_04
   - first:
       213: 8168418948152097925
-    second: shoes_black_52
+    second: holding_right_05
   - first:
       213: 5352500378641895855
-    second: shoes_black_53
+    second: holding_right_06
   - first:
       213: -7426009316807890191
-    second: shoes_black_54
+    second: holding_right_07
   - first:
       213: -3414085907982879453
-    second: shoes_black_55
+    second: holding_right_08
   - first:
       213: 9185369489856877693
-    second: shoes_black_56
+    second: holding_left_01
   - first:
       213: -1447967110377142184
-    second: shoes_black_57
+    second: holding_left_02
   - first:
       213: 2357833347198706177
-    second: shoes_black_58
+    second: holding_left_03
   - first:
       213: -1410943724504039207
-    second: shoes_black_59
+    second: holding_left_04
   - first:
       213: -3824421432990129072
-    second: shoes_black_60
+    second: holding_left_05
   - first:
       213: -1713454922641343308
-    second: shoes_black_61
+    second: holding_left_06
   - first:
       213: 8340660549300838078
-    second: shoes_black_62
+    second: holding_left_07
   - first:
       213: -8713751435832638127
-    second: shoes_black_63
+    second: holding_left_08
   - first:
       213: -1570575827622938186
     second: shoes_black_64
@@ -1105,7 +1105,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shoes_black_32
+      name: holding_down_01
       rect:
         serializedVersion: 2
         x: 0
@@ -1126,7 +1126,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shoes_black_33
+      name: holding_down_02
       rect:
         serializedVersion: 2
         x: 32
@@ -1147,7 +1147,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shoes_black_34
+      name: holding_down_03
       rect:
         serializedVersion: 2
         x: 64
@@ -1168,7 +1168,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shoes_black_35
+      name: holding_down_04
       rect:
         serializedVersion: 2
         x: 96
@@ -1189,7 +1189,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shoes_black_36
+      name: holding_down_05
       rect:
         serializedVersion: 2
         x: 128
@@ -1210,7 +1210,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shoes_black_37
+      name: holding_down_06
       rect:
         serializedVersion: 2
         x: 160
@@ -1231,7 +1231,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shoes_black_38
+      name: holding_down_07
       rect:
         serializedVersion: 2
         x: 192
@@ -1252,7 +1252,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shoes_black_39
+      name: holding_down_08
       rect:
         serializedVersion: 2
         x: 224
@@ -1273,7 +1273,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shoes_black_40
+      name: holding_up_01
       rect:
         serializedVersion: 2
         x: 0
@@ -1294,7 +1294,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shoes_black_41
+      name: holding_up_02
       rect:
         serializedVersion: 2
         x: 32
@@ -1315,7 +1315,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shoes_black_42
+      name: holding_up_03
       rect:
         serializedVersion: 2
         x: 64
@@ -1336,7 +1336,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shoes_black_43
+      name: holding_up_04
       rect:
         serializedVersion: 2
         x: 96
@@ -1357,7 +1357,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shoes_black_44
+      name: holding_up_05
       rect:
         serializedVersion: 2
         x: 128
@@ -1378,7 +1378,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shoes_black_45
+      name: holding_up_06
       rect:
         serializedVersion: 2
         x: 160
@@ -1399,7 +1399,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shoes_black_46
+      name: holding_up_07
       rect:
         serializedVersion: 2
         x: 192
@@ -1420,7 +1420,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shoes_black_47
+      name: holding_up_08
       rect:
         serializedVersion: 2
         x: 224
@@ -1441,7 +1441,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shoes_black_48
+      name: holding_right_01
       rect:
         serializedVersion: 2
         x: 0
@@ -1462,7 +1462,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shoes_black_49
+      name: holding_right_02
       rect:
         serializedVersion: 2
         x: 32
@@ -1483,7 +1483,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shoes_black_50
+      name: holding_right_03
       rect:
         serializedVersion: 2
         x: 64
@@ -1504,7 +1504,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shoes_black_51
+      name: holding_right_04
       rect:
         serializedVersion: 2
         x: 96
@@ -1525,7 +1525,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shoes_black_52
+      name: holding_right_05
       rect:
         serializedVersion: 2
         x: 128
@@ -1546,7 +1546,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shoes_black_53
+      name: holding_right_06
       rect:
         serializedVersion: 2
         x: 160
@@ -1567,7 +1567,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shoes_black_54
+      name: holding_right_07
       rect:
         serializedVersion: 2
         x: 192
@@ -1588,7 +1588,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shoes_black_55
+      name: holding_right_08
       rect:
         serializedVersion: 2
         x: 224
@@ -1609,7 +1609,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shoes_black_56
+      name: holding_left_01
       rect:
         serializedVersion: 2
         x: 0
@@ -1630,7 +1630,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shoes_black_57
+      name: holding_left_02
       rect:
         serializedVersion: 2
         x: 32
@@ -1651,7 +1651,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shoes_black_58
+      name: holding_left_03
       rect:
         serializedVersion: 2
         x: 64
@@ -1672,7 +1672,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shoes_black_59
+      name: holding_left_04
       rect:
         serializedVersion: 2
         x: 96
@@ -1693,7 +1693,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shoes_black_60
+      name: holding_left_05
       rect:
         serializedVersion: 2
         x: 128
@@ -1714,7 +1714,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shoes_black_61
+      name: holding_left_06
       rect:
         serializedVersion: 2
         x: 160
@@ -1735,7 +1735,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shoes_black_62
+      name: holding_left_07
       rect:
         serializedVersion: 2
         x: 192
@@ -1756,7 +1756,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shoes_black_63
+      name: holding_left_08
       rect:
         serializedVersion: 2
         x: 224
