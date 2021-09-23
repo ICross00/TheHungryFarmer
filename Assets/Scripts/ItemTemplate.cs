@@ -39,5 +39,6 @@ public enum ItemType {
     Seeds_Tomato,
     Seeds_Strawberry,
     Seeds_Carrot,
-    Carrot
+    Carrot,
+    Fish
 }
