@@ -27,7 +27,7 @@ public class Item
 
     /**
     Creates a copy of an item. This is useful when purchasing an item from a shop. Items in shop inventories should not be copied by reference to the player's inventory,
-    as any modification to that reference will have unintended side effects the shop's inventory.
+    as any modification to that reference will have unintended side effects on the shop's inventory.
 
     @param itemToCopy The item to copy
     @return A copy of the item

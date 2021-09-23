@@ -1170,6 +1170,7 @@ GameObject:
   - component: {fileID: 1289275291}
   - component: {fileID: 1289275290}
   - component: {fileID: 1289275289}
+  - component: {fileID: 1289275288}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1177,6 +1178,27 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!50 &1289275288
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1289275287}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 15
+  m_AngularDrag: 15
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!114 &1289275289
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1192,10 +1214,8 @@ MonoBehaviour:
   hitPoint: 10
   maxHitPoint: 10
   pushRecoverySpeed: 0.2
-  experience: 0
-  energy: 0
-  ySpeed: 4
-  xSpeed: 5
+  xSpeed: 1
+  ySpeed: 1
   interactionRadius: 1.2
   inventoryUI: {fileID: 1927071159}
 --- !u!61 &1289275290
@@ -9171,7 +9191,7 @@ PrefabInstance:
     - target: {fileID: 8690458068205657560, guid: 7466939bbde03b244a7a2cc072318158,
         type: 3}
       propertyPath: m_Name
-      value: InventoryUI
+      value: Player Inventory UI
       objectReference: {fileID: 0}
     - target: {fileID: 8690458068205657560, guid: 7466939bbde03b244a7a2cc072318158,
         type: 3}
