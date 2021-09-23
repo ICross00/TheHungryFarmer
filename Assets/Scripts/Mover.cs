@@ -13,6 +13,8 @@ public class Mover : Fighter
     protected virtual void Start()
     {
         rb2d = gameObject.GetComponent<Rigidbody2D>();
+        this.rb2d.gravityScale = 0.0f;
+        this.rb2d.velocity = Vector2.zero;
     }
 
     //Must be Overridden in the child class FixedUpdate method
