@@ -49,7 +49,7 @@ public class Inventory : MonoBehaviour
             //Check if the item can be stacked first
             foreach(Item storedItem in items) {
                 //If the items are of the same type and if the stored item is below the max stack size, then the item can be stacked
-                if(storedItem.GetItemType() == newItem.GetItemType() && storedItem.amount < storedItem.item.maxStack) {
+                if(storedItem.GetItemType() == newItem.GetItemType() && storedItem.amount < storedItem.itemTemplate.maxStack) {
                     storedItem.amount += 1; //Increment the stack
                     canStack = true;
                     break;
@@ -57,7 +57,7 @@ public class Inventory : MonoBehaviour
             }
 
             if(!canStack) { //If the item cannot be stacked, add it to the end of the inventory
-                items.Add(new Item { item = newItem.item, amount = 1 } );
+                items.Add(new Item { itemTemplate = newItem.itemTemplate, amount = 1 } );
             }
         }
 
@@ -124,7 +124,7 @@ public class Inventory : MonoBehaviour
     @return True if the item was successfully removed, false if the item was not in the inventory
     */
     public bool RemoveItemSingle(Item removedItem) {
-        Item singleItem = new Item { item = removedItem.item, amount = 1 };
+        Item singleItem = new Item { itemTemplate = removedItem.itemTemplate, amount = 1 };
         return RemoveItem(singleItem);
     }
 

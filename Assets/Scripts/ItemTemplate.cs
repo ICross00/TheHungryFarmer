@@ -22,6 +22,7 @@ public class ItemTemplate : ScriptableObject
     public int maxStack;
     public int sellPrice;
     public Sprite sprite;
+    public bool isEquippable;
 
     [Serializable]
     public struct ItemTag {
@@ -59,5 +60,6 @@ public enum ItemType {
     Seeds_Tomato,
     Seeds_Strawberry,
     Seeds_Carrot,
-    Carrot
+    Carrot,
+    Sword
 }
