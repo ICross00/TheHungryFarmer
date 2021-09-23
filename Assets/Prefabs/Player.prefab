@@ -108,8 +108,8 @@ MonoBehaviour:
   hitPoint: 10
   maxHitPoint: 10
   pushRecoverySpeed: 0.2
-  xSpeed: 1.5
-  ySpeed: 1
+  xSpeed: 1
+  ySpeed: 0.8
   interactionRadius: 1.2
   inventoryUI: {fileID: 0}
 --- !u!95 &3954170101240099473
