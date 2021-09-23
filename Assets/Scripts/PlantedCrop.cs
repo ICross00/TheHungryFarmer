@@ -19,7 +19,7 @@ public class PlantedCrop : MonoBehaviour
     private Grid plantableGrid;
 
     void Start() {
-        gameObject.tag = "crop";
+        gameObject.tag = "Crop";
 
         //Locate the array of sprites associated with crop growth stages
         SpriteListDictionary cropDict = Resources.Load<SpriteListDictionary>("Prefabs/Crop Sprite Dictionary");
@@ -58,9 +58,9 @@ public class PlantedCrop : MonoBehaviour
     */
     public void HarvestCrop() {
         //Only yield any items if the crop was fully grown
-        if(growthStage < MAX_GROWTH_STAGE) {
+        if(growthStage >= MAX_GROWTH_STAGE) {
             int numSpawnedCrops = Random.Range(2, 6);
-            Collectable spawnedItem = Collectable.Spawn(transform.position, cropTemplate.name, numSpawnedCrops, 1.5f);
+            Collectable spawnedItem = Collectable.Spawn(transform.position, cropTemplate.GetTagValue("grows_into"), numSpawnedCrops, 1.5f);
             spawnedItem.ApplyRandomForce(8.0f);
         }
 

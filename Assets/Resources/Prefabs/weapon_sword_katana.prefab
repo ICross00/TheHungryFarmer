@@ -125,7 +125,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98b9b824dc2ce0548b3db604f0e3a8f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionRadius: 1
   filter:
     useTriggers: 0
     useLayerMask: 0
