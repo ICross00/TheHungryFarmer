@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9cbc7e85fa3738c458d90a5a408acd80, type: 3}
   m_Name: Strawberry
   m_EditorClassIdentifier: 
-  itemName: 
+  itemName: Strawberry
   type: 10
   maxStack: 64
-  sellPrice: 10
+  sellPrice: 8
   sprite: {fileID: 6263799353418098354, guid: 1884b98184089f34184916226ef1b1c5, type: 3}

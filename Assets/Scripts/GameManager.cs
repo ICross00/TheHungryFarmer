@@ -32,7 +32,9 @@ public class GameManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
 
         instance = this;
-        //playerInventory = GetComponent<Inventory>();
+        //Attach the inventory ui to the inventory component
+        UI_Inventory playerInventoryUI = GameObject.Find("Player Inventory UI").GetComponent<UI_Inventory>();
+        playerInventoryUI.SetInventory(GetComponent<Inventory>());
 
         GameObject.Find("Main Camera").transform.position = player.transform.position;
     }
@@ -47,9 +49,9 @@ public class GameManager : MonoBehaviour
     public void ChangeGold(int amount) {
         gold += amount;
 
-        Text playerGoldLabel = GameObject.Find("PlayerGold").GetComponent<Text>();
+        GameObject playerGoldLabel = GameObject.Find("PlayerGold");
         if(playerGoldLabel != null) {
-            playerGoldLabel.text = "Gold: " + gold.ToString();
+            playerGoldLabel.GetComponent<Text>().text = "Gold: " + gold.ToString();
         }
     }
 

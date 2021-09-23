@@ -368,6 +368,45 @@ TextureImporter:
   - first:
       213: 8015546670464259135
     second: building_restaurant_top
+  - first:
+      213: 9102136129325419051
+    second: crop_carrot_1
+  - first:
+      213: 1666924224620861248
+    second: crop_carrot_2
+  - first:
+      213: 1155421917473274402
+    second: crop_carrot_3
+  - first:
+      213: -698443959698334554
+    second: crop_carrot_4
+  - first:
+      213: -6676260388390354696
+    second: crop_tomato_1
+  - first:
+      213: 5692104285460604160
+    second: crop_tomato_2
+  - first:
+      213: 4378304370956802131
+    second: crop_tomato_3
+  - first:
+      213: 6368562846694357713
+    second: crop_tomato_4
+  - first:
+      213: 5554053530373987258
+    second: crop_strawberry_1
+  - first:
+      213: 6552169634520184416
+    second: crop_strawberry_2
+  - first:
+      213: -691926385672660622
+    second: crop_strawberry_3
+  - first:
+      213: 7744632869141271735
+    second: crop_strawberry_4
+  - first:
+      213: -5524412188343902071
+    second: item_carrot
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -2972,6 +3011,279 @@ TextureImporter:
       bones: []
       spriteID: f3456958a31fc3f60800000000000000
       internalID: 8015546670464259135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crop_carrot_1
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 577
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2ac0bd9598415e70800000000000000
+      internalID: 9102136129325419051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crop_carrot_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 577
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 047150420ca122710800000000000000
+      internalID: 1666924224620861248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crop_carrot_3
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 577
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22af1bcbc12e80010800000000000000
+      internalID: 1155421917473274402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crop_carrot_4
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 577
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6acd9ae4be0ae46f0800000000000000
+      internalID: -698443959698334554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crop_tomato_1
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 560
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f04bf19c882953a0800000000000000
+      internalID: -6676260388390354696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crop_tomato_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 560
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 005ab5780ba6efe40800000000000000
+      internalID: 5692104285460604160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crop_tomato_3
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 560
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3589b6dc0acd2cc30800000000000000
+      internalID: 4378304370956802131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crop_tomato_4
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 560
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dab7feba2ea16850800000000000000
+      internalID: 6368562846694357713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crop_strawberry_1
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 545
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abb127d5246f31d40800000000000000
+      internalID: 5554053530373987258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crop_strawberry_2
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 545
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0663da5519bfdea50800000000000000
+      internalID: 6552169634520184416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crop_strawberry_3
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 545
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 279d2434e98c566f0800000000000000
+      internalID: -691926385672660622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crop_strawberry_4
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 544
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b4daf8cf867a7b60800000000000000
+      internalID: 7744632869141271735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: item_carrot
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 577
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9806ce062685553b0800000000000000
+      internalID: -5524412188343902071
       vertices: []
       indices: 
       edges: []
