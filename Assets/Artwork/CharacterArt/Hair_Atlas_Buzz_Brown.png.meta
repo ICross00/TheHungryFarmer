@@ -100,100 +100,100 @@ TextureImporter:
     second: left_08
   - first:
       213: 1384851719678460770
-    second: Hair_Atlas_Buzz_Brown_32
+    second: holding_down_01
   - first:
       213: -8175886614156022372
-    second: Hair_Atlas_Buzz_Brown_33
+    second: holding_down_02
   - first:
       213: -7311937408607597599
-    second: Hair_Atlas_Buzz_Brown_34
+    second: holding_down_03
   - first:
       213: 2951413728119630295
-    second: Hair_Atlas_Buzz_Brown_35
+    second: holding_down_04
   - first:
       213: 1801065993525515643
-    second: Hair_Atlas_Buzz_Brown_36
+    second: holding_down_05
   - first:
       213: 2331649804368920131
-    second: Hair_Atlas_Buzz_Brown_37
+    second: holding_down_06
   - first:
       213: -5143952783961256290
-    second: Hair_Atlas_Buzz_Brown_38
+    second: holding_down_07
   - first:
       213: 7784381411755239815
-    second: Hair_Atlas_Buzz_Brown_39
+    second: holding_down_08
   - first:
       213: 215994966776953654
-    second: Hair_Atlas_Buzz_Brown_40
+    second: holding_up_01
   - first:
       213: 2001554465889867623
-    second: Hair_Atlas_Buzz_Brown_41
+    second: holding_up_02
   - first:
       213: 313796312130499761
-    second: Hair_Atlas_Buzz_Brown_42
+    second: holding_up_03
   - first:
       213: 5220193941804988357
-    second: Hair_Atlas_Buzz_Brown_43
+    second: holding_up_04
   - first:
       213: -1608353826748547847
-    second: Hair_Atlas_Buzz_Brown_44
+    second: holding_up_05
   - first:
       213: -7090727848064881506
-    second: Hair_Atlas_Buzz_Brown_45
+    second: holding_up_06
   - first:
       213: -6625620255254579160
-    second: Hair_Atlas_Buzz_Brown_46
+    second: holding_up_07
   - first:
       213: 3918860593568890493
-    second: Hair_Atlas_Buzz_Brown_47
+    second: holding_up_08
   - first:
       213: 3027081155801588408
-    second: Hair_Atlas_Buzz_Brown_48
+    second: holding_right_01
   - first:
       213: -7465177917742508465
-    second: Hair_Atlas_Buzz_Brown_49
+    second: holding_right_02
   - first:
       213: 2048325417315770340
-    second: Hair_Atlas_Buzz_Brown_50
+    second: holding_right_03
   - first:
       213: 15446702676218460
-    second: Hair_Atlas_Buzz_Brown_51
+    second: holding_right_04
   - first:
       213: 5663471254181686656
-    second: Hair_Atlas_Buzz_Brown_52
+    second: holding_right_05
   - first:
       213: -428541311457892136
-    second: Hair_Atlas_Buzz_Brown_53
+    second: holding_right_06
   - first:
       213: 863068021953347880
-    second: Hair_Atlas_Buzz_Brown_54
+    second: holding_right_07
   - first:
       213: -2909870325191938773
-    second: Hair_Atlas_Buzz_Brown_55
+    second: holding_right_08
   - first:
       213: -1099027190494436282
-    second: Hair_Atlas_Buzz_Brown_56
+    second: holding_left_01
   - first:
       213: -6005945099512629375
-    second: Hair_Atlas_Buzz_Brown_57
+    second: holding_left_02
   - first:
       213: 4087190493091671818
-    second: Hair_Atlas_Buzz_Brown_58
+    second: holding_left_03
   - first:
       213: 4854134296623238221
-    second: Hair_Atlas_Buzz_Brown_59
+    second: holding_left_04
   - first:
       213: -1651818945561657882
-    second: Hair_Atlas_Buzz_Brown_60
+    second: holding_left_05
   - first:
       213: -3039898134154808377
-    second: Hair_Atlas_Buzz_Brown_61
+    second: holding_left_06
   - first:
       213: 3169131924114129335
-    second: Hair_Atlas_Buzz_Brown_62
+    second: holding_left_07
   - first:
       213: 4285506002268100275
-    second: Hair_Atlas_Buzz_Brown_63
+    second: holding_left_08
   - first:
       213: -823764539096417586
     second: Hair_Atlas_Buzz_Brown_64
@@ -1117,7 +1117,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hair_Atlas_Buzz_Brown_32
+      name: holding_down_01
       rect:
         serializedVersion: 2
         x: 0
@@ -1138,7 +1138,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hair_Atlas_Buzz_Brown_33
+      name: holding_down_02
       rect:
         serializedVersion: 2
         x: 32
@@ -1159,7 +1159,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hair_Atlas_Buzz_Brown_34
+      name: holding_down_03
       rect:
         serializedVersion: 2
         x: 64
@@ -1180,7 +1180,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hair_Atlas_Buzz_Brown_35
+      name: holding_down_04
       rect:
         serializedVersion: 2
         x: 96
@@ -1201,7 +1201,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hair_Atlas_Buzz_Brown_36
+      name: holding_down_05
       rect:
         serializedVersion: 2
         x: 128
@@ -1222,7 +1222,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hair_Atlas_Buzz_Brown_37
+      name: holding_down_06
       rect:
         serializedVersion: 2
         x: 160
@@ -1243,7 +1243,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hair_Atlas_Buzz_Brown_38
+      name: holding_down_07
       rect:
         serializedVersion: 2
         x: 192
@@ -1264,7 +1264,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hair_Atlas_Buzz_Brown_39
+      name: holding_down_08
       rect:
         serializedVersion: 2
         x: 224
@@ -1285,7 +1285,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hair_Atlas_Buzz_Brown_40
+      name: holding_up_01
       rect:
         serializedVersion: 2
         x: 0
@@ -1306,7 +1306,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hair_Atlas_Buzz_Brown_41
+      name: holding_up_02
       rect:
         serializedVersion: 2
         x: 32
@@ -1327,7 +1327,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hair_Atlas_Buzz_Brown_42
+      name: holding_up_03
       rect:
         serializedVersion: 2
         x: 64
@@ -1348,7 +1348,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hair_Atlas_Buzz_Brown_43
+      name: holding_up_04
       rect:
         serializedVersion: 2
         x: 96
@@ -1369,7 +1369,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hair_Atlas_Buzz_Brown_44
+      name: holding_up_05
       rect:
         serializedVersion: 2
         x: 128
@@ -1390,7 +1390,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hair_Atlas_Buzz_Brown_45
+      name: holding_up_06
       rect:
         serializedVersion: 2
         x: 160
@@ -1411,7 +1411,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hair_Atlas_Buzz_Brown_46
+      name: holding_up_07
       rect:
         serializedVersion: 2
         x: 192
@@ -1432,7 +1432,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hair_Atlas_Buzz_Brown_47
+      name: holding_up_08
       rect:
         serializedVersion: 2
         x: 224
@@ -1453,7 +1453,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hair_Atlas_Buzz_Brown_48
+      name: holding_right_01
       rect:
         serializedVersion: 2
         x: 0
@@ -1474,7 +1474,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hair_Atlas_Buzz_Brown_49
+      name: holding_right_02
       rect:
         serializedVersion: 2
         x: 32
@@ -1495,7 +1495,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hair_Atlas_Buzz_Brown_50
+      name: holding_right_03
       rect:
         serializedVersion: 2
         x: 64
@@ -1516,7 +1516,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hair_Atlas_Buzz_Brown_51
+      name: holding_right_04
       rect:
         serializedVersion: 2
         x: 96
@@ -1537,7 +1537,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hair_Atlas_Buzz_Brown_52
+      name: holding_right_05
       rect:
         serializedVersion: 2
         x: 128
@@ -1558,7 +1558,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hair_Atlas_Buzz_Brown_53
+      name: holding_right_06
       rect:
         serializedVersion: 2
         x: 160
@@ -1579,7 +1579,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hair_Atlas_Buzz_Brown_54
+      name: holding_right_07
       rect:
         serializedVersion: 2
         x: 192
@@ -1600,7 +1600,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hair_Atlas_Buzz_Brown_55
+      name: holding_right_08
       rect:
         serializedVersion: 2
         x: 224
@@ -1621,7 +1621,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hair_Atlas_Buzz_Brown_56
+      name: holding_left_01
       rect:
         serializedVersion: 2
         x: 0
@@ -1642,7 +1642,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hair_Atlas_Buzz_Brown_57
+      name: holding_left_02
       rect:
         serializedVersion: 2
         x: 32
@@ -1663,7 +1663,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hair_Atlas_Buzz_Brown_58
+      name: holding_left_03
       rect:
         serializedVersion: 2
         x: 64
@@ -1684,7 +1684,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hair_Atlas_Buzz_Brown_59
+      name: holding_left_04
       rect:
         serializedVersion: 2
         x: 96
@@ -1705,7 +1705,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hair_Atlas_Buzz_Brown_60
+      name: holding_left_05
       rect:
         serializedVersion: 2
         x: 128
@@ -1726,7 +1726,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hair_Atlas_Buzz_Brown_61
+      name: holding_left_06
       rect:
         serializedVersion: 2
         x: 160
@@ -1747,7 +1747,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hair_Atlas_Buzz_Brown_62
+      name: holding_left_07
       rect:
         serializedVersion: 2
         x: 192
@@ -1768,7 +1768,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hair_Atlas_Buzz_Brown_63
+      name: holding_left_08
       rect:
         serializedVersion: 2
         x: 224

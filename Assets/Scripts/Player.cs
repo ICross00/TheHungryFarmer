@@ -11,7 +11,7 @@ public class Player : Mover
     private Inventory inventory;
     private GameManager gameManager;
 
-    private Item selectedItem;
+    public Item selectedItem;
 
     //Actions to store and select items. These may be temporarily overridden by other classes, so are stored so they may be reset
     private UnityAction<int> dropItem;
