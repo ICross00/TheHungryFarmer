@@ -1477,7 +1477,7 @@ PrefabInstance:
     - target: {fileID: 8690458068205657560, guid: 7466939bbde03b244a7a2cc072318158,
         type: 3}
       propertyPath: m_Name
-      value: Inventory UI
+      value: Player Inventory UI
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7466939bbde03b244a7a2cc072318158, type: 3}

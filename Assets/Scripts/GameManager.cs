@@ -32,7 +32,9 @@ public class GameManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
 
         instance = this;
-        //playerInventory = GetComponent<Inventory>();
+        //Attach the inventory ui to the inventory component
+        UI_Inventory playerInventoryUI = GameObject.Find("Player Inventory UI").GetComponent<UI_Inventory>();
+        playerInventoryUI.SetInventory(GetComponent<Inventory>());
 
         GameObject.Find("Main Camera").transform.position = player.transform.position;
     }
