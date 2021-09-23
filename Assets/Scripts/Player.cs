@@ -11,7 +11,7 @@ public class Player : Mover
     private Inventory inventory;
     private GameManager gameManager;
 
-    private Item selectedItem;
+    public Item selectedItem;
 
     //Actions to store and select items. These may be temporarily overridden by other classes, so are stored so they may be reset
     private UnityAction<int> dropItem;
@@ -27,16 +27,14 @@ public class Player : Mover
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         inventory = GameObject.Find("GameManager").GetComponent<Inventory>();
 
-        inventoryUI.SetInventory(inventory);
+        //inventoryUI.SetInventory(inventory);
 
         //Setup callback functions for interacting with the inventory UI
 
         //This function will run when the player right clicks on an inventory slot in their own inventory
         dropItem = (int slotIndex) => {
             Collectable spawnedItem = inventory.DropItem(transform.position, slotIndex);
-            //Apply a force to the spawned item
-            Rigidbody2D rb2d = spawnedItem.GetComponent<Rigidbody2D>();
-            rb2d.AddForce(Random.insideUnitCircle.normalized * 11, ForceMode2D.Impulse);
+            spawnedItem.ApplyRandomForce(11.0f);
         };
 
         //This function will run when the player left clicks on an inventory slot in their own inventory
@@ -80,7 +78,7 @@ public class Player : Mover
         float x = Input.GetAxisRaw("Horizontal");
         float y = Input.GetAxisRaw("Vertical");
 
-        UpdateMotor(new Vector3(x, y, 0));
+        UpdateMotor(new Vector2(x, y));
     }
 
     void Update() {
@@ -97,6 +95,8 @@ public class Player : Mover
         if(Input.GetKeyDown(KeyCode.E)) {
             if(selectedItem != null) {
                 Item.UseItem(selectedItem, this);
+                if(selectedItem.amount <= 0) //Deselect the item
+                    selectedItem = null;
             }
         }
 

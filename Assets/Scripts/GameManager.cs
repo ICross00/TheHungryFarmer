@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
     public FloatingTextManager floatingTextManager;  //Referencing floating text for later use
     public int gold = 0;
     private string previousScene;
+    private bool initialLoad;
 
     public static GameManager instance;
 
@@ -25,12 +26,17 @@ public class GameManager : MonoBehaviour
             Destroy(floatingTextManager.gameObject);
             return;
         }
+        initialLoad = true;
 
         SceneManager.sceneLoaded += LoadState;
         DontDestroyOnLoad(gameObject);
 
         instance = this;
-        //playerInventory = GetComponent<Inventory>();
+        //Attach the inventory ui to the inventory component
+        UI_Inventory playerInventoryUI = GameObject.Find("Player Inventory UI").GetComponent<UI_Inventory>();
+        playerInventoryUI.SetInventory(GetComponent<Inventory>());
+
+        GameObject.Find("Main Camera").transform.position = player.transform.position;
     }
 
     public int GetGold() {
@@ -43,9 +49,9 @@ public class GameManager : MonoBehaviour
     public void ChangeGold(int amount) {
         gold += amount;
 
-        Text playerGoldLabel = GameObject.Find("PlayerGold").GetComponent<Text>();
+        GameObject playerGoldLabel = GameObject.Find("PlayerGold");
         if(playerGoldLabel != null) {
-            playerGoldLabel.text = "Gold: " + gold.ToString();
+            playerGoldLabel.GetComponent<Text>().text = "Gold: " + gold.ToString();
         }
     }
 
@@ -71,6 +77,7 @@ public class GameManager : MonoBehaviour
 
         PlayerPrefs.SetString("SaveState", s);
         Debug.Log("SaveState");
+        initialLoad = false;
     }
 
     public void LoadState(Scene s, LoadSceneMode mode)
@@ -90,7 +97,12 @@ public class GameManager : MonoBehaviour
         List<Item> tempInventory = Inventory.FromString(data[2]);
         //playerInventory.SetItemList(tempInventory);
 
-        player.transform.position = GameObject.Find(previousScene + "SpawnPoint").transform.position;
+        if (!initialLoad)
+        {
+            player.transform.position = GameObject.Find(previousScene + "SpawnPoint").transform.position;
+        }
+
         GameObject.Find("Main Camera").transform.position = player.transform.position;
+        player.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
     }
 }

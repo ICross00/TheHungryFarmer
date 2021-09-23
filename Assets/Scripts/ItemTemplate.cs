@@ -17,11 +17,32 @@ This will create a new template item for which you must specify a sprite, type, 
 [CreateAssetMenu(fileName = "New Item Template", menuName = "Items/Item Template")]
 public class ItemTemplate : ScriptableObject
 {
-    public string itemName;
+    public string itemName; //User-friendly name. Access the internal name using the name field
     public ItemType type;
     public int maxStack;
     public int sellPrice;
     public Sprite sprite;
+    public bool isEquippable;
+
+    [Serializable]
+    public struct ItemTag {
+        public string key;
+        public string value;
+    }
+
+    //Optional field allowing you to assign key/value pairs of tags to an item
+    public ItemTag[] tags;
+
+    //Access the set value of a tag from a given key
+    public string GetTagValue(string key) {
+        foreach(ItemTag tag in tags) {
+            if(tag.key == key) {
+                return tag.value;
+            }
+        }
+
+        return null;
+    }
 }
 
 public enum ItemType {
@@ -39,5 +60,6 @@ public enum ItemType {
     Seeds_Tomato,
     Seeds_Strawberry,
     Seeds_Carrot,
-    Carrot
+    Carrot,
+    Sword
 }

@@ -22,7 +22,7 @@ public class ItemSpawner : MonoBehaviour
     {
         //Spawn the item
         //Set the z-coordinate to 0 so the item doesn't appear behind the background
-        Collectable.Spawn(new Vector3(transform.position.x, transform.position.y, 0), new Item { item = this.item, amount = this.amount });
+        Collectable.Spawn(new Vector3(transform.position.x, transform.position.y, 0), new Item { itemTemplate = this.item, amount = this.amount });
         Destroy(gameObject);
     }
 }
