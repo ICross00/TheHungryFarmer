@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerAnimator : MonoBehaviour 
 {
     private Animator anim;
+    public Player player;
 
     private void Start()
     {
@@ -64,6 +65,18 @@ public class PlayerAnimator : MonoBehaviour
         {
             anim.SetBool("isMoveUp", false);
             anim.SetBool("isMoveDown", false);
+        }
+    }
+
+    public void UpdateItemAnim()
+    {
+        if (!player.selectedItem.activeItem)
+        {
+            anim.SetBool("isHoldItem", true);
+        }
+        else
+        {
+            anim.SetBool("isHoldItem", false);
         }
     }
 }
