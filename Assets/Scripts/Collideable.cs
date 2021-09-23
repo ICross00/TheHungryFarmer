@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Collideable : Interactable
+public class Collideable : MonoBehaviour
 {
     public ContactFilter2D filter;
     private BoxCollider2D boxCollider;
@@ -31,6 +31,6 @@ public class Collideable : Interactable
 
     protected virtual void OnCollide(Collider2D coll)
     {
-        Debug.Log("OnCollide was not implimented in " + this.name);
+        Debug.Log("OnCollide was not implemented in " + this.name);
     }
 }

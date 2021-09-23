@@ -103,5 +103,6 @@ public class GameManager : MonoBehaviour
         }
 
         GameObject.Find("Main Camera").transform.position = player.transform.position;
+        player.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
     }
 }
