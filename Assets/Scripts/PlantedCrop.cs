@@ -19,6 +19,8 @@ public class PlantedCrop : MonoBehaviour
     private Grid plantableGrid;
 
     void Start() {
+        gameObject.tag = "crop";
+
         //Locate the array of sprites associated with crop growth stages
         SpriteListDictionary cropDict = Resources.Load<SpriteListDictionary>("Prefabs/Crop Sprite Dictionary");
         //Get the key associated with the appropriate growth sprites from the crop's name
@@ -98,7 +100,7 @@ public class PlantedCrop : MonoBehaviour
     private static Vector3 SnapPositionToGrid(Vector3 worldPosition) {
         Grid activeGrid = GetActiveGrid();
         Vector3Int gridPosition = activeGrid.WorldToCell(worldPosition);
-        return activeGrid.CellToWorld(gridPosition);
+        return activeGrid.CellToWorld(gridPosition) + new Vector3(0.5f, -0.5f, 0.0f); //Offset by half so the crop is planted in the middle
     }
 
     /*
@@ -108,12 +110,13 @@ public class PlantedCrop : MonoBehaviour
     */
     public static bool CanPlant(Vector3 position) {
         Vector3 gridPosition = SnapPositionToGrid(position);
-        Collider2D[] results = Physics2D.OverlapCircleAll(position, 0.9f, 1<<7);
-        
+        Collider2D[] results = Physics2D.OverlapCircleAll(gridPosition, 0.5f, 1<<7);
+        Debug.Log(results.Length);
+
         if(results.Length > 0) {
-        foreach(Collider2D other in results) {
-            Debug.Log(other.transform.gameObject);
-        }
+            foreach(Collider2D other in results) {
+                Debug.Log(other.transform.gameObject);
+            }
         }
 
         //Return true if there were 0 crops at this cell
