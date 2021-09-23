@@ -108,8 +108,8 @@ MonoBehaviour:
   hitPoint: 10
   maxHitPoint: 10
   pushRecoverySpeed: 0.2
-  xSpeed: 1
-  ySpeed: 0.8
+  xSpeed: 1.5
+  ySpeed: 1.2
   interactionRadius: 1.2
   inventoryUI: {fileID: 0}
 --- !u!95 &3954170101240099473
@@ -156,8 +156,8 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 10
-  m_AngularDrag: 10
+  m_LinearDrag: 15
+  m_AngularDrag: 15
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
