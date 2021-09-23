@@ -70,12 +70,25 @@ public class PlayerAnimator : MonoBehaviour
 
     public void UpdateItemAnim()
     {
-        if (!player.selectedItem.activeItem)
+        if (player.selectedItem != null)
         {
-            anim.SetBool("isHoldItem", true);
+            if (!player.selectedItem.activeItem)
+            {
+                anim.SetBool("isHoldItem", true);
+            }
+            else if (player.selectedItem.activeItem)
+            {
+                anim.SetBool("isEquipItem", true);
+            }
+            else
+            {
+                anim.SetBool("isEquipItem", false);
+                anim.SetBool("isHoldItem", false);
+            }
         }
         else
         {
+            anim.SetBool("isEquipItem", false);
             anim.SetBool("isHoldItem", false);
         }
     }

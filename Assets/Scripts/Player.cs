@@ -27,8 +27,7 @@ public class Player : Mover
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         inventory = GameObject.Find("GameManager").GetComponent<Inventory>();
 
-        inventoryUI.SetInventory(inventory);
-        selectedItem = null;
+        //inventoryUI.SetInventory(inventory);
         //Setup callback functions for interacting with the inventory UI
 
         //This function will run when the player right clicks on an inventory slot in their own inventory
@@ -40,9 +39,21 @@ public class Player : Mover
         //This function will run when the player left clicks on an inventory slot in their own inventory
 
         selectItem = (int slotIndex) => {
-            selectedItem = inventory.GetItem(slotIndex);
-            this.GetComponent<HeldItem>().updateHeldItem(selectedItem);
-            this.GetComponent<EquippedItem>().updateActiveItem(selectedItem);
+            Item tempItem = inventory.GetItem(slotIndex);
+            if (tempItem == selectedItem)
+            {
+                this.transform.Find("HeldItem").GetComponent<HeldItem>().updateHeldItem(null);
+                this.transform.Find("EquippedItem").GetComponent<EquippedItem>().updateEquippedItem(null);
+                selectedItem = null;
+                this.GetComponent<PlayerAnimator>().UpdateItemAnim();
+            }
+            else
+            {
+            selectedItem = tempItem;
+            this.transform.Find("HeldItem").GetComponent<HeldItem>().updateHeldItem(selectedItem);
+            this.transform.Find("EquippedItem").GetComponent<EquippedItem>().updateEquippedItem(selectedItem);
+            this.GetComponent<PlayerAnimator>().UpdateItemAnim();
+            }
         };
 
 
