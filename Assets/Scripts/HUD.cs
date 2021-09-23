@@ -15,7 +15,7 @@ public class HUD : MonoBehaviour
 
     private void Start()
     {
-        health = GameManager.instance.player.maxHitPoint;
+        health = (float) GameManager.instance.player.maxHitPoint;
         maxHealth = health;
     }
 

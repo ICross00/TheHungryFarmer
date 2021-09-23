@@ -19,7 +19,7 @@ public class CharacterMenu : MonoBehaviour
         goldText.text = "DISPLAY GOLD";
 
         //Xp Bar
-        xpText.text = "DISPLAY XP AMMOUNT";
+        xpText.text = "DISPLAY XP AMOUNT";
         xpBar.localScale = new Vector3(0.5f, 0, 0);
 
         //level
