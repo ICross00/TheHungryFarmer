@@ -1389,7 +1389,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   items:
   - itemTemplate: {fileID: 11400000, guid: dfdf0ebd969daad43aa1e1368ec03365, type: 2}
-    amount: 0
+    amount: 1
     activeItem: 0
 --- !u!4 &1511672664 stripped
 Transform:
