@@ -22,6 +22,26 @@ public class ItemTemplate : ScriptableObject
     public int maxStack;
     public int sellPrice;
     public Sprite sprite;
+
+    [Serializable]
+    public struct ItemTag {
+        public string key;
+        public string value;
+    }
+
+    //Optional field allowing you to assign key/value pairs of tags to an item
+    public ItemTag[] tags;
+
+    //Access the set value of a tag from a given key
+    public string GetTagValue(string key) {
+        foreach(ItemTag tag in tags) {
+            if(tag.key == key) {
+                return tag.value;
+            }
+        }
+
+        return null;
+    }
 }
 
 public enum ItemType {

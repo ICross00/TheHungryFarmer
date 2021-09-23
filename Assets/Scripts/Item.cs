@@ -68,6 +68,11 @@ public class Item
         return item.name;
     }
 
+    //Access the set value of a tag from a given key
+    public string GetItemTagValue(string key) {
+        return item.GetTagValue(key);
+    }
+
     /*
         Uses an item. The player should be passed in so that additional information is available.
         For example, the position of the player can be used in this function, or the player's
@@ -86,7 +91,7 @@ public class Item
             case ItemType.Seeds_Carrot:
             case ItemType.Seeds_Strawberry:
                 Debug.Log("Planted crop: " + item.GetInternalName());
-                GameObject pfCrop = Resources.Load<GameObject>("Items/pfPlantedCrop");
+                GameObject pfCrop = Resources.Load<GameObject>("Prefabs/pfPlantedCrop");
                 PlantedCrop crop = GameObject.Instantiate(pfCrop, user.transform.position, Quaternion.identity).GetComponent<PlantedCrop>();
                 crop.cropTemplate = item.item;
 

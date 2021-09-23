@@ -6,7 +6,6 @@ using UnityEditor;
 public class PlantedCrop : MonoBehaviour
 {
     public ItemTemplate cropTemplate;
-    public Sprite[] growthSprites;
 
     private const float GROWTH_CHANCE = 0.1f; //The probability at each growth check that the crop will grow, where 0.0 = never and 1.0 = certain
     private const float GROWTH_CHECK_TIME = 0.33f; //The number of seconds that must pass before the crop attempts to grow to the next stage
@@ -16,13 +15,20 @@ public class PlantedCrop : MonoBehaviour
     private int growthStage = 1;
 
     private SpriteRenderer spriteRenderer;
+    private Sprite[] cropSprites;
 
     void Start() {
+        //Locate the array of sprites associated with crop growth stages
+        SpriteListDictionary cropDict = Resources.Load<SpriteListDictionary>("Prefabs/Crop Sprite Dictionary");
+        //Get the key associated with the appropriate growth sprites from the crop's name
+        string cropType = cropTemplate.GetTagValue("crop_sprites");
+        cropSprites = cropDict.GetSpriteList(cropType);
+
         //Set initial sprite
         spriteRenderer = GetComponent<SpriteRenderer>();
-        spriteRenderer.sprite = growthSprites[0];
+        spriteRenderer.sprite = cropSprites[0];
 
-        //Schedule a growth check
+        //Schedule next growth check
         checkAdvanceGrowth = Time.time + GROWTH_CHECK_TIME;
     }
 
@@ -36,7 +42,7 @@ public class PlantedCrop : MonoBehaviour
         }
 
         growthStage++; //Advance stage and update sprite
-        spriteRenderer.sprite = growthSprites[growthStage - 1];
+        spriteRenderer.sprite = cropSprites[growthStage - 1];
     }
 
     /*

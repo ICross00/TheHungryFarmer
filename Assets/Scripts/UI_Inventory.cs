@@ -131,8 +131,8 @@ public class UI_Inventory : MonoBehaviour
         if(m_inventory == null) 
             return;
 
-        Debug.Log("Refreshing");
         //Destroy old gameobjects
+        tooltip.ShowTooltip(false);
         foreach(Transform child in itemSlotContainer) {
             if(child == itemSlotTemplate || child == tooltip.transform) continue;
             Destroy(child.gameObject);
