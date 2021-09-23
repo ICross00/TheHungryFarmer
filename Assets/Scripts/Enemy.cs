@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class Enemy : Mover_OLD
+public class Enemy : Mover
 {
     //xpValue determines how much XP is dropped from killing an enemy.
     public int xpValue = 1;
