@@ -350,6 +350,10 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: -0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 2132655801, guid: b069c17624560dd49bce2081d080c332, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 173280991}
     - target: {fileID: 295756234940369031, guid: b069c17624560dd49bce2081d080c332,
         type: 3}
       propertyPath: m_Sprite
@@ -375,12 +379,12 @@ PrefabInstance:
     - target: {fileID: 671243669677350677, guid: b069c17624560dd49bce2081d080c332,
         type: 3}
       propertyPath: xSpeed
-      value: 5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 671243669677350677, guid: b069c17624560dd49bce2081d080c332,
         type: 3}
       propertyPath: ySpeed
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 671243669677350677, guid: b069c17624560dd49bce2081d080c332,
         type: 3}
@@ -494,6 +498,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EquippedItem
+      objectReference: {fileID: 0}
+    - target: {fileID: 8956849195213982516, guid: b069c17624560dd49bce2081d080c332,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b069c17624560dd49bce2081d080c332, type: 3}
@@ -3513,6 +3522,18 @@ MonoBehaviour:
   items:
   - itemTemplate: {fileID: 11400000, guid: 0b4f54df5f87c7543a986187d7c58fa6, type: 2}
     amount: 1
+    activeItem: 0
+  - itemTemplate: {fileID: 11400000, guid: 7fe54323e33903e4485d2115788fb6c8, type: 2}
+    amount: 1
+    activeItem: 1
+  - itemTemplate: {fileID: 11400000, guid: c6ea5215bd047db448cefb198b764710, type: 2}
+    amount: 64
+    activeItem: 0
+  - itemTemplate: {fileID: 11400000, guid: 4022f1b71a46c3d49977088fa1e57f47, type: 2}
+    amount: 64
+    activeItem: 0
+  - itemTemplate: {fileID: 11400000, guid: 1132a5e80a271794595f616a271cbabe, type: 2}
+    amount: 64
     activeItem: 0
 --- !u!1 &868580926
 GameObject:
