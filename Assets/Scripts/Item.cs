@@ -28,7 +28,7 @@ public class Item
 
     /**
     Creates a copy of an item. This is useful when purchasing an item from a shop. Items in shop inventories should not be copied by reference to the player's inventory,
-    as any modification to that reference will have unintended side effects the shop's inventory.
+    as any modification to that reference will have unintended side effects on the shop's inventory.
 
     @param itemToCopy The item to copy
     @return A copy of the item
@@ -93,11 +93,17 @@ public class Item
             case ItemType.Seeds_Strawberry:
                 Debug.Log("Planted crop: " + item.GetInternalName());
                 GameObject pfCrop = Resources.Load<GameObject>("Prefabs/pfPlantedCrop");
-                PlantedCrop crop = GameObject.Instantiate(pfCrop, user.transform.position, Quaternion.identity).GetComponent<PlantedCrop>();
-                crop.cropTemplate = item.itemTemplate;
+                Transform plantableGrid = GameObject.Find("Grid").transform;
 
-                //Consume the item
-                inventory.RemoveItemSingle(item);
+                if(PlantedCrop.CanPlant(user.transform.position)) {
+                    PlantedCrop crop = GameObject.Instantiate(pfCrop, user.transform.position, Quaternion.identity, plantableGrid).GetComponent<PlantedCrop>();
+                    crop.cropTemplate = item.itemTemplate;
+
+                    //Consume the item
+                    inventory.RemoveItemSingle(item);
+                } else {
+                    Debug.Log("Tried to plant in an occupied cell");
+                }
             break;
 
             case ItemType.Heart:

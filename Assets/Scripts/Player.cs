@@ -32,6 +32,13 @@ public class Player : Mover
 
         //This function will run when the player right clicks on an inventory slot in their own inventory
         dropItem = (int slotIndex) => {
+            Item clickedItem = inventory.GetItem(slotIndex);
+
+            if(clickedItem == selectedItem) {
+                selectedItem = null;
+                UpdateItemAnimations();
+            }
+
             Collectable spawnedItem = inventory.DropItem(transform.position, slotIndex);
             spawnedItem.ApplyRandomForce(11.0f);
         };
@@ -39,26 +46,35 @@ public class Player : Mover
         //This function will run when the player left clicks on an inventory slot in their own inventory
 
         selectItem = (int slotIndex) => {
-            Item tempItem = inventory.GetItem(slotIndex);
-            if (tempItem == selectedItem)
-            {
-                this.transform.Find("HeldItem").GetComponent<HeldItem>().updateHeldItem(null);
-                this.transform.Find("EquippedItem").GetComponent<EquippedItem>().updateEquippedItem(null);
-                selectedItem = null;
-                this.GetComponent<PlayerAnimator>().UpdateItemAnim();
-            }
-            else
-            {
-            selectedItem = tempItem;
-            this.transform.Find("HeldItem").GetComponent<HeldItem>().updateHeldItem(selectedItem);
-            this.transform.Find("EquippedItem").GetComponent<EquippedItem>().updateEquippedItem(selectedItem);
-            this.GetComponent<PlayerAnimator>().UpdateItemAnim();
-            }
+            Item clickedItem = inventory.GetItem(slotIndex);
+            selectedItem = (clickedItem == selectedItem) ? null : clickedItem;
+
+            if(clickedItem.GetItemType() == ItemType.Sword) {
+                if(selectedItem != null) {
+                    GameObject swordPrefab = Resources.Load<GameObject>("Prefabs/weapon_sword_katana");
+                    GameObject sword = GameObject.Instantiate(swordPrefab, transform.position, Quaternion.identity, this.transform);
+                    sword.name = "Equipped Sword";
+                } else {
+                    GameObject swordInstance = transform.Find("Equipped Sword").gameObject;
+                    Destroy(swordInstance);
+                }
+            } //
+
+            UpdateItemAnimations();
         };
 
 
         //Attach the listeners
         SetDefaultInventoryListeners();
+    }
+
+    /*
+    Updates the held and equipped item animation states
+    */
+    private void UpdateItemAnimations() {
+        this.transform.Find("HeldItem").GetComponent<HeldItem>().updateHeldItem(selectedItem);
+        this.transform.Find("EquippedItem").GetComponent<EquippedItem>().updateEquippedItem(selectedItem);
+        this.GetComponent<PlayerAnimator>().UpdateItemAnim();
     }
 
     //Sets the default actions for when the player interacts with inventory slots

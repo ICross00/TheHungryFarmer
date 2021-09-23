@@ -16,8 +16,11 @@ public class PlantedCrop : MonoBehaviour
 
     private SpriteRenderer spriteRenderer;
     private Sprite[] cropSprites;
+    private Grid plantableGrid;
 
     void Start() {
+        gameObject.tag = "crop";
+
         //Locate the array of sprites associated with crop growth stages
         SpriteListDictionary cropDict = Resources.Load<SpriteListDictionary>("Prefabs/Crop Sprite Dictionary");
         //Get the key associated with the appropriate growth sprites from the crop's name
@@ -30,6 +33,11 @@ public class PlantedCrop : MonoBehaviour
 
         //Schedule next growth check
         checkAdvanceGrowth = Time.time + GROWTH_CHECK_TIME;
+
+        //Find plantable grid
+        plantableGrid = GetActiveGrid();
+        this.transform.position = SnapPositionToGrid(this.transform.position);
+
     }
 
     /*
@@ -75,5 +83,43 @@ public class PlantedCrop : MonoBehaviour
             //Schedule next growth check
             checkAdvanceGrowth = Time.time + GROWTH_CHECK_TIME;
         }
+    }
+
+    /*
+    Returns the currently active Grid object
+    */
+    public static Grid GetActiveGrid() {
+        return GameObject.Find("Grid").GetComponent<Grid>();
+    }
+
+    /*
+    Snaps a vector 3 to the plantable grid
+    @param worldPosition The position to snap to the grid
+    @return The position snapped to the grid
+    */
+    private static Vector3 SnapPositionToGrid(Vector3 worldPosition) {
+        Grid activeGrid = GetActiveGrid();
+        Vector3Int gridPosition = activeGrid.WorldToCell(worldPosition);
+        return activeGrid.CellToWorld(gridPosition) + new Vector3(0.5f, -0.5f, 0.0f); //Offset by half so the crop is planted in the middle
+    }
+
+    /*
+    Checks if a crop can be planted at the provided position
+    @param The grid to check on
+    @param position The position to test
+    */
+    public static bool CanPlant(Vector3 position) {
+        Vector3 gridPosition = SnapPositionToGrid(position);
+        Collider2D[] results = Physics2D.OverlapCircleAll(gridPosition, 0.5f, 1<<7);
+        Debug.Log(results.Length);
+
+        if(results.Length > 0) {
+            foreach(Collider2D other in results) {
+                Debug.Log(other.transform.gameObject);
+            }
+        }
+
+        //Return true if there were 0 crops at this cell
+        return results.Length == 0;
     }
 }
