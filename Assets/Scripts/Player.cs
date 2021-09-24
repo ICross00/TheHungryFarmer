@@ -10,6 +10,7 @@ public class Player : Mover
     private SpriteRenderer spriteRenderer;
     private Inventory inventory;
     private GameManager gameManager;
+    public bool isInvOpen = false;
 
     public Item selectedItem;
 
@@ -115,6 +116,7 @@ public class Player : Mover
         //Show/hide inventory
         if(Input.GetKeyDown(KeyCode.F)) {
             if(inventoryUI) {
+                isInvOpen = !isInvOpen;
                 inventoryUI.ToggleVisible();
             }
         }
