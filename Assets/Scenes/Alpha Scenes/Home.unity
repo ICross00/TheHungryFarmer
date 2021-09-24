@@ -379,12 +379,12 @@ PrefabInstance:
     - target: {fileID: 671243669677350677, guid: b069c17624560dd49bce2081d080c332,
         type: 3}
       propertyPath: xSpeed
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 671243669677350677, guid: b069c17624560dd49bce2081d080c332,
         type: 3}
       propertyPath: ySpeed
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 671243669677350677, guid: b069c17624560dd49bce2081d080c332,
         type: 3}
@@ -498,6 +498,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EquippedItem
+      objectReference: {fileID: 0}
+    - target: {fileID: 5432005890383287430, guid: b069c17624560dd49bce2081d080c332,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8956849195213982516, guid: b069c17624560dd49bce2081d080c332,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8956849195213982516, guid: b069c17624560dd49bce2081d080c332,
         type: 3}

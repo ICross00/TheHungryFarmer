@@ -11,6 +11,7 @@ public class Enemy : Mover
     [SerializeField] Transform target;
     NavMeshAgent agent;
     private Vector3 startingPosition;
+    public float chaceDistance;
 
     protected override void Start()
     {
@@ -26,14 +27,27 @@ public class Enemy : Mover
 
     private void FixedUpdate()
     {
-        agent.SetDestination(target.position);
-        
+        float distane = Vector3.Distance(transform.position, target.position);
+
+        Debug.Log(distane);
+
+        if (distane > chaceDistance)
+        {
+            agent.SetDestination(startingPosition);
+        }
+        else
+        {
+            agent.SetDestination(target.position);
+        }
+
+        //agent.SetDestination(target.position);
     }
 
     protected override void Death()
     {
+        int numSpawnedCoins = Random.Range(3, 7);
+
+        Collectable.Spawn(transform.position, "GoldCoin", numSpawnedCoins, 1.0f);//Amoutn you get is 100
         Destroy(gameObject);
-        //TODO: Add ability to give player XP when enemy is killed. Video point (4:00 hours in).
-        //TODO: Add text showing player got XP after the enemy dies. Previous TODO relies on this one.
     }
 }
