@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class Weapon : Collideable
 {
-    private Player player;
-
     // Damage structure
     public int damagePoint = 1;
     public float pushForce = 2.0f;
@@ -16,13 +14,11 @@ public class Weapon : Collideable
 
     //Swinging the sword
     private Animator anim;
-    private float cooldown = 1.0f;
+    private float cooldown = 0.5f;
     private float lastSwing;
 
     protected override void Start()
     {
-        player = GameObject.Find("Player").GetComponent<Player>();
-
         base.Start();
         spriteRenderer = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
@@ -32,12 +28,12 @@ public class Weapon : Collideable
     {
         base.Update();
 
-        if (Input.GetKeyDown(KeyCode.Mouse0) && player.isInvOpen == false)
+        if (Input.GetKeyDown(KeyCode.Mouse0))
         {
             if(Time.time - lastSwing > cooldown)
             {
                 lastSwing = Time.time;
-                anim.SetTrigger("SwordAttack");
+                Swing();
             }
         }
 

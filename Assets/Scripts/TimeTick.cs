@@ -9,8 +9,8 @@ public class TimeTick : MonoBehaviour
     private int tick;
     private float tickTimer;
     public int currentTick;
-    public int seconds;
-    public int hours;
+    private int seconds;
+    private int hours;
     public int days;
     private Animator anim;
 
