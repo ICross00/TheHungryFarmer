@@ -21,7 +21,8 @@ public class TimeTick : MonoBehaviour
         tick = currentTick;
 
         seconds = tick % 60;
-
+        hours = (currentTick - (currentTick % 60)) / 60;
+        
         anim = GetComponent<Animator>();
         //TODO: Add Tick to hours and hours variables to start from where they left off at some point.
 
