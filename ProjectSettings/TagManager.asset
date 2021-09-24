@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Fighter
+  - Crop
+  - PlantableArea
   layers:
   - Default
   - TransparentFX

@@ -17,6 +17,9 @@ MonoBehaviour:
   maxStack: 64
   sellPrice: 4
   sprite: {fileID: -1742513348937851951, guid: 1884b98184089f34184916226ef1b1c5, type: 3}
+  isEquippable: 0
   tags:
   - key: crop_sprites
     value: crop_carrot
+  - key: grows_into
+    value: Carrot
