@@ -7,8 +7,8 @@ using UnityEngine.SceneManagement;
 //Basic class to persist an object between scenes, but to only have it visible on the scene it was initialized in
 public class Persist : MonoBehaviour
 {
-    private static Dictionary<Tuple<GameObject, string>, bool> persistSceneTargets = new Dictionary<Tuple<GameObject, string>, bool>();
-    private Tuple<GameObject, string> key;
+    private static Dictionary<Tuple<string, string>, bool> persistSceneTargets = new Dictionary<Tuple<string, string>, bool>();
+    private Tuple<string, string> key;
 
     void Start()
     {
@@ -23,9 +23,9 @@ public class Persist : MonoBehaviour
         }
     }
 
-    private Tuple<GameObject, string> GetDictionaryKey() {
+    private Tuple<string, string> GetDictionaryKey() {
         if(key == null) {
-            return new Tuple<GameObject, string>(gameObject, SceneManager.GetActiveScene().name);
+            return new Tuple<string, string>(gameObject.name, SceneManager.GetActiveScene().name);
         } else {
             return key;
         }
@@ -35,9 +35,8 @@ public class Persist : MonoBehaviour
         if(this == null)
             return;
 
-        Tuple<GameObject, string> currentKey = GetDictionaryKey();
+        Tuple<string, string> currentKey = GetDictionaryKey();
         if(persistSceneTargets.ContainsKey(currentKey)) {
-            Debug.Log(n.name == currentKey.Item2 ? "Enable" : "Disable");
             this.gameObject.SetActive(n.name == currentKey.Item2);
         }
     }
