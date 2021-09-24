@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class Enemy : Mover_OLD
+public class Enemy : Mover
 {
     //xpValue determines how much XP is dropped from killing an enemy.
     public int xpValue = 1;
@@ -11,6 +11,7 @@ public class Enemy : Mover_OLD
     [SerializeField] Transform target;
     NavMeshAgent agent;
     private Vector3 startingPosition;
+    public Vector3 directionDelta;
 
     protected override void Start()
     {
@@ -27,6 +28,7 @@ public class Enemy : Mover_OLD
     private void FixedUpdate()
     {
         agent.SetDestination(target.position);
+        directionDelta = target.position - transform.position;
     }
 
     protected override void Death()
