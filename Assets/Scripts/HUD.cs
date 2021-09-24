@@ -7,30 +7,46 @@ public class HUD : MonoBehaviour
 {
     //This class contains the methods used in the HUD information
 
+    public Text timeText ,daysText, hoursText;
+
     public Image healthBar;
 
-    float health;
+    private TimeTick time;
+
+    float health = GameManager.instance.player.maxHitPoint;
     float maxHealth;
-    float lerdSpeed;
+    //float fillSpeed;
+
 
     private void Start()
     {
-        health = (float) GameManager.instance.player.maxHitPoint;
+        //In game clock
+        //time = GameObject.Find("TimeTick").GetComponent<TimeTick>();
+        TimeTick time = gameObject.AddComponent<TimeTick>();
+
+        
+
+        //Health Bar
         maxHealth = health;
     }
 
     private void Update()
     {
-        if (health > maxHealth) health = maxHealth;
 
-        lerdSpeed = 3f * Time.deltaTime;
-
+        //Health Bar
+       
+        //fillSpeed = 3f * Time.deltaTime;
         HealthBarFiller();
+        
+
+        //Clock
+        timeText.text = time.hours.ToString() + ":" + time.seconds.ToString();
+        daysText.text = time.days.ToString();
     }
 
-    void HealthBarFiller()
+    public void HealthBarFiller() // function to control health bar fill
     {
-        healthBar.fillAmount = Mathf.Lerp(healthBar.fillAmount, health / maxHealth, lerdSpeed);
+        healthBar.fillAmount = health / maxHealth;
     }
     
 
