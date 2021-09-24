@@ -11,7 +11,8 @@ public class Enemy : Mover
     [SerializeField] Transform target;
     NavMeshAgent agent;
     private Vector3 startingPosition;
-    public float chaceDistance;
+    public Vector3 directionDelta;
+    public float chaseDistance = 20.0f;
 
     protected override void Start()
     {
@@ -27,12 +28,11 @@ public class Enemy : Mover
 
     private void FixedUpdate()
     {
-        float distane = Vector3.Distance(transform.position, target.position);
-
-        Debug.Log(distane);
+        float distance = Vector3.Distance(transform.position, target.position);
+        directionDelta = transform.position - target.position;
 
         //This will stop the enemy chancing you off the bat and have it only chase when the player enter range.
-        if (distane > chaceDistance)
+        if (distance > chaseDistance)
         {
             agent.SetDestination(startingPosition);
         }
