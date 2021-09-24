@@ -40,16 +40,16 @@ public class HUD : MonoBehaviour
     {
 
         //Health Bar
-       
+
         //fillSpeed = 3f * Time.deltaTime;
         HealthBarFiller();
 
 
         //Clock
         timeText.text = time.hours.ToString() + ":" + time.seconds.ToString();
-        //dayText.text = time.days.ToString();
+        dayText.text = time.days.ToString();
 
-        switch (time.days % 7)
+        switch ((time.days % 7) + 1)
         {
             case 1:
                 dayText.text = "MON";
@@ -59,7 +59,7 @@ public class HUD : MonoBehaviour
                 break;
             case 3:
                 dayText.text = "WED";
-                break; 
+                break;
             case 4:
                 dayText.text = "THU";
                 break;
@@ -74,7 +74,7 @@ public class HUD : MonoBehaviour
                 break;
         }
 
-        if (time.currentTick <=1140 )
+        if (time.currentTick <= 1140)
         {
             Day_Night_Text.text = "AM";
         }
@@ -82,14 +82,6 @@ public class HUD : MonoBehaviour
         {
             Day_Night_Text.text = "PM";
         }
-
-
-
-
-
-        
-
-        
     }
 
     public void HealthBarFiller() // function to control health bar fill
