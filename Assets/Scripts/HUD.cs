@@ -37,7 +37,7 @@ public class HUD : MonoBehaviour
 
 
         //Clock
-        timeText.text = time.hours.ToString() + ":" + time.seconds.ToString();
+        timeText.text = time.hours.ToString() + ":" + string.Format("{0:00}", time.seconds);
         numOfDays.text = (time.days + 1).ToString();
 
         switch ((time.days % 7) + 1)
