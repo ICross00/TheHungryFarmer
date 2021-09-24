@@ -6,7 +6,7 @@ public class Weapon : Collideable
 {
     // Damage structure
     public int damagePoint = 1;
-    public float pushForce = 2.0f;
+    public float pushForce = 0.0f;
 
     // Upgrade section
     public int weaponLevel = 0;
@@ -16,6 +16,8 @@ public class Weapon : Collideable
     private Animator anim;
     private float cooldown = 0.5f;
     private float lastSwing;
+
+    private Player play;
 
     protected override void Start()
     {
@@ -28,24 +30,12 @@ public class Weapon : Collideable
     {
         base.Update();
 
-        if (Input.GetKeyDown(KeyCode.Mouse0))
+        if (Input.GetKeyDown(KeyCode.Mouse0) && play.selectedItem.itemTemplate.type == ItemType.Sword)
         {
             if(Time.time - lastSwing > cooldown)
             {
                 lastSwing = Time.time;
-                Swing();
-            }
-        }
-
-        //TODO: Add another swing in the opposite direction you are facing. This is so you can attack while running away.
-        //This will swing in the opposite direction to where the player usually attacks.
-        //P.s. Mouse1 == Right clicking mouse.
-        if (Input.GetKeyDown(KeyCode.Mouse1))
-        {
-            if (Time.time - lastSwing > cooldown)
-            {
-                lastSwing = Time.time;
-                Swing();
+                anim.SetTrigger("SwordAttack");
             }
         }
     }
@@ -66,16 +56,10 @@ public class Weapon : Collideable
             };
 
             coll.SendMessage("ReceiveDamage", dmg);
-            
         }
 
         if(coll.tag == "crop") {
             coll.SendMessage("HarvestCrop");
         }
-    }
-
-    private void Swing()
-    {
-        anim.SetTrigger("Swing");
     }
 }

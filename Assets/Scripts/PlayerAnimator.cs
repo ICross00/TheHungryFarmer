@@ -6,6 +6,7 @@ public class PlayerAnimator : MonoBehaviour
 {
     private Animator anim;
     public Player player;
+    //The move number was put here to allow the weapon class to check which direction the player is facing.
 
     private void Start()
     {
