@@ -242,8 +242,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeText: {fileID: 984684034}
-  daysText: {fileID: 1521779209}
-  hoursText: {fileID: 0}
+  dayText: {fileID: 1521779209}
+  Day_Night_Text: {fileID: 502124344}
   healthBar: {fileID: 1655182502}
 --- !u!1 &212060462
 GameObject:
@@ -10581,7 +10581,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
-    m_Alignment: 4
+    m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -12254,7 +12254,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: num
+  m_Text: 0
 --- !u!222 &1301061426
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12441,8 +12441,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 6143032858664878800, guid: 1884b98184089f34184916226ef1b1c5,
-    type: 3}
+  m_Sprite: {fileID: 533756255033582868, guid: 1884b98184089f34184916226ef1b1c5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -12472,7 +12471,7 @@ GameObject:
   - component: {fileID: 1521779210}
   - component: {fileID: 1521779209}
   m_Layer: 5
-  m_Name: day_of_week
+  m_Name: Day_of_week
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12530,7 +12529,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Day
+  m_Text: 0
 --- !u!222 &1521779210
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12826,7 +12825,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 8257569978211034523, guid: 1884b98184089f34184916226ef1b1c5,
+  m_Sprite: {fileID: -6682213866912997642, guid: 1884b98184089f34184916226ef1b1c5,
     type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -12869,10 +12868,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07a245adbcdf7d34fa0dc160e2818992, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentTick: 420
-  seconds: 20
-  hours: 0
-  days: 0
+  currentTick: 1
+  seconds: 1
+  hours: 1
+  days: 1
 --- !u!1 &1967512060
 GameObject:
   m_ObjectHideFlags: 0
