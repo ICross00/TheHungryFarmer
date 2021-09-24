@@ -81,10 +81,8 @@ public class Shop : Interactable
         if(playerInventory.RemoveItem(soldItem)) {
             int totalSaleAmount = soldItem.GetTotalSellPrice();
             playerCustomer.ChangeGold(totalSaleAmount);
-
             return true;
         }
-
         return false;
     }
 

@@ -100,6 +100,7 @@ public class Storage : Interactable
         Item itemCopy = Item.CopyItem(storedItem);
         if(playerInventory.RemoveItem(storedItem)) {
             storageInventory.AddItem(itemCopy);
+            player.UpdateItemAnimations();
             return true;
         }
 

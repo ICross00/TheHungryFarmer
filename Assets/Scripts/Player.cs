@@ -63,6 +63,12 @@ public class Player : Mover
             UpdateItemAnimations();
         };
 
+        inventory.OnItemListChanged += (object sender, System.EventArgs e) => {
+            if(selectedItem.amount == 0) {
+                selectedItem = null;
+            }
+            UpdateItemAnimations();
+        };
 
         //Attach the listeners
         SetDefaultInventoryListeners();
@@ -71,7 +77,7 @@ public class Player : Mover
     /*
     Updates the held and equipped item animation states
     */
-    private void UpdateItemAnimations() {
+    public void UpdateItemAnimations() {
         this.transform.Find("HeldItem").GetComponent<HeldItem>().updateHeldItem(selectedItem);
         this.transform.Find("EquippedItem").GetComponent<EquippedItem>().updateEquippedItem(selectedItem);
         this.GetComponent<PlayerAnimator>().UpdateItemAnim();

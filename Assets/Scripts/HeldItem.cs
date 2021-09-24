@@ -20,12 +20,11 @@ public class HeldItem : MonoBehaviour
             {
                 heldSprite.sprite = newItem.GetSprite();
                 heldItem = newItem;
+                return;
             }
         }
-        else
-        {
-            heldSprite.sprite = null;
-            heldItem = null;
-        }
+
+        heldSprite.sprite = null;
+        heldItem = null;
     }
 }
