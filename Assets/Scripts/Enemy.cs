@@ -11,6 +11,7 @@ public class Enemy : Mover
     [SerializeField] Transform target;
     NavMeshAgent agent;
     private Vector3 startingPosition;
+    public Vector3 directionDelta;
 
     protected override void Start()
     {
@@ -27,7 +28,7 @@ public class Enemy : Mover
     private void FixedUpdate()
     {
         agent.SetDestination(target.position);
-        
+        directionDelta = target.position - transform.position;
     }
 
     protected override void Death()
