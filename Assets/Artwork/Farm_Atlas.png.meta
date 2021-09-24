@@ -413,6 +413,54 @@ TextureImporter:
   - first:
       213: 8257569978211034523
     second: Farm_Atlas_102
+  - first:
+      213: 8304886744329573643
+    second: ghost_down_01
+  - first:
+      213: -990485181152779184
+    second: ghost_down_02
+  - first:
+      213: -27669701846434901
+    second: ghost_down_03
+  - first:
+      213: 997522269480643604
+    second: ghost_down_04
+  - first:
+      213: 3563563943397053536
+    second: ghost_up_01
+  - first:
+      213: 8433841496536544759
+    second: ghost_up_02
+  - first:
+      213: 3655824335125150277
+    second: ghost_up_03
+  - first:
+      213: 3215863149281334893
+    second: ghost_up_04
+  - first:
+      213: -2188000326394152069
+    second: ghost_left_01
+  - first:
+      213: -3438956144964982860
+    second: ghost_left_02
+  - first:
+      213: -8551129834720466877
+    second: ghost_left_03
+  - first:
+      213: -5280175189183532836
+    second: ghost_left_04
+  - first:
+      213: 5597067064672420405
+    second: ghost_right_01
+  - first:
+      213: 1538335826513448980
+    second: ghost_right_02
+  - first:
+      213: -8331567899774473605
+    second: ghost_right_03
+  - first:
+      213: 3928898471364390577
+    second: ghost_right_04
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -476,7 +524,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -488,7 +536,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -3303,7 +3351,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3324,7 +3372,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3332,6 +3380,342 @@ TextureImporter:
       bones: []
       spriteID: b95e23b0528c89270800000000000000
       internalID: 8257569978211034523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghost_down_01
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 671
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b055d972e72e04370800000000000000
+      internalID: 8304886744329573643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghost_down_02
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 671
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 054a91eb9f61142f0800000000000000
+      internalID: -990485181152779184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghost_down_03
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 671
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: babf6628d82bd9ff0800000000000000
+      internalID: -27669701846434901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghost_down_04
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 671
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41c6fef0839e7dd00800000000000000
+      internalID: 997522269480643604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghost_up_01
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 654
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0645294a682547130800000000000000
+      internalID: 3563563943397053536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghost_up_02
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 654
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f5720d18260b0570800000000000000
+      internalID: 8433841496536544759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghost_up_03
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 654
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54afc580dd81cb230800000000000000
+      internalID: 3655824335125150277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghost_up_04
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 654
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d66de23fe7a01ac20800000000000000
+      internalID: 3215863149281334893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghost_left_01
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 637
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7b76d0bb49a2a1e0800000000000000
+      internalID: -2188000326394152069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghost_left_02
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 637
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b727354b9f5640d0800000000000000
+      internalID: -3438956144964982860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghost_left_03
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 637
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 348ed3d98b8445980800000000000000
+      internalID: -8551129834720466877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghost_left_04
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 637
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd072e814ac09b6b0800000000000000
+      internalID: -5280175189183532836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghost_right_01
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 620
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53286dd37d6ccad40800000000000000
+      internalID: 5597067064672420405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghost_right_02
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 620
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4105794a844495510800000000000000
+      internalID: 1538335826513448980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghost_right_03
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 620
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7a25ef3323506c80800000000000000
+      internalID: -8331567899774473605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghost_right_04
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 620
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1beef30f750468630800000000000000
+      internalID: 3928898471364390577
       vertices: []
       indices: 
       edges: []
