@@ -10,6 +10,7 @@ public class Player : Mover
     private SpriteRenderer spriteRenderer;
     private Inventory inventory;
     private GameManager gameManager;
+    public bool isInvOpen = false;
 
     public Item selectedItem;
 
@@ -50,7 +51,7 @@ public class Player : Mover
             selectedItem = (clickedItem == selectedItem) ? null : clickedItem;
 
             if(clickedItem.GetItemType() == ItemType.Sword && selectedItem != null) {
-                GameObject swordPrefab = Resources.Load<GameObject>("Prefabs/weapon_sword_katana");
+                GameObject swordPrefab = Resources.Load<GameObject>("Prefabs/weapon_sword_wood");
                 GameObject sword = GameObject.Instantiate(swordPrefab, transform.position, Quaternion.identity, this.transform);
                 sword.name = "Equipped Sword";
             } else {
@@ -115,6 +116,7 @@ public class Player : Mover
         //Show/hide inventory
         if(Input.GetKeyDown(KeyCode.F)) {
             if(inventoryUI) {
+                isInvOpen = !isInvOpen;
                 inventoryUI.ToggleVisible();
             }
         }
