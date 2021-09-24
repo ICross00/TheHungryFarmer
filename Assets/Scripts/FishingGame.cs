@@ -32,8 +32,16 @@ public class FishingGame : MonoBehaviour
 
     [SerializeField] public Transform ProgressBarContainer;
 
-    bool pause = false;
+    bool pause = true;
     [SerializeField] public float failTimer = 5f;
+
+
+    public void Start_Game()
+    {
+        pause = false;
+
+    }
+
 
     private void Update()
     {
@@ -114,11 +122,11 @@ public class FishingGame : MonoBehaviour
 
     }
 
-
     private void Win()
     {
         pause = true;
         Debug.Log("YOU WIN! CONGRATULATIONS, YOU CAUGHT THE FISH!");
+
     }
 
     private void Lose()
