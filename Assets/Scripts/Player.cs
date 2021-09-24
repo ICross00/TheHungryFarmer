@@ -50,7 +50,7 @@ public class Player : Mover
             selectedItem = (clickedItem == selectedItem) ? null : clickedItem;
 
             if(clickedItem.GetItemType() == ItemType.Sword && selectedItem != null) {
-                GameObject swordPrefab = Resources.Load<GameObject>("Prefabs/weapon_sword_katana");
+                GameObject swordPrefab = Resources.Load<GameObject>("Prefabs/weapon_sword_wood");
                 GameObject sword = GameObject.Instantiate(swordPrefab, transform.position, Quaternion.identity, this.transform);
                 sword.name = "Equipped Sword";
             } else {

@@ -14,7 +14,7 @@ public class Weapon : Collideable
 
     //Swinging the sword
     private Animator anim;
-    private float cooldown = 0.5f;
+    private float cooldown = 1.0f;
     private float lastSwing;
 
     protected override void Start()
@@ -33,7 +33,7 @@ public class Weapon : Collideable
             if(Time.time - lastSwing > cooldown)
             {
                 lastSwing = Time.time;
-                Swing();
+                anim.SetTrigger("SwordAttack");
             }
         }
 
