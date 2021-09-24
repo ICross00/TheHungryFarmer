@@ -91,18 +91,14 @@ public class Item
             case ItemType.Seeds_Tomato:
             case ItemType.Seeds_Carrot:
             case ItemType.Seeds_Strawberry:
-                Debug.Log("Planted crop: " + item.GetInternalName());
                 GameObject pfCrop = Resources.Load<GameObject>("Prefabs/pfPlantedCrop");
                 Transform plantableGrid = GameObject.Find("Grid").transform;
 
                 if(PlantedCrop.CanPlant(user.transform.position)) {
-                    PlantedCrop crop = GameObject.Instantiate(pfCrop, user.transform.position, Quaternion.identity, plantableGrid).GetComponent<PlantedCrop>();
-                    crop.cropTemplate = item.itemTemplate;
-
+                    GameObject crop = GameObject.Instantiate(pfCrop, user.transform.position, Quaternion.identity, plantableGrid);
+                    crop.GetComponent<PlantedCrop>().cropTemplate = item.itemTemplate; //Set the crop type after spawning it
                     //Consume the item
                     inventory.RemoveItemSingle(item);
-                } else {
-                    Debug.Log("Tried to plant in an occupied cell");
                 }
             break;
 

@@ -10,16 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9cbc7e85fa3738c458d90a5a408acd80, type: 3}
-  m_Name: Seeds_Carrot
+  m_Name: Fish
   m_EditorClassIdentifier: 
-  itemName: Carrot Seed Packet
-  type: 13
+  itemName: Fish
+  type: 15
   maxStack: 64
-  sellPrice: 4
-  sprite: {fileID: -1742513348937851951, guid: 1884b98184089f34184916226ef1b1c5, type: 3}
-  isEquippable: 0
-  tags:
-  - key: crop_sprites
-    value: crop_carrot
-  - key: grows_into
-    value: Carrot
+  sellPrice: 40
+  sprite: {fileID: 21300000, guid: 24459bcee67e82c42bedbf96ef5b48c6, type: 3}

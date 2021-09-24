@@ -49,16 +49,15 @@ public class Player : Mover
             Item clickedItem = inventory.GetItem(slotIndex);
             selectedItem = (clickedItem == selectedItem) ? null : clickedItem;
 
-            if(clickedItem.GetItemType() == ItemType.Sword) {
-                if(selectedItem != null) {
-                    GameObject swordPrefab = Resources.Load<GameObject>("Prefabs/weapon_sword_katana");
-                    GameObject sword = GameObject.Instantiate(swordPrefab, transform.position, Quaternion.identity, this.transform);
-                    sword.name = "Equipped Sword";
-                } else {
-                    GameObject swordInstance = transform.Find("Equipped Sword").gameObject;
-                    Destroy(swordInstance);
-                }
-            } //
+            if(clickedItem.GetItemType() == ItemType.Sword && selectedItem != null) {
+                GameObject swordPrefab = Resources.Load<GameObject>("Prefabs/weapon_sword_katana");
+                GameObject sword = GameObject.Instantiate(swordPrefab, transform.position, Quaternion.identity, this.transform);
+                sword.name = "Equipped Sword";
+            } else {
+                Transform swordInstance = transform.Find("Equipped Sword");
+                if(swordInstance != null)
+                    Destroy(swordInstance.gameObject);
+            }
 
             UpdateItemAnimations();
         };
