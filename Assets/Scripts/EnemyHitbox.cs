@@ -9,7 +9,7 @@ public class EnemyHitbox : Collideable
 
     protected override void OnCollide(Collider2D coll)
     {
-        if (coll.tag == "Fighter" && coll.name == "Player")
+        if (coll.tag == "Player" && coll.name == "Player")
         {
             //Create a damage object and use it to send it to player (or what has been hit).
             Damage dmg = new Damage
