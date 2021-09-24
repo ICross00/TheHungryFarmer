@@ -33,7 +33,7 @@ public class FishingGame : MonoBehaviour
     [SerializeField] public Transform ProgressBarContainer;
 
     bool pause = false;
-    [SerializeField] public float failTimer = 10f;
+    [SerializeField] public float failTimer = 5f;
 
     private void Update()
     {
