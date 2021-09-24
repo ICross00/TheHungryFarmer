@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
 {
     //References
     public Player player;
-    //public Inventory playerInventory;
+    //public Inventory playerInventory;v
     public int restaurantRating;
     public FloatingTextManager floatingTextManager;  //Referencing floating text for later use
     public int gold = 0;
@@ -37,6 +37,7 @@ public class GameManager : MonoBehaviour
         playerInventoryUI.SetInventory(GetComponent<Inventory>());
 
         GameObject.Find("Main Camera").transform.position = player.transform.position;
+        ChangeGold(0);
     }
 
     public int GetGold() {
@@ -48,7 +49,6 @@ public class GameManager : MonoBehaviour
     */
     public void ChangeGold(int amount) {
         gold += amount;
-
         GameObject playerGoldLabel = GameObject.Find("PlayerGold");
         if(playerGoldLabel != null) {
             playerGoldLabel.GetComponent<Text>().text = "Gold: " + gold.ToString();
@@ -73,6 +73,8 @@ public class GameManager : MonoBehaviour
         //Attach saved values to the string here, separated by '|'
         s += (SceneManager.GetActiveScene().name + "|");
         s += (gold + "|");
+
+        ChangeGold(0);
         //s += (playerInventory + "|");
 
         PlayerPrefs.SetString("SaveState", s);

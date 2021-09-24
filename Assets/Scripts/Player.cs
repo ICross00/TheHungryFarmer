@@ -10,6 +10,7 @@ public class Player : Mover
     private SpriteRenderer spriteRenderer;
     private Inventory inventory;
     private GameManager gameManager;
+    public bool isInvOpen = false;
 
     public Item selectedItem;
 
@@ -28,11 +29,17 @@ public class Player : Mover
         inventory = GameObject.Find("GameManager").GetComponent<Inventory>();
 
         //inventoryUI.SetInventory(inventory);
-
         //Setup callback functions for interacting with the inventory UI
 
         //This function will run when the player right clicks on an inventory slot in their own inventory
         dropItem = (int slotIndex) => {
+            Item clickedItem = inventory.GetItem(slotIndex);
+
+            if(clickedItem == selectedItem) {
+                selectedItem = null;
+                UpdateItemAnimations();
+            }
+
             Collectable spawnedItem = inventory.DropItem(transform.position, slotIndex);
             spawnedItem.ApplyRandomForce(11.0f);
         };
@@ -40,12 +47,34 @@ public class Player : Mover
         //This function will run when the player left clicks on an inventory slot in their own inventory
 
         selectItem = (int slotIndex) => {
-            selectedItem = inventory.GetItem(slotIndex);
+            Item clickedItem = inventory.GetItem(slotIndex);
+            selectedItem = (clickedItem == selectedItem) ? null : clickedItem;
+
+            if(clickedItem.GetItemType() == ItemType.Sword && selectedItem != null) {
+                GameObject swordPrefab = Resources.Load<GameObject>("Prefabs/weapon_sword_wood");
+                GameObject sword = GameObject.Instantiate(swordPrefab, transform.position, Quaternion.identity, this.transform);
+                sword.name = "Equipped Sword";
+            } else {
+                Transform swordInstance = transform.Find("Equipped Sword");
+                if(swordInstance != null)
+                    Destroy(swordInstance.gameObject);
+            }
+
+            UpdateItemAnimations();
         };
 
 
         //Attach the listeners
         SetDefaultInventoryListeners();
+    }
+
+    /*
+    Updates the held and equipped item animation states
+    */
+    private void UpdateItemAnimations() {
+        this.transform.Find("HeldItem").GetComponent<HeldItem>().updateHeldItem(selectedItem);
+        this.transform.Find("EquippedItem").GetComponent<EquippedItem>().updateEquippedItem(selectedItem);
+        this.GetComponent<PlayerAnimator>().UpdateItemAnim();
     }
 
     //Sets the default actions for when the player interacts with inventory slots
@@ -87,6 +116,7 @@ public class Player : Mover
         //Show/hide inventory
         if(Input.GetKeyDown(KeyCode.F)) {
             if(inventoryUI) {
+                isInvOpen = !isInvOpen;
                 inventoryUI.ToggleVisible();
             }
         }

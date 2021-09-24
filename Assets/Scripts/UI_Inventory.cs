@@ -151,17 +151,16 @@ public class UI_Inventory : MonoBehaviour
             RectTransform templateTf = itemSlotTemplate.GetComponent<RectTransform>();
             slotTf.anchoredPosition = templateTf.anchoredPosition + new Vector2(x * cellSize + cellMargin, y * cellSize + cellMargin);
 
-            //Update sprite
             Image image = slotTf.Find("ItemIcon").GetComponent<Image>();
             image.sprite = item.GetSprite();
 
             //Scale up the image if it is selected
             if(selectedIndex >= 0 && selectedIndex == index) {
-                image.rectTransform.sizeDelta = new Vector2(16, 16);
+                image.rectTransform.sizeDelta = new Vector2(18, 18);
             } else {
-                image.rectTransform.sizeDelta = new Vector2(12, 12);
+                image.rectTransform.sizeDelta = new Vector2(16, 16);
             }
-
+    
             //Update quantity text
             Text amountText = slotTf.Find("AmountText").GetComponent<Text>();
             amountText.text = item.amount > 1 ? item.amount.ToString() : "";

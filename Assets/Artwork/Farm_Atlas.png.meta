@@ -55,16 +55,16 @@ TextureImporter:
     second: lightDirt_03
   - first:
       213: -789957569431557616
-    second: ui_health_bar_01
+    second: ui_health_bar
   - first:
       213: 5362084925166495948
-    second: ui_energy_bar_01
+    second: ui_energy_bar
   - first:
       213: -8527319294260379677
-    second: ui_health_unit_01
+    second: ui_health_unit
   - first:
       213: -5641067850834542070
-    second: ui_energy_unit_01
+    second: ui_energy_unit
   - first:
       213: -9155489754422746361
     second: ui_time_display
@@ -409,22 +409,10 @@ TextureImporter:
     second: item_carrot
   - first:
       213: 6143032858664878800
-    second: ui_energy_bar_02
+    second: items_rawseeds_carrot
   - first:
       213: 8257569978211034523
-    second: ui_health_bar_02
-  - first:
-      213: 8304886744329573643
-    second: ui_health_unit_02
-  - first:
-      213: -990485181152779184
-    second: ui_energy_unit_02
-  - first:
-      213: -27669701846434901
-    second: sun
-  - first:
-      213: 997522269480643604
-    second: ui_inventory
+    second: Farm_Atlas_102
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -955,7 +943,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ui_health_bar_01
+      name: ui_health_bar
       rect:
         serializedVersion: 2
         x: 512
@@ -976,7 +964,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ui_energy_bar_01
+      name: ui_energy_bar
       rect:
         serializedVersion: 2
         x: 538
@@ -997,7 +985,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ui_health_unit_01
+      name: ui_health_unit
       rect:
         serializedVersion: 2
         x: 585
@@ -1018,7 +1006,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ui_energy_unit_01
+      name: ui_energy_unit
       rect:
         serializedVersion: 2
         x: 585
@@ -1609,10 +1597,10 @@ TextureImporter:
       name: item_tomato
       rect:
         serializedVersion: 2
-        x: 321
-        y: 561
-        width: 14
-        height: 14
+        x: 320
+        y: 560
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1630,10 +1618,10 @@ TextureImporter:
       name: item_strawberry
       rect:
         serializedVersion: 2
-        x: 321
-        y: 545
-        width: 14
-        height: 14
+        x: 320
+        y: 544
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1651,10 +1639,10 @@ TextureImporter:
       name: item_pumpkin
       rect:
         serializedVersion: 2
-        x: 321
-        y: 529
-        width: 14
-        height: 14
+        x: 320
+        y: 528
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1674,8 +1662,8 @@ TextureImporter:
         serializedVersion: 2
         x: 320
         y: 513
-        width: 14
-        height: 14
+        width: 16
+        height: 15
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1695,8 +1683,8 @@ TextureImporter:
         serializedVersion: 2
         x: 320
         y: 497
-        width: 14
-        height: 14
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1715,9 +1703,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 320
-        y: 482
-        width: 14
-        height: 14
+        y: 481
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1735,10 +1723,10 @@ TextureImporter:
       name: item_radish
       rect:
         serializedVersion: 2
-        x: 321
+        x: 320
         y: 465
-        width: 14
-        height: 14
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1756,10 +1744,10 @@ TextureImporter:
       name: item_diamond
       rect:
         serializedVersion: 2
-        x: 226
-        y: 593
-        width: 13
-        height: 13
+        x: 224
+        y: 592
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1777,10 +1765,10 @@ TextureImporter:
       name: item_ruby
       rect:
         serializedVersion: 2
-        x: 209
-        y: 593
-        width: 13
-        height: 13
+        x: 208
+        y: 592
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1798,10 +1786,10 @@ TextureImporter:
       name: item_emerald
       rect:
         serializedVersion: 2
-        x: 241
-        y: 609
-        width: 14
-        height: 14
+        x: 240
+        y: 608
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1924,10 +1912,10 @@ TextureImporter:
       name: item_seeds_carrot
       rect:
         serializedVersion: 2
-        x: 209
-        y: 577
-        width: 14
-        height: 14
+        x: 208
+        y: 576
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1945,10 +1933,10 @@ TextureImporter:
       name: item_seeds_tomato
       rect:
         serializedVersion: 2
-        x: 209
-        y: 561
-        width: 14
-        height: 14
+        x: 208
+        y: 560
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1966,10 +1954,10 @@ TextureImporter:
       name: item_seeds_strawberry
       rect:
         serializedVersion: 2
-        x: 209
-        y: 545
-        width: 14
-        height: 14
+        x: 208
+        y: 544
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1987,10 +1975,10 @@ TextureImporter:
       name: item_seeds_pumpkin
       rect:
         serializedVersion: 2
-        x: 209
-        y: 529
-        width: 14
-        height: 14
+        x: 208
+        y: 528
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3038,9 +3026,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 240
-        y: 577
-        width: 15
-        height: 15
+        y: 576
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3059,9 +3047,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 256
-        y: 577
-        width: 15
-        height: 15
+        y: 576
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3080,9 +3068,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 272
-        y: 577
-        width: 15
-        height: 15
+        y: 576
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3101,9 +3089,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 288
-        y: 577
-        width: 15
-        height: 15
+        y: 576
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3121,10 +3109,10 @@ TextureImporter:
       name: crop_tomato_1
       rect:
         serializedVersion: 2
-        x: 241
+        x: 240
         y: 560
-        width: 15
-        height: 15
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3144,8 +3132,8 @@ TextureImporter:
         serializedVersion: 2
         x: 256
         y: 560
-        width: 15
-        height: 15
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3163,10 +3151,10 @@ TextureImporter:
       name: crop_tomato_3
       rect:
         serializedVersion: 2
-        x: 290
+        x: 288
         y: 560
-        width: 15
-        height: 15
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3184,10 +3172,10 @@ TextureImporter:
       name: crop_tomato_4
       rect:
         serializedVersion: 2
-        x: 305
+        x: 304
         y: 560
-        width: 15
-        height: 15
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3205,10 +3193,10 @@ TextureImporter:
       name: crop_strawberry_1
       rect:
         serializedVersion: 2
-        x: 241
-        y: 545
-        width: 15
-        height: 15
+        x: 240
+        y: 544
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3226,10 +3214,10 @@ TextureImporter:
       name: crop_strawberry_2
       rect:
         serializedVersion: 2
-        x: 274
-        y: 545
-        width: 15
-        height: 15
+        x: 272
+        y: 544
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3247,10 +3235,10 @@ TextureImporter:
       name: crop_strawberry_3
       rect:
         serializedVersion: 2
-        x: 289
-        y: 545
-        width: 14
-        height: 15
+        x: 288
+        y: 544
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3268,10 +3256,10 @@ TextureImporter:
       name: crop_strawberry_4
       rect:
         serializedVersion: 2
-        x: 305
+        x: 304
         y: 544
-        width: 15
-        height: 15
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3290,9 +3278,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 320
-        y: 577
-        width: 15
-        height: 15
+        y: 576
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3307,15 +3295,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ui_energy_bar_02
+      name: items_rawseeds_carrot
       rect:
         serializedVersion: 2
-        x: 512
-        y: 369
-        width: 107
-        height: 23
+        x: 224
+        y: 576
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3328,15 +3316,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ui_health_bar_02
+      name: Farm_Atlas_102
       rect:
         serializedVersion: 2
-        x: 512
-        y: 393
-        width: 107
-        height: 23
+        x: 304
+        y: 576
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3344,90 +3332,6 @@ TextureImporter:
       bones: []
       spriteID: b95e23b0528c89270800000000000000
       internalID: 8257569978211034523
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ui_health_unit_02
-      rect:
-        serializedVersion: 2
-        x: 624
-        y: 409
-        width: 4
-        height: 7
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b055d972e72e04370800000000000000
-      internalID: 8304886744329573643
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ui_energy_unit_02
-      rect:
-        serializedVersion: 2
-        x: 624
-        y: 377
-        width: 4
-        height: 7
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 054a91eb9f61142f0800000000000000
-      internalID: -990485181152779184
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sun
-      rect:
-        serializedVersion: 2
-        x: 303
-        y: 1184
-        width: 17
-        height: 18
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: babf6628d82bd9ff0800000000000000
-      internalID: -27669701846434901
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ui_inventory
-      rect:
-        serializedVersion: 2
-        x: 210
-        y: 328
-        width: 293
-        height: 119
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 41c6fef0839e7dd00800000000000000
-      internalID: 997522269480643604
       vertices: []
       indices: 
       edges: []

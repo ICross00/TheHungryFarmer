@@ -14,10 +14,13 @@ public class HeldItem : MonoBehaviour
 
     public void updateHeldItem(Item newItem)
     {
-        if (newItem.itemTemplate.isEquippable)
+        if (newItem != null)
         {
-            heldSprite.sprite = newItem.GetSprite();
-            heldItem = newItem;
+            if (!(newItem.itemTemplate.isEquippable))
+            {
+                heldSprite.sprite = newItem.GetSprite();
+                heldItem = newItem;
+            }
         }
         else
         {

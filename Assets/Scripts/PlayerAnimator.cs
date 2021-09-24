@@ -5,6 +5,8 @@ using UnityEngine;
 public class PlayerAnimator : MonoBehaviour 
 {
     private Animator anim;
+    public Player player;
+    //The move number was put here to allow the weapon class to check which direction the player is facing.
 
     private void Start()
     {
@@ -64,6 +66,31 @@ public class PlayerAnimator : MonoBehaviour
         {
             anim.SetBool("isMoveUp", false);
             anim.SetBool("isMoveDown", false);
+        }
+    }
+
+    public void UpdateItemAnim()
+    {
+        if (player.selectedItem != null)
+        {
+            if (!player.selectedItem.activeItem)
+            {
+                anim.SetBool("isHoldItem", true);
+            }
+            else if (player.selectedItem.activeItem)
+            {
+                anim.SetBool("isEquipItem", true);
+            }
+            else
+            {
+                anim.SetBool("isEquipItem", false);
+                anim.SetBool("isHoldItem", false);
+            }
+        }
+        else
+        {
+            anim.SetBool("isEquipItem", false);
+            anim.SetBool("isHoldItem", false);
         }
     }
 }

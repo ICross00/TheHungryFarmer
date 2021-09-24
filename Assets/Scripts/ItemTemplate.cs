@@ -61,5 +61,6 @@ public enum ItemType {
     Seeds_Strawberry,
     Seeds_Carrot,
     Carrot,
-    Sword
+    Sword,
+    Fish
 }

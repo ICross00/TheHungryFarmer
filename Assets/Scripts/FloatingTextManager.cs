@@ -41,7 +41,8 @@ public class FloatingTextManager : MonoBehaviour
 
         if(txt == null)
         {
-            txt = new FloatingText();
+            txt = gameObject.AddComponent(typeof(FloatingText)) as FloatingText;
+
             txt.go = Instantiate(textPrefab);
             txt.go.transform.SetParent(textContainer.transform);
             txt.txt = txt.go.GetComponent<Text>();

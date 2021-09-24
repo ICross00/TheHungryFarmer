@@ -100,100 +100,100 @@ TextureImporter:
     second: left_08
   - first:
       213: 2455037532465379591
-    second: Pants_Atlas_Blue_32
+    second: holding_down_01
   - first:
       213: -1200058657064392026
-    second: Pants_Atlas_Blue_33
+    second: holding_down_02
   - first:
       213: -7487997528866106920
-    second: Pants_Atlas_Blue_34
+    second: holding_down_03
   - first:
       213: -3682582973743598737
-    second: Pants_Atlas_Blue_35
+    second: holding_down_04
   - first:
       213: -8855576008300887253
-    second: Pants_Atlas_Blue_36
+    second: holding_down_05
   - first:
       213: -8814457104818821618
-    second: Pants_Atlas_Blue_37
+    second: holding_down_06
   - first:
       213: -7787970521468160344
-    second: Pants_Atlas_Blue_38
+    second: holding_down_07
   - first:
       213: 6236208380156092793
-    second: Pants_Atlas_Blue_39
+    second: holding_down_08
   - first:
       213: 4140009396246152076
-    second: Pants_Atlas_Blue_40
+    second: holding_up_01
   - first:
       213: -7438613103794176600
-    second: Pants_Atlas_Blue_41
+    second: holding_up_02
   - first:
       213: -5449717949834865970
-    second: Pants_Atlas_Blue_42
+    second: holding_up_03
   - first:
       213: 8615405649472129963
-    second: Pants_Atlas_Blue_43
+    second: holding_up_04
   - first:
       213: 2738087239673533692
-    second: Pants_Atlas_Blue_44
+    second: holding_up_05
   - first:
       213: -3694779565850588417
-    second: Pants_Atlas_Blue_45
+    second: holding_up_06
   - first:
       213: 4247730237084212483
-    second: Pants_Atlas_Blue_46
+    second: holding_up_07
   - first:
       213: 8659039199074107736
-    second: Pants_Atlas_Blue_47
+    second: holding_up_08
   - first:
       213: 5589084051240097968
-    second: Pants_Atlas_Blue_48
+    second: holding_right_01
   - first:
       213: 417066212769568282
-    second: Pants_Atlas_Blue_49
+    second: holding_right_02
   - first:
       213: 1327539226358082404
-    second: Pants_Atlas_Blue_50
+    second: holding_right_03
   - first:
       213: -5459454763702656276
-    second: Pants_Atlas_Blue_51
+    second: holding_right_04
   - first:
       213: 5833739073744229163
-    second: Pants_Atlas_Blue_52
+    second: holding_right_05
   - first:
       213: 5161078296925249636
-    second: Pants_Atlas_Blue_53
+    second: holding_right_06
   - first:
       213: -3371378849683787172
-    second: Pants_Atlas_Blue_54
+    second: holding_right_07
   - first:
       213: 5497503495080232503
-    second: Pants_Atlas_Blue_55
+    second: holding_right_08
   - first:
       213: 3980948436888390679
-    second: Pants_Atlas_Blue_56
+    second: holding_left_01
   - first:
       213: 8893205732733784965
-    second: Pants_Atlas_Blue_57
+    second: holding_left_02
   - first:
       213: 6813073770172793806
-    second: Pants_Atlas_Blue_58
+    second: holding_left_03
   - first:
       213: -7238173744192160688
-    second: Pants_Atlas_Blue_59
+    second: holding_left_04
   - first:
       213: 8397120178736413898
-    second: Pants_Atlas_Blue_60
+    second: holding_left_05
   - first:
       213: 3369642904987646720
-    second: Pants_Atlas_Blue_61
+    second: holding_left_06
   - first:
       213: 9135770125859471732
-    second: Pants_Atlas_Blue_62
+    second: holding_left_07
   - first:
       213: 9059411752564341029
-    second: Pants_Atlas_Blue_63
+    second: holding_left_08
   - first:
       213: -6506164642023191516
     second: Pants_Atlas_Blue_64
@@ -1108,7 +1108,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pants_Atlas_Blue_32
+      name: holding_down_01
       rect:
         serializedVersion: 2
         x: 0
@@ -1129,7 +1129,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pants_Atlas_Blue_33
+      name: holding_down_02
       rect:
         serializedVersion: 2
         x: 32
@@ -1150,7 +1150,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pants_Atlas_Blue_34
+      name: holding_down_03
       rect:
         serializedVersion: 2
         x: 64
@@ -1171,7 +1171,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pants_Atlas_Blue_35
+      name: holding_down_04
       rect:
         serializedVersion: 2
         x: 96
@@ -1192,7 +1192,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pants_Atlas_Blue_36
+      name: holding_down_05
       rect:
         serializedVersion: 2
         x: 128
@@ -1213,7 +1213,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pants_Atlas_Blue_37
+      name: holding_down_06
       rect:
         serializedVersion: 2
         x: 160
@@ -1234,7 +1234,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pants_Atlas_Blue_38
+      name: holding_down_07
       rect:
         serializedVersion: 2
         x: 192
@@ -1255,7 +1255,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pants_Atlas_Blue_39
+      name: holding_down_08
       rect:
         serializedVersion: 2
         x: 224
@@ -1276,7 +1276,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pants_Atlas_Blue_40
+      name: holding_up_01
       rect:
         serializedVersion: 2
         x: 0
@@ -1297,7 +1297,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pants_Atlas_Blue_41
+      name: holding_up_02
       rect:
         serializedVersion: 2
         x: 32
@@ -1318,7 +1318,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pants_Atlas_Blue_42
+      name: holding_up_03
       rect:
         serializedVersion: 2
         x: 64
@@ -1339,7 +1339,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pants_Atlas_Blue_43
+      name: holding_up_04
       rect:
         serializedVersion: 2
         x: 96
@@ -1360,7 +1360,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pants_Atlas_Blue_44
+      name: holding_up_05
       rect:
         serializedVersion: 2
         x: 128
@@ -1381,7 +1381,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pants_Atlas_Blue_45
+      name: holding_up_06
       rect:
         serializedVersion: 2
         x: 160
@@ -1402,7 +1402,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pants_Atlas_Blue_46
+      name: holding_up_07
       rect:
         serializedVersion: 2
         x: 192
@@ -1423,7 +1423,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pants_Atlas_Blue_47
+      name: holding_up_08
       rect:
         serializedVersion: 2
         x: 224
@@ -1444,7 +1444,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pants_Atlas_Blue_48
+      name: holding_right_01
       rect:
         serializedVersion: 2
         x: 0
@@ -1465,7 +1465,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pants_Atlas_Blue_49
+      name: holding_right_02
       rect:
         serializedVersion: 2
         x: 32
@@ -1486,7 +1486,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pants_Atlas_Blue_50
+      name: holding_right_03
       rect:
         serializedVersion: 2
         x: 64
@@ -1507,7 +1507,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pants_Atlas_Blue_51
+      name: holding_right_04
       rect:
         serializedVersion: 2
         x: 96
@@ -1528,7 +1528,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pants_Atlas_Blue_52
+      name: holding_right_05
       rect:
         serializedVersion: 2
         x: 128
@@ -1549,7 +1549,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pants_Atlas_Blue_53
+      name: holding_right_06
       rect:
         serializedVersion: 2
         x: 160
@@ -1570,7 +1570,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pants_Atlas_Blue_54
+      name: holding_right_07
       rect:
         serializedVersion: 2
         x: 192
@@ -1591,7 +1591,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pants_Atlas_Blue_55
+      name: holding_right_08
       rect:
         serializedVersion: 2
         x: 224
@@ -1612,7 +1612,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pants_Atlas_Blue_56
+      name: holding_left_01
       rect:
         serializedVersion: 2
         x: 0
@@ -1633,7 +1633,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pants_Atlas_Blue_57
+      name: holding_left_02
       rect:
         serializedVersion: 2
         x: 32
@@ -1654,7 +1654,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pants_Atlas_Blue_58
+      name: holding_left_03
       rect:
         serializedVersion: 2
         x: 64
@@ -1675,7 +1675,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pants_Atlas_Blue_59
+      name: holding_left_04
       rect:
         serializedVersion: 2
         x: 96
@@ -1696,7 +1696,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pants_Atlas_Blue_60
+      name: holding_left_05
       rect:
         serializedVersion: 2
         x: 128
@@ -1717,7 +1717,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pants_Atlas_Blue_61
+      name: holding_left_06
       rect:
         serializedVersion: 2
         x: 160
@@ -1738,7 +1738,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pants_Atlas_Blue_62
+      name: holding_left_07
       rect:
         serializedVersion: 2
         x: 192
@@ -1759,7 +1759,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pants_Atlas_Blue_63
+      name: holding_left_08
       rect:
         serializedVersion: 2
         x: 224
