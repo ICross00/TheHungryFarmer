@@ -31,6 +31,7 @@ public class Enemy : Mover
 
         Debug.Log(distane);
 
+        //This will stop the enemy chancing you off the bat and have it only chase when the player enter range.
         if (distane > chaceDistance)
         {
             agent.SetDestination(startingPosition);
@@ -43,11 +44,14 @@ public class Enemy : Mover
         //agent.SetDestination(target.position);
     }
 
+    //This will destroy the enemy object and drop gold in its place
     protected override void Death()
     {
+        //TODO: Have the enemy drop XP when it dies.
+
         int numSpawnedCoins = Random.Range(3, 7);
 
-        Collectable.Spawn(transform.position, "GoldCoin", numSpawnedCoins, 1.0f);//Amoutn you get is 100
+        Collectable.Spawn(transform.position, "GoldCoin", numSpawnedCoins, 1.0f);
         Destroy(gameObject);
     }
 }
