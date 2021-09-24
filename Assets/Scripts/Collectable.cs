@@ -58,6 +58,7 @@ public class Collectable : MonoBehaviour
             collectableItem.shouldCheckCooldown = true;
         }
 
+        tf.name = item.GetInternalName() + "_" + tf.GetInstanceID();
         return collectableItem;
     }
 
