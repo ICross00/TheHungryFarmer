@@ -11,6 +11,7 @@ public class Item
 {
     public ItemTemplate itemTemplate;
     public int amount;
+    public bool activeItem;
 
     /**
     Creates an instance of an item that can be added to an inventory.

@@ -6,6 +6,7 @@ public class PlayerAnimator : MonoBehaviour
 {
     private Animator anim;
     public Player player;
+    //The move number was put here to allow the weapon class to check which direction the player is facing.
 
     private void Start()
     {
@@ -72,11 +73,11 @@ public class PlayerAnimator : MonoBehaviour
     {
         if (player.selectedItem != null)
         {
-            if (!player.selectedItem.itemTemplate.isEquippable)
+            if (!player.selectedItem.activeItem)
             {
                 anim.SetBool("isHoldItem", true);
             }
-            else if (player.selectedItem.itemTemplate.isEquippable)
+            else if (player.selectedItem.activeItem)
             {
                 anim.SetBool("isEquipItem", true);
             }
