@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Weapon : Collideable
 {
+    private Player player;
+
     // Damage structure
     public int damagePoint = 1;
     public float pushForce = 2.0f;
@@ -19,6 +21,8 @@ public class Weapon : Collideable
 
     protected override void Start()
     {
+        player = GameObject.Find("Player").GetComponent<Player>();
+
         base.Start();
         spriteRenderer = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
@@ -28,7 +32,7 @@ public class Weapon : Collideable
     {
         base.Update();
 
-        if (Input.GetKeyDown(KeyCode.Mouse0))
+        if (Input.GetKeyDown(KeyCode.Mouse0) && player.isInvOpen == false)
         {
             if(Time.time - lastSwing > cooldown)
             {
