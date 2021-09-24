@@ -21,9 +21,8 @@ public class HUD : MonoBehaviour
     private void Start()
     {
         //In game clock
-        //time = GameObject.Find("TimeTick").GetComponent<TimeTick>();
-        TimeTick time = gameObject.AddComponent<TimeTick>();
-
+        time = GameObject.Find("TimeTick").GetComponent<TimeTick>();
+       
         
 
         //Health Bar
