@@ -20,10 +20,8 @@ public class HUD : MonoBehaviour
 
     private void Start()
     {
-        //In game clock
-        time = GameObject.Find("TimeTick").GetComponent<TimeTick>();
-       
-        
+        GameObject mainCamera = GameObject.Find("Main Camera");
+        time = mainCamera.transform.GetChild(0).GetComponent<TimeTick>(); 
 
         //Health Bar
         maxHealth = health;
