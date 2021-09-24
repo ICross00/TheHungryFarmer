@@ -49,7 +49,6 @@ public class GameManager : MonoBehaviour
     */
     public void ChangeGold(int amount) {
         gold += amount;
-        Debug.Log("Gold changed by " + amount);
         GameObject playerGoldLabel = GameObject.Find("PlayerGold");
         if(playerGoldLabel != null) {
             playerGoldLabel.GetComponent<Text>().text = "Gold: " + gold.ToString();

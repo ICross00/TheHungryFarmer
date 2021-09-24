@@ -17,6 +17,7 @@ public class PlantedCrop : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private Sprite[] cropSprites;
     private Grid plantableGrid;
+    private PlantableArea plantableArea;
 
     void Start() {
         gameObject.tag = "Crop";
@@ -38,6 +39,8 @@ public class PlantedCrop : MonoBehaviour
         plantableGrid = GetActiveGrid();
         this.transform.position = SnapPositionToGrid(this.transform.position);
 
+        //Find plantable area
+        plantableArea = GameObject.Find("PlantableArea").GetComponent<PlantableArea>();
     }
 
     /*
@@ -65,11 +68,6 @@ public class PlantedCrop : MonoBehaviour
         }
 
         Destroy(this.gameObject);
-    }
-
-    //Draw debug text
-    void OnDrawGizmos() {
-        Handles.Label(transform.position, "Growth Stage: " + growthStage.ToString());
     }
 
     // Update is called once per frame
@@ -104,14 +102,37 @@ public class PlantedCrop : MonoBehaviour
     }
 
     /*
+    Checks if a provided position is in a plantable area, i.e. a GameObject with the PlantableArea tag that also has a PlantableArea script attached
+    @return True if the provided coordinate was in any plantable area, false if not
+    */
+    public static bool CheckInPlantableArea(Vector3 position) {
+        GameObject[] areas = GameObject.FindGameObjectsWithTag("PlantableArea");
+        if(areas.Length == 0) //Return if no areas were found with the tag
+            return false;
+
+        foreach(GameObject obj in areas) {
+            PlantableArea area = obj.GetComponent<PlantableArea>();
+            if((area != null) & area.ContainsPoint(position)) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    /*
     Checks if a crop can be planted at the provided position
     @param The grid to check on
     @param position The position to test
     */
     public static bool CanPlant(Vector3 position) {
         Vector3 gridPosition = SnapPositionToGrid(position);
+        //Check if the grid position is in a plantable area
+        if(!CheckInPlantableArea(gridPosition))
+            return false;
+
+        //Check if the 
         Collider2D[] results = Physics2D.OverlapCircleAll(gridPosition, 0.5f, 1<<7);
-        Debug.Log(results.Length);
 
         if(results.Length > 0) {
             foreach(Collider2D other in results) {

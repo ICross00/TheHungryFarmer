@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Fighter
   - Crop
+  - PlantableArea
   layers:
   - Default
   - TransparentFX
