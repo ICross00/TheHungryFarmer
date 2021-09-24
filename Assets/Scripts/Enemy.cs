@@ -11,6 +11,7 @@ public class Enemy : Mover
     [SerializeField] Transform target;
     NavMeshAgent agent;
     private Vector3 startingPosition;
+    public float chaceDistance;
 
     protected override void Start()
     {
@@ -26,14 +27,31 @@ public class Enemy : Mover
 
     private void FixedUpdate()
     {
-        agent.SetDestination(target.position);
-        
+        float distane = Vector3.Distance(transform.position, target.position);
+
+        Debug.Log(distane);
+
+        //This will stop the enemy chancing you off the bat and have it only chase when the player enter range.
+        if (distane > chaceDistance)
+        {
+            agent.SetDestination(startingPosition);
+        }
+        else
+        {
+            agent.SetDestination(target.position);
+        }
+
+        //agent.SetDestination(target.position);
     }
 
+    //This will destroy the enemy object and drop gold in its place
     protected override void Death()
     {
+        //TODO: Have the enemy drop XP when it dies.
+
+        int numSpawnedCoins = Random.Range(3, 7);
+
+        Collectable.Spawn(transform.position, "GoldCoin", numSpawnedCoins, 1.0f);
         Destroy(gameObject);
-        //TODO: Add ability to give player XP when enemy is killed. Video point (4:00 hours in).
-        //TODO: Add text showing player got XP after the enemy dies. Previous TODO relies on this one.
     }
 }
