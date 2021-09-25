@@ -7,19 +7,11 @@ public class HUD : MonoBehaviour
 {
     //This class contains the methods used in the HUD information
 
-    public Text timeText, dayText, Day_Night_Text;
+    public Text timeText, dayText, Day_Night_Text, numOfDays;
 
     public Image healthBar;
 
-    private TimeTick time;
-
-    public enum day
-    {
-        
-
-
-
-    }
+    private TimeManager time;
 
     float health;
     float maxHealth;
@@ -28,8 +20,7 @@ public class HUD : MonoBehaviour
 
     private void Start()
     {
-        GameObject mainCamera = GameObject.Find("Main Camera");
-        time = mainCamera.transform.GetChild(0).GetComponent<TimeTick>();
+        time = GetComponentInParent<TimeManager>();
 
         //Health Bar
         health = GameManager.instance.player.maxHitPoint;
@@ -46,8 +37,8 @@ public class HUD : MonoBehaviour
 
 
         //Clock
-        timeText.text = time.hours.ToString() + ":" + string.Format("00" , time.seconds.ToString());
-        dayText.text = time.days.ToString();
+        timeText.text = time.hours.ToString() + ":" + string.Format("{0:00}", time.seconds);
+        numOfDays.text = (time.days + 1).ToString();
 
         switch ((time.days % 7) + 1)
         {

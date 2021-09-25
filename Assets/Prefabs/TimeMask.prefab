@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 548339005812361313}
   - component: {fileID: 548339005812361312}
   - component: {fileID: 548339005812361327}
-  - component: {fileID: 548339005812361326}
-  m_Layer: 0
+  - component: {fileID: 1948469209}
+  m_Layer: 10
   m_Name: TimeMask
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 548339005812361314}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.0234, y: -0.0221, z: 10}
-  m_LocalScale: {x: 36.005066, y: 11.171084, z: 1}
+  m_LocalScale: {x: 50, y: 50, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -71,8 +71,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -220714063
-  m_SortingLayer: 4
+  m_SortingLayerID: 295485271
+  m_SortingLayer: 7
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6,
     type: 3}
@@ -105,7 +105,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &548339005812361326
+--- !u!114 &1948469209
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -117,5 +117,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07a245adbcdf7d34fa0dc160e2818992, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxTicks: 30
-  currentTick: 1

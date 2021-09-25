@@ -97,7 +97,7 @@ TextureImporter:
     second: painting_rose_01
   - first:
       213: 3139908691281498487
-    second: bowl_empty_01
+    second: bowl_top_empty
   - first:
       213: 4330940250518039227
     second: topper_edge_top
@@ -155,6 +155,12 @@ TextureImporter:
   - first:
       213: -4956757594518254573
     second: livingroom_coffeetable_01
+  - first:
+      213: 96011805750910153
+    second: bowl_top_pomegranate
+  - first:
+      213: -1617712096120962086
+    second: bowl_bottom_dark_blue
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -832,7 +838,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bowl_empty_01
+      name: bowl_top_empty
       rect:
         serializedVersion: 2
         x: 945
@@ -1239,7 +1245,7 @@ TextureImporter:
         width: 19
         height: 14
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1247,6 +1253,48 @@ TextureImporter:
       bones: []
       spriteID: 31c0505da3f063bb0800000000000000
       internalID: -4956757594518254573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bowl_top_pomegranate
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 784
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ccd6088a3a155100800000000000000
+      internalID: 96011805750910153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bowl_bottom_dark_blue
+      rect:
+        serializedVersion: 2
+        x: 956
+        y: 800
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad38bd96b6bbc89e0800000000000000
+      internalID: -1617712096120962086
       vertices: []
       indices: 
       edges: []
