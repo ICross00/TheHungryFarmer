@@ -97,7 +97,6 @@ public class GameManager : MonoBehaviour
 
         //Set Player Inventory
         List<Item> tempInventory = Inventory.FromString(data[2]);
-        //playerInventory.SetItemList(tempInventory);
 
         if (!initialLoad)
         {

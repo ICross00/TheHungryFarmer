@@ -73,11 +73,11 @@ public class PlayerAnimator : MonoBehaviour
     {
         if (player.selectedItem != null)
         {
-            if (!player.selectedItem.itemTemplate.isEquippable)
+            if (!player.selectedItem.activeItem)
             {
                 anim.SetBool("isHoldItem", true);
             }
-            else if (player.selectedItem.itemTemplate.isEquippable)
+            else if (player.selectedItem.activeItem)
             {
                 anim.SetBool("isEquipItem", true);
             }
