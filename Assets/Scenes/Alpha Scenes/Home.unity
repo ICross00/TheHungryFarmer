@@ -4527,7 +4527,7 @@ MonoBehaviour:
     activeItem: 0
   - itemTemplate: {fileID: 11400000, guid: 7fe54323e33903e4485d2115788fb6c8, type: 2}
     amount: 1
-    activeItem: 0
+    activeItem: 1
   - itemTemplate: {fileID: 11400000, guid: c6ea5215bd047db448cefb198b764710, type: 2}
     amount: 64
     activeItem: 0
