@@ -64,8 +64,10 @@ public class Player : Mover
         };
 
         inventory.OnItemListChanged += (object sender, System.EventArgs e) => {
-            if(selectedItem.amount == 0) {
-                selectedItem = null;
+            if(selectedItem != null)  {
+                if(selectedItem.amount == 0) {
+                    selectedItem = null;
+                }
             }
             UpdateItemAnimations();
         };
