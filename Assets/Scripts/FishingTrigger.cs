@@ -4,15 +4,22 @@ using UnityEngine;
 
 public class FishingTrigger : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    private FishingGame game;
+    private GameObject canvas;
 
-    // Update is called once per frame
-    void Update()
+    private void Awake()
     {
-        
+        game = GetComponentInChildren<FishingGame>();
+        canvas = GameObject.Find("FishingCanvas");
+        canvas.SetActive(false);
+    }
+    private void OnTriggerEnter2D(Collider2D collide)
+    {
+        Debug.Log(game);
+        if (collide.name == "Player")
+        {
+            canvas.SetActive(true);
+            game.Start_Game();
+        }
     }
 }
