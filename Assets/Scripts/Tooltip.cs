@@ -37,7 +37,7 @@ public class Tooltip : MonoBehaviour
     private void FixedUpdate() {
         //Convert the cursor position to a screen space coordinate that can be used to position the tooltip within the inventory frame
         Vector2 localPoint;
-        RectTransformUtility.ScreenPointToLocalPointInRectangle(transform.parent.GetComponent<RectTransform>(), Input.mousePosition, uiCamera, out localPoint);
+        RectTransformUtility.ScreenPointToLocalPointInRectangle(transform.parent.GetComponent<RectTransform>(), Input.mousePosition, null, out localPoint);
         transform.localPosition = localPoint;
     }
 }
