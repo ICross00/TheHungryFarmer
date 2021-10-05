@@ -29,9 +29,9 @@ public class Player : Mover
         inventory = GameObject.Find("GameManager").GetComponent<Inventory>();
 
         //inventoryUI.SetInventory(inventory);
-        //Setup callback functions for interacting with the inventory UI
+        //Setup callback functions for interacting with the inventory UI.
 
-        //This function will run when the player right clicks on an inventory slot in their own inventory
+        //This function will run when the player right clicks on an inventory slot in their own inventory.
         dropItem = (int slotIndex) => {
             Item clickedItem = inventory.GetItem(slotIndex);
 
