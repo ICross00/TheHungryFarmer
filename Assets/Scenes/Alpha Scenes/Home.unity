@@ -4578,7 +4578,7 @@ MonoBehaviour:
     activeItem: 0
   - itemTemplate: {fileID: 11400000, guid: 7fe54323e33903e4485d2115788fb6c8, type: 2}
     amount: 1
-    activeItem: 0
+    activeItem: 1
   - itemTemplate: {fileID: 11400000, guid: c6ea5215bd047db448cefb198b764710, type: 2}
     amount: 64
     activeItem: 0
@@ -7358,7 +7358,7 @@ PrefabInstance:
     - target: {fileID: 2778104347548870014, guid: c5c05c57b6e04634f90a22e7d335d162,
         type: 3}
       propertyPath: items.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2778104347548870014, guid: c5c05c57b6e04634f90a22e7d335d162,
         type: 3}
@@ -7367,9 +7367,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2778104347548870014, guid: c5c05c57b6e04634f90a22e7d335d162,
         type: 3}
+      propertyPath: items.Array.data[1].amount
+      value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 2778104347548870014, guid: c5c05c57b6e04634f90a22e7d335d162,
+        type: 3}
       propertyPath: items.Array.data[0].itemTemplate
       value: 
       objectReference: {fileID: 11400000, guid: 19f5f85c4bfae5e4982c19c83fc9d66d,
+        type: 2}
+    - target: {fileID: 2778104347548870014, guid: c5c05c57b6e04634f90a22e7d335d162,
+        type: 3}
+      propertyPath: items.Array.data[1].itemTemplate
+      value: 
+      objectReference: {fileID: 11400000, guid: 1e653b5b209c7af478d2d70ce3328fdd,
         type: 2}
     - target: {fileID: 4837796657064691646, guid: c5c05c57b6e04634f90a22e7d335d162,
         type: 3}
