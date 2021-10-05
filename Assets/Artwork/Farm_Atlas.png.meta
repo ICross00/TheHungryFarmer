@@ -412,7 +412,7 @@ TextureImporter:
     second: items_rawseeds_carrot
   - first:
       213: 8257569978211034523
-    second: Farm_Atlas_102
+    second: crop_tomato_5
   - first:
       213: 8304886744329573643
     second: ghost_down_01
@@ -467,6 +467,24 @@ TextureImporter:
   - first:
       213: 533756255033582868
     second: ui_energy_bar_02
+  - first:
+      213: 1218879797200860638
+    second: crop_pumpkin_1
+  - first:
+      213: 8788537403944600919
+    second: crop_strawberry_5
+  - first:
+      213: -6226236428853467325
+    second: crop_pumpkin_2
+  - first:
+      213: 2216242330895328463
+    second: crop_pumpkin_3
+  - first:
+      213: -9048493622981729802
+    second: crop_pumpkin_4
+  - first:
+      213: -5736373190446774062
+    second: crop_pumpkin_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -3205,7 +3223,7 @@ TextureImporter:
       name: crop_tomato_3
       rect:
         serializedVersion: 2
-        x: 288
+        x: 272
         y: 560
         width: 16
         height: 16
@@ -3226,7 +3244,7 @@ TextureImporter:
       name: crop_tomato_4
       rect:
         serializedVersion: 2
-        x: 304
+        x: 288
         y: 560
         width: 16
         height: 16
@@ -3268,7 +3286,7 @@ TextureImporter:
       name: crop_strawberry_2
       rect:
         serializedVersion: 2
-        x: 272
+        x: 256
         y: 544
         width: 16
         height: 16
@@ -3289,7 +3307,7 @@ TextureImporter:
       name: crop_strawberry_3
       rect:
         serializedVersion: 2
-        x: 288
+        x: 272
         y: 544
         width: 16
         height: 16
@@ -3310,7 +3328,7 @@ TextureImporter:
       name: crop_strawberry_4
       rect:
         serializedVersion: 2
-        x: 304
+        x: 288
         y: 544
         width: 16
         height: 16
@@ -3370,11 +3388,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Farm_Atlas_102
+      name: crop_tomato_5
       rect:
         serializedVersion: 2
         x: 304
-        y: 576
+        y: 560
         width: 16
         height: 16
       alignment: 0
@@ -3764,6 +3782,132 @@ TextureImporter:
       bones: []
       spriteID: 4156be96c78486700800000000000000
       internalID: 533756255033582868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crop_pumpkin_1
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 528
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed5be08b7b45ae010800000000000000
+      internalID: 1218879797200860638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crop_strawberry_5
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 544
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7550a59843827f970800000000000000
+      internalID: 8788537403944600919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crop_pumpkin_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 528
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 347a79ab4f6f799a0800000000000000
+      internalID: -6226236428853467325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crop_pumpkin_3
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 528
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc4233568aca1ce10800000000000000
+      internalID: 2216242330895328463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crop_pumpkin_4
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 528
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f169c9adfa4d6280800000000000000
+      internalID: -9048493622981729802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crop_pumpkin_5
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 528
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d88854d9fe4460b0800000000000000
+      internalID: -5736373190446774062
       vertices: []
       indices: 
       edges: []

@@ -36,6 +36,7 @@ public class Player : Mover
             Item clickedItem = inventory.GetItem(slotIndex);
 
             if(clickedItem == selectedItem) {
+                selectedItem.Equip(this, false); //Trigger unequip behaviour
                 selectedItem = null;
                 UpdateItemAnimations();
             }
@@ -48,24 +49,23 @@ public class Player : Mover
 
         selectItem = (int slotIndex) => {
             Item clickedItem = inventory.GetItem(slotIndex);
-            selectedItem = (clickedItem == selectedItem) ? null : clickedItem;
 
-            if(clickedItem.GetItemType() == ItemType.Sword && selectedItem != null) {
-                GameObject swordPrefab = Resources.Load<GameObject>("Prefabs/weapon_sword_wood");
-                GameObject sword = GameObject.Instantiate(swordPrefab, transform.position, Quaternion.identity, this.transform);
-                sword.name = "Equipped Sword";
-            } else {
-                Transform swordInstance = transform.Find("Equipped Sword");
-                if(swordInstance != null)
-                    Destroy(swordInstance.gameObject);
-            }
+            //Handle equipped item logic
+            Item previousItem = selectedItem;
+            selectedItem = (clickedItem == previousItem) ? null : clickedItem; //Update selected item
 
-            UpdateItemAnimations();
+            if(selectedItem != null)
+                selectedItem.Equip(this, true); //Trigger equip behaviour for the newly selected item
+            if(previousItem != null)
+                previousItem.Equip(this, false); //Trigger unequip behaviour for the previously selected item
+
+            UpdateItemAnimations(); //Update animations
         };
 
         inventory.OnItemListChanged += (object sender, System.EventArgs e) => {
             if(selectedItem != null)  {
                 if(selectedItem.amount == 0) {
+                    selectedItem.Equip(this, false); //Trigger unequip behaviour
                     selectedItem = null;
                 }
             }
@@ -132,7 +132,7 @@ public class Player : Mover
         //Use selected item
         if(Input.GetKeyDown(KeyCode.E)) {
             if(selectedItem != null) {
-                Item.UseItem(selectedItem, this);
+                selectedItem.Use(this);
                 if(selectedItem.amount <= 0) //Deselect the item
                     selectedItem = null;
             }

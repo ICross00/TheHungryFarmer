@@ -75,18 +75,44 @@ public class Item
     }
 
     /*
-        Uses an item. The player should be passed in so that additional information is available.
-        For example, the position of the player can be used in this function, or the player's
-        inventory can be accessed if you want to remove an item to make it a consumable.
+    Triggers the equip/uenquip behaviour for this item.
 
-        To define new item behaviour, add a new switch case corresponding to the enum in ItemType (see ItemTemplate.cs) you want to define behaviour for.
-
-        @param item The item to use
-        @param user The player who used this item
+    @param ply The player who equipped or unequipped this item
+    @param equipped Whether the item was equipped (true) or unequipped (false)
     */
-    public static void UseItem(Item item, Player user)  {
-        Inventory inventory = user.GetInventory();
+    public void Equip(Player ply, bool equipped) {
+        Inventory inventory = ply.GetInventory();
 
+        //Invoke the item's OnEquipped/OnUnequipped behaviour
+        if(itemTemplate != null) {
+            ItemBehaviour behaviour = itemTemplate.GetItemBehaviour();
+            if(behaviour != null) {
+                if(equipped)
+                    behaviour.OnItemEquipped(this, ply, inventory);
+                else
+                    behaviour.OnItemUnequipped(this, ply, inventory);
+            }
+        }
+    }
+
+    /*
+    Uses an item. The player should be passed in so that additional information is available.
+    For example, the position of the player can be used in this function, or the player's
+    inventory can be accessed if you want to remove an item to make it a consumable.
+
+    @param ply The player who used this item
+    */
+    public void Use(Player ply)  {
+        Inventory inventory = ply.GetInventory();
+        //Invoke the item's OnUse behaviour
+        if(itemTemplate != null) {
+            ItemBehaviour behaviour = itemTemplate.GetItemBehaviour();
+
+            if(behaviour != null) {
+                behaviour.OnItemUsed(this, ply, inventory);
+            }
+        }
+        /*
         switch(item.GetItemType()) {
             case ItemType.Seeds_Tomato:
             case ItemType.Seeds_Carrot:
@@ -109,5 +135,6 @@ public class Item
                 inventory.RemoveItemSingle(item); //Remove one heart from the inventory
             break;
         }
+        */
     }
 }

@@ -1,0 +1,10 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Behaviour_Trap : ItemBehaviour
+{
+    public override void OnItemUsed(Item item, Player player, Inventory inventory) {
+
+    }
+}

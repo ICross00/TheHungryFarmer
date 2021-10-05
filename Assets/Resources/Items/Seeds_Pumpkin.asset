@@ -10,17 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9cbc7e85fa3738c458d90a5a408acd80, type: 3}
-  m_Name: Sword
+  m_Name: Seeds_Pumpkin
   m_EditorClassIdentifier: 
-  itemName: Sword
-  behaviourClassName: Behaviour_Sword
-  type: 15
-  maxStack: 1
-  sellPrice: 0
-  sprite: {fileID: -6348125399003915226, guid: 0a0b0de405e53224d9e15edaec2a0be9, type: 3}
-  isEquippable: 1
+  itemName: Pumpkin Seeds
+  behaviourClassName: Behaviour_Seeds
+  type: 16
+  maxStack: 64
+  sellPrice: 25
+  sprite: {fileID: -6662726404311003216, guid: 1884b98184089f34184916226ef1b1c5, type: 3}
+  isEquippable: 0
   tags:
-  - key: Damage
-    value: 1
-  - key: Knockback
+  - key: crop_sprites
+    value: crop_pumpkin
+  - key: grows_into
+    value: Pumpkin
+  - key: growth_stages
     value: 5
