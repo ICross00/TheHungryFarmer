@@ -13,6 +13,8 @@ using UnityEngine;
 */
 public abstract class RandomEvent : MonoBehaviour
 {
+    public static Dictionary<int, float> randomEventMap = new Dictionary<int, float>(); //Keeps track of times at which objects were disabled by using their instance ID as the key
+
     public float probability = 0.1f;            //The probability that reach random check will pass, where 0.0 = never and 1.0 = certain
     public float period = 0.33f;                //The number of seconds that must pass before another random check is made
     public bool eventEnabled = true;            //Whether or not the random event should be triggered
@@ -25,8 +27,8 @@ public abstract class RandomEvent : MonoBehaviour
     protected abstract void OnRandomEventTriggered();
 
     void Start() {
-        initialized = true;
         nextTrialTime = Time.time + period;
+        randomEventMap[GetInstanceID()] = Time.time;
         timeOnDisable = Time.time;
     }
 
@@ -39,14 +41,14 @@ public abstract class RandomEvent : MonoBehaviour
     }
 
     void OnDisable() {
-        timeOnDisable = Time.time; //To be used later when object is re-enabled
+        randomEventMap[GetInstanceID()] = Time.time; //To be used later when object is re-enabled
     }
 
     void OnEnable() {
-        if(!initialized)
+        if(!randomEventMap.ContainsKey(GetInstanceID()))
             return;
 
-        float deltatime = Time.time - timeOnDisable;
+        float deltatime = Time.time - randomEventMap[GetInstanceID()];
         SimulateTrials(deltatime); //Simulate trials based on how long the object was disabled
     }
 
