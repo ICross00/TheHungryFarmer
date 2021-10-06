@@ -26,9 +26,7 @@ public class PlantedCrop : RandomEvent
         //Get the key associated with the appropriate crop sprites
         string cropType = cropTemplate.GetTagValue("crop_sprites");
         cropSprites = cropDict.GetSpriteList(cropType);
-
-        //Get the key associated with the number of growth stages
-        maxGrowthStage = int.Parse(cropTemplate.GetTagValue("growth_stages"));
+        maxGrowthStage = cropSprites.Length;
 
         //Set initial sprite
         spriteRenderer = GetComponent<SpriteRenderer>();
