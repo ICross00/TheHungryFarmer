@@ -24,5 +24,3 @@ MonoBehaviour:
     value: crop_tomato
   - key: grows_into
     value: Tomato
-  - key: growth_stages
-    value: 5

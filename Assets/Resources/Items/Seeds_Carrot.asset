@@ -24,5 +24,3 @@ MonoBehaviour:
     value: crop_carrot
   - key: grows_into
     value: Carrot
-  - key: growth_stages
-    value: 4

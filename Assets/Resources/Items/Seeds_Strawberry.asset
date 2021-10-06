@@ -24,5 +24,3 @@ MonoBehaviour:
     value: crop_strawberry
   - key: grows_into
     value: Strawberry
-  - key: growth_stages
-    value: 5

@@ -24,5 +24,3 @@ MonoBehaviour:
     value: crop_pumpkin
   - key: grows_into
     value: Pumpkin
-  - key: growth_stages
-    value: 5
