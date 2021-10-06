@@ -25,25 +25,26 @@ public abstract class RandomEvent : MonoBehaviour
 
     protected abstract void OnRandomEventTriggered();
 
-    void Start() {
+
+    //Virtual MonoBehaviour methods that can be overridden - make sure to call base.Start()
+    protected virtual void Start() {
         nextTrialTime = Time.time + period;
         randomEventMap[GetInstanceID()] = Time.time;
         timeOnDisable = Time.time;
     }
 
-    void Update()
-    {
+    protected virtual void Update() {
         if(Time.time > nextTrialTime) {
             Trial();
             nextTrialTime = Time.time + period; //Schedule next random trial
         }
     }
 
-    void OnDisable() {
+    protected virtual void OnDisable() {
         randomEventMap[GetInstanceID()] = Time.time; //To be used later when object is re-enabled
     }
 
-    void OnEnable() {
+    protected virtual void OnEnable() {
         if(!randomEventMap.ContainsKey(GetInstanceID()))
             return;
 
@@ -51,7 +52,7 @@ public abstract class RandomEvent : MonoBehaviour
         SimulateTrials(deltatime); //Simulate trials based on how long the object was disabled
     }
 
-    void OnDestroy() {
+    protected virtual void OnDestroy() {
         randomEventMap.Remove(GetInstanceID());
     }
 

@@ -5,15 +5,26 @@ using UnityEditor;
 
 public class Trap : RandomEvent
 {
-    void Start() {
-        //Set probability values
-        period = 0.33f;
-        probability = 0.25f; 
+    protected override void Start() {
+        base.Start();
     }
+
+    //Ensure that the trap does not trigger while on screen
+    protected override void OnEnable() {
+        base.OnEnable();
+        eventEnabled = false;
+    }
+
+    protected override void OnDisable() {
+        base.OnDisable();
+        eventEnabled = true;
+    }
+
     /*
     Triggers the trap
     */
     protected override void OnRandomEventTriggered() {
         Debug.Log("Trap triggered");
+        Destroy(this.gameObject);
     }
 }

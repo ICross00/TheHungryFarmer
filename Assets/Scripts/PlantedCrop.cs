@@ -14,7 +14,9 @@ public class PlantedCrop : RandomEvent
     private Grid plantableGrid;
     private PlantableArea plantableArea;
 
-    void Start() {
+    protected override void Start() {
+        base.Start();
+
         gameObject.tag = "Crop";
         //Set growth probabilities
         probability = 0.1f;

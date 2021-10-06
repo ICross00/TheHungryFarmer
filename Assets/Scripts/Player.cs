@@ -132,9 +132,10 @@ public class Player : Mover
         //Use selected item
         if(Input.GetKeyDown(KeyCode.E)) {
             if(selectedItem != null) {
-                selectedItem.Use(this);
                 if(selectedItem.amount <= 0) //Deselect the item
                     selectedItem = null;
+                else
+                    selectedItem.Use(this);
             }
         }
 

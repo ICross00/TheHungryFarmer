@@ -4580,7 +4580,7 @@ MonoBehaviour:
     amount: 1
     activeItem: 1
   - itemTemplate: {fileID: 11400000, guid: c6ea5215bd047db448cefb198b764710, type: 2}
-    amount: 64
+    amount: 5
     activeItem: 0
   - itemTemplate: {fileID: 11400000, guid: 4022f1b71a46c3d49977088fa1e57f47, type: 2}
     amount: 64
