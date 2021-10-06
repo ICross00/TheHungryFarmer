@@ -22,7 +22,6 @@ public abstract class RandomEvent : MonoBehaviour
 
     private float nextTrialTime = 0.0f;         //Time of the next random trial
     private float timeOnDisable = 0.0f;         //Last time the object was disabled
-    private bool initialized = false;           //Prevents OnEnable from executing when the object is first spawned
 
     protected abstract void OnRandomEventTriggered();
 
@@ -50,6 +49,10 @@ public abstract class RandomEvent : MonoBehaviour
 
         float deltatime = Time.time - randomEventMap[GetInstanceID()];
         SimulateTrials(deltatime); //Simulate trials based on how long the object was disabled
+    }
+
+    void OnDestroy() {
+        randomEventMap.Remove(GetInstanceID());
     }
 
     /*

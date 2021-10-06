@@ -32,9 +32,9 @@ public class PlantedCrop : RandomEvent
         spriteRenderer = GetComponent<SpriteRenderer>();
         spriteRenderer.sprite = cropSprites[0];
 
-        //Find plantable grid
-        plantableGrid = GetActiveGrid();
-        this.transform.position = SnapPositionToGrid(this.transform.position);
+        //Find plantable grid and snap to grid
+        plantableGrid = GridUtilities.GetActiveGrid();
+        this.transform.position = GridUtilities.SnapPositionToGrid(this.transform.position);
 
         //Find plantable area
         plantableArea = GameObject.Find("PlantableArea").GetComponent<PlantableArea>();
@@ -72,51 +72,14 @@ public class PlantedCrop : RandomEvent
     }
 
     /*
-    Returns the currently active Grid object
-    */
-    public static Grid GetActiveGrid() {
-        return GameObject.Find("Grid").GetComponent<Grid>();
-    }
-
-    /*
-    Snaps a vector 3 to the plantable grid
-    @param worldPosition The position to snap to the grid
-    @return The position snapped to the grid
-    */
-    private static Vector3 SnapPositionToGrid(Vector3 worldPosition) {
-        Grid activeGrid = GetActiveGrid();
-        Vector3Int gridPosition = activeGrid.WorldToCell(worldPosition);
-        return activeGrid.CellToWorld(gridPosition) + new Vector3(0.5f, -0.5f, 0.0f); //Offset by half so the crop is planted in the middle
-    }
-
-    /*
-    Checks if a provided position is in a plantable area, i.e. a GameObject with the PlantableArea tag that also has a PlantableArea script attached
-    @return True if the provided coordinate was in any plantable area, false if not
-    */
-    public static bool CheckInPlantableArea(Vector3 position) {
-        GameObject[] areas = GameObject.FindGameObjectsWithTag("PlantableArea");
-        if(areas.Length == 0) //Return if no areas were found with the tag
-            return false;
-
-        foreach(GameObject obj in areas) {
-            PlantableArea area = obj.GetComponent<PlantableArea>();
-            if((area != null) & area.ContainsPoint(position)) {
-                return true;
-            }
-        }
-
-        return false;
-    }
-
-    /*
     Checks if a crop can be planted at the provided position
     @param The grid to check on
     @param position The position to test
     */
     public static bool CanPlant(Vector3 position) {
-        Vector3 gridPosition = SnapPositionToGrid(position);
+        Vector3 gridPosition = GridUtilities.SnapPositionToGrid(position);
         //Check if the grid position is in a plantable area
-        if(!CheckInPlantableArea(gridPosition))
+        if(!PlantableArea.CheckInPlantableArea(gridPosition))
             return false;
 
         //Check if the crop is overlapping any existing crops.
