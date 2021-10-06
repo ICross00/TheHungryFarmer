@@ -43,9 +43,11 @@ public class ItemTemplate : ScriptableObject
     Gets the associated behaviour for this template. This function will be called by the Item class whenever the item is used.
     When this function is called for the first time, it will create an instance of the ItemBehaviour child class provided by
     behaviourClassName, then store it for successive calls.
+
+    If the item has no specified behaviour, null is returned
     */
     public ItemBehaviour GetItemBehaviour() {
-        if(behaviourClassName != null) {
+        if(!String.IsNullOrEmpty(behaviourClassName)) {
             if(itemBehaviourMap.ContainsKey(behaviourClassName)) { //Return existing behaviour
                 return itemBehaviourMap[behaviourClassName];
             } else {
@@ -56,17 +58,18 @@ public class ItemTemplate : ScriptableObject
                     itemBehaviourMap[behaviourClassName] = behaviour; //Assign behaviour
 
                     return behaviour;
-                } catch(TypeLoadException e) {
-                    //If this exception is thrown, then the provided behaviourClassName did not match any behaviour class
-                    Debug.Log("[ItemTemplate] Failed to load behaviour for " + behaviourClassName + " in item \"" + itemName+"\".");
-                    Debug.LogException(e, this);
-                    return null;
+                } catch(Exception e) {
+                    //If these exceptions are thrown, then the provided behaviourClassName did not match any behaviour class or behaviourClassName became null at runtime
+                    if (e is TypeLoadException || e is ArgumentNullException) {
+                        Debug.Log("[ItemTemplate] Failed to load behaviour in item \"" + itemName+"\".");
+                        Debug.LogException(e, this);
+                        return null;
+                    }
                 }
             }
         }
 
         //No behaviour specified
-        Debug.Log("none");
         return null;
     }
     //Access the set value of a tag from a given key

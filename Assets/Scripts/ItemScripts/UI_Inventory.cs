@@ -153,6 +153,7 @@ public class UI_Inventory : MonoBehaviour
 
             Image image = slotTf.Find("ItemIcon").GetComponent<Image>();
             image.sprite = item.GetSprite();
+            image.preserveAspect = true;
 
             //Scale up the image if it is selected
             if(selectedIndex >= 0 && selectedIndex == index) {
@@ -160,7 +161,7 @@ public class UI_Inventory : MonoBehaviour
             } else {
                 image.rectTransform.sizeDelta = new Vector2(16, 16);
             }
-    
+
             //Update quantity text
             Text amountText = slotTf.Find("AmountText").GetComponent<Text>();
             amountText.text = item.amount > 1 ? item.amount.ToString() : "";
