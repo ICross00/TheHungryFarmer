@@ -25,6 +25,9 @@ public class PlayerInventory : Inventory
     }
 
     public Item GetItemFromHotbar(int slotIndex) {
+        if(slotIndex >= hotbar.Count)
+            return null;
+
         return hotbar[slotIndex];
     }
 

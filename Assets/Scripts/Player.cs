@@ -48,25 +48,26 @@ public class Player : Mover
         SetDefaultInventoryListeners(); //Attach listeners
     }
 
-    public Item GetSelectedItem() {
-        return inventoryController.selectedItem;
-    }
-
     /*
     Updates the held and equipped item animation states
     */
     public void UpdateItemAnimations() {
         Item selectedItem = inventoryController.selectedItem;
 
-        this.transform.Find("HeldItem").GetComponent<HeldItem>().updateHeldItem(selectedItem);
-        this.transform.Find("EquippedItem").GetComponent<EquippedItem>().updateEquippedItem(selectedItem);
-        this.GetComponent<PlayerAnimator>().UpdateItemAnim();
+        GetComponentInChildren<HeldItem>().updateHeldItem(selectedItem);
+        GetComponentInChildren<EquippedItem>().updateEquippedItem(selectedItem);
+        GetComponent<PlayerAnimator>().UpdateItemAnim();
     }
 
     //Sets the default actions for when the player interacts with inventory slots
     public void SetDefaultInventoryListeners() {
         inventoryUI.SetClickListeners(selectItem, dropItem);
         hotbarUI.SetClickListeners(selectHotbarItem, transferHotbarItem);
+    }
+
+    //Returns the selected item
+    public Item GetSelectedItem() {
+        return inventoryController.selectedItem;
     }
 
     //Returns the player's inventory
@@ -95,27 +96,19 @@ public class Player : Mover
     }
 
     void Update() {
-        //UI Keybinds
+        //Item/inventory keybinds
 
-        //Show/hide inventory
-        if(Input.GetKeyDown(KeyCode.F)) {
-            if(inventoryUI) {
-                isInvOpen = !isInvOpen;
-                inventoryUI.ToggleVisible();
-            }
-        }
+        if(Input.GetKeyDown(KeyCode.F))
+            inventoryController.ShowHideInventory();
 
-        //Use selected item
-        if(Input.GetKeyDown(KeyCode.E)) {
-            Item selectedItem = inventoryController.selectedItem;
-            if(selectedItem != null) {
-                if(selectedItem.amount <= 0) { //Deselect the item
-                    selectedItem = null;
-                } else {
-                    selectedItem.Use(this);
-                }
-            }
-        }
+        if(Input.GetKeyDown(KeyCode.E))
+            inventoryController.UseSelectedItem();
+
+         for(int i = 1; i <= UI_Inventory.ROW_SIZE; i++) //Keys 1-8 on the keyboard are used to access the hotbar
+             if(Input.GetKeyDown(i.ToString())) {
+                inventoryController.SelectHotbarItem(i - 1);
+                break; //Only allow selecting one item
+             }
 
         //Interactable keybinds
         if(Input.GetKeyDown(KeyCode.Space)) {

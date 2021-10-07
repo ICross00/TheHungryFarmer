@@ -15,6 +15,60 @@ public class InventoryController
 
     public Item selectedItem;
 
+    public void ShowHideInventory() {
+        if(inventoryUI) {
+            player.isInvOpen = !player.isInvOpen;
+            inventoryUI.ToggleVisible();
+        }
+    }
+
+    public void UseSelectedItem() {
+        if(selectedItem != null) {
+            if(selectedItem.amount <= 0) { //Deselect the item
+                selectedItem = null;
+            } else {
+                selectedItem.Use(player);
+            }
+        }
+    }
+
+    /*
+    Selects an item from the hotbar
+    @param hotbarIndex The index in the hotbar to select
+    */
+    public void SelectHotbarItem(int hotbarIndex) {
+        Item item = inventory.GetItemFromHotbar(hotbarIndex);
+        if (item == null) //Do nothing if an out of range item was selected
+            return;
+
+        SelectItem(item);
+        hotbarUI.SetSelectedIndex(selectedItem == null ? -1 : hotbarIndex); //If the item was deselected, also deselect the hotbar item
+    }
+
+    /*
+    Forcibly selects an item, overriding whatever was previously selected
+    If the selected item was already selected, then it will be deselected
+
+    @param item The item to select
+    */
+    private void SelectItem(Item item) {
+        Item previousItem = selectedItem;
+        selectedItem = (item == previousItem) ? null : item; //Update selected item
+
+        if(selectedItem != null)
+            selectedItem.Equip(player, true); //Trigger equip behaviour for the previously selected item
+
+        if(previousItem != null)
+            previousItem.Equip(player, false); //Trigger unequip behaviour for the previously selected item
+
+        player.UpdateItemAnimations();
+    }
+
+    /*
+    The below functions should be passed in as parameters to the SetClickListeners function of a UI_Inventory class.
+    They should not be called directly, as SetClickListeners will dynamically provide the parameters based on what the player
+    clicked on in an inventory/hotbar
+    */
     public void OnInventoryRightClick(Item clickedItem, int slotIndex) {
         if(clickedItem == selectedItem) {
             selectedItem.Equip(player, false); //Trigger unequip behaviour
@@ -22,23 +76,12 @@ public class InventoryController
         }
 
         Collectable spawnedItem = inventory.DropItem(player.transform.position, slotIndex);
-        spawnedItem.ApplyRandomForce(11.0f);
+        spawnedItem.ApplyRandomForce(10.0f);
     }
 
 
     public void OnHotbarLeftClick(Item clickedItem, int slotIndex) {
-        //Handle equipped item logic
-        Item previousItem = selectedItem;
-        selectedItem = (clickedItem == previousItem) ? null : clickedItem; //Update selected item
-
-        if(selectedItem != null) {
-            selectedItem.Equip(player, true); //Trigger equip behaviour for the newly selected item
-        }
-
-        if(previousItem != null) {
-            previousItem.Equip(player, false); //Trigger unequip behaviour for the previously selected item
-        }
-
+        SelectItem(clickedItem);
         player.UpdateItemAnimations();
     }
 
@@ -46,7 +89,7 @@ public class InventoryController
         if(inventory.IsHotbarFull()) //Do not move items to hotbar if it is already full
             return;
 
-        OnHotbarLeftClick(clickedItem, slotIndex);
+        SelectItem(clickedItem);
         inventory.TransferToHotbar(slotIndex); //Move selected item to hotbar
         hotbarUI.SetSelectedIndex(inventory.GetNumHotbarItems() - 1);
 
