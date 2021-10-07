@@ -43,7 +43,7 @@ public class InventoryController
     }
 
     public void OnInventoryLeftClick(Item clickedItem, int slotIndex) {
-        if(inventory.IsHotbarFull())
+        if(inventory.IsHotbarFull()) //Do not move items to hotbar if it is already full
             return;
 
         OnHotbarLeftClick(clickedItem, slotIndex);
