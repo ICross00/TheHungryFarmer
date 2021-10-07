@@ -17,11 +17,12 @@ public class PlayerInventory : Inventory
     Forces the hotbar to refresh
     */
     public void TriggerRefresh() {
+        hotbar.RemoveAll(hotbarItem => hotbarItem.amount == 0);
         OnHotbarChanged?.Invoke(this, EventArgs.Empty);
     }
 
     private void Inventory_OnHotbarChanged(object sender, System.EventArgs e) {
-        hotbar.RemoveAll(hotbarItem => hotbarItem.amount == 0);
+        
     }
 
     public Item GetItemFromHotbar(int slotIndex) {

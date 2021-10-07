@@ -24,10 +24,13 @@ public class InventoryController
 
     public void UseSelectedItem() {
         if(selectedItem != null) {
+            if(selectedItem.amount > 0)
+                selectedItem.Use(player);
+
             if(selectedItem.amount <= 0) { //Deselect the item
                 selectedItem = null;
-            } else {
-                selectedItem.Use(player);
+                hotbarUI.SetSelectedIndex(-1);
+                player.UpdateItemAnimations();
             }
         }
     }
