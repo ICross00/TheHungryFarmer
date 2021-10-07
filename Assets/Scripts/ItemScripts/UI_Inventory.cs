@@ -7,20 +7,22 @@ using UnityEngine.EventSystems;
 
 public class UI_Inventory : MonoBehaviour
 {
-    private Inventory m_inventory; //The inventory object that this will display a UI for
-    private Transform itemSlotContainer;
-    private Transform itemSlotTemplate;
-    private Tooltip tooltip;
-    private int selectedIndex;
+    public static readonly float CELL_SIZE = 21.0f;
+    public static readonly int ROW_SIZE = 8;
 
-    private bool isVisible;
+    public Inventory m_inventory; //The inventory object that this will display a UI for
+    protected Transform itemSlotContainer;
+    protected Transform itemSlotTemplate;
+    protected Tooltip tooltip;
+
+    protected bool isVisible;
 
     public EventSystem eventSystem;
 
-    public UnityEvent<int> onButtonRightClicked; //Callback function run whenever the player left-clicks an item in the inventory
-    public UnityEvent<int> onButtonLeftClicked; //Callback function run whenever the player right-clicks an item in the inventory
+    public UnityEvent<Item, int> onButtonRightClicked; //Callback function run whenever the player left-clicks an item in the inventory
+    public UnityEvent<Item, int> onButtonLeftClicked; //Callback function run whenever the player right-clicks an item in the inventory
 
-    private void Start() {
+    protected void Start() {
         itemSlotContainer = transform.Find("InventoryImage");
         itemSlotTemplate = itemSlotContainer.Find("SlotTemplate");
 
@@ -42,8 +44,19 @@ public class UI_Inventory : MonoBehaviour
         m_inventory.OnItemListChanged += UI_OnItemListChanged;
     }
 
+    /*
+    Sets actions for when an item is left and right clicked
+    */
+    public void SetClickListeners(UnityAction<Item, int> leftClickListener, UnityAction<Item, int> rightClickListener) {
+        onButtonLeftClicked.RemoveAllListeners();
+        onButtonRightClicked.RemoveAllListeners();
+
+        onButtonLeftClicked.AddListener(leftClickListener);
+        onButtonRightClicked.AddListener(rightClickListener);
+    }
+
     //Refresh when the inventory data structure is changed
-    private void UI_OnItemListChanged(object sender, System.EventArgs e) {
+    protected void UI_OnItemListChanged(object sender, System.EventArgs e) {
         Refresh();
     }
 
@@ -68,34 +81,25 @@ public class UI_Inventory : MonoBehaviour
     /**
     Callback function run whenever the player left-clicks an item in the inventory
     */
-    private void OnButtonLeftClicked(int slotIndex) {
-        onButtonLeftClicked.Invoke(slotIndex);
-
-        tooltip.SetText(m_inventory.GetItemList()[slotIndex].GetName());
+    protected virtual void OnButtonLeftClicked(Item item, int slotIndex) {
+        onButtonLeftClicked.Invoke(item, slotIndex);
         tooltip.ShowTooltip(false);
-
-        //Select the item, if it was already selected then deselect it
-        selectedIndex = (slotIndex == selectedIndex) ? -1 : slotIndex;
         Refresh();
     }
 
     /**
     Callback function run whenever the player right-clicks an item in the inventory
     */
-    private void OnButtonRightClicked(int slotIndex) {
-        onButtonRightClicked.Invoke(slotIndex);
+    protected virtual void OnButtonRightClicked(Item item, int slotIndex) {
+        onButtonRightClicked.Invoke(item, slotIndex);
         tooltip.ShowTooltip(false);
-
-        //Deselect the item
-        selectedIndex = -1;
-
         Refresh();
     }
 
     /**
     Callback function run whenever the player's mouse hovers over an item in the inventory
     */
-    private void OnButtonHover(int slotIndex) {
+    protected virtual void OnButtonHover(int slotIndex) {
         Item hoveredItem = m_inventory.GetItemList()[slotIndex];
         string text = hoveredItem.GetName() + "\nUnit Price: " + hoveredItem.GetUnitSellPrice().ToString();
 
@@ -107,7 +111,7 @@ public class UI_Inventory : MonoBehaviour
     /**
     Callback function run whenever the player's mouse stops hovering over an item in the inventory
     */
-    private void OnButtonHoverExit(int slotIndex) {
+    protected virtual void OnButtonHoverExit(int slotIndex) {
         tooltip.ShowTooltip(false);
         tooltip.SetText("");
     }
@@ -116,7 +120,7 @@ public class UI_Inventory : MonoBehaviour
     Refreshes all of the event listeners to default for a provided item slot
     @param slotItem The ClickableObject associated with the item slot for which event listeners will be reset
     */
-    private void RefreshListeners(ClickableObject slotButton) {
+    protected void RefreshListeners(ClickableObject slotButton) {
         slotButton.RemoveAllListeners();
         slotButton.onRight.AddListener(OnButtonRightClicked);
         slotButton.onLeft.AddListener(OnButtonLeftClicked);
@@ -124,8 +128,47 @@ public class UI_Inventory : MonoBehaviour
         slotButton.onExit.AddListener(OnButtonHoverExit);
     }
 
+    private void DrawSlots() {
+        int x = 0;
+        int y = 0;
+
+        int index = 0; //Index in the item list of the current slot
+
+        foreach (Item item in m_inventory.GetItemList()) {
+            RectTransform slotTf = Instantiate(itemSlotTemplate, itemSlotContainer).GetComponent<RectTransform>();
+            slotTf.gameObject.SetActive(true);
+            RectTransform templateTf = itemSlotTemplate.GetComponent<RectTransform>();
+            slotTf.anchoredPosition = templateTf.anchoredPosition + new Vector2(x * CELL_SIZE, y * CELL_SIZE);
+
+            Image image = slotTf.Find("ItemIcon").GetComponent<Image>();
+            image.sprite = item.GetSprite();
+            image.preserveAspect = true;
+            image.rectTransform.sizeDelta = new Vector2(16, 16);
+
+            //Update quantity text
+            Text amountText = slotTf.Find("AmountText").GetComponent<Text>();
+            amountText.text = item.amount > 1 ? item.amount.ToString() : "";
+
+            //Update event listeners
+            ClickableObject slotButton = slotTf.Find("ItemButton").GetComponent<ClickableObject>();
+            slotButton.index = index;
+            slotButton.item = item;
+            RefreshListeners(slotButton);
+
+            //Wrap around rows
+            x++;
+            if(x > ROW_SIZE) {
+                x = 0;
+                y--;
+            }
+
+            index++;
+        }
+    }
+
     /*
     Redraws the inventory by destroying all the slot gameobjects and recreating them from the current inventory state
+    Can be overridden to draw additional information
     */
     private void Refresh() {
         if(m_inventory == null) 
@@ -138,47 +181,7 @@ public class UI_Inventory : MonoBehaviour
             Destroy(child.gameObject);
         }
 
-        int x = 0;
-        int y = 0;
-        float cellSize = 21f;
-        float cellMargin = 0f;
-
-        int index = 0; //Index in the item list of the current slot
-
-        foreach (Item item in m_inventory.GetItemList()) {
-            RectTransform slotTf = Instantiate(itemSlotTemplate, itemSlotContainer).GetComponent<RectTransform>();
-            slotTf.gameObject.SetActive(true);
-            RectTransform templateTf = itemSlotTemplate.GetComponent<RectTransform>();
-            slotTf.anchoredPosition = templateTf.anchoredPosition + new Vector2(x * cellSize + cellMargin, y * cellSize + cellMargin);
-
-            Image image = slotTf.Find("ItemIcon").GetComponent<Image>();
-            image.sprite = item.GetSprite();
-            image.preserveAspect = true;
-
-            //Scale up the image if it is selected
-            if(selectedIndex >= 0 && selectedIndex == index) {
-                image.rectTransform.sizeDelta = new Vector2(18, 18);
-            } else {
-                image.rectTransform.sizeDelta = new Vector2(16, 16);
-            }
-
-            //Update quantity text
-            Text amountText = slotTf.Find("AmountText").GetComponent<Text>();
-            amountText.text = item.amount > 1 ? item.amount.ToString() : "";
-
-            //Update event listeners
-            ClickableObject slotButton = slotTf.Find("ItemButton").GetComponent<ClickableObject>();
-            slotButton.index = index;
-            RefreshListeners(slotButton);
-
-            //Wrap around rows
-            x++;
-            if(x > 8) {
-                x = 0;
-                y--;
-            }
-
-            index++;
-        }
+        //Redraw item slots
+        DrawSlots();
     }
 }

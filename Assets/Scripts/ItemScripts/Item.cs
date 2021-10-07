@@ -19,11 +19,12 @@ public class Item
 
     @param name The name of the item to create. This must match the name of the item as found in the Resources/Items folder
     @param itemAmount The amount of item to include in the stack
+    @param activeItem
     */
 
-    public static Item CreateItem(string name, int itemAmount) {
+    public static Item CreateItem(string name, int itemAmount, bool activeItem = false) {
         ItemTemplate template = Resources.Load<ItemTemplate>("Items/"+name);
-        return new Item { itemTemplate = template, amount = itemAmount };
+        return new Item { itemTemplate = template, amount = itemAmount, activeItem = activeItem };
     }
 
     /**
@@ -34,7 +35,7 @@ public class Item
     @return A copy of the item
     */
     public static Item CopyItem(Item itemToCopy) {
-        return new Item { itemTemplate = itemToCopy.itemTemplate, amount = itemToCopy.amount };
+        return new Item { itemTemplate = itemToCopy.itemTemplate, amount = itemToCopy.amount, activeItem = itemToCopy.activeItem };
     }
 
     /*
@@ -103,7 +104,7 @@ public class Item
     @param ply The player who used this item
     */
     public void Use(Player ply)  {
-        Inventory inventory = ply.GetInventory();
+        PlayerInventory inventory = ply.GetInventory() as PlayerInventory;
         //Invoke the item's OnUse behaviour
         if(itemTemplate != null) {
             ItemBehaviour behaviour = itemTemplate.GetItemBehaviour();
@@ -111,6 +112,9 @@ public class Item
             if(behaviour != null) {
                 behaviour.OnItemUsed(this, ply, inventory);
             }
+
+            //Refresh the inventory in case an item was consumed
+            inventory.TriggerRefresh();
         }
         /*
         switch(item.GetItemType()) {

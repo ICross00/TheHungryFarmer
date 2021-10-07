@@ -25,15 +25,13 @@ public class Shop : Interactable
 
         //Set up callback functions for when an item is bought or sold
 
-        shopUI.onButtonRightClicked.AddListener((int slotIndex) => {
-            Item soldItem = shopInventory.GetItemList()[slotIndex];
-            SellItem(soldItem);
+        shopUI.onButtonRightClicked.AddListener((Item item, int slotIndex) => {
+            SellItem(item);
         });
 
-        shopUI.onButtonLeftClicked.AddListener((int slotIndex) => {
-            Item purchasedItem = shopInventory.GetItemList()[slotIndex];
+        shopUI.onButtonLeftClicked.AddListener((Item item, int slotIndex) => {
             if(playerCustomer != null) {
-                BuyItem(purchasedItem);
+                BuyItem(item);
             }
         });
     }

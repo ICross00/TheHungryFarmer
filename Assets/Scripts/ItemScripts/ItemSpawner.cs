@@ -17,12 +17,13 @@ public class ItemSpawner : MonoBehaviour
 {
     public ItemTemplate item; //The item that this spawner will spawn
     public int amount = 1; //The amount of the item that will be spawned
+    public bool activeItem = false;
 
     void Start()
     {
         //Spawn the item
         //Set the z-coordinate to 0 so the item doesn't appear behind the background
-        Collectable.Spawn(new Vector3(transform.position.x, transform.position.y, 0), new Item { itemTemplate = this.item, amount = this.amount });
+        Collectable.Spawn(new Vector3(transform.position.x, transform.position.y, 0), new Item { itemTemplate = this.item, amount = this.amount , activeItem = activeItem});
         Destroy(gameObject);
     }
 }

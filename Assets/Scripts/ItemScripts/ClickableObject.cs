@@ -4,11 +4,12 @@ using UnityEngine.EventSystems;
 using UnityEngine.Events;
 
 //Custom button that allows both left and right clicks
-public class ClickableObject: MonoBehaviour, IPointerClickHandler, IPointerEnterHandler, IPointerExitHandler {
+public class ClickableObject  : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler, IPointerExitHandler {
     public int index = 0;
+    public Item item;
 
-    public UnityEvent<int> onLeft;
-    public UnityEvent<int> onRight;
+    public UnityEvent<Item, int> onLeft;
+    public UnityEvent<Item, int> onRight;
 
     public UnityEvent<int> onHover;
     public UnityEvent<int> onExit;
@@ -25,11 +26,11 @@ public class ClickableObject: MonoBehaviour, IPointerClickHandler, IPointerEnter
     {
         if (eventData.button == PointerEventData.InputButton.Left)
         {
-            onLeft.Invoke(index);
+            onLeft.Invoke(item, index);
         }
         else if (eventData.button == PointerEventData.InputButton.Right)
         {
-            onRight.Invoke(index);
+            onRight.Invoke(item, index);
         }
     }
 
@@ -43,7 +44,7 @@ public class ClickableObject: MonoBehaviour, IPointerClickHandler, IPointerEnter
     //Detect when cursor leaves the gameobject
     public void OnPointerExit(PointerEventData pointerEventData)
     {
-        SetImageAlpha(0f);
+        SetImageAlpha(0.0f);
         onExit.Invoke(index);
     }
 

@@ -11,6 +11,6 @@ public class Behaviour_Trap : ItemBehaviour
         GameObject trap = GameObject.Instantiate(pfTrap, player.transform.position, Quaternion.identity, trapGrid);
 
         //Consume the item
-        inventory.RemoveItemSingle(item);
+        item.amount--;
     }
 }

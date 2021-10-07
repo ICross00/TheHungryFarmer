@@ -71,9 +71,10 @@ public class PlayerAnimator : MonoBehaviour
 
     public void UpdateItemAnim()
     {
-        if (player.selectedItem != null)
+        Item selectedItem = player.GetSelectedItem();
+        if (selectedItem != null)
         {
-            if (!player.selectedItem.activeItem)
+            if (!selectedItem.activeItem)
             {
                 anim.SetBool("isHoldItem", true);
             }

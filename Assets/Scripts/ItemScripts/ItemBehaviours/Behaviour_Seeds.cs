@@ -13,7 +13,7 @@ public class Behaviour_Seeds : ItemBehaviour
             crop.cropTemplate = item.itemTemplate; //Set the crop type after spawning it
 
             //Consume the item
-            inventory.RemoveItemSingle(item);
+            item.amount--;
         }
     }
 }

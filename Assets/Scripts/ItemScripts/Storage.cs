@@ -23,10 +23,9 @@ public class Storage : Interactable
 
         //Set up callback functions for when an item is retrieved
 
-        storageUI.onButtonRightClicked.AddListener((int slotIndex) => {
-            Item retrievedItem = storageInventory.GetItemList()[slotIndex];
+        storageUI.onButtonRightClicked.AddListener((Item item, int slotIndex) => {
             if(player != null) {
-                RetrieveItem(retrievedItem);
+                RetrieveItem(item);
             }
         });
     }
@@ -45,10 +44,9 @@ public class Storage : Interactable
         //We need to temporarily override the player's UI inventory right click function to make it deposit items in the inventory rather than dropping them
         UI_Inventory playerInvUI = player.inventoryUI;
         playerInvUI.onButtonRightClicked.RemoveAllListeners();
-        playerInvUI.onButtonRightClicked.AddListener((int slotIndex) => {
+        playerInvUI.onButtonRightClicked.AddListener((Item item, int slotIndex) => {
             //Override the right click event to store the item in the storage
-            Item storedItem = playerInventory.GetItemList()[slotIndex];
-            StoreItem(storedItem);
+            StoreItem(item);
         });
 
         isStorageOpen = true;
@@ -100,7 +98,6 @@ public class Storage : Interactable
         Item itemCopy = Item.CopyItem(storedItem);
         if(playerInventory.RemoveItem(storedItem)) {
             storageInventory.AddItem(itemCopy);
-            player.UpdateItemAnimations();
             return true;
         }
 

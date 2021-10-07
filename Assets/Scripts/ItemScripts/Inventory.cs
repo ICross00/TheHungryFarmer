@@ -8,7 +8,14 @@ public class Inventory : MonoBehaviour
     public event EventHandler OnItemListChanged;
     [SerializeField]
     private List<Item> items;
-    private List<Item> hotbar;
+
+    void Start() {
+         OnItemListChanged += Inventory_OnItemListChanged;
+    }
+
+    private void Inventory_OnItemListChanged(object sender, System.EventArgs e) {
+        items.RemoveAll(storedItem => storedItem.amount == 0);
+    }
 
     /*
     Returns the inventory as a list of items test
@@ -47,7 +54,8 @@ public class Inventory : MonoBehaviour
         for(int stack = 0; stack < newItem.amount; stack++) {
             bool canStack = false;
             //Check if the item can be stacked first
-            foreach(Item storedItem in items) {
+            for (int i = items.Count-1; i >= 0; i--) {
+                Item storedItem = items[i];
                 //If the items are of the same type and if the stored item is below the max stack size, then the item can be stacked
                 if(storedItem.GetItemType() == newItem.GetItemType() && storedItem.amount < storedItem.itemTemplate.maxStack) {
                     storedItem.amount += 1; //Increment the stack
@@ -57,7 +65,9 @@ public class Inventory : MonoBehaviour
             }
 
             if(!canStack) { //If the item cannot be stacked, add it to the end of the inventory
-                items.Add(new Item { itemTemplate = newItem.itemTemplate, amount = 1 } );
+                Item clone = Item.CopyItem(newItem);
+                clone.amount = 1;
+                items.Add(clone);
             }
         }
 
@@ -98,12 +108,13 @@ public class Inventory : MonoBehaviour
         int index = 0;
         bool success = false;
 
-        foreach(Item storedItem in items) {
+        for (int i = items.Count-1; i >= 0; i--) {
+            Item storedItem = items[i];
             //If the items are of the same type and if the amount of stored item is above the amount of the provided item, then the item can be removed
             if(storedItem.GetItemType() == removedItem.GetItemType() && storedItem.amount >= removedItem.amount) {
                 storedItem.amount -= removedItem.amount;
                 if(storedItem.amount == 0) {
-                    items.RemoveAt(index);
+                    items.RemoveAt(i);
                 }
                 //Indicate success
                 success = true;
@@ -124,7 +135,8 @@ public class Inventory : MonoBehaviour
     @return True if the item was successfully removed, false if the item was not in the inventory
     */
     public bool RemoveItemSingle(Item removedItem) {
-        Item singleItem = new Item { itemTemplate = removedItem.itemTemplate, amount = 1 };
+        Item singleItem = Item.CopyItem(removedItem);
+        singleItem.amount = 1;
         return RemoveItem(singleItem);
     }
 
