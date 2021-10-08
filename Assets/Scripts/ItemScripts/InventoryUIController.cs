@@ -6,7 +6,7 @@ using UnityEngine.Events;
 /*
     Controls interactions between a player and the inventory
 */
-public class InventoryController
+public class InventoryUIController
 {
     public Player player;
     public PlayerInventory inventory;

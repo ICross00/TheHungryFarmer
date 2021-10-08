@@ -10,7 +10,7 @@ public class Player : Mover
     public UI_Hotbar hotbarUI;
     private SpriteRenderer spriteRenderer;
     private PlayerInventory inventory;
-    private InventoryController inventoryController;
+    private InventoryUIController inventoryController;
     private GameManager gameManager;
     public bool isInvOpen = false;
 
@@ -33,7 +33,7 @@ public class Player : Mover
 
         hotbarUI.Initialize(inventory);
         //Initialize inventory UI clicking behaviour
-        inventoryController = new InventoryController {
+        inventoryController = new InventoryUIController {
             player = this,
             inventory = inventory,
             inventoryUI = inventoryUI,
