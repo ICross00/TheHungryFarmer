@@ -39,10 +39,12 @@ public class PlantedCrop : RandomEvent
         this.transform.position = GridUtilities.SnapPositionToGrid(this.transform.position);
 
         //Find plantable area
-        plantableArea = GameObject.Find("PlantableArea").GetComponent<PlantableArea>();
+        GameObject pObj = GameObject.Find("PlantableArea");
+        plantableArea = pObj.GetComponent<PlantableArea>();
 
         //Assign unique name
         this.name = cropType + "_" + GetInstanceID();
+        this.transform.parent = pObj.transform;
     }
 
     /*
