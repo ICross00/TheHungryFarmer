@@ -7,17 +7,17 @@ public class Player : Mover
 {
     public float interactionRadius = 1.2f;
     public UI_Inventory inventoryUI;
+    public UI_Hotbar hotbarUI;
     private SpriteRenderer spriteRenderer;
-    private Inventory inventory;
+    private PlayerInventory inventory;
+    private InventoryUIController inventoryController;
     private GameManager gameManager;
     public bool isInvOpen = false;
 
-    public Item selectedItem;
 
     //Actions to store and select items. These may be temporarily overridden by other classes, so are stored so they may be reset
-    private UnityAction<int> dropItem;
-    private UnityAction<int> selectItem;
-
+    private UnityAction<Item, int> dropItem;
+    private UnityAction<Item, int> selectItem;
     protected override void Start()
     {
         base.Start();
@@ -26,68 +26,45 @@ public class Player : Mover
         DontDestroyOnLoad(gameObject);
 
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
-        inventory = GameObject.Find("GameManager").GetComponent<Inventory>();
+        inventory = GameObject.Find("GameManager").GetComponent<PlayerInventory>();
 
-        //inventoryUI.SetInventory(inventory);
-        //Setup callback functions for interacting with the inventory UI.
+        hotbarUI.Initialize(inventory);
 
-        //This function will run when the player right clicks on an inventory slot in their own inventory.
-        dropItem = (int slotIndex) => {
-            Item clickedItem = inventory.GetItem(slotIndex);
-
-            if(clickedItem == selectedItem) {
-                selectedItem = null;
-                UpdateItemAnimations();
-            }
-
-            Collectable spawnedItem = inventory.DropItem(transform.position, slotIndex);
-            spawnedItem.ApplyRandomForce(11.0f);
+        //Initialize inventory UI clicking behaviour
+        inventoryController = new InventoryUIController {
+            player = this,
+            inventory = inventory,
+            inventoryUI = inventoryUI,
+            hotbarUI = hotbarUI
         };
 
-        //This function will run when the player left clicks on an inventory slot in their own inventory
-
-        selectItem = (int slotIndex) => {
-            Item clickedItem = inventory.GetItem(slotIndex);
-            selectedItem = (clickedItem == selectedItem) ? null : clickedItem;
-
-            if(clickedItem.GetItemType() == ItemType.Sword && selectedItem != null) {
-                GameObject swordPrefab = Resources.Load<GameObject>("Prefabs/weapon_sword_wood");
-                GameObject sword = GameObject.Instantiate(swordPrefab, transform.position, Quaternion.identity, this.transform);
-                sword.name = "Equipped Sword";
-            } else {
-                Transform swordInstance = transform.Find("Equipped Sword");
-                if(swordInstance != null)
-                    Destroy(swordInstance.gameObject);
-            }
-
-            UpdateItemAnimations();
-        };
-
-
-        //Attach the listeners
-        SetDefaultInventoryListeners();
+        inventoryController.SetUIListeners(); //Attach listeners
     }
 
     /*
     Updates the held and equipped item animation states
     */
-    private void UpdateItemAnimations() {
-        this.transform.Find("HeldItem").GetComponent<HeldItem>().updateHeldItem(selectedItem);
-        this.transform.Find("EquippedItem").GetComponent<EquippedItem>().updateEquippedItem(selectedItem);
-        this.GetComponent<PlayerAnimator>().UpdateItemAnim();
+    public void UpdateItemAnimations() {
+        Item selectedItem = inventoryController.selectedItem;
+
+        GetComponentInChildren<HeldItem>().updateHeldItem(selectedItem);
+        GetComponentInChildren<EquippedItem>().updateEquippedItem(selectedItem);
+        GetComponent<PlayerAnimator>().UpdateItemAnim();
     }
 
     //Sets the default actions for when the player interacts with inventory slots
     public void SetDefaultInventoryListeners() {
-        inventoryUI.onButtonLeftClicked.RemoveAllListeners();
-        inventoryUI.onButtonLeftClicked.AddListener(selectItem);
-        inventoryUI.onButtonRightClicked.RemoveAllListeners();
-        inventoryUI.onButtonRightClicked.AddListener(dropItem);
+       inventoryController.SetUIListeners();
+    }
+
+    //Returns the selected item
+    public Item GetSelectedItem() {
+        return inventoryController.selectedItem;
     }
 
     //Returns the player's inventory
     public Inventory GetInventory() {
-        return inventory;
+        return (Inventory)inventory;
     }
 
     //Returns the amount of gold held by the player
@@ -111,24 +88,26 @@ public class Player : Mover
     }
 
     void Update() {
-        //UI Keybinds
+        //Item/inventory keybinds
 
-        //Show/hide inventory
-        if(Input.GetKeyDown(KeyCode.F)) {
-            if(inventoryUI) {
-                isInvOpen = !isInvOpen;
-                inventoryUI.ToggleVisible();
-            }
-        }
+        if(Input.GetKeyDown(KeyCode.F))
+            inventoryController.ShowHideInventory();
 
-        //Use selected item
-        if(Input.GetKeyDown(KeyCode.E)) {
-            if(selectedItem != null) {
-                Item.UseItem(selectedItem, this);
-                if(selectedItem.amount <= 0) //Deselect the item
-                    selectedItem = null;
+        if(Input.GetKeyDown(KeyCode.E))
+            inventoryController.UseSelectedItem();
+
+        for(int i = 1; i <= UI_Inventory.ROW_SIZE; i++) //Keys 1-8 on the keyboard are used to access the hotbar
+            if(Input.GetKeyDown(i.ToString())) {
+            inventoryController.SelectHotbarItem(i - 1);
+            break; //Only allow selecting one item
             }
-        }
+
+
+        /*Check for scrolling through hotbar slots
+        float scroll = Input.GetAxis("Mouse ScrollWheel");
+        if(scroll != 0f)
+            inventoryController.ChangeHotbarItem(scroll);
+        */
 
         //Interactable keybinds
         if(Input.GetKeyDown(KeyCode.Space)) {

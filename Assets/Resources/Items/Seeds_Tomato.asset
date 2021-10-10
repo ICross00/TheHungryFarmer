@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Seeds_Tomato
   m_EditorClassIdentifier: 
   itemName: Tomato Seed Packet
+  behaviourClassName: Behaviour_Seeds
   type: 11
   maxStack: 64
   sellPrice: 3

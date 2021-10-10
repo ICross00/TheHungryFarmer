@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Seeds_Carrot
   m_EditorClassIdentifier: 
   itemName: Carrot Seed Packet
+  behaviourClassName: Behaviour_Seeds
   type: 13
   maxStack: 64
   sellPrice: 4
