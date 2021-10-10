@@ -54,6 +54,15 @@ public class InventoryUIController
     }
 
     /*
+    Selects an item from the hotbar in an adjacent slot
+    @param direction The direction to switch in. Values >0 will switch to the right slot, <0 will switch to the left slot
+    */
+    public void ChangeHotbarItem(float direction) {
+        int nextindex = hotbarUI.GetSelectedIndex() + (int)Mathf.Ceil(direction);
+        SelectHotbarItem(nextIndex);
+    }
+
+    /*
     Forcibly selects an item, overriding whatever was previously selected
     If the selected item was already selected, then it will be deselected
 

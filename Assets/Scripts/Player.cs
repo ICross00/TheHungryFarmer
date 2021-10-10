@@ -96,11 +96,18 @@ public class Player : Mover
         if(Input.GetKeyDown(KeyCode.E))
             inventoryController.UseSelectedItem();
 
-         for(int i = 1; i <= UI_Inventory.ROW_SIZE; i++) //Keys 1-8 on the keyboard are used to access the hotbar
-             if(Input.GetKeyDown(i.ToString())) {
-                inventoryController.SelectHotbarItem(i - 1);
-                break; //Only allow selecting one item
-             }
+        for(int i = 1; i <= UI_Inventory.ROW_SIZE; i++) //Keys 1-8 on the keyboard are used to access the hotbar
+            if(Input.GetKeyDown(i.ToString())) {
+            inventoryController.SelectHotbarItem(i - 1);
+            break; //Only allow selecting one item
+            }
+
+
+        /*Check for scrolling through hotbar slots
+        float scroll = Input.GetAxis("Mouse ScrollWheel");
+        if(scroll != 0f)
+            inventoryController.ChangeHotbarItem(scroll);
+        */
 
         //Interactable keybinds
         if(Input.GetKeyDown(KeyCode.Space)) {

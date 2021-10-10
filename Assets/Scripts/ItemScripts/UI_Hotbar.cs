@@ -18,6 +18,10 @@ public class UI_Hotbar : UI_Inventory
         hasInitialized = true;
     }
 
+    public int GetSelectedIndex() {
+        return selectedIndex;
+    }
+
     public void SetSelectedIndex(int index) {
         selectedIndex = index;
         Refresh();
