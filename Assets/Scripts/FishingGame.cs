@@ -6,7 +6,6 @@ public class FishingGame : MonoBehaviour
 {
     [SerializeField] Transform Top;
     [SerializeField] Transform Bottom;
-
     [SerializeField] Transform fish;
 
     float fishPosition;
