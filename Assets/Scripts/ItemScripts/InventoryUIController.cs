@@ -15,6 +15,11 @@ public class InventoryUIController
 
     public Item selectedItem;
 
+    public void SetUIListeners() {
+        inventoryUI.SetClickListeners(OnInventoryLeftClick, OnInventoryRightClick);
+        hotbarUI.SetClickListeners(OnHotbarLeftClick, OnHotbarRightClick);
+    }
+
     public void ShowHideInventory() {
         if(inventoryUI) {
             player.isInvOpen = !player.isInvOpen;

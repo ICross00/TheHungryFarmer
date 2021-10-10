@@ -18,9 +18,6 @@ public class Player : Mover
     //Actions to store and select items. These may be temporarily overridden by other classes, so are stored so they may be reset
     private UnityAction<Item, int> dropItem;
     private UnityAction<Item, int> selectItem;
-    private UnityAction<Item, int> selectHotbarItem;
-    private UnityAction<Item, int> transferHotbarItem;
-
     protected override void Start()
     {
         base.Start();
@@ -32,6 +29,7 @@ public class Player : Mover
         inventory = GameObject.Find("GameManager").GetComponent<PlayerInventory>();
 
         hotbarUI.Initialize(inventory);
+
         //Initialize inventory UI clicking behaviour
         inventoryController = new InventoryUIController {
             player = this,
@@ -40,12 +38,7 @@ public class Player : Mover
             hotbarUI = hotbarUI
         };
 
-        dropItem = inventoryController.OnInventoryRightClick;           //Inventory slot right clicked
-        selectItem = inventoryController.OnInventoryLeftClick;          //Inventory slot left clicked
-        selectHotbarItem = inventoryController.OnHotbarLeftClick;       //Hotbar slot left clicked
-        transferHotbarItem = inventoryController.OnHotbarRightClick;    //Hotbar slot right clicked
-
-        SetDefaultInventoryListeners(); //Attach listeners
+        inventoryController.SetUIListeners(); //Attach listeners
     }
 
     /*
@@ -61,8 +54,7 @@ public class Player : Mover
 
     //Sets the default actions for when the player interacts with inventory slots
     public void SetDefaultInventoryListeners() {
-        inventoryUI.SetClickListeners(selectItem, dropItem);
-        hotbarUI.SetClickListeners(selectHotbarItem, transferHotbarItem);
+       inventoryController.SetUIListeners();
     }
 
     //Returns the selected item
