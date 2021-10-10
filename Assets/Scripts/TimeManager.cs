@@ -37,7 +37,7 @@ public class TimeManager : MonoBehaviour
         tickTimer += Time.deltaTime;
         if (tickTimer > tickTimerMax)
         {
-            if (seconds == 60)
+            if (seconds == 59)
             {
                 hours++;
                 seconds = 0;

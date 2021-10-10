@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Seeds_Strawberry
   m_EditorClassIdentifier: 
   itemName: Strawberry Seed Packet
+  behaviourClassName: Behaviour_Seeds
   type: 12
   maxStack: 64
   sellPrice: 3

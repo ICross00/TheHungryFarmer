@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
-public class Interactable : MonoBehaviour
+public abstract class Interactable : MonoBehaviour
 {
     //Number of seconds between player collision checks
     private static float COLLISION_CHECK_INTERVAL = 0.1f;
@@ -10,7 +10,7 @@ public class Interactable : MonoBehaviour
 
     protected Player interactingPlayer; //The player that this interactable is currently in interaction with
 
-    void Start() {
+    void OnEnable() {
         cCheckTime = Time.time + COLLISION_CHECK_INTERVAL;
         StartCoroutine(CheckInCollision());
     }
@@ -65,13 +65,13 @@ public class Interactable : MonoBehaviour
         interactingPlayer = null;
     }
 
-    protected virtual void OnInteract(Player triggerPlayer) {}
+    protected abstract void OnInteract(Player triggerPlayer);
 
     protected virtual void OnClose(Player triggerPlayer) {}
 
     IEnumerator CheckInCollision() {
         while(true) {
-            yield return new WaitForSeconds(0.1f); //Only check every 0.1s to save resources
+            yield return new WaitForSeconds(COLLISION_CHECK_INTERVAL); //Only check every 0.1s to save resources
 
             if(this.interactingPlayer != null) {
                 //Check if the player is still in collision with the interactable
