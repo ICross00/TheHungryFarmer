@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cbc7e85fa3738c458d90a5a408acd80, type: 3}
+  m_Name: Seeds_Pumpkin
+  m_EditorClassIdentifier: 
+  itemName: Pumpkin Seeds
+  behaviourClassName: Behaviour_Seeds
+  type: 16
+  maxStack: 64
+  sellPrice: 25
+  sprite: {fileID: -6662726404311003216, guid: 1884b98184089f34184916226ef1b1c5, type: 3}
+  isEquippable: 0
+  tags:
+  - key: crop_sprites
+    value: crop_pumpkin
+  - key: grows_into
+    value: Pumpkin
