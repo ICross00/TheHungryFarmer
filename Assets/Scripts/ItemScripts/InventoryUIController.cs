@@ -58,7 +58,7 @@ public class InventoryUIController
     @param direction The direction to switch in. Values >0 will switch to the right slot, <0 will switch to the left slot
     */
     public void ChangeHotbarItem(float direction) {
-        int nextindex = hotbarUI.GetSelectedIndex() + (int)Mathf.Ceil(direction);
+        int nextIndex = hotbarUI.GetSelectedIndex() + (int)Mathf.Ceil(direction);
         SelectHotbarItem(nextIndex);
     }
 
