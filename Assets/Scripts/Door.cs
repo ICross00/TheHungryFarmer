@@ -26,7 +26,7 @@ public class Door : Interactable
 
         //Change the object's layer. This has the effect of updating collisions, as only collider objects on layer 8 collide with the player
         //This allows us to disable collisions without disabling the interactable
-        gameObject.layer = isOpen ? 1 : 8;
+        gameObject.layer = isOpen ? 1 : 8; //Refactor this to use LayerMask.NameToLayer
     }
 
     //Interact function - open/close the door by toggling

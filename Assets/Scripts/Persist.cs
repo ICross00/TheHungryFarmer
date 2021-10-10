@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 //Basic class to persist an object between scenes, but to only have it visible on the scene it was initialized in
 public class Persist : MonoBehaviour
 {
+    //This dictionary associates a gameobject's name with the scene it was originally created in. From this we can decide upon scene transitions if the object should be re-enabled or destroyed
     private static Dictionary<Tuple<string, string>, bool> persistSceneTargets = new Dictionary<Tuple<string, string>, bool>();
     private Tuple<string, string> key;
 
