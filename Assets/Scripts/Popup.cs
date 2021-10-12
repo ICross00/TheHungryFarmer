@@ -27,13 +27,13 @@ public class Popup : MonoBehaviour
         popupCanvas.enabled = isVisible;
     }
 
-    public void toggleVisible()
+    public void ToggleVisible()
     {
         SetVisible(!isVisible);
     }
 
-    public void exitPopup()
+    public void ExitPopup()
     {
-        toggleVisible();
+        Destroy(this.gameObject);
     }
 }
