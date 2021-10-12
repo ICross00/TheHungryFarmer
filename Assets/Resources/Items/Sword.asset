@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Sword
   m_EditorClassIdentifier: 
   itemName: Sword
+  behaviourClassName: Behaviour_Sword
   type: 15
   maxStack: 1
   sellPrice: 0
