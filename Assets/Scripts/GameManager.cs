@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
 {
     //References
     public Player player;
-    //public Inventory playerInventory;v
+    //public Inventory playerInventory;
     public int restaurantRating;
     public FloatingTextManager floatingTextManager;  //Referencing floating text for later use
     public int gold = 0;
