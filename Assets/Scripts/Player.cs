@@ -26,27 +26,13 @@ public class Player : Mover
         DontDestroyOnLoad(gameObject);
 
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
-        inventory = GameObject.Find("GameManager").GetComponent<Inventory>();
-
-        //inventoryUI.SetInventory(inventory);
-        //Sets up callback functions for interacting with the inventory UI
-
-
-        //This function will run when the player right clicks on an inventory slot in their own inventory.
-        dropItem = (int slotIndex) => {
-            Item clickedItem = inventory.GetItem(slotIndex);
-
-            if(clickedItem == selectedItem) {
-                selectedItem = null;
-                UpdateItemAnimations();
-            }
         inventory = GameObject.Find("GameManager").GetComponent<PlayerInventory>();
-
 
         hotbarUI.Initialize(inventory);
 
         //Initialize inventory UI clicking behaviour
-        inventoryController = new InventoryUIController {
+        inventoryController = new InventoryUIController
+        {
             player = this,
             inventory = inventory,
             inventoryUI = inventoryUI,
@@ -59,7 +45,8 @@ public class Player : Mover
     /*
     Updates the held and equipped item animation states
     */
-    public void UpdateItemAnimations() {
+    public void UpdateItemAnimations()
+    {
         Item selectedItem = inventoryController.selectedItem;
 
         GetComponentInChildren<HeldItem>().updateHeldItem(selectedItem);
@@ -68,28 +55,33 @@ public class Player : Mover
     }
 
     //Sets the default actions for when the player interacts with inventory slots
-    public void SetDefaultInventoryListeners() {
-       inventoryController.SetUIListeners();
+    public void SetDefaultInventoryListeners()
+    {
+        inventoryController.SetUIListeners();
     }
 
     //Returns the selected item
-    public Item GetSelectedItem() {
+    public Item GetSelectedItem()
+    {
         return inventoryController.selectedItem;
     }
 
     //Returns the player's inventory
-    public Inventory GetInventory() {
+    public Inventory GetInventory()
+    {
         return (Inventory)inventory;
     }
 
     //Returns the amount of gold held by the player
-    public int GetGold() {
+    public int GetGold()
+    {
         return gameManager.GetGold();
     }
 
     //Wrapper function for the GameManager's ChangeGold function.
     //This allows objects that the player interacts with (such as shops) to change the player's gold without needing to acquire a reference to the GameManager
-    public void ChangeGold(int amount) {
+    public void ChangeGold(int amount)
+    {
         gameManager.ChangeGold(amount);
     }
 
@@ -102,19 +94,21 @@ public class Player : Mover
         UpdateMotor(new Vector2(x, y));
     }
 
-    void Update() {
+    void Update()
+    {
         //Item/inventory keybinds
 
-        if(Input.GetKeyDown(KeyCode.F))
+        if (Input.GetKeyDown(KeyCode.F))
             inventoryController.ShowHideInventory();
 
-        if(Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E))
             inventoryController.UseSelectedItem();
 
-        for(int i = 1; i <= UI_Inventory.ROW_SIZE; i++) //Keys 1-8 on the keyboard are used to access the hotbar
-            if(Input.GetKeyDown(i.ToString())) {
-            inventoryController.SelectHotbarItem(i - 1);
-            break; //Only allow selecting one item
+        for (int i = 1; i <= UI_Inventory.ROW_SIZE; i++) //Keys 1-8 on the keyboard are used to access the hotbar
+            if (Input.GetKeyDown(i.ToString()))
+            {
+                inventoryController.SelectHotbarItem(i - 1);
+                break; //Only allow selecting one item
             }
 
 
@@ -125,11 +119,13 @@ public class Player : Mover
         */
 
         //Interactable keybinds
-        if(Input.GetKeyDown(KeyCode.Space)) {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
             //Find all objects the player can interact with at this position
             List<Interactable> interactableObjects = Interactable.GetInteractablesInRadius(transform.position, interactionRadius);
 
-            foreach(Interactable i in interactableObjects) {
+            foreach (Interactable i in interactableObjects)
+            {
                 i.Interact(this);
             }
         }
