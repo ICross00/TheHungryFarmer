@@ -13,8 +13,12 @@ public class PopupTrigger : MonoBehaviour
         Debug.Log("PopupTrigger Entered");
         if (collide.name == "Player")
         {
-            popupWindow = Resources.Load<GameObject>("Prefabs/Popups/PopupCanvas");
-            popup = popupWindow.GetComponent<Popup>();
+            if (true)
+            {
+                GameObject tempObj = Resources.Load<GameObject>("Prefabs/Popups/" + popupName);
+                popupWindow = GameObject.Instantiate(tempObj, Vector3.zero, Quaternion.identity);
+                popup = popupWindow.GetComponent<Popup>();
+            }
         }
     }
 }
