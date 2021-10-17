@@ -15,7 +15,7 @@ public class CraftingRecipe : ScriptableObject
         public int amount;
 
         public override string ToString() {
-            return template.name + ":" + amount;
+            return template.name + " x" + amount;
         }
     }
 
@@ -26,17 +26,12 @@ public class CraftingRecipe : ScriptableObject
     /*
     Checks if an inventory contains the necessary items to craft this recipe
     @param inventory The inventory that contains the crafting ingredients
-    @param consume If set to true, the ingredients will be consumed from the inventory if they exist
     @return True if the inventory has enough resources to craft the item, false if not
     */
     public bool CheckCanCraft(Inventory inventory, bool consume=false) {
         foreach(CraftingIngredient ingredient in craftingIngredients) {
-            if(!inventory.ContainsItem(ingredient.template, ingredient.amount)) {
+            if(!inventory.ContainsItem(ingredient.template, ingredient.amount))
                 return false;
-            } else {
-                if(consume)
-                    inventory.RemoveItem(ingredient.template, ingredient.amount);
-            }
         }
 
         return true;
@@ -49,7 +44,11 @@ public class CraftingRecipe : ScriptableObject
     @return True if the item was crafted successfully, false if not
     */
     public bool Craft(Inventory outputInv) {
-        if(CheckCanCraft(outputInv, true)) {
+        if(CheckCanCraft(outputInv)) {
+            //Consume the items
+            foreach(CraftingIngredient ingredient in craftingIngredients)
+                outputInv.RemoveItem(ingredient.template, ingredient.amount);
+
             //Create the item and add it to the inventory
             Item craftedItem = new Item { itemTemplate = craftingOutput, amount = outputAmount }; 
             outputInv.AddItem(craftedItem);
@@ -59,11 +58,18 @@ public class CraftingRecipe : ScriptableObject
         return false;
     }
 
-    public override string ToString() {
+    /*
+    Returns the recipe as a formatted string, with ingredients highlighted in red
+    if they do not exist in the inventory
+    @param inventory The inventory to check for ingredients in
+    */
+    public string FormatIngredientString(Inventory inventory) {
         string s = "";
-        foreach(CraftingIngredient ingredient in craftingIngredients)
-            s += ingredient + "\n";
+        foreach(CraftingIngredient ingredient in craftingIngredients) {
+            string c = inventory.ContainsItem(ingredient.template, ingredient.amount)  ? "00FF00" : "FF0000";
+            s += "<color=#"+c+">"+ingredient + "</color>\n";
+        }
 
-        return s;
+        return s.Substring(0,s.Length-1);
     }
 }
