@@ -9,31 +9,28 @@ public class Popup : MonoBehaviour
     public Image popupBackground;
     public Image popupContent;
     public Button exitButton;
-
-    private bool isVisible;
     void Awake()
     {
+        PauseGame();
         this.popupCanvas = GetComponent<Canvas>();
         this.popupBackground = GameObject.Find("PopupBackground").GetComponent<Image>();
         this.popupContent = GameObject.Find("PopupContent").GetComponent<Image>();
         this.exitButton = GameObject.Find("ExitButton").GetComponent<Button>();
-
-        SetVisible(true);
-    }
-
-    public void SetVisible(bool visible)
-    {
-        isVisible = visible;
-        popupCanvas.enabled = isVisible;
-    }
-
-    public void ToggleVisible()
-    {
-        SetVisible(!isVisible);
     }
 
     public void ExitPopup()
     {
+        ResumeGame();
         Destroy(this.gameObject);
+    }
+
+    public void PauseGame()
+    {
+        Time.timeScale = 0;
+    }
+
+    public void ResumeGame()
+    {
+        Time.timeScale = 1;
     }
 }

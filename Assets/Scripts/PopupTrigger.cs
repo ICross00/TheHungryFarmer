@@ -13,12 +13,9 @@ public class PopupTrigger : MonoBehaviour
         Debug.Log("PopupTrigger Entered");
         if (collide.name == "Player")
         {
-            if (true)
-            {
-                GameObject tempObj = Resources.Load<GameObject>("Prefabs/Popups/" + popupName);
-                popupWindow = GameObject.Instantiate(tempObj, Vector3.zero, Quaternion.identity);
-                popup = popupWindow.GetComponent<Popup>();
-            }
+            GameObject tempObj = Resources.Load<GameObject>("Prefabs/Popups/" + popupName);
+            popupWindow = GameObject.Instantiate(tempObj, Vector3.zero, Quaternion.identity);
+            popup = popupWindow.GetComponent<Popup>();
         }
     }
 }
