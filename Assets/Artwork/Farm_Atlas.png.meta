@@ -1816,10 +1816,10 @@ TextureImporter:
       name: item_diamond
       rect:
         serializedVersion: 2
-        x: 224
+        x: 225
         y: 592
-        width: 16
-        height: 16
+        width: 15
+        height: 15
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1839,8 +1839,8 @@ TextureImporter:
         serializedVersion: 2
         x: 208
         y: 592
-        width: 16
-        height: 16
+        width: 15
+        height: 15
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}

@@ -13,6 +13,10 @@ public class CraftingRecipe : ScriptableObject
     public struct CraftingIngredient { //Struct to store an item template and the amount. An entire instance of an item is not needed for the crafting recipe
         public ItemTemplate template;
         public int amount;
+
+        public override string ToString() {
+            return template.name + ":" + amount;
+        }
     }
 
     public ItemTemplate craftingOutput;
@@ -53,5 +57,13 @@ public class CraftingRecipe : ScriptableObject
         }
 
         return false;
+    }
+
+    public override string ToString() {
+        string s = "";
+        foreach(CraftingIngredient ingredient in craftingIngredients)
+            s += ingredient + "\n";
+
+        return s;
     }
 }
