@@ -41,6 +41,10 @@ public class Enemy : Mover
             agent.SetDestination(target.position);
         }
 
+        if (hitPoint <= 0)
+        {
+            Death();
+        }
         //agent.SetDestination(target.position);
     }
 
