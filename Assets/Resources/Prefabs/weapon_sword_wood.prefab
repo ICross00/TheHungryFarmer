@@ -124,7 +124,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  damagePoint: 1
+  damagePoint: 5
   pushForce: 2
   weaponLevel: 0
 --- !u!61 &4236245040133056059
