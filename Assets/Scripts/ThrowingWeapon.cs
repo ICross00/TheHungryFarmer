@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class ThrowingWeapon : MonoBehaviour
 {
+    Player player = GameObject.Find("Player").GetComponent<Player>();
+
     public GameObject target;
     public Vector3 offset = new Vector3(0, 0, -1);
 
@@ -13,6 +15,8 @@ public class ThrowingWeapon : MonoBehaviour
     public Transform FirePoint;
     private Vector2 mousePosition;
     public float fireForce;
+    public float cooldown;
+    private float lastSwing;
 
     void Update()
     {
@@ -45,8 +49,9 @@ public class ThrowingWeapon : MonoBehaviour
     {
         mousePosition = sceneCamera.ScreenToWorldPoint(Input.mousePosition);
 
-        if (Input.GetMouseButtonDown(1))
+        if (Input.GetMouseButtonDown(1) && (Time.time - lastSwing > cooldown))
         {
+            lastSwing = Time.time;
             Fire();
         }
     }
