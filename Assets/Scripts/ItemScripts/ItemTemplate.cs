@@ -103,6 +103,7 @@ public enum ItemType {
     Seeds_Carrot,
     Seeds_Pumpkin,
     Sword,
+    Katana,
     Fish,
     Trap1
 }

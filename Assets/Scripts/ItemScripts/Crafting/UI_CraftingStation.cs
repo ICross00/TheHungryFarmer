@@ -9,6 +9,7 @@ using UnityEngine.EventSystems;
 public class UI_CraftingStation : MonoBehaviour
 {
     public static readonly float CELL_SIZE = 120.0f;
+    public static readonly float ITEM_SIZE = 100.0f;
     public static readonly int ROW_SIZE = 6;
 
     private CraftingStation craftingStation;
@@ -71,7 +72,7 @@ public class UI_CraftingStation : MonoBehaviour
     protected virtual void OnButtonHover(int slotIndex) {
         CraftingRecipe hoveredRecipe = craftingStation.craftableItems[slotIndex];
         Inventory inv = craftingStation.GetInventory();
-        string text =  hoveredRecipe.craftingOutput.itemName + "<color=#FFFF00>\nIngredients:\n</color>" + hoveredRecipe.FormatIngredientString(inv);
+        string text =  "<b>" + hoveredRecipe.craftingOutput.itemName + "</b>\nIngredients:\n" + hoveredRecipe.FormatIngredientString(inv);
         tooltip.ShowTooltip(true);
         tooltip.SetText(text);
     }
@@ -111,7 +112,7 @@ public class UI_CraftingStation : MonoBehaviour
             Image image = slotTf.Find("ItemIcon").GetComponent<Image>();
             image.sprite = recipe.craftingOutput.sprite;
             image.preserveAspect = true;
-            image.rectTransform.sizeDelta = new Vector2(100, 100);
+            image.rectTransform.sizeDelta = new Vector2(ITEM_SIZE, ITEM_SIZE);
 
             //Update quantity text
             TextMeshProUGUI amountText = slotTf.Find("AmountText").GetComponent<TextMeshProUGUI>();

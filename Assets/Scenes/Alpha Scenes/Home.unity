@@ -1527,7 +1527,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28a365efc21879941a7e6c1cd1b37d3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scale: 1
+  scale: 0.2
   padding: 60
 --- !u!222 &620719069
 CanvasRenderer:
@@ -8337,7 +8337,7 @@ PrefabInstance:
     - target: {fileID: 8041746446577464868, guid: 602ca54520b2171469555aa18ee95df3,
         type: 3}
       propertyPath: craftableItems.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8041746446577464868, guid: 602ca54520b2171469555aa18ee95df3,
         type: 3}
@@ -8349,7 +8349,7 @@ PrefabInstance:
         type: 3}
       propertyPath: craftableItems.Array.data[1]
       value: 
-      objectReference: {fileID: 11400000, guid: 0cfd31a0750fa6141ba73c86341a1cf6,
+      objectReference: {fileID: 11400000, guid: 613551eb2f247df44a7d6c51611a68c4,
         type: 2}
     - target: {fileID: 8041746446577464868, guid: 602ca54520b2171469555aa18ee95df3,
         type: 3}
