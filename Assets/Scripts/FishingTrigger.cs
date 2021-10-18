@@ -10,7 +10,7 @@ public class FishingTrigger : MonoBehaviour
     private void Awake()
     {
         game = GetComponentInChildren<FishingGame>();
-        canvas = GameObject.Find("FishingCanvas");
+        canvas = GameObject.Find("FishingCanvas Variant");
         canvas.SetActive(false);
     }
     private void OnTriggerEnter2D(Collider2D collide)

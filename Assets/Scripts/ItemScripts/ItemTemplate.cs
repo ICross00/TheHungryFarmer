@@ -105,5 +105,6 @@ public enum ItemType {
     Seeds_Pumpkin,
     Sword,
     Fish,
-    Trap1
+    Trap1,
+    FishingRod
 }
