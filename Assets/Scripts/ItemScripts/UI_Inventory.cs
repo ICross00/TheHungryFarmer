@@ -1,3 +1,4 @@
+using TMPro;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -146,7 +147,7 @@ public class UI_Inventory : MonoBehaviour
             image.rectTransform.sizeDelta = new Vector2(16, 16);
 
             //Update quantity text
-            Text amountText = slotTf.Find("AmountText").GetComponent<Text>();
+            TextMeshProUGUI amountText = slotTf.Find("AmountText").GetComponent<TextMeshProUGUI>();
             amountText.text = item.amount > 1 ? item.amount.ToString() : "";
 
             //Update event listeners

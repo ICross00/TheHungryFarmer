@@ -12,7 +12,6 @@ Add the name of the new item type to the 'ItemType' enum in the class below on a
 This will create a new template item for which you must specify a sprite, type, maximum stack size, and a user-friendly name.
 */
 
-//Class representing an instance of an item
 [Serializable]
 [CreateAssetMenu(fileName = "New Item Template", menuName = "Items/Item Template")]
 public class ItemTemplate : ScriptableObject
@@ -104,6 +103,10 @@ public enum ItemType {
     Seeds_Carrot,
     Seeds_Pumpkin,
     Sword,
+    Katana,
     Fish,
-    Trap1
+    Trap1,
+    SlimeResidue,
+    GhostDust,
+    BatWings
 }

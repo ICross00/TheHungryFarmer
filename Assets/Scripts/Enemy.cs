@@ -13,6 +13,7 @@ public class Enemy : Mover
     private Vector3 startingPosition;
     public Vector3 directionDelta;
     public float chaseDistance = 20.0f;
+    [SerializeField] string enemyName;
 
     protected override void Start()
     {
@@ -41,17 +42,46 @@ public class Enemy : Mover
             agent.SetDestination(target.position);
         }
 
-        //agent.SetDestination(target.position);
+        if (hitPoint <= 0)
+        {
+            Death();
+        }
     }
 
-    //This will destroy the enemy object and drop gold in its place
+    //This will destroy the enemy object and drop loot in its place.
     protected override void Death()
     {
         //TODO: Have the enemy drop XP when it dies.
 
-        int numSpawnedCoins = Random.Range(3, 7);
+        int randNum = Random.Range(3, 7);
 
-        Collectable.Spawn(transform.position, "GoldCoin", numSpawnedCoins, 1.0f);
-        Destroy(gameObject);
+        //This will drop enemy loot based on what 'enemyName' thay have
+        //NOTE: Using new tags seemed to cause issues with several other scripts
+        //Slime
+        if (enemyName == "Slime")
+        {
+            Collectable.Spawn(transform.position, "SlimeResidue", 1, 1.0f);
+            Collectable.Spawn(transform.position, "GoldCoin", Random.Range(5, 10), 1.0f);
+            Destroy(gameObject);
+        }
+        //Bat
+        else if (enemyName == "Bat")
+        {
+            Collectable.Spawn(transform.position, "BatWings", 1, 1.0f);
+            Collectable.Spawn(transform.position, "GoldCoin", Random.Range(1, 3), 1.0f);
+            Destroy(gameObject);
+        }
+        //Ghost
+        else if (enemyName == "Ghost")
+        {
+            Collectable.Spawn(transform.position, "GhostDust", 1, 1.0f);
+            Collectable.Spawn(transform.position, "GoldCoin", Random.Range(1, 3), 1.0f);
+            Destroy(gameObject);
+        }
+        //No name
+        else
+        {
+            Debug.Log("Enemy name invalid. Please type a name in the 'Enemy' script ('Slime', 'Bat', or 'Ghost')");
+        }
     }
 }
