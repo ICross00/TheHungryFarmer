@@ -4429,7 +4429,7 @@ MonoBehaviour:
   player: {fileID: 173280991}
   restaurantRating: 0
   floatingTextManager: {fileID: 129958186}
-  gold: 5
+  gold: 2000
 --- !u!4 &860906199
 Transform:
   m_ObjectHideFlags: 0
@@ -4510,6 +4510,18 @@ MonoBehaviour:
     activeItem: 0
   - itemTemplate: {fileID: 11400000, guid: 1e653b5b209c7af478d2d70ce3328fdd, type: 2}
     amount: 5
+    activeItem: 0
+  - itemTemplate: {fileID: 11400000, guid: 80369b7ef39db864ab514a3fd6ce7f2f, type: 2}
+    amount: 200
+    activeItem: 0
+  - itemTemplate: {fileID: 11400000, guid: 5adb7ec275f09e441a0d560c9f5308d7, type: 2}
+    amount: 200
+    activeItem: 0
+  - itemTemplate: {fileID: 11400000, guid: fc890999ba18e404eb15e134b3ccef85, type: 2}
+    amount: 200
+    activeItem: 0
+  - itemTemplate: {fileID: 11400000, guid: 97557616a2d7d8446b9d1968490bacb4, type: 2}
+    amount: 2000
     activeItem: 0
 --- !u!114 &860906203
 MonoBehaviour:
@@ -6341,6 +6353,16 @@ PrefabInstance:
     - target: {fileID: 6032313490401207724, guid: f21543d6b0a86cc408b1fc9ce0913f46,
         type: 3}
       propertyPath: cooldown
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6032313490401207724, guid: f21543d6b0a86cc408b1fc9ce0913f46,
+        type: 3}
+      propertyPath: lifeSteal
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6032313490401207724, guid: f21543d6b0a86cc408b1fc9ce0913f46,
+        type: 3}
+      propertyPath: knifeDamage
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6032313490401207724, guid: f21543d6b0a86cc408b1fc9ce0913f46,
@@ -8355,7 +8377,7 @@ PrefabInstance:
     - target: {fileID: 8041746446577464868, guid: 602ca54520b2171469555aa18ee95df3,
         type: 3}
       propertyPath: craftableItems.Array.size
-      value: 2
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8041746446577464868, guid: 602ca54520b2171469555aa18ee95df3,
         type: 3}
@@ -8367,13 +8389,37 @@ PrefabInstance:
         type: 3}
       propertyPath: craftableItems.Array.data[1]
       value: 
-      objectReference: {fileID: 11400000, guid: 613551eb2f247df44a7d6c51611a68c4,
+      objectReference: {fileID: 11400000, guid: 4319b5ef43d93484ca59a42a1f07a72d,
         type: 2}
     - target: {fileID: 8041746446577464868, guid: 602ca54520b2171469555aa18ee95df3,
         type: 3}
       propertyPath: craftableItems.Array.data[2]
       value: 
-      objectReference: {fileID: 11400000, guid: 0cfd31a0750fa6141ba73c86341a1cf6,
+      objectReference: {fileID: 11400000, guid: 6ea6e0989ec7bd0429ea4a4df5ac01b5,
+        type: 2}
+    - target: {fileID: 8041746446577464868, guid: 602ca54520b2171469555aa18ee95df3,
+        type: 3}
+      propertyPath: craftableItems.Array.data[3]
+      value: 
+      objectReference: {fileID: 11400000, guid: b103f6d6d8570e54083d023d9b1cd822,
+        type: 2}
+    - target: {fileID: 8041746446577464868, guid: 602ca54520b2171469555aa18ee95df3,
+        type: 3}
+      propertyPath: craftableItems.Array.data[4]
+      value: 
+      objectReference: {fileID: 11400000, guid: 32c706406245d5a4d8e5f0001f25e854,
+        type: 2}
+    - target: {fileID: 8041746446577464868, guid: 602ca54520b2171469555aa18ee95df3,
+        type: 3}
+      propertyPath: craftableItems.Array.data[5]
+      value: 
+      objectReference: {fileID: 11400000, guid: 5d22d786b42a89d418aaf522b9075db1,
+        type: 2}
+    - target: {fileID: 8041746446577464868, guid: 602ca54520b2171469555aa18ee95df3,
+        type: 3}
+      propertyPath: craftableItems.Array.data[6]
+      value: 
+      objectReference: {fileID: 11400000, guid: 613551eb2f247df44a7d6c51611a68c4,
         type: 2}
     - target: {fileID: 8041746446577464871, guid: 602ca54520b2171469555aa18ee95df3,
         type: 3}

@@ -14,10 +14,15 @@ public class Enemy : Mover
     public Vector3 directionDelta;
     public float chaseDistance = 20.0f;
     [SerializeField] string enemyName;
+    GameObject knife;
+    int health;
+    Player player;
+    private int lootMuliplier;
 
     protected override void Start()
     {
         base.Start();
+        knife = GameObject.Find("ThrowingWeapon");
         target = GameObject.Find("Player").transform;
         startingPosition = transform.position;
 
@@ -51,7 +56,7 @@ public class Enemy : Mover
     //This will destroy the enemy object and drop loot in its place.
     protected override void Death()
     {
-        //TODO: Have the enemy drop XP when it dies.
+        lootMuliplier = GameObject.Find("ThrowingWeapon").GetComponent<ThrowingWeapon>().lootDropChance;
 
         int randNum = Random.Range(3, 7);
 
@@ -60,22 +65,22 @@ public class Enemy : Mover
         //Slime
         if (enemyName == "Slime")
         {
-            Collectable.Spawn(transform.position, "SlimeResidue", 1, 1.0f);
-            Collectable.Spawn(transform.position, "GoldCoin", Random.Range(5, 10), 1.0f);
+            Collectable.Spawn(transform.position, "SlimeResidue", 1 * lootMuliplier, 1.0f);
+            Collectable.Spawn(transform.position, "GoldCoin", Random.Range(5, 10) * lootMuliplier, 1.0f);
             Destroy(gameObject);
         }
         //Bat
         else if (enemyName == "Bat")
         {
-            Collectable.Spawn(transform.position, "BatWings", 1, 1.0f);
-            Collectable.Spawn(transform.position, "GoldCoin", Random.Range(1, 3), 1.0f);
+            Collectable.Spawn(transform.position, "BatWings", 1 * lootMuliplier, 1.0f);
+            Collectable.Spawn(transform.position, "GoldCoin", Random.Range(1, 3) * lootMuliplier, 1.0f);
             Destroy(gameObject);
         }
         //Ghost
         else if (enemyName == "Ghost")
         {
-            Collectable.Spawn(transform.position, "GhostDust", 1, 1.0f);
-            Collectable.Spawn(transform.position, "GoldCoin", Random.Range(1, 3), 1.0f);
+            Collectable.Spawn(transform.position, "Fish", 1 * lootMuliplier, 1.0f);
+            Collectable.Spawn(transform.position, "GoldCoin", Random.Range(1, 3) * lootMuliplier, 1.0f);
             Destroy(gameObject);
         }
         //No name
@@ -83,5 +88,7 @@ public class Enemy : Mover
         {
             Debug.Log("Enemy name invalid. Please type a name in the 'Enemy' script ('Slime', 'Bat', or 'Ghost')");
         }
+        //Activates the life steal weapon perk when an enemy is killed.
+        GameObject.Find("ThrowingWeapon").GetComponent<ThrowingWeapon>().LifeSteal();
     }
 }

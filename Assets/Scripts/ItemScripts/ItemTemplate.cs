@@ -108,5 +108,10 @@ public enum ItemType {
     Trap1,
     SlimeResidue,
     GhostDust,
-    BatWings
+    BatWings,
+    Sword2,
+    Sword3,
+    Sword4,
+    Sword5,
+    Sword6
 }
