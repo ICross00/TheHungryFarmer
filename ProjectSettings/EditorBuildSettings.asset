@@ -24,6 +24,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Alpha Scenes/Home.unity
     guid: b4cd46dbf6c2be44cb0e00c75b9d2234
   - enabled: 1
-    path: Assets/Scenes/FishingGame.unity
+    path: Assets/Scenes/Alpha Scenes/FishingGame.unity
     guid: e918768c1e016a846a21fd95e5855695
+  - enabled: 1
+    path: Assets/Scenes/Alpha Scenes/Wilderness.unity
+    guid: 15aa327158d08ac4b9f4342bb3febe40
   m_configObjects: {}
