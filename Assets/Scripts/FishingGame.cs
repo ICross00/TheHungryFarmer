@@ -34,20 +34,14 @@ public class FishingGame : MonoBehaviour
     bool pause = false;
     [SerializeField] public float failTimer = 5f;
 
-
-    public void Start_Game()
+    private void Start()
     {
         pause = false;
     }
 
-    private void Start()
-    {
-        pause = true;
-    }
     private void Update()
     {
         if (pause) { return; }
-
         Fish();
         Hook();
         Progress();
@@ -127,13 +121,12 @@ public class FishingGame : MonoBehaviour
     {
         pause = true;
         Debug.Log("YOU WIN! CONGRATULATIONS, YOU CAUGHT THE FISH!");
-        GetComponentInParent<Canvas>().enabled = false;
+        Collectable.Spawn(transform.position, "Fish", 1);
     }
 
     private void Lose()
     {
         pause = true;
         Debug.Log("YOU LOST THE FISH! :( ");
-        GetComponentInParent<Canvas>().enabled = false;
     }
 }
