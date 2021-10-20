@@ -7,6 +7,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 412398614614931159, guid: 7a83d8a1f246ceb46850ca3b58d44d5f,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0.622
+      objectReference: {fileID: 0}
+    - target: {fileID: 412398614614931159, guid: 7a83d8a1f246ceb46850ca3b58d44d5f,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0.438
+      objectReference: {fileID: 0}
+    - target: {fileID: 412398614614931159, guid: 7a83d8a1f246ceb46850ca3b58d44d5f,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 326.70312
+      objectReference: {fileID: 0}
+    - target: {fileID: 412398614614931159, guid: 7a83d8a1f246ceb46850ca3b58d44d5f,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 142.99995
+      objectReference: {fileID: 0}
     - target: {fileID: 621019094836436848, guid: 7a83d8a1f246ceb46850ca3b58d44d5f,
         type: 3}
       propertyPath: m_TagString
@@ -17,10 +37,40 @@ PrefabInstance:
       propertyPath: m_TagString
       value: GameController
       objectReference: {fileID: 0}
+    - target: {fileID: 1901504760300538238, guid: 7a83d8a1f246ceb46850ca3b58d44d5f,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 9.591
+      objectReference: {fileID: 0}
+    - target: {fileID: 1901504760300538238, guid: 7a83d8a1f246ceb46850ca3b58d44d5f,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 8.279
+      objectReference: {fileID: 0}
+    - target: {fileID: 1901504760300538238, guid: 7a83d8a1f246ceb46850ca3b58d44d5f,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 322.77
+      objectReference: {fileID: 0}
+    - target: {fileID: 1901504760300538238, guid: 7a83d8a1f246ceb46850ca3b58d44d5f,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 140.78812
+      objectReference: {fileID: 0}
     - target: {fileID: 2094076700828645312, guid: 7a83d8a1f246ceb46850ca3b58d44d5f,
         type: 3}
       propertyPath: m_TagString
       value: GameController
+      objectReference: {fileID: 0}
+    - target: {fileID: 2632757889198027426, guid: 7a83d8a1f246ceb46850ca3b58d44d5f,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 319.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2632757889198027426, guid: 7a83d8a1f246ceb46850ca3b58d44d5f,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 285.9
       objectReference: {fileID: 0}
     - target: {fileID: 2752315184820705371, guid: 7a83d8a1f246ceb46850ca3b58d44d5f,
         type: 3}
@@ -147,6 +197,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7743247293220967406, guid: 7a83d8a1f246ceb46850ca3b58d44d5f,
+        type: 3}
+      propertyPath: popupCanvas
+      value: 
+      objectReference: {fileID: 7959641446001864052}
     - target: {fileID: 7743247293220967409, guid: 7a83d8a1f246ceb46850ca3b58d44d5f,
         type: 3}
       propertyPath: m_Name
@@ -234,3 +289,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a83d8a1f246ceb46850ca3b58d44d5f, type: 3}
+--- !u!223 &7959641446001864052 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 7743247293220967404, guid: 7a83d8a1f246ceb46850ca3b58d44d5f,
+    type: 3}
+  m_PrefabInstance: {fileID: 361371927058202264}
+  m_PrefabAsset: {fileID: 0}
