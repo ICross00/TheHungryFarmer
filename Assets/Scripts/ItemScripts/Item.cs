@@ -11,7 +11,7 @@ public class Item
 {
     public ItemTemplate itemTemplate;
     public int amount;
-    public bool activeItem;
+    public bool activeItem = true;
 
     /**
     Creates an instance of an item that can be added to an inventory.
@@ -21,8 +21,7 @@ public class Item
     @param itemAmount The amount of item to include in the stack
     @param activeItem
     */
-
-    public static Item CreateItem(string name, int itemAmount, bool activeItem = false) {
+    public static Item CreateItem(string name, int itemAmount, bool activeItem = true) {
         ItemTemplate template = Resources.Load<ItemTemplate>("Items/"+name);
         return new Item { itemTemplate = template, amount = itemAmount, activeItem = activeItem };
     }

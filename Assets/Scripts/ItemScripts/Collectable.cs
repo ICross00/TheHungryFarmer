@@ -25,7 +25,6 @@ public class Collectable : MonoBehaviour
         if(item.GetItemType() == ItemType.Coin_Gold) {
             //Special case for gold, it should not be added to the inventory but used to increment the gold stored in the game manager
             collector.ChangeGold(item.amount); 
-            Debug.Log(item.amount);
         } else {
             Inventory playerInventory = collector.GetInventory();
             playerInventory.AddItem(item);
