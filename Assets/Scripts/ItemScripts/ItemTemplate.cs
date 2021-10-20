@@ -105,5 +105,10 @@ public enum ItemType {
     Sword,
     Katana,
     Fish,
-    Trap1
+    Trap1,
+    Trap2,
+    Trap3,
+    Gold,
+    Iron,
+    Copper
 }

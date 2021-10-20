@@ -485,6 +485,15 @@ TextureImporter:
   - first:
       213: -5736373190446774062
     second: crop_pumpkin_5
+  - first:
+      213: 8648627747469420143
+    second: item_iron
+  - first:
+      213: 3424843775948109831
+    second: item_gold
+  - first:
+      213: -1567083623299841524
+    second: item_copper
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -3908,6 +3917,69 @@ TextureImporter:
       bones: []
       spriteID: 2d88854d9fe4460b0800000000000000
       internalID: -5736373190446774062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: item_iron
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 592
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f66608a2d19160870800000000000000
+      internalID: 8648627747469420143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: item_gold
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 592
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7083894c44d778f20800000000000000
+      internalID: 3424843775948109831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: item_copper
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 609
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0281e35fb9904ae0800000000000000
+      internalID: -1567083623299841524
       vertices: []
       indices: 
       edges: []
