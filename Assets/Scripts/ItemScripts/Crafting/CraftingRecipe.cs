@@ -15,7 +15,7 @@ public class CraftingRecipe : ScriptableObject
         public int amount;
 
         public override string ToString() {
-            return template.name + " x" + amount;
+            return template.itemName + " x" + amount;
         }
     }
 
