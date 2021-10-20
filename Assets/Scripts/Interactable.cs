@@ -81,7 +81,6 @@ public abstract class Interactable : MonoBehaviour
                 float distance = interactableCollider.Distance(playerCollider).distance;
                 //If they are not, trigger the onclose behaviour
                 if(distance > 1.0f) {
-                    Debug.Log("Exited Interactable");
                     Close(interactingPlayer);
                 }
             }

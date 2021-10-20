@@ -49,7 +49,6 @@ public class UI_Hotbar : UI_Inventory
         onButtonRightClicked.Invoke(item, slotIndex);
         tooltip.ShowTooltip(false);
 
-        Debug.Log(selectedIndex + " , " + slotIndex);
         //Deselect the item
         if(selectedIndex > slotIndex)
             selectedIndex--;

@@ -10,7 +10,7 @@ public class Behaviour_Sword : ItemBehaviour
 
     public override void OnItemEquipped(Item item, Player player, Inventory inventory) {
         //Instantiate the sword prefab as a child of the player
-        GameObject swordPrefab = Resources.Load<GameObject>("Prefabs/weapon_sword_wood"); //TODO: Get the prefab name from a tag value of the sword item
+        GameObject swordPrefab = Resources.Load<GameObject>("Prefabs/" + item.GetItemTagValue("prefab_name")); //TODO: Get the prefab name from a tag value of the sword item
         GameObject sword = GameObject.Instantiate(swordPrefab, player.transform.position, Quaternion.identity, player.transform);
         sword.name = "Equipped Sword";
     }

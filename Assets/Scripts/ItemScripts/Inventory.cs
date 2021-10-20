@@ -17,6 +17,7 @@ public class Inventory : MonoBehaviour
         items.RemoveAll(storedItem => storedItem.amount == 0);
     }
 
+
     /*
     Returns the inventory as a list of items test
     */
@@ -104,15 +105,15 @@ public class Inventory : MonoBehaviour
     @param removedItem The item to remove from the inventory
     @return True if the item was successfully removed, false if the item was not in the inventory or if there was not enough of the item to remove the provided amount
     */
-    public bool RemoveItem(Item removedItem) {
+    public bool RemoveItem(ItemTemplate removedItem, int amount) {
         int index = 0;
         bool success = false;
 
         for (int i = items.Count-1; i >= 0; i--) {
             Item storedItem = items[i];
             //If the items are of the same type and if the amount of stored item is above the amount of the provided item, then the item can be removed
-            if(storedItem.GetItemType() == removedItem.GetItemType() && storedItem.amount >= removedItem.amount) {
-                storedItem.amount -= removedItem.amount;
+            if(storedItem.GetItemType() == removedItem.type && storedItem.amount >= amount) {
+                storedItem.amount -= amount;
                 if(storedItem.amount == 0) {
                     items.RemoveAt(i);
                 }
@@ -127,6 +128,13 @@ public class Inventory : MonoBehaviour
         //Notify any listeners that the inventory changed
         OnItemListChanged?.Invoke(this, EventArgs.Empty);
         return success;
+    }
+
+    /**
+    Overload of RemoveItem(ItemTemplate, int)
+    */
+    public bool RemoveItem(Item removedItem) {
+        return RemoveItem(removedItem.itemTemplate, removedItem.amount);
     }
 
     /**
@@ -165,6 +173,20 @@ public class Inventory : MonoBehaviour
 
         //Remove the first | before returning
         return result.Substring(1);
+    }
+
+    /*
+    Checks if the inventory contains an item with a minimum amount
+    @param item The item to check for in the inventory
+    @param amount The amount of the item to check for
+    @return True if the item existed in the inventory with the same amount or more, false if not
+    */
+    public bool ContainsItem(ItemTemplate item, int amount) {
+        foreach(Item storedItem in items)
+            if(storedItem.GetItemType() == item.type & storedItem.amount >= amount)
+                return true;
+
+        return false;
     }
 
     /*

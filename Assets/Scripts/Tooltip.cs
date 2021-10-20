@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class Tooltip : MonoBehaviour
 {
-    private static readonly float prefabSize = 0.2f;
+    public float scale = 1.0f;
     public float padding = 40.0f;
     private TextMeshProUGUI tooltipText;
     private Image background;
@@ -24,7 +24,7 @@ public class Tooltip : MonoBehaviour
         //Calculate size of tooltip background based on the provided text
         Vector2 textSize = tooltipText.GetPreferredValues();
         textSize = textSize + new Vector2(padding, padding * 0.5f); //Apply padding
-        textSize = textSize * prefabSize; //Scale by the size of the prefab's transform
+        textSize = textSize * scale; //Scale by the size of the prefab's transform
 
         background.rectTransform.sizeDelta = textSize;
     }
