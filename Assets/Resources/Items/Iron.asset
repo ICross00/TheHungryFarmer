@@ -17,6 +17,6 @@ MonoBehaviour:
   type: 24
   maxStack: 64
   sellPrice: 6
-  sprite: {fileID: 8648627747469420143, guid: 1884b98184089f34184916226ef1b1c5, type: 3}
+  sprite: {fileID: 1747881185522978305, guid: 1884b98184089f34184916226ef1b1c5, type: 3}
   isEquippable: 0
   tags: []
