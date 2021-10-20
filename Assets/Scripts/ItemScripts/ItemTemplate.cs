@@ -106,5 +106,7 @@ public enum ItemType {
     Katana,
     Fish,
     Trap1,
-    FishingRod
+    SlimeResidue,
+    GhostDust,
+    BatWings
 }
