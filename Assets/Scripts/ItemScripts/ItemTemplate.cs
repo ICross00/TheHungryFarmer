@@ -110,5 +110,8 @@ public enum ItemType {
     Trap3,
     Gold,
     Iron,
-    Copper
+    Copper,
+    SlimeResidue,
+    GhostDust,
+    BatWings
 }

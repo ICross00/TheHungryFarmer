@@ -19,6 +19,10 @@ public class KnifeScript : MonoBehaviour
                 collision.gameObject.GetComponent<Enemy>().hitPoint = collision.gameObject.GetComponent<Enemy>().hitPoint - damage;
                 Destroy(gameObject);
                 break;
+
+            case "Crop":
+                collision.SendMessage("HarvestCrop");
+                break;
         }
     }
 }

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4236245040133056058}
   - component: {fileID: 4236245040133056059}
   - component: {fileID: 4236245040133056056}
+  - component: {fileID: 7119672379676794283}
   m_Layer: 31
   m_Name: weapon_sword_wood
   m_TagString: Untagged
@@ -127,6 +128,15 @@ MonoBehaviour:
   damagePoint: 5
   pushForce: 2
   weaponLevel: 0
+  target: {fileID: 0}
+  offset: {x: 0, y: 0, z: -1}
+  rb: {fileID: 7119672379676794283}
+  sceneCamera: {fileID: 0}
+  ThrowingKnife: {fileID: 1941583395554580080, guid: 85f852a28220b9f4582d9d4dd9e06add,
+    type: 3}
+  FirePoint: {fileID: 0}
+  fireForce: 10
+  cooldownKnife: 0
 --- !u!61 &4236245040133056059
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -172,3 +182,24 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!50 &7119672379676794283
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4236245040133056038}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0

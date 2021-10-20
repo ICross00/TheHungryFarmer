@@ -487,13 +487,94 @@ TextureImporter:
     second: crop_pumpkin_5
   - first:
       213: 8648627747469420143
-    second: item_iron
+    second: Slime_Down_01
   - first:
       213: 3424843775948109831
-    second: item_gold
+    second: Slime_Down_02
   - first:
       213: -1567083623299841524
-    second: item_copper
+    second: Slime_Down_03
+  - first:
+      213: 6234653955964610490
+    second: Slime_Down_04
+  - first:
+      213: -2441087476335409952
+    second: Slime_Down_05
+  - first:
+      213: 4392391976299827974
+    second: Slime_Left_01
+  - first:
+      213: 7202483365207893727
+    second: Slime_Left_02
+  - first:
+      213: 1387080378908866285
+    second: Slime_Left_03
+  - first:
+      213: 6971411635742636990
+    second: Slime_Left_04
+  - first:
+      213: 4515585076417652184
+    second: Slime_Left_05
+  - first:
+      213: -5505450000900170214
+    second: Slime_Up_01
+  - first:
+      213: 3551040268686304249
+    second: Slime_Up_02
+  - first:
+      213: 7923895222377946896
+    second: Slime_Up_03
+  - first:
+      213: -7614018695095452485
+    second: Slime_Up_04
+  - first:
+      213: 646815968308071162
+    second: Slime_Up_05
+  - first:
+      213: 5087411413366367418
+    second: Bat_Down_01
+  - first:
+      213: 6594309483535230102
+    second: Bat_Down_02
+  - first:
+      213: -6555542558006739981
+    second: Bat_Down_03
+  - first:
+      213: 5182978571576444265
+    second: Bat_Down_04
+  - first:
+      213: 9192897369339822326
+    second: Bat_Up_01
+  - first:
+      213: 2814834830807521832
+    second: Bat_Up_02
+  - first:
+      213: -2883807297175472670
+    second: Bat_Up_03
+  - first:
+      213: 8541041386458788207
+    second: Bat_Up_04
+  - first:
+      213: 8544118107665191181
+    second: Bat_Left_01
+  - first:
+      213: 1316220870652161154
+    second: Bat_Left_02
+  - first:
+      213: 8217714309480581126
+    second: Bat_Left_03
+  - first:
+      213: -2386340877152887167
+    second: Bat_Left_04
+  - first:
+      213: 4716451509661686858
+    second: BatWings
+  - first:
+      213: -185265954457179507
+    second: SlimeResidue
+  - first:
+      213: -4595318747970016082
+    second: GhostDust
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -3922,15 +4003,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: item_iron
+      name: Slime_Down_01
       rect:
         serializedVersion: 2
-        x: 240
-        y: 592
-        width: 15
-        height: 15
+        x: 528
+        y: 576
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3943,15 +4024,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: item_gold
+      name: Slime_Down_02
       rect:
         serializedVersion: 2
-        x: 256
-        y: 592
-        width: 15
-        height: 15
+        x: 544
+        y: 576
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3964,15 +4045,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: item_copper
+      name: Slime_Down_03
       rect:
         serializedVersion: 2
-        x: 256
-        y: 609
-        width: 15
-        height: 15
+        x: 560
+        y: 576
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3980,6 +4061,573 @@ TextureImporter:
       bones: []
       spriteID: c0281e35fb9904ae0800000000000000
       internalID: -1567083623299841524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime_Down_04
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 576
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab721c68db0f58650800000000000000
+      internalID: 6234653955964610490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime_Down_05
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 576
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e48f5bafd38f1ed0800000000000000
+      internalID: -2441087476335409952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime_Left_01
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 560
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60390a50b39e4fc30800000000000000
+      internalID: 4392391976299827974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime_Left_02
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 560
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd660e3d57c54f360800000000000000
+      internalID: 7202483365207893727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime_Left_03
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 560
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de6f6cb6146ef3310800000000000000
+      internalID: 1387080378908866285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime_Left_04
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 560
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebbf67352fd6fb060800000000000000
+      internalID: 6971411635742636990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime_Left_05
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 560
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d5ede0d3b49aae30800000000000000
+      internalID: 4515585076417652184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime_Up_01
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 528
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1edbafa466b893b0800000000000000
+      internalID: -5505450000900170214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime_Up_02
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 528
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f3a7266f44d74130800000000000000
+      internalID: 3551040268686304249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime_Up_03
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 528
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01f904fd8b457fd60800000000000000
+      internalID: 7923895222377946896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime_Up_04
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 528
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbcf6ad6652955690800000000000000
+      internalID: -7614018695095452485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime_Up_05
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 528
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afa8d0a32b3f9f800800000000000000
+      internalID: 646815968308071162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bat_Down_01
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 502
+        width: 19
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab468f7e9bd1a9640800000000000000
+      internalID: 5087411413366367418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bat_Down_02
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 502
+        width: 19
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6946b118981b38b50800000000000000
+      internalID: 6594309483535230102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bat_Down_03
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 502
+        width: 19
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fb7d08b6c80605a0800000000000000
+      internalID: -6555542558006739981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bat_Down_04
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 502
+        width: 19
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 965864ddc83ade740800000000000000
+      internalID: 5182978571576444265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bat_Up_01
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 492
+        width: 19
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f08f1c837bb39f70800000000000000
+      internalID: 9192897369339822326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bat_Up_02
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 492
+        width: 19
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82addaf6d5d401720800000000000000
+      internalID: 2814834830807521832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bat_Up_03
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 492
+        width: 19
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e53d23da88aaf7d0800000000000000
+      internalID: -2883807297175472670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bat_Up_04
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 492
+        width: 19
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6139cb73efd78670800000000000000
+      internalID: 8541041386458788207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bat_Left_01
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 482
+        width: 19
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d01dd56762ec29670800000000000000
+      internalID: 8544118107665191181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bat_Left_02
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 482
+        width: 19
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28c6d2188e7244210800000000000000
+      internalID: 1316220870652161154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bat_Left_03
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 482
+        width: 19
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6080c3a00af2b0270800000000000000
+      internalID: 8217714309480581126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bat_Left_04
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 482
+        width: 19
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18ede489d9302eed0800000000000000
+      internalID: -2386340877152887167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BatWings
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 455
+        width: 19
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4c5db1c8a3347140800000000000000
+      internalID: 4716451509661686858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlimeResidue
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 513
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8a2b93989dcd6df0800000000000000
+      internalID: -185265954457179507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GhostDust
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 522
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaced8d12f52a30c0800000000000000
+      internalID: -4595318747970016082
       vertices: []
       indices: 
       edges: []

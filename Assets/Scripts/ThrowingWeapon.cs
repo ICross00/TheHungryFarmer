@@ -4,29 +4,38 @@ using UnityEngine;
 
 public class ThrowingWeapon : MonoBehaviour
 {
-    Player player = GameObject.Find("Player").GetComponent<Player>();
-
+    Player player;
     public GameObject target;
     public Vector3 offset = new Vector3(0, 0, -1);
 
     public Rigidbody2D rb;
-    public Camera sceneCamera;
+    private Camera sceneCamera;
     public GameObject ThrowingKnife;
     public Transform FirePoint;
     private Vector2 mousePosition;
     public float fireForce;
     public float cooldown;
     private float lastSwing;
+    Item selectedItem;
+
+    private void Start()
+    {
+        sceneCamera = Camera.main;
+        player = GameObject.Find("Player").GetComponent<Player>();
+        target = GameObject.Find("Player");
+    }
 
     void Update()
     {
+        sceneCamera = Camera.main;
         ProcessInputs();
+        //Calls the AimDirection method.
+        AimDirection();
     }
 
     void FixedUpdate()
     {
-        //Calls the AimDirection method.
-        AimDirection();
+        
 
         //Has the throwingweapon object follow the player assuming the target exists.
         if (target)
@@ -37,7 +46,7 @@ public class ThrowingWeapon : MonoBehaviour
                 target.transform.position.z + offset.z);
         }
     }
-    
+
     public void Fire()
     {
         GameObject projectile = Instantiate(ThrowingKnife, FirePoint.position, FirePoint.rotation);
@@ -49,18 +58,26 @@ public class ThrowingWeapon : MonoBehaviour
     {
         mousePosition = sceneCamera.ScreenToWorldPoint(Input.mousePosition);
 
-        if (Input.GetMouseButtonDown(1) && (Time.time - lastSwing > cooldown))
+        //Throws the knife assuming the player has the sword equiped and the cooldown is over.
+        //Try catch has been added to avoid Null Reference if nothing is equipped.
+        try
         {
-            lastSwing = Time.time;
-            Fire();
+            if (player.GetSelectedItem().GetItemType() == ItemType.Sword)
+            {
+                if (Input.GetMouseButtonDown(1) && (Time.time - lastSwing > cooldown))
+                {
+                    lastSwing = Time.time;
+                    Fire();
+                }
+            }
         }
+        catch (System.NullReferenceException) { }
     }
 
     // Update is called once per frame
     void AimDirection()
     {
         //Sets the objects position on the player.
-        
 
         //Rotate the direction of weapon
         //NOTE: The gun is there to avoid having to use player direction. Doing this makes it easier to aim in game.
