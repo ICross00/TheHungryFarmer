@@ -21,9 +21,9 @@ public class Item
     @param itemAmount The amount of item to include in the stack
     @param activeItem
     */
-    public static Item CreateItem(string name, int itemAmount, bool activeItem = true) {
+    public static Item CreateItem(string name, int itemAmount, bool activeItem = false) {
         ItemTemplate template = Resources.Load<ItemTemplate>("Items/"+name);
-        return new Item { itemTemplate = template, amount = itemAmount, activeItem = activeItem };
+        return new Item { itemTemplate = template, amount = itemAmount, activeItem = !template.isEquippable };
     }
 
     /**
@@ -34,7 +34,7 @@ public class Item
     @return A copy of the item
     */
     public static Item CopyItem(Item itemToCopy) {
-        return new Item { itemTemplate = itemToCopy.itemTemplate, amount = itemToCopy.amount, activeItem = itemToCopy.activeItem };
+        return new Item { itemTemplate = itemToCopy.itemTemplate, amount = itemToCopy.amount, activeItem = itemToCopy.itemTemplate.isEquippable };
     }
 
     /*
