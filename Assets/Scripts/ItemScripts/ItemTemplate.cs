@@ -85,6 +85,7 @@ public class ItemTemplate : ScriptableObject
 }
 
 public enum ItemType {
+    Pickaxe,
     Heart,
     Star,
     Gear,
