@@ -113,5 +113,8 @@ public enum ItemType {
     Copper,
     SlimeResidue,
     GhostDust,
-    BatWings
+    BatWings,
+    Chicken,
+    Steak,
+    Bacon
 }

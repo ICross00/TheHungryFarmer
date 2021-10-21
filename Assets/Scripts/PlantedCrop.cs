@@ -67,7 +67,7 @@ public class PlantedCrop : RandomEvent
     public void HarvestCrop() {
         //Only yield any items if the crop was fully grown
         if(growthStage >= maxGrowthStage) {
-            int numSpawnedCrops = Random.Range(2, 6);
+            int numSpawnedCrops = Random.Range(3, 5);
             Collectable spawnedItem = Collectable.Spawn(transform.position, cropTemplate.GetTagValue("grows_into"), numSpawnedCrops, 1.5f);
             spawnedItem.ApplyRandomForce(8.0f);
         }

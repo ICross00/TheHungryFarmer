@@ -4511,6 +4511,9 @@ MonoBehaviour:
   - itemTemplate: {fileID: 11400000, guid: 1e653b5b209c7af478d2d70ce3328fdd, type: 2}
     amount: 5
     activeItem: 0
+  - itemTemplate: {fileID: 11400000, guid: 1e653b5b209c7af478d2d70ce3328fdd, type: 2}
+    amount: 5
+    activeItem: 0
 --- !u!114 &860906203
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8355,7 +8358,7 @@ PrefabInstance:
     - target: {fileID: 8041746446577464868, guid: 602ca54520b2171469555aa18ee95df3,
         type: 3}
       propertyPath: craftableItems.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8041746446577464868, guid: 602ca54520b2171469555aa18ee95df3,
         type: 3}
@@ -8373,7 +8376,7 @@ PrefabInstance:
         type: 3}
       propertyPath: craftableItems.Array.data[2]
       value: 
-      objectReference: {fileID: 11400000, guid: 0cfd31a0750fa6141ba73c86341a1cf6,
+      objectReference: {fileID: 11400000, guid: 95400281374d2614c8eb373be93df58f,
         type: 2}
     - target: {fileID: 8041746446577464871, guid: 602ca54520b2171469555aa18ee95df3,
         type: 3}
