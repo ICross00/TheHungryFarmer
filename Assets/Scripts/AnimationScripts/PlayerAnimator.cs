@@ -67,6 +67,8 @@ public class PlayerAnimator : MonoBehaviour
             anim.SetBool("isMoveUp", false);
             anim.SetBool("isMoveDown", false);
         }
+
+            anim.SetBool("isMining", Input.GetKey(KeyCode.E));
     }
 
     public void UpdateItemAnim()
