@@ -67,8 +67,14 @@ public class PlayerAnimator : MonoBehaviour
             anim.SetBool("isMoveUp", false);
             anim.SetBool("isMoveDown", false);
         }
+    }
 
-        anim.SetBool("isMining", Input.GetKey(KeyCode.E));
+    /*
+    Updates the state of the mining animation
+    @param enabled Whether or not the mining animation should be enabled
+    */
+    public void TriggerMiningAnim(bool enabled) {
+        anim.SetBool("isMining", enabled);
     }
 
     public void UpdateItemAnim()
