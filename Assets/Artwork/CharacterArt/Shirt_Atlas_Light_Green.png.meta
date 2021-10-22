@@ -298,64 +298,64 @@ TextureImporter:
     second: Shirt_Atlas_Light_Green_97
   - first:
       213: -393034083778089905
-    second: Shirt_Atlas_Light_Green_98
+    second: shirt_mining_down_01
   - first:
       213: -637048773443193109
-    second: Shirt_Atlas_Light_Green_99
+    second: shirt_mining_down_02
   - first:
       213: 2805088210977192931
-    second: Shirt_Atlas_Light_Green_100
+    second: shirt_mining_down_03
   - first:
       213: 5371276651095820068
-    second: Shirt_Atlas_Light_Green_101
+    second: shirt_mining_down_04
   - first:
       213: 8736845041571929628
-    second: Shirt_Atlas_Light_Green_102
+    second: shirt_mining_down_05
   - first:
       213: -3480996397191032987
-    second: Shirt_Atlas_Light_Green_103
+    second: shirt_mining_up_01
   - first:
       213: -7055848141872682117
-    second: Shirt_Atlas_Light_Green_104
+    second: shirt_mining_up_02
   - first:
       213: -7856873276284359879
-    second: Shirt_Atlas_Light_Green_105
+    second: shirt_mining_up_03
   - first:
       213: 3000003560025618947
-    second: Shirt_Atlas_Light_Green_106
+    second: shirt_mining_up_04
   - first:
       213: 5316404765236186241
-    second: Shirt_Atlas_Light_Green_107
+    second: shirt_mining_up_05
   - first:
       213: 5085173187827727763
-    second: Shirt_Atlas_Light_Green_108
+    second: shirt_mining_right_01
   - first:
       213: 5355933278752851868
-    second: Shirt_Atlas_Light_Green_109
+    second: shirt_mining_right_02
   - first:
       213: -6215351742479881543
-    second: Shirt_Atlas_Light_Green_110
+    second: shirt_mining_right_03
   - first:
       213: 9135118439854361683
-    second: Shirt_Atlas_Light_Green_111
+    second: shirt_mining_right_04
   - first:
       213: 5805229766671699024
-    second: Shirt_Atlas_Light_Green_112
+    second: shirt_mining_right_05
   - first:
       213: -8457405235159642302
-    second: Shirt_Atlas_Light_Green_113
+    second: shirt_mining_left_01
   - first:
       213: 552525514226908825
-    second: Shirt_Atlas_Light_Green_114
+    second: shirt_mining_left_02
   - first:
       213: 1157464628453497027
-    second: Shirt_Atlas_Light_Green_115
+    second: shirt_mining_left_03
   - first:
       213: -6846417826958960843
-    second: Shirt_Atlas_Light_Green_116
+    second: shirt_mining_left_04
   - first:
       213: -5658467971582662193
-    second: Shirt_Atlas_Light_Green_117
+    second: shirt_mining_left_05
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -2503,7 +2503,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shirt_Atlas_Light_Green_98
+      name: shirt_mining_down_01
       rect:
         serializedVersion: 2
         x: 0
@@ -2524,7 +2524,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shirt_Atlas_Light_Green_99
+      name: shirt_mining_down_02
       rect:
         serializedVersion: 2
         x: 32
@@ -2545,7 +2545,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shirt_Atlas_Light_Green_100
+      name: shirt_mining_down_03
       rect:
         serializedVersion: 2
         x: 64
@@ -2566,7 +2566,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shirt_Atlas_Light_Green_101
+      name: shirt_mining_down_04
       rect:
         serializedVersion: 2
         x: 96
@@ -2587,7 +2587,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shirt_Atlas_Light_Green_102
+      name: shirt_mining_down_05
       rect:
         serializedVersion: 2
         x: 128
@@ -2608,7 +2608,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shirt_Atlas_Light_Green_103
+      name: shirt_mining_up_01
       rect:
         serializedVersion: 2
         x: 0
@@ -2629,7 +2629,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shirt_Atlas_Light_Green_104
+      name: shirt_mining_up_02
       rect:
         serializedVersion: 2
         x: 32
@@ -2650,7 +2650,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shirt_Atlas_Light_Green_105
+      name: shirt_mining_up_03
       rect:
         serializedVersion: 2
         x: 64
@@ -2671,7 +2671,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shirt_Atlas_Light_Green_106
+      name: shirt_mining_up_04
       rect:
         serializedVersion: 2
         x: 96
@@ -2692,7 +2692,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shirt_Atlas_Light_Green_107
+      name: shirt_mining_up_05
       rect:
         serializedVersion: 2
         x: 128
@@ -2713,7 +2713,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shirt_Atlas_Light_Green_108
+      name: shirt_mining_right_01
       rect:
         serializedVersion: 2
         x: 0
@@ -2734,7 +2734,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shirt_Atlas_Light_Green_109
+      name: shirt_mining_right_02
       rect:
         serializedVersion: 2
         x: 32
@@ -2755,7 +2755,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shirt_Atlas_Light_Green_110
+      name: shirt_mining_right_03
       rect:
         serializedVersion: 2
         x: 64
@@ -2776,7 +2776,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shirt_Atlas_Light_Green_111
+      name: shirt_mining_right_04
       rect:
         serializedVersion: 2
         x: 96
@@ -2797,7 +2797,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shirt_Atlas_Light_Green_112
+      name: shirt_mining_right_05
       rect:
         serializedVersion: 2
         x: 128
@@ -2818,7 +2818,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shirt_Atlas_Light_Green_113
+      name: shirt_mining_left_01
       rect:
         serializedVersion: 2
         x: 0
@@ -2839,7 +2839,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shirt_Atlas_Light_Green_114
+      name: shirt_mining_left_02
       rect:
         serializedVersion: 2
         x: 32
@@ -2860,7 +2860,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shirt_Atlas_Light_Green_115
+      name: shirt_mining_left_03
       rect:
         serializedVersion: 2
         x: 64
@@ -2881,7 +2881,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shirt_Atlas_Light_Green_116
+      name: shirt_mining_left_04
       rect:
         serializedVersion: 2
         x: 96
@@ -2902,7 +2902,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shirt_Atlas_Light_Green_117
+      name: shirt_mining_left_05
       rect:
         serializedVersion: 2
         x: 128

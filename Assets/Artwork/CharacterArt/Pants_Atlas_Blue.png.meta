@@ -292,61 +292,64 @@ TextureImporter:
     second: Pants_Atlas_Blue_95
   - first:
       213: -2738534049740698359
-    second: Pants_Atlas_Blue_96
+    second: pants_mining_up_01
   - first:
       213: -6208546485245669716
-    second: Pants_Atlas_Blue_97
+    second: pants_mining_up_02
   - first:
       213: 2699468558426145984
-    second: Pants_Atlas_Blue_98
+    second: pants_mining_up_03
   - first:
       213: 1613571508676431632
-    second: Pants_Atlas_Blue_99
+    second: pants_mining_up_04
   - first:
       213: -1913901492572676800
-    second: Pants_Atlas_Blue_100
+    second: pants_mining_down_01
   - first:
       213: 5304703355120684322
-    second: Pants_Atlas_Blue_101
+    second: pants_mining_down_02
   - first:
       213: 6286199324130312706
-    second: Pants_Atlas_Blue_102
+    second: pants_mining_down_03
   - first:
       213: 6261421325670518105
-    second: Pants_Atlas_Blue_103
+    second: pants_mining_down_04
   - first:
       213: 6041734598969676759
-    second: Pants_Atlas_Blue_104
+    second: pants_mining_down_05
   - first:
       213: -8815259628858542472
-    second: Pants_Atlas_Blue_105
+    second: pants_mining_right_01
   - first:
       213: -4747936599308013341
-    second: Pants_Atlas_Blue_106
+    second: pants_mining_right_02
   - first:
       213: -7416135002081819248
-    second: Pants_Atlas_Blue_107
+    second: pants_mining_right_03
   - first:
       213: 3395407184372339321
-    second: Pants_Atlas_Blue_108
+    second: pants_mining_right_04
   - first:
       213: -6379849661926554213
-    second: Pants_Atlas_Blue_109
+    second: pants_mining_right_05
   - first:
       213: 4309796540853054794
-    second: Pants_Atlas_Blue_110
+    second: pants_mining_left_01
   - first:
       213: -99939692487875442
-    second: Pants_Atlas_Blue_111
+    second: pants_mining_left_02
   - first:
       213: -7780970035218951570
-    second: Pants_Atlas_Blue_112
+    second: pants_mining_left_03
   - first:
       213: 5330691260070874900
-    second: Pants_Atlas_Blue_113
+    second: pants_mining_left_04
   - first:
       213: -8842925926205813726
-    second: Pants_Atlas_Blue_114
+    second: pants_mining_left_05
+  - first:
+      213: -8613492171564807020
+    second: pants_mining_up_05
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -2452,11 +2455,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pants_Atlas_Blue_96
+      name: pants_mining_up_01
       rect:
         serializedVersion: 2
         x: 0
-        y: 96
+        y: 64
         width: 32
         height: 32
       alignment: 0
@@ -2473,11 +2476,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pants_Atlas_Blue_97
+      name: pants_mining_up_02
       rect:
         serializedVersion: 2
         x: 32
-        y: 96
+        y: 64
         width: 32
         height: 32
       alignment: 0
@@ -2494,11 +2497,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pants_Atlas_Blue_98
+      name: pants_mining_up_03
       rect:
         serializedVersion: 2
         x: 64
-        y: 96
+        y: 64
         width: 32
         height: 32
       alignment: 0
@@ -2515,11 +2518,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pants_Atlas_Blue_99
+      name: pants_mining_up_04
       rect:
         serializedVersion: 2
         x: 96
-        y: 96
+        y: 64
         width: 32
         height: 32
       alignment: 0
@@ -2536,11 +2539,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pants_Atlas_Blue_100
+      name: pants_mining_down_01
       rect:
         serializedVersion: 2
         x: 0
-        y: 64
+        y: 96
         width: 32
         height: 32
       alignment: 0
@@ -2557,11 +2560,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pants_Atlas_Blue_101
+      name: pants_mining_down_02
       rect:
         serializedVersion: 2
         x: 32
-        y: 64
+        y: 96
         width: 32
         height: 32
       alignment: 0
@@ -2578,11 +2581,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pants_Atlas_Blue_102
+      name: pants_mining_down_03
       rect:
         serializedVersion: 2
         x: 64
-        y: 64
+        y: 96
         width: 32
         height: 32
       alignment: 0
@@ -2599,11 +2602,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pants_Atlas_Blue_103
+      name: pants_mining_down_04
       rect:
         serializedVersion: 2
         x: 96
-        y: 64
+        y: 96
         width: 32
         height: 32
       alignment: 0
@@ -2620,7 +2623,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pants_Atlas_Blue_104
+      name: pants_mining_down_05
       rect:
         serializedVersion: 2
         x: 128
@@ -2641,7 +2644,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pants_Atlas_Blue_105
+      name: pants_mining_right_01
       rect:
         serializedVersion: 2
         x: 0
@@ -2662,7 +2665,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pants_Atlas_Blue_106
+      name: pants_mining_right_02
       rect:
         serializedVersion: 2
         x: 32
@@ -2683,7 +2686,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pants_Atlas_Blue_107
+      name: pants_mining_right_03
       rect:
         serializedVersion: 2
         x: 64
@@ -2704,7 +2707,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pants_Atlas_Blue_108
+      name: pants_mining_right_04
       rect:
         serializedVersion: 2
         x: 96
@@ -2725,7 +2728,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pants_Atlas_Blue_109
+      name: pants_mining_right_05
       rect:
         serializedVersion: 2
         x: 128
@@ -2746,7 +2749,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pants_Atlas_Blue_110
+      name: pants_mining_left_01
       rect:
         serializedVersion: 2
         x: 0
@@ -2767,7 +2770,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pants_Atlas_Blue_111
+      name: pants_mining_left_02
       rect:
         serializedVersion: 2
         x: 32
@@ -2788,7 +2791,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pants_Atlas_Blue_112
+      name: pants_mining_left_03
       rect:
         serializedVersion: 2
         x: 64
@@ -2809,7 +2812,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pants_Atlas_Blue_113
+      name: pants_mining_left_04
       rect:
         serializedVersion: 2
         x: 96
@@ -2830,7 +2833,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pants_Atlas_Blue_114
+      name: pants_mining_left_05
       rect:
         serializedVersion: 2
         x: 128
@@ -2846,6 +2849,27 @@ TextureImporter:
       bones: []
       spriteID: 22c0961d8bd974580800000000000000
       internalID: -8842925926205813726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pants_mining_up_05
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49c8546918ab67880800000000000000
+      internalID: -8613492171564807020
       vertices: []
       indices: 
       edges: []
