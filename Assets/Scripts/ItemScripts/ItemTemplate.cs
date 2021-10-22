@@ -113,5 +113,6 @@ public enum ItemType {
     Copper,
     SlimeResidue,
     GhostDust,
-    BatWings
+    BatWings, 
+    FishingRod
 }
