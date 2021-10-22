@@ -117,5 +117,6 @@ public enum ItemType {
     BatWings,
     Chicken,
     Steak,
-    Bacon
+    Bacon,
+    FishingRod
 }
