@@ -15,7 +15,5 @@ MonoBehaviour:
   craftingOutput: {fileID: 11400000, guid: 19f5f85c4bfae5e4982c19c83fc9d66d, type: 2}
   outputAmount: 1
   craftingIngredients:
-  - template: {fileID: 11400000, guid: 1ee339e44d70693499bf5eb846bc30a6, type: 2}
-    amount: 2
-  - template: {fileID: 11400000, guid: 66c5ce0a535e6ce45a9f64c059c73196, type: 2}
-    amount: 6
+  - template: {fileID: 11400000, guid: da793009c226ac8449cde9116da0e539, type: 2}
+    amount: 10
