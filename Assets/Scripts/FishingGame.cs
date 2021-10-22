@@ -33,10 +33,12 @@ public class FishingGame : MonoBehaviour
 
     bool pause = false;
     [SerializeField] public float failTimer = 5f;
+    
 
     private void Start()
     {
         pause = false;
+        Debug.Log("hello");
     }
 
     private void Update()

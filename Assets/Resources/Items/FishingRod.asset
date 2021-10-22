@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: FishingRod
   behaviourClassName: Behaviour_FishingRod
-  type: 21
+  type: 33
   maxStack: 1
   sellPrice: 120
   sprite: {fileID: 21300000, guid: e13a5ccde02f644478c3275d9ce429ce, type: 3}
