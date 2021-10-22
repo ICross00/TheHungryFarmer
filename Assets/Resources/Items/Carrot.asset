@@ -13,7 +13,10 @@ MonoBehaviour:
   m_Name: Carrot
   m_EditorClassIdentifier: 
   itemName: Carrot
-  type: 14
+  behaviourClassName: 
+  type: 12
   maxStack: 64
   sellPrice: 10
   sprite: {fileID: -5524412188343902071, guid: 1884b98184089f34184916226ef1b1c5, type: 3}
+  isEquippable: 0
+  tags: []
