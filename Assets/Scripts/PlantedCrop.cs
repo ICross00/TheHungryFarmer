@@ -19,8 +19,8 @@ public class PlantedCrop : RandomEvent
 
         gameObject.tag = "Crop";
         //Set growth probabilities
-        probability = 0.1f;
-        period = 0.33f;
+        this.eventProbability = 0.1f;
+        this.period = 2.5f;
 
         //Locate the array of sprites associated with crop growth stages
         SpriteListDictionary cropDict = Resources.Load<SpriteListDictionary>("Prefabs/Crop Sprite Dictionary");

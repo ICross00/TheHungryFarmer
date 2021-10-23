@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
+    private const int INV_MAX = 27;
     public event EventHandler OnItemListChanged;
     [SerializeField]
     private List<Item> items;
@@ -47,8 +48,7 @@ public class Inventory : MonoBehaviour
 
     /*
     Adds an item to the inventory
-    Todo: Decrement the stack of the world item being picked up, this is important if the inventory is near
-    full and only part of the stack can be picked up
+    @param newItem The item to add to the inventory
     */
     public void AddItem(Item newItem) {
         //Attempt to insert each item in the stack
@@ -60,15 +60,18 @@ public class Inventory : MonoBehaviour
                 //If the items are of the same type and if the stored item is below the max stack size, then the item can be stacked
                 if(storedItem.GetItemType() == newItem.GetItemType() && storedItem.amount < storedItem.itemTemplate.maxStack) {
                     storedItem.amount += 1; //Increment the stack
+                    newItem.amount -= 1;
                     canStack = true;
                     break;
                 }
             }
 
-            if(!canStack) { //If the item cannot be stacked, add it to the end of the inventory
-                Item clone = Item.CopyItem(newItem);
-                clone.amount = 1;
-                items.Add(clone);
+            if(!canStack) { //If the item cannot be stacked, add it to the end of the inventory if there is room
+                if(items.Count < INV_MAX) {
+                    Item clone = Item.CopyItem(newItem);
+                    clone.amount = 1;
+                    items.Add(clone);
+                }
             }
         }
 
