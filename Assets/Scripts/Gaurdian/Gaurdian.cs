@@ -88,6 +88,8 @@ public class Gaurdian : MonoBehaviour
         //This will stop the enemy chancing you off the bat and have it only chase when the player enter range.
         if (distance < activatDistance)
         {
+            GetComponent<BoxCollider2D>().enabled = true;
+
             if (hitPoint > 0)
             {
                 Timer();
@@ -111,6 +113,7 @@ public class Gaurdian : MonoBehaviour
         else
         {
             blockModeDisabled();
+            GetComponent<BoxCollider2D>().enabled = false;
         }
     }
 
