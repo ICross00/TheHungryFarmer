@@ -958,10 +958,10 @@ TextureImporter:
     second: dung_door_2_1
   - first:
       213: 21300636
-    second: tiles_318
+    second: lockedDoor_01
   - first:
       213: 21300638
-    second: tiles_319
+    second: lockedDoor02
   - first:
       213: 21300640
     second: tiles_320
@@ -1009,10 +1009,10 @@ TextureImporter:
     second: dung_door_2_3
   - first:
       213: 21300670
-    second: tiles_335
+    second: lockedDoor03
   - first:
       213: 21300672
-    second: tiles_336
+    second: lockedDoor04
   - first:
       213: 21300674
     second: tiles_337
@@ -8353,7 +8353,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tiles_318
+      name: lockedDoor_01
       rect:
         serializedVersion: 2
         x: 64
@@ -8374,7 +8374,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tiles_319
+      name: lockedDoor02
       rect:
         serializedVersion: 2
         x: 80
@@ -8710,7 +8710,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tiles_335
+      name: lockedDoor03
       rect:
         serializedVersion: 2
         x: 64
@@ -8731,7 +8731,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tiles_336
+      name: lockedDoor04
       rect:
         serializedVersion: 2
         x: 80

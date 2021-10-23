@@ -23,6 +23,7 @@ public class Gaurdian : MonoBehaviour
     private bool gaurdianDead = false;
     private float lastUse;
     public int coolDown;
+    public string gaurdianName;
 
     private bool switchTimer = true;
 
@@ -159,9 +160,19 @@ public class Gaurdian : MonoBehaviour
     {
         lootMuliplier = GameObject.Find("ThrowingWeapon").GetComponent<ThrowingWeapon>().lootDropChance;
 
-        //TODO: Change loot drop table for gaurdian enemy.
+        if (gaurdianName == "")
+        {
+            //TODO: Add loot to the first gaurdian as seen below
 
-        //Collectable.Spawn(transform.position, "SlimeResidue", 1 * lootMuliplier, 1.0f);
-        //Collectable.Spawn(transform.position, "GoldCoin", Random.Range(5, 10) * lootMuliplier, 1.0f);
+            //Collectable.Spawn(transform.position, "Gaurdianloot", 1 * lootMuliplier, 1.0f);
+            //Collectable.Spawn(transform.position, "GoldCoin", Random.Range(5, 10) * lootMuliplier, 1.0f);
+        }
+        else if (gaurdianName == "")
+        {
+            //TODO: Add loot to the second gaurdian as seen below
+
+            //Collectable.Spawn(transform.position, "Gaurdianloot", 1 * lootMuliplier, 1.0f);
+            //Collectable.Spawn(transform.position, "GoldCoin", Random.Range(5, 10) * lootMuliplier, 1.0f);
+        }
     }
 }
