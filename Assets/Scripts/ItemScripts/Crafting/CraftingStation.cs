@@ -13,9 +13,6 @@ public class CraftingStation : Interactable
         craftingUI.SetCraftingStation(this);
         craftingUI.SetVisible(true);
 
-        foreach(CraftingRecipe recipe in craftableItems)
-            if(recipe.CheckCanCraft(craftingInventory))
-                Debug.Log(recipe);
     }
 
     protected override void OnClose(Player triggerPlayer) {

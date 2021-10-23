@@ -85,6 +85,14 @@ public class Player : Mover
         gameManager.ChangeGold(amount);
     }
 
+    //This function will be called by the mining animation whenever the pickaxe strikes the ground
+    //Direction: 0 = left, 1 = up, 2 = right, 3 = down
+    public void OnMine(int direction) {
+        Debug.Log("OnMine called with direction " + direction);
+    }
+
+
+
     private void FixedUpdate()
     {
         //Movement code

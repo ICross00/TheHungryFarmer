@@ -289,61 +289,64 @@ TextureImporter:
     second: shoes_black_94
   - first:
       213: -7911404890308886217
-    second: shoes_black_95
+    second: shoes_mining_down_01
   - first:
       213: 6330030518384873131
-    second: shoes_black_96
+    second: shoes_mining_down_02
   - first:
       213: -2410526204226538285
-    second: shoes_black_97
+    second: shoes_mining_down_03
   - first:
       213: 3721979816063045638
-    second: shoes_black_98
+    second: shoes_mining_down_04
   - first:
       213: 5208772086922856404
-    second: shoes_black_99
+    second: shoes_mining_down_05
   - first:
       213: -3388876616482357549
-    second: shoes_black_100
+    second: shoes_mining_up_01
   - first:
       213: -6014467226103184476
-    second: shoes_black_101
+    second: shoes_mining_up_02
   - first:
       213: -2466090121451839343
-    second: shoes_black_102
+    second: shoes_mining_up_03
   - first:
       213: -4961509161638646993
-    second: shoes_black_103
+    second: shoes_mining_up_04
   - first:
       213: 2928773552614495215
-    second: shoes_black_104
+    second: shoes_mining_right_01
   - first:
       213: 7839722677104514172
-    second: shoes_black_105
+    second: shoes_mining_right_02
   - first:
       213: 2489712939325146307
-    second: shoes_black_106
+    second: shoes_mining_right_03
   - first:
       213: -4564949769824870886
-    second: shoes_black_107
+    second: shoes_mining_right_04
   - first:
       213: -2593562334888304174
-    second: shoes_black_108
+    second: shoes_mining_right_05
   - first:
       213: -8844572295027896266
-    second: shoes_black_109
+    second: shoes_mining_left_01
   - first:
       213: 6351607785171692050
-    second: shoes_black_110
+    second: shoes_mining_left_02
   - first:
       213: -1932037132739644378
-    second: shoes_black_111
+    second: shoes_mining_left_03
   - first:
       213: -9070215017479518666
-    second: shoes_black_112
+    second: shoes_mining_left_04
   - first:
       213: -6465701314904762351
-    second: shoes_black_113
+    second: shoes_mining_left_05
+  - first:
+      213: 5317083052123957220
+    second: shoes_mining_up_05
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -2428,7 +2431,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shoes_black_95
+      name: shoes_mining_down_01
       rect:
         serializedVersion: 2
         x: 0
@@ -2449,7 +2452,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shoes_black_96
+      name: shoes_mining_down_02
       rect:
         serializedVersion: 2
         x: 32
@@ -2470,7 +2473,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shoes_black_97
+      name: shoes_mining_down_03
       rect:
         serializedVersion: 2
         x: 64
@@ -2491,7 +2494,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shoes_black_98
+      name: shoes_mining_down_04
       rect:
         serializedVersion: 2
         x: 96
@@ -2512,7 +2515,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shoes_black_99
+      name: shoes_mining_down_05
       rect:
         serializedVersion: 2
         x: 128
@@ -2533,7 +2536,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shoes_black_100
+      name: shoes_mining_up_01
       rect:
         serializedVersion: 2
         x: 0
@@ -2554,7 +2557,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shoes_black_101
+      name: shoes_mining_up_02
       rect:
         serializedVersion: 2
         x: 32
@@ -2575,7 +2578,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shoes_black_102
+      name: shoes_mining_up_03
       rect:
         serializedVersion: 2
         x: 64
@@ -2596,7 +2599,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shoes_black_103
+      name: shoes_mining_up_04
       rect:
         serializedVersion: 2
         x: 96
@@ -2617,7 +2620,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shoes_black_104
+      name: shoes_mining_right_01
       rect:
         serializedVersion: 2
         x: 0
@@ -2638,7 +2641,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shoes_black_105
+      name: shoes_mining_right_02
       rect:
         serializedVersion: 2
         x: 32
@@ -2659,7 +2662,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shoes_black_106
+      name: shoes_mining_right_03
       rect:
         serializedVersion: 2
         x: 64
@@ -2680,7 +2683,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shoes_black_107
+      name: shoes_mining_right_04
       rect:
         serializedVersion: 2
         x: 96
@@ -2701,7 +2704,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shoes_black_108
+      name: shoes_mining_right_05
       rect:
         serializedVersion: 2
         x: 128
@@ -2722,7 +2725,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shoes_black_109
+      name: shoes_mining_left_01
       rect:
         serializedVersion: 2
         x: 0
@@ -2743,7 +2746,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shoes_black_110
+      name: shoes_mining_left_02
       rect:
         serializedVersion: 2
         x: 32
@@ -2764,7 +2767,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shoes_black_111
+      name: shoes_mining_left_03
       rect:
         serializedVersion: 2
         x: 64
@@ -2785,7 +2788,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shoes_black_112
+      name: shoes_mining_left_04
       rect:
         serializedVersion: 2
         x: 96
@@ -2806,7 +2809,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shoes_black_113
+      name: shoes_mining_left_05
       rect:
         serializedVersion: 2
         x: 128
@@ -2822,6 +2825,27 @@ TextureImporter:
       bones: []
       spriteID: 118535d29e63546a0800000000000000
       internalID: -6465701314904762351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shoes_mining_up_05
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e729136dd21ac940800000000000000
+      internalID: 5317083052123957220
       vertices: []
       indices: 
       edges: []

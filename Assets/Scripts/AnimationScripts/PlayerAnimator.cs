@@ -69,6 +69,14 @@ public class PlayerAnimator : MonoBehaviour
         }
     }
 
+    /*
+    Updates the state of the mining animation
+    @param enabled Whether or not the mining animation should be enabled
+    */
+    public void TriggerMiningAnim(bool enabled) {
+        anim.SetBool("isMining", enabled);
+    }
+
     public void UpdateItemAnim()
     {
         Item selectedItem = player.GetSelectedItem();
