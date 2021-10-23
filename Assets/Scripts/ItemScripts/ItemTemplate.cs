@@ -119,7 +119,7 @@ public enum ItemType {
     Sword3,
     Sword4,
     Sword5,
-    Sword6
+    Sword6,
     Chicken,
     Steak,
     Bacon,
