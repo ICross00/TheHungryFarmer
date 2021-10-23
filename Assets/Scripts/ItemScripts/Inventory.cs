@@ -8,7 +8,7 @@ public class Inventory : MonoBehaviour
     private const int INV_MAX = 27;
     public event EventHandler OnItemListChanged;
     [SerializeField]
-    private List<Item> items;
+    private List<Item> items = new List<Item>();
 
     void Start() {
          OnItemListChanged += Inventory_OnItemListChanged;
@@ -18,6 +18,12 @@ public class Inventory : MonoBehaviour
         items.RemoveAll(storedItem => storedItem.amount == 0);
     }
 
+    /*
+    @return True if the inventory is full, false if not
+    */
+    public bool IsFull() {
+        return items.Count == INV_MAX;
+    }
 
     /*
     Returns the inventory as a list of items test
@@ -60,7 +66,6 @@ public class Inventory : MonoBehaviour
                 //If the items are of the same type and if the stored item is below the max stack size, then the item can be stacked
                 if(storedItem.GetItemType() == newItem.GetItemType() && storedItem.amount < storedItem.itemTemplate.maxStack) {
                     storedItem.amount += 1; //Increment the stack
-                    newItem.amount -= 1;
                     canStack = true;
                     break;
                 }
@@ -182,12 +187,15 @@ public class Inventory : MonoBehaviour
     Checks if the inventory contains an item with a minimum amount
     @param item The item to check for in the inventory
     @param amount The amount of the item to check for
+    @param exact Whether or not this amount should be exact
     @return True if the item existed in the inventory with the same amount or more, false if not
     */
-    public bool ContainsItem(ItemTemplate item, int amount) {
-        foreach(Item storedItem in items)
-            if(storedItem.GetItemType() == item.type & storedItem.amount >= amount)
+    public bool ContainsItem(ItemTemplate item, int amount, bool exact=false) {
+        foreach(Item storedItem in items) {
+            bool c = exact ? storedItem.amount == amount : storedItem.amount >= amount;
+            if(storedItem.GetItemType() == item.type & c)
                 return true;
+        }
 
         return false;
     }
