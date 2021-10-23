@@ -79,7 +79,7 @@ public class Enemy : Mover
         //Ghost
         else if (enemyName == "Ghost")
         {
-            Collectable.Spawn(transform.position, "Fish", 1 * lootMuliplier, 1.0f);
+            Collectable.Spawn(transform.position, "GhostDust", 1 * lootMuliplier, 1.0f);
             Collectable.Spawn(transform.position, "GoldCoin", Random.Range(1, 3) * lootMuliplier, 1.0f);
             Destroy(gameObject);
         }

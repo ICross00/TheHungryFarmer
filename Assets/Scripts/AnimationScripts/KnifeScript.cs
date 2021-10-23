@@ -23,11 +23,16 @@ public class KnifeScript : MonoBehaviour
 
             case "Fighter":
                 collision.gameObject.GetComponent<Enemy>().hitPoint = collision.gameObject.GetComponent<Enemy>().hitPoint - knifeDamage;
-                Destroy(gameObject);
+                GameManager.instance.ShowText(knifeDamage.ToString(), 25, Color.red, transform.position, Vector3.up * 50, 3.0f);
                 break;
 
             case "Crop":
                 collision.SendMessage("HarvestCrop");
+                break;
+
+            case "Gaurdian":
+                collision.gameObject.GetComponent<Gaurdian>().hitPoint = collision.gameObject.GetComponent<Gaurdian>().hitPoint - knifeDamage;
+                GameManager.instance.ShowText(knifeDamage.ToString(), 25, Color.red, transform.position, Vector3.up * 50, 3.0f);
                 break;
         }
     }

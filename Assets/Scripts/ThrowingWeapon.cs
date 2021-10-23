@@ -16,7 +16,6 @@ public class ThrowingWeapon : MonoBehaviour
     private Vector2 mousePosition;
     public float fireForce;
     private float lastSwing;
-    public int knifeDamage;
     public int lifeSteal;
     public int lootDropChance;
 
@@ -68,10 +67,9 @@ public class ThrowingWeapon : MonoBehaviour
         //Try catch has been added to avoid Null Reference if nothing is equipped.
         try
         {
+            swordCheck = player.GetSelectedItem().GetItemType().ToString();
             if (swordTypes.Contains(player.GetSelectedItem().GetItemType().ToString()) && Time.time - lastSwing > CoolDownTime(swordCheck))
             {
-                swordCheck = player.GetSelectedItem().GetItemType().ToString();
-                
                 if (Input.GetMouseButtonDown(1) && (player.isInvOpen == false))
                 {
                     lastSwing = Time.time;
