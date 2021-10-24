@@ -5,6 +5,7 @@ using UnityEditor;
 
 public class PlantedCrop : RandomEvent
 {
+    public static SpriteListDictionary cropDict;
     public ItemTemplate cropTemplate;
     private int maxGrowthStage;
     private int growthStage = 1;
@@ -20,13 +21,14 @@ public class PlantedCrop : RandomEvent
     protected override void Start() {
         base.Start();
 
+        //Locate the array of sprites associated with crop growth stages
+        if(cropDict == null)
+            cropDict = Resources.Load<SpriteListDictionary>("Prefabs/Crop Sprite Dictionary");
+
         gameObject.tag = "Crop";
         //Set growth probabilities
         this.eventProbability = 0.1f;
         this.period = 2.5f;
-
-        //Locate the array of sprites associated with crop growth stages
-        SpriteListDictionary cropDict = Resources.Load<SpriteListDictionary>("Prefabs/Crop Sprite Dictionary");
 
         //Get the key associated with the appropriate crop sprites
         string cropType = cropTemplate.GetTagValue("crop_sprites");
