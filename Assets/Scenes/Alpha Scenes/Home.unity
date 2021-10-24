@@ -4527,7 +4527,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 860906198}
-  currentTick: 1420
+  currentTick: 480
   seconds: 0
   hours: 0
   days: 0
