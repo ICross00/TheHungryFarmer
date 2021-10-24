@@ -8,6 +8,8 @@ TagManager:
   - Crop
   - PlantableArea
   - Collidable
+  - Spawns
+  - Gaurdian
   - Ore
   layers:
   - Default
