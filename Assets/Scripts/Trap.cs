@@ -17,7 +17,7 @@ public class Trap : RandomEvent
         this.name =  "trap_t" + tier + "_" + GetInstanceID();
 
         this.period = 1.0f; //Check every 30 seconds
-        this.probability = 0.05f + tier * 0.05f; //Increasing probability of success with higher tier traps
+        this.eventProbability = 0.05f + tier * 0.05f; //Increasing probability of success with higher tier traps
 
         base.Start();
     }

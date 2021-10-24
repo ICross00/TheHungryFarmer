@@ -13,7 +13,10 @@ MonoBehaviour:
   m_Name: Emerald
   m_EditorClassIdentifier: 
   itemName: Emerald
+  behaviourClassName: 
   type: 5
   maxStack: 64
   sellPrice: 500
   sprite: {fileID: 4622322650234758072, guid: 1884b98184089f34184916226ef1b1c5, type: 3}
+  isEquippable: 0
+  tags: []
