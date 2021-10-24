@@ -278,4 +278,4 @@ MonoBehaviour:
   spriteObject: {fileID: 3796382655027053857}
   dropType: {fileID: 11400000, guid: 675c7014d43e45c4397106dedddee33a, type: 2}
   dropProbability: 0.4
-  numDropsBeforeDestroy: 12
+  numDropsBeforeDestroy: 8
