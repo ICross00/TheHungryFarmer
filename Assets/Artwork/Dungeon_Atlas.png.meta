@@ -10,7 +10,7 @@ TextureImporter:
     second: weapon_sword_katana
   - first:
       213: 2051385223110754156
-    second: Monster_Boss
+    second: Sword_Black
   - first:
       213: 3559900268273746473
     second: Golden_Sword
@@ -140,6 +140,27 @@ TextureImporter:
       bones: []
       spriteID: 25d64b356f30768f0800000000000000
       internalID: -547464473201054382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword_Black
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 161
+        width: 10
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6f7001edfbf77c10800000000000000
+      internalID: 2051385223110754156
       vertices: []
       indices: 
       edges: []
