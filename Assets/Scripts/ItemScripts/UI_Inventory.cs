@@ -1,4 +1,5 @@
 using TMPro;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -102,7 +103,12 @@ public class UI_Inventory : MonoBehaviour
     */
     protected virtual void OnButtonHover(int slotIndex) {
         Item hoveredItem = m_inventory.GetItemList()[slotIndex];
-        string text = hoveredItem.GetName() + "\nUnit Price: " + hoveredItem.GetUnitSellPrice().ToString();
+        string text = hoveredItem.GetName();
+
+        if(!String.IsNullOrEmpty(hoveredItem.GetDescription()))
+            text += "\n" + hoveredItem.GetDescription();
+
+        text += "\nUnit Price: " + hoveredItem.GetUnitSellPrice().ToString();
 
         tooltip.ShowTooltip(true);
         tooltip.SetText(text);
@@ -172,7 +178,7 @@ public class UI_Inventory : MonoBehaviour
     Can be overridden to draw additional information
     */
     private void Refresh() {
-        if(m_inventory == null) 
+        if(m_inventory == null)
             return;
 
         //Destroy old gameobjects
