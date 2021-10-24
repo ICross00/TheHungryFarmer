@@ -298,64 +298,64 @@ TextureImporter:
     second: Hair_Atlas_Buzz_Brown_97
   - first:
       213: 6135511848991461586
-    second: Hair_Atlas_Buzz_Brown_98
+    second: hair_mining_down_01
   - first:
       213: -8239495265396952708
-    second: Hair_Atlas_Buzz_Brown_99
+    second: hair_mining_down_02
   - first:
       213: 4928152570688639019
-    second: Hair_Atlas_Buzz_Brown_100
+    second: hair_mining_down_03
   - first:
       213: 5369007580679378728
-    second: Hair_Atlas_Buzz_Brown_101
+    second: hair_mining_down_04
   - first:
       213: 428730996523880830
-    second: Hair_Atlas_Buzz_Brown_102
+    second: hair_mining_down_05
   - first:
       213: -7884778760134534947
-    second: Hair_Atlas_Buzz_Brown_103
+    second: hair_mining_up_01
   - first:
       213: -4390290119212169936
-    second: Hair_Atlas_Buzz_Brown_104
+    second: hair_mining_up_02
   - first:
       213: 535916479594946717
-    second: Hair_Atlas_Buzz_Brown_105
+    second: hair_mining_up_03
   - first:
       213: -6173877014977868502
-    second: Hair_Atlas_Buzz_Brown_106
+    second: hair_mining_up_04
   - first:
       213: -3966636869674276457
-    second: Hair_Atlas_Buzz_Brown_107
+    second: hair_mining_up_05
   - first:
       213: -8899189034409665754
-    second: Hair_Atlas_Buzz_Brown_108
+    second: hair_mining_right_01
   - first:
       213: -7413298981820702924
-    second: Hair_Atlas_Buzz_Brown_109
+    second: hair_mining_right_02
   - first:
       213: -7335076112119303581
-    second: Hair_Atlas_Buzz_Brown_110
+    second: hair_mining_right_03
   - first:
       213: 2487671369884357385
-    second: Hair_Atlas_Buzz_Brown_111
+    second: hair_mining_right_04
   - first:
       213: 7506022336933538474
-    second: Hair_Atlas_Buzz_Brown_112
+    second: hair_mining_right_05
   - first:
       213: 5862138840200070841
-    second: Hair_Atlas_Buzz_Brown_113
+    second: hair_mining_left_01
   - first:
       213: -2071988410433607793
-    second: Hair_Atlas_Buzz_Brown_114
+    second: hair_mining_left_02
   - first:
       213: 3596096728701492060
-    second: Hair_Atlas_Buzz_Brown_115
+    second: hair_mining_left_03
   - first:
       213: 6998109158276705105
-    second: Hair_Atlas_Buzz_Brown_116
+    second: hair_mining_left_04
   - first:
       213: -2310740088501820318
-    second: Hair_Atlas_Buzz_Brown_117
+    second: hair_mining_left_05
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -2503,7 +2503,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hair_Atlas_Buzz_Brown_98
+      name: hair_mining_down_01
       rect:
         serializedVersion: 2
         x: 0
@@ -2524,7 +2524,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hair_Atlas_Buzz_Brown_99
+      name: hair_mining_down_02
       rect:
         serializedVersion: 2
         x: 32
@@ -2545,7 +2545,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hair_Atlas_Buzz_Brown_100
+      name: hair_mining_down_03
       rect:
         serializedVersion: 2
         x: 64
@@ -2566,7 +2566,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hair_Atlas_Buzz_Brown_101
+      name: hair_mining_down_04
       rect:
         serializedVersion: 2
         x: 96
@@ -2587,7 +2587,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hair_Atlas_Buzz_Brown_102
+      name: hair_mining_down_05
       rect:
         serializedVersion: 2
         x: 128
@@ -2608,7 +2608,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hair_Atlas_Buzz_Brown_103
+      name: hair_mining_up_01
       rect:
         serializedVersion: 2
         x: 0
@@ -2629,7 +2629,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hair_Atlas_Buzz_Brown_104
+      name: hair_mining_up_02
       rect:
         serializedVersion: 2
         x: 32
@@ -2650,7 +2650,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hair_Atlas_Buzz_Brown_105
+      name: hair_mining_up_03
       rect:
         serializedVersion: 2
         x: 64
@@ -2671,7 +2671,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hair_Atlas_Buzz_Brown_106
+      name: hair_mining_up_04
       rect:
         serializedVersion: 2
         x: 96
@@ -2692,7 +2692,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hair_Atlas_Buzz_Brown_107
+      name: hair_mining_up_05
       rect:
         serializedVersion: 2
         x: 128
@@ -2713,7 +2713,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hair_Atlas_Buzz_Brown_108
+      name: hair_mining_right_01
       rect:
         serializedVersion: 2
         x: 0
@@ -2734,7 +2734,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hair_Atlas_Buzz_Brown_109
+      name: hair_mining_right_02
       rect:
         serializedVersion: 2
         x: 32
@@ -2755,7 +2755,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hair_Atlas_Buzz_Brown_110
+      name: hair_mining_right_03
       rect:
         serializedVersion: 2
         x: 64
@@ -2776,7 +2776,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hair_Atlas_Buzz_Brown_111
+      name: hair_mining_right_04
       rect:
         serializedVersion: 2
         x: 96
@@ -2797,7 +2797,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hair_Atlas_Buzz_Brown_112
+      name: hair_mining_right_05
       rect:
         serializedVersion: 2
         x: 128
@@ -2818,7 +2818,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hair_Atlas_Buzz_Brown_113
+      name: hair_mining_left_01
       rect:
         serializedVersion: 2
         x: 0
@@ -2839,7 +2839,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hair_Atlas_Buzz_Brown_114
+      name: hair_mining_left_02
       rect:
         serializedVersion: 2
         x: 32
@@ -2860,7 +2860,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hair_Atlas_Buzz_Brown_115
+      name: hair_mining_left_03
       rect:
         serializedVersion: 2
         x: 64
@@ -2881,7 +2881,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hair_Atlas_Buzz_Brown_116
+      name: hair_mining_left_04
       rect:
         serializedVersion: 2
         x: 96
@@ -2902,7 +2902,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hair_Atlas_Buzz_Brown_117
+      name: hair_mining_left_05
       rect:
         serializedVersion: 2
         x: 128

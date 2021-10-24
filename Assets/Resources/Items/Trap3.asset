@@ -19,4 +19,6 @@ MonoBehaviour:
   sellPrice: 200
   sprite: {fileID: 21300000, guid: fac6eb104191839418bafb0aef9f6c26, type: 3}
   isEquippable: 0
-  tags: []
+  tags:
+  - key: tier
+    value: 3
