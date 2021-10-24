@@ -4522,9 +4522,6 @@ MonoBehaviour:
   - itemTemplate: {fileID: 11400000, guid: 9ba014eb66b3cba42b87feb03b91fb1c, type: 2}
     amount: 1
     activeItem: 0
-  - itemTemplate: {fileID: 11400000, guid: 87bb0e943ddd24a41aebdc7af513bd05, type: 2}
-    amount: 1
-    activeItem: 0
   - itemTemplate: {fileID: 11400000, guid: 93ad6e4bd08815345ac6e4d9ad556141, type: 2}
     amount: 1
     activeItem: 0
