@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Copper
   behaviourClassName: 
-  type: 8
+  type: 25
   maxStack: 64
   sellPrice: 1
   sprite: {fileID: 7135017887872376897, guid: 1884b98184089f34184916226ef1b1c5, type: 3}
