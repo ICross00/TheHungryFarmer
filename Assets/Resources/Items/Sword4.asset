@@ -26,3 +26,6 @@ MonoBehaviour:
     value: 5
   - key: prefab_name
     value: swordT4
+  - key: description
+    value: '<br>Sword Damage: 15<br>Knife Damage: 6<br>Life Steal on Kill: 1<br>Loot
+      Drop Chance: x1<br>'
