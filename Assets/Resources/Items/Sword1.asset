@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9cbc7e85fa3738c458d90a5a408acd80, type: 3}
   m_Name: Sword1
   m_EditorClassIdentifier: 
-  itemName: Sword
+  itemName: Sword - Tier 1
   behaviourClassName: Behaviour_Sword
   type: 17
   maxStack: 1
@@ -21,7 +21,7 @@ MonoBehaviour:
   isEquippable: 1
   tags:
   - key: Damage
-    value: 1
+    value: 5
   - key: Knockback
     value: 5
   - key: prefab_name
