@@ -69,6 +69,10 @@ public class Item
         return itemTemplate.name;
     }
 
+    public string GetDescription() {
+        return itemTemplate.GetTagValue("Description");
+    }
+
     //Access the set value of a tag from a given key
     public string GetItemTagValue(string key) {
         return itemTemplate.GetTagValue(key);

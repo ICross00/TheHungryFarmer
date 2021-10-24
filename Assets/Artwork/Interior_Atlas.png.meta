@@ -161,6 +161,12 @@ TextureImporter:
   - first:
       213: -1617712096120962086
     second: bowl_bottom_dark_blue
+  - first:
+      213: 8138337315054700903
+    second: desk_white_back
+  - first:
+      213: -4606904485820418465
+    second: decor_potted_plant_01
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -1266,7 +1272,7 @@ TextureImporter:
         width: 12
         height: 10
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1287,7 +1293,7 @@ TextureImporter:
         width: 11
         height: 10
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1295,6 +1301,48 @@ TextureImporter:
       bones: []
       spriteID: ad38bd96b6bbc89e0800000000000000
       internalID: -1617712096120962086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: desk_white_back
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 992
+        width: 30
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76944265bae21f070800000000000000
+      internalID: 8138337315054700903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decor_potted_plant_01
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 816
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f56358057ccf010c0800000000000000
+      internalID: -4606904485820418465
       vertices: []
       indices: 
       edges: []

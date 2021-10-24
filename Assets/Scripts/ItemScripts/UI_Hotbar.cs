@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -63,7 +64,12 @@ public class UI_Hotbar : UI_Inventory
     */
     protected override void OnButtonHover(int slotIndex) {
         Item hoveredItem = hotbarInventory.GetHotbarList()[slotIndex];
-        string text = hoveredItem.GetName() + "\nUnit Price: " + hoveredItem.GetUnitSellPrice().ToString();
+        string text = hoveredItem.GetName();
+
+        if(!String.IsNullOrEmpty(hoveredItem.GetDescription()))
+            text += "\n" + hoveredItem.GetDescription();
+
+        text += "\nUnit Price: " + hoveredItem.GetUnitSellPrice().ToString();
 
         tooltip.ShowTooltip(true);
         tooltip.SetText(text);
