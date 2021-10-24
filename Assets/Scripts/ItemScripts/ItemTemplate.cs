@@ -85,7 +85,6 @@ public class ItemTemplate : ScriptableObject
 }
 
 public enum ItemType {
-    Pickaxe,
     Heart,
     Star,
     Gear,
@@ -123,5 +122,7 @@ public enum ItemType {
     Chicken,
     Steak,
     Bacon,
-    FishingRod
+    FishingRod,
+    Pickaxe,
+    ThrowingKnife
 }

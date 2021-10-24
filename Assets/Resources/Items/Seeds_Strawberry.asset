@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Strawberry Seed Packet
   behaviourClassName: Behaviour_Seeds
-  type: 12
+  type: 14
   maxStack: 64
   sellPrice: 3
   sprite: {fileID: -6449412298968507767, guid: 1884b98184089f34184916226ef1b1c5, type: 3}
@@ -24,3 +24,7 @@ MonoBehaviour:
     value: crop_strawberry
   - key: grows_into
     value: Strawberry
+  - key: min_yield
+    value: 2
+  - key: max_yield
+    value: 3

@@ -24,3 +24,7 @@ MonoBehaviour:
     value: crop_pumpkin
   - key: grows_into
     value: Pumpkin
+  - key: min_yield
+    value: 1
+  - key: max_yield
+    value: 2

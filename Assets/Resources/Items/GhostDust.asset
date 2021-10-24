@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Ghost Dust
   behaviourClassName: 
-  type: 21
+  type: 27
   maxStack: 64
   sellPrice: 10
   sprite: {fileID: -4595318747970016082, guid: 1884b98184089f34184916226ef1b1c5, type: 3}
