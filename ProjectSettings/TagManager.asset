@@ -10,6 +10,8 @@ TagManager:
   - Collidable
   - Spawns
   - Gaurdian
+  - Ore
+
   layers:
   - Default
   - TransparentFX

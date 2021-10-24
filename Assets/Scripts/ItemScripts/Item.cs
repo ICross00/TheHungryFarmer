@@ -82,15 +82,18 @@ public class Item
     */
     public void Equip(Player ply, bool equipped) {
         Inventory inventory = ply.GetInventory();
+        ply.activeBehaviour = null;
 
         //Invoke the item's OnEquipped/OnUnequipped behaviour
         if(itemTemplate != null) {
             ItemBehaviour behaviour = itemTemplate.GetItemBehaviour();
             if(behaviour != null) {
-                if(equipped)
+                if(equipped) {
                     behaviour.OnItemEquipped(this, ply, inventory);
-                else
+                    ply.activeBehaviour = behaviour;
+                } else {
                     behaviour.OnItemUnequipped(this, ply, inventory);
+                }
             }
         }
     }

@@ -5,17 +5,17 @@ using UnityEngine;
 /*
     This class allows you to associate behaviour with a randomly triggered event by overriding the OnRandomEventTriggered function.
 
-    The frequency at which OnRandomEventTriggered is called depends on the 'probability' and 'period' variables.
+    The frequency at which OnRandomEventTriggered is called depends on the 'eventProbability' and 'period' variables.
 
-    For example, if 'period' is set to 0.1f and 'probability' is set to 0.5f, every 0.1 seconds there is a 50% chance that OnRandomEventTriggered is called.
+    For example, if 'period' is set to 0.1f and 'eventProbability' is set to 0.5f, every 0.1 seconds there is a 50% chance that OnRandomEventTriggered is called.
     Override this method in a child class to define behaviour for when this random event is triggered, and assign values to
-    the probability and period values to change how often this random event occurs.
+    the eventProbability and period values to change how often this random event occurs.
 */
 public abstract class RandomEvent : MonoBehaviour
 {
     public static Dictionary<int, float> randomEventMap = new Dictionary<int, float>(); //Keeps track of times at which objects were disabled by using their instance ID as the key
 
-    public float probability = 0.1f;            //The probability that reach random check will pass, where 0.0 = never and 1.0 = certain
+    public float eventProbability = 0.1f;       //The probability that reach random check will pass, where 0.0 = never and 1.0 = certain
     public float period = 0.33f;                //The number of seconds that must pass before another random check is made
     public bool eventEnabled = true;            //Whether or not the random event should be triggered
     public bool simulateWhileDisabled = true;   //Whether or not random events should continue to be simulated while the object is disabled
@@ -57,7 +57,7 @@ public abstract class RandomEvent : MonoBehaviour
     }
 
     /*
-    Performs a random trial with a chance of success defined by the probability variable
+    Performs a random trial with a chance of success defined by the eventProbability variable
     If successful, calls OnRandomEventTriggered
     If the RandomEvent instance is not enabled, this function does nothing
     */
@@ -66,7 +66,7 @@ public abstract class RandomEvent : MonoBehaviour
             return;
 
         float trial = Random.Range(0.0f, 1.0f);
-        if(trial < probability) {
+        if(trial < eventProbability) {
             OnRandomEventTriggered();
         }
     }

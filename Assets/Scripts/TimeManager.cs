@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class TimeManager : MonoBehaviour
 {
+    public GameManager gameManager;
+
     private const float tickTimerMax = 1.0f;
     private const int maxTicks = 1440;
     private int tick;
@@ -28,9 +30,8 @@ public class TimeManager : MonoBehaviour
         //This will reset the ticks backs to zero after they reach maxTick value.
         if (tick == maxTicks)
         {
-            tick = 0;
-            days++;
-            hours = 0;
+            NextDay();
+            gameManager.ResetPlayer();
         }
 
         //This will update the tick every second (to change time they are updated, update the tickTimer value).
@@ -47,5 +48,12 @@ public class TimeManager : MonoBehaviour
             tick++;
             seconds++;
         }
+    }
+
+    public void NextDay()
+    {
+        tick = 0;
+        hours = 8;
+        days++;
     }
 }
