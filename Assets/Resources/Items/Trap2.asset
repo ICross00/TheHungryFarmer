@@ -22,3 +22,5 @@ MonoBehaviour:
   tags:
   - key: tier
     value: 2
+  - key: description
+    value: A better trap, for catching cows

@@ -22,3 +22,5 @@ MonoBehaviour:
   tags:
   - key: tier
     value: 1
+  - key: description
+    value: A basic trap, for catching chickens

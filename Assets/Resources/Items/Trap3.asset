@@ -22,3 +22,5 @@ MonoBehaviour:
   tags:
   - key: tier
     value: 3
+  - key: description
+    value: The best available trap, for catching pigs
