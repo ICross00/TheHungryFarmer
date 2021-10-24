@@ -28,7 +28,7 @@ public class PlantedCrop : RandomEvent
         gameObject.tag = "Crop";
         //Set growth probabilities
         this.eventProbability = 0.1f;
-        this.period = 2.5f;
+        this.period = 5f;
 
         //Get the key associated with the appropriate crop sprites
         string cropType = cropTemplate.GetTagValue("crop_sprites");
