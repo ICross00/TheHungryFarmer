@@ -6,7 +6,8 @@ public class FishingGame : MonoBehaviour
 {
     [SerializeField] Transform Top;
     [SerializeField] Transform Bottom;
-    [SerializeField] Transform fish;
+    
+    [SerializeField] RectTransform fish;
 
     float fishPosition;
     float fishDestination;
@@ -17,7 +18,8 @@ public class FishingGame : MonoBehaviour
     float fishSpeed;
     [SerializeField] private const float smoothMotion = 1.5f;
 
-    [SerializeField] Transform hook;
+    [SerializeField] RectTransform hook;
+    
     float hookPosition;
     [SerializeField] private const float hookSize = 0.1f;
     [SerializeField] private const float hookPower = 0.5f;
@@ -33,10 +35,12 @@ public class FishingGame : MonoBehaviour
 
     bool pause = false;
     [SerializeField] public float failTimer = 5f;
+    
 
     private void Start()
     {
         pause = false;
+        Debug.Log("Let's go fishing");
     }
 
     private void Update()
@@ -49,7 +53,7 @@ public class FishingGame : MonoBehaviour
 
     void Fish()
     {
-        fishTimer -= Time.deltaTime;
+        fishTimer -= Time.unscaledDeltaTime;
         if (fishTimer < 0f)
         {
             fishTimer = UnityEngine.Random.value * timerMultiplicator;
@@ -57,7 +61,7 @@ public class FishingGame : MonoBehaviour
             fishDestination = UnityEngine.Random.value;
         }
 
-        fishPosition = Mathf.SmoothDamp(fishPosition, fishDestination, ref fishSpeed, smoothMotion);
+        fishPosition = Mathf.SmoothDamp(fishPosition, fishDestination, ref fishSpeed, smoothMotion, Mathf.Infinity, Time.unscaledDeltaTime);
         fish.position = Vector3.Lerp(Bottom.position, Top.position, fishPosition);
     }
 
@@ -65,10 +69,10 @@ public class FishingGame : MonoBehaviour
     {
         if (Input.GetMouseButton(0))
         {
-            hookPullVelocity += hookPullPower * Time.deltaTime;
+            hookPullVelocity += hookPullPower * Time.unscaledDeltaTime;
         }
 
-        hookPullVelocity -= hookGravityPower * Time.deltaTime;
+        hookPullVelocity -= hookGravityPower * Time.unscaledDeltaTime;
 
         hookPosition += hookPullVelocity;
 
@@ -96,12 +100,12 @@ public class FishingGame : MonoBehaviour
 
         if (min < fishPosition && fishPosition < max)
         {
-            hookProgress += hookPower * Time.deltaTime;
+            hookProgress += hookPower * Time.unscaledDeltaTime;
         }
         else
         {
-            hookProgress -= hookProgressDegradationPower * Time.deltaTime;
-            failTimer -= Time.deltaTime;
+            hookProgress -= hookProgressDegradationPower * Time.unscaledDeltaTime;
+            failTimer -= Time.unscaledDeltaTime;
             if (failTimer < 0f)
             {
                 Lose();
@@ -111,6 +115,8 @@ public class FishingGame : MonoBehaviour
         if (hookProgress >= 1f)
         {
             Win();
+            Vector3 position = GameObject.Find("Player").transform.position;
+            Collectable.Spawn(position, "Fish", 1);
         }
 
         hookProgress = Mathf.Clamp(hookProgress, 0f, 1f);
@@ -121,7 +127,6 @@ public class FishingGame : MonoBehaviour
     {
         pause = true;
         Debug.Log("YOU WIN! CONGRATULATIONS, YOU CAUGHT THE FISH!");
-        Collectable.Spawn(transform.position, "Fish", 1);
     }
 
     private void Lose()

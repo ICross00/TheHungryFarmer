@@ -128,15 +128,8 @@ MonoBehaviour:
   damagePoint: 5
   pushForce: 2
   weaponLevel: 0
-  target: {fileID: 0}
-  offset: {x: 0, y: 0, z: -1}
-  rb: {fileID: 7119672379676794283}
-  sceneCamera: {fileID: 0}
-  ThrowingKnife: {fileID: 1941583395554580080, guid: 85f852a28220b9f4582d9d4dd9e06add,
-    type: 3}
-  FirePoint: {fileID: 0}
-  fireForce: 10
-  cooldownKnife: 0
+  lifeSteal: 3
+  additionaLoot: 3
 --- !u!61 &4236245040133056059
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -2,17 +2,25 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SceneChange : Collideable
+public class SceneChange : MonoBehaviour
 {
     public string[] sceneNames;
-    protected override void OnCollide(Collider2D coll)
+    public SceneLoader sceneLoader;
+
+    private void Awake()
     {
-        if (coll.name == "Player")
+        //Find the SceneLoader Object
+        sceneLoader = GameObject.Find("SceneLoader").GetComponent<SceneLoader>();
+    }
+
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.name == "Player")
         {
             //Teleport the player
             GameManager.instance.SaveState();
             string sceneName = sceneNames[Random.Range(0, sceneNames.Length)];
-            UnityEngine.SceneManagement.SceneManager.LoadScene(sceneName);
+            sceneLoader.TransitionLevel(sceneName);
         }
     }
 }
