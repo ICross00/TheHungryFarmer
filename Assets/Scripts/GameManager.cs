@@ -11,9 +11,12 @@ public class GameManager : MonoBehaviour
     //public Inventory playerInventory;
     public int restaurantRating;
     public FloatingTextManager floatingTextManager;  //Referencing floating text for later use
-    public int gold = 0;
+    private TimeManager timeManager;
+
+    //Local Variables
     private string previousScene;
     private bool initialLoad;
+    public int gold = 0;
 
     public static GameManager instance;
 
@@ -36,8 +39,12 @@ public class GameManager : MonoBehaviour
         UI_Inventory playerInventoryUI = GameObject.Find("Player Inventory UI").GetComponent<UI_Inventory>();
         playerInventoryUI.SetInventory(GetComponent<Inventory>());
 
+        timeManager = GetComponent<TimeManager>();
+
         GameObject.Find("Main Camera").transform.position = player.transform.position;
         ChangeGold(0);
+
+        previousScene = "Bed"; //To prevent a null pointer exception when respawning the player if they haven't left home by middnight
     }
 
     public int GetGold() {
@@ -98,11 +105,39 @@ public class GameManager : MonoBehaviour
         //Set Player Inventory
         List<Item> tempInventory = Inventory.FromString(data[2]);
 
+        Debug.Log("Initial Load: " + initialLoad);
         if (!initialLoad)
         {
-            player.transform.position = GameObject.Find(previousScene + "SpawnPoint").transform.position;
+            Debug.Log("Spawn at spawn point");
+            SpawnPlayer();
         }
+        else if (initialLoad)
+        {
+            Debug.Log("Should spawn at bed");
+            SpawnPlayer("Bed");
+        }
+        else
+        {
+            Debug.Log("Neither");
+        }
+    }
 
+    public void ResetPlayer()
+    {
+        SaveState();
+        SceneManager.LoadScene("Home");
+    }
+
+    public void SpawnPlayer()
+    {
+        player.transform.position = GameObject.Find(previousScene + "SpawnPoint").transform.position;
+        GameObject.Find("Main Camera").transform.position = player.transform.position;
+        player.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+    }
+
+    public void SpawnPlayer(string spawnName)
+    {
+        player.transform.position = GameObject.Find(spawnName + "SpawnPoint").transform.position;
         GameObject.Find("Main Camera").transform.position = player.transform.position;
         player.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
     }
