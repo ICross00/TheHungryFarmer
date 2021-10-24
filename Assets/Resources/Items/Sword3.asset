@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Sword - Tier 3
   behaviourClassName: Behaviour_Sword
-  type: 31
+  type: 30
   maxStack: 1
   sellPrice: 300
   sprite: {fileID: -5908182510162382659, guid: c8c085d14c298684082fbe2a605c1918, type: 3}
