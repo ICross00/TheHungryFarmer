@@ -44,7 +44,7 @@ public class Weapon : Collideable
 
     protected override void OnCollide(Collider2D coll)
     {
-        if (coll.tag == "Fighter")
+        if (coll.tag == "Fighter" || coll.tag == "Gaurdian")
         {
             if (coll.name == "Player")
                 return;
@@ -60,13 +60,11 @@ public class Weapon : Collideable
             coll.SendMessage("ReceiveDamage", dmg);
         }
 
-
         if (coll.tag == "Crop")
         {
             coll.SendMessage("HarvestCrop");
         }
     }
-
 
     private void Swing()
     {

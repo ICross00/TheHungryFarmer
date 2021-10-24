@@ -120,8 +120,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18c41d1ac0654664bb808b63c2248bed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 4
   rb: {fileID: 2740419899175666381}
+  knifeDamage: 3
 --- !u!61 &4060711739712216642
 BoxCollider2D:
   m_ObjectHideFlags: 0
