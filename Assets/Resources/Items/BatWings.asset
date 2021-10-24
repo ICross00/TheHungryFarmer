@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Bat Wings
   behaviourClassName: 
-  type: 22
+  type: 28
   maxStack: 64
   sellPrice: 10
   sprite: {fileID: 4716451509661686858, guid: 1884b98184089f34184916226ef1b1c5, type: 3}

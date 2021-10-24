@@ -30,7 +30,7 @@ public class CraftingRecipe : ScriptableObject
     */
     public bool CheckCanCraft(Inventory inventory, bool consume=false) {
         foreach(CraftingIngredient ingredient in craftingIngredients) {
-            if(!inventory.ContainsItem(ingredient.template, ingredient.amount))
+            if(!inventory.ContainsItem(ingredient.template, ingredient.amount) | inventory.IsFull())
                 return false;
         }
 

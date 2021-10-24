@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Carrot Seed Packet
   behaviourClassName: Behaviour_Seeds
-  type: 13
+  type: 15
   maxStack: 64
   sellPrice: 4
   sprite: {fileID: -1742513348937851951, guid: 1884b98184089f34184916226ef1b1c5, type: 3}
@@ -24,3 +24,7 @@ MonoBehaviour:
     value: crop_carrot
   - key: grows_into
     value: Carrot
+  - key: min_yield
+    value: 2
+  - key: max_yield
+    value: 4

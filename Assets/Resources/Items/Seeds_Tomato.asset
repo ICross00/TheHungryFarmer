@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Tomato Seed Packet
   behaviourClassName: Behaviour_Seeds
-  type: 11
+  type: 13
   maxStack: 64
   sellPrice: 3
   sprite: {fileID: 5034380702231317304, guid: 1884b98184089f34184916226ef1b1c5, type: 3}
@@ -24,3 +24,7 @@ MonoBehaviour:
     value: crop_tomato
   - key: grows_into
     value: Tomato
+  - key: min_yield
+    value: 1
+  - key: max_yield
+    value: 5

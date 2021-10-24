@@ -14,6 +14,7 @@ public class Player : Mover
     private GameManager gameManager;
     public bool isInvOpen = false;
 
+    public ItemBehaviour activeBehaviour; //Behaviour associated with the current item
 
     //Actions to store and select items. These may be temporarily overridden by other classes, so are stored so they may be reset
     private UnityAction<Item, int> dropItem;
@@ -85,13 +86,21 @@ public class Player : Mover
         gameManager.ChangeGold(amount);
     }
 
-    //This function will be called by the mining animation whenever the pickaxe strikes the ground
-    //Direction: 0 = left, 1 = up, 2 = right, 3 = down
-    public void OnMine(int direction) {
-        Debug.Log("OnMine called with direction " + direction);
+    /*
+    Sets the speed at which the player mines as a multiplier, where 1 = default
+    @param speed The new mining speed
+    */
+    public void SetMiningSpeed(float speed) {
+        GetComponent<PlayerAnimator>().SetMiningSpeed(speed);
     }
 
-
+    //This function will be called by the mining animation whenever the pickaxe strikes the ground
+    public void OnMine(int direction) {
+        if(activeBehaviour != null & activeBehaviour is Behaviour_Pickaxe) {
+            Behaviour_Pickaxe pickaxe = (Behaviour_Pickaxe)activeBehaviour;
+            pickaxe.OnMine(this, direction);
+        }
+    }
 
     private void FixedUpdate()
     {

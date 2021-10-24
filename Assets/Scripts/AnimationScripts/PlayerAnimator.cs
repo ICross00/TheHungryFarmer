@@ -70,6 +70,14 @@ public class PlayerAnimator : MonoBehaviour
     }
 
     /*
+    Sets the speed at which the player mines as a multiplier, where 1 = default
+    @param speed The new mining speed
+    */
+    public void SetMiningSpeed(float speed) {
+        anim.SetFloat("miningSpeed", speed);
+    }
+
+    /*
     Updates the state of the mining animation
     @param enabled Whether or not the mining animation should be enabled
     */
