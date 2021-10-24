@@ -24,3 +24,7 @@ MonoBehaviour:
     value: crop_strawberry
   - key: grows_into
     value: Strawberry
+  - key: min_yield
+    value: 2
+  - key: max_yield
+    value: 3

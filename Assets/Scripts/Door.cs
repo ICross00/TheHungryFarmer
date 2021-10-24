@@ -24,9 +24,9 @@ public class Door : Interactable
         SpriteRenderer doorRenderer = GetComponent<SpriteRenderer>();
         doorRenderer.sprite = isOpen ? openSprite : closedSprite;
 
-        //Change the object's layer. This has the effect of updating collisions, as only collider objects on layer 8 collide with the player
-        //This allows us to disable collisions without disabling the interactable
-        gameObject.layer = isOpen ? 1 : 8; //Refactor this to use LayerMask.NameToLayer
+        //Update door collisionss
+        BoxCollider2D collider = GetComponent<BoxCollider2D>();
+        collider.isTrigger = isOpen;
     }
 
     //Interact function - open/close the door by toggling

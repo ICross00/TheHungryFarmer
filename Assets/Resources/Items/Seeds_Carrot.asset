@@ -24,3 +24,7 @@ MonoBehaviour:
     value: crop_carrot
   - key: grows_into
     value: Carrot
+  - key: min_yield
+    value: 2
+  - key: max_yield
+    value: 4

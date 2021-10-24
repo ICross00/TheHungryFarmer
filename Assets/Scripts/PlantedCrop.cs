@@ -14,6 +14,9 @@ public class PlantedCrop : RandomEvent
     private Grid plantableGrid;
     private PlantableArea plantableArea;
 
+    private int minYield;
+    private int maxYield;
+
     protected override void Start() {
         base.Start();
 
@@ -45,6 +48,10 @@ public class PlantedCrop : RandomEvent
         //Assign unique name
         this.name = cropType + "_" + GetInstanceID();
         this.transform.parent = pObj.transform;
+
+        //Get minimum and maximum yield values
+        minYield = int.Parse(cropTemplate.GetTagValue("min_yield"));
+        maxYield = int.Parse(cropTemplate.GetTagValue("max_yield"));
     }
 
     /*
@@ -62,17 +69,15 @@ public class PlantedCrop : RandomEvent
 
     /*
     Harvests the crop. This will destroy the crop's GameObject and spawn a random amount of the crop in the world as a Collectable
-    TODO: Make the numSpawnedCrops variable based upon a pair of string tags in the crop template indicating minimum and maximum yield
     */
     public void HarvestCrop() {
         //Only yield any items if the crop was fully grown
         if(growthStage >= maxGrowthStage) {
-            int numSpawnedCrops = Random.Range(3, 5);
+            int numSpawnedCrops = Random.Range(minYield, maxYield);
             Collectable spawnedItem = Collectable.Spawn(transform.position, cropTemplate.GetTagValue("grows_into"), numSpawnedCrops, 1.5f);
             spawnedItem.ApplyRandomForce(8.0f);
+            Destroy(this.gameObject);
         }
-
-        Destroy(this.gameObject);
     }
 
     /*
@@ -87,8 +92,7 @@ public class PlantedCrop : RandomEvent
             return false;
 
         //Check if the crop is overlapping any existing crops.
-        //TODO: Make 1<<7 more readable. Currently this tells the function to only check overlaps on layer 7
-        Collider2D[] results = Physics2D.OverlapCircleAll(gridPosition, 0.5f, 1<<7); 
+        Collider2D[] results = Physics2D.OverlapCircleAll(gridPosition, 0.5f, 1<<7);
 
         //Return true if there were 0 crops at this cell
         return results.Length == 0;

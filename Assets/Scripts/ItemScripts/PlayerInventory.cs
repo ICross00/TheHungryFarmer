@@ -63,6 +63,9 @@ public class PlayerInventory : Inventory
     @return True if the item could be transferred, false if not (i.e. the inventory is full)
     */
     public bool TransferFromHotbar(int hotbarIndex) {
+        if(IsFull())
+            return false;
+
         Item itemToInventory = hotbar[hotbarIndex];
         hotbar.RemoveAt(hotbarIndex);
 
@@ -70,7 +73,7 @@ public class PlayerInventory : Inventory
 
         //Notify any listeners that the hotbar changed
         OnHotbarChanged?.Invoke(this, EventArgs.Empty);
-        return true; //TODO: Add inventory size limit
+        return true;
     }
 
     public List<Item> GetHotbarList() {
