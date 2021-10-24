@@ -6,6 +6,7 @@ public class FishingGame : MonoBehaviour
 {
     [SerializeField] Transform Top;
     [SerializeField] Transform Bottom;
+    
     [SerializeField] RectTransform fish;
 
     float fishPosition;
@@ -18,6 +19,7 @@ public class FishingGame : MonoBehaviour
     [SerializeField] private const float smoothMotion = 1.5f;
 
     [SerializeField] RectTransform hook;
+    
     float hookPosition;
     [SerializeField] private const float hookSize = 0.1f;
     [SerializeField] private const float hookPower = 0.5f;
