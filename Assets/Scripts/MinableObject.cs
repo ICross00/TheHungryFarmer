@@ -41,7 +41,7 @@ public class MinableObject : RandomEvent
     protected override void Start() {
         sr = spriteObject.GetComponent<SpriteRenderer>();
         remainingDrops = numDropsBeforeDestroy;
-        missIncrement = dropProbability / 8;
+        missIncrement = dropProbability / 5;
         base.Start();
     }
 
