@@ -25,14 +25,14 @@ public class MinableObject : RandomEvent
 
     /*
     Returns the first instance of a MinableObject object that overlaps a provided position
-    @param position The position to check for an ore at
+    @param position The position to check for a minable object at
     */
     public static MinableObject GetObjectAtPosition(Vector2 position) {
         Collider2D colliderAtPoint = Physics2D.OverlapPoint(position);
         if(colliderAtPoint != null) {
-            MinableObject ore = colliderAtPoint.GetComponent<MinableObject>();
-            if(ore != null)
-                return ore;
+            MinableObject obj = colliderAtPoint.GetComponent<MinableObject>();
+            if(obj != null)
+                return obj;
         }
 
         return null;
@@ -41,12 +41,17 @@ public class MinableObject : RandomEvent
     protected override void Start() {
         sr = spriteObject.GetComponent<SpriteRenderer>();
         remainingDrops = numDropsBeforeDestroy;
-        missIncrement = dropProbability / 10;
+        missIncrement = dropProbability / 8;
         base.Start();
     }
 
+    private void SetEnabled(bool enabled) {
+        GetComponent<BoxCollider2D>().enabled = enabled;
+        sr.enabled = enabled;
+    }
+
     /*
-    Spawns the set ore item in the world
+    Spawns the set drop item in the world
     */
     private void SpawnDrop() {
         Item drop = new Item { itemTemplate = dropType, amount = 1, activeItem = !dropType.isEquippable };
@@ -58,22 +63,31 @@ public class MinableObject : RandomEvent
     Rolls a random chance to drop the item and decrements the remaining hits if successful
     */
     public void Mine() {
+        if(!enabled) //Do nothing if the ore has been mined
+            return;
+
         bool success = Random.value < (dropProbability + numMisses * missIncrement);
+        numMisses = success ? 0 : (numMisses + 1); //Increase the probability with each miss to prevent long streaks of nothing being collected
+        Debug.Log(numMisses);
         if(success) {
             SpawnDrop();
-            numMisses = 0;
-        } else {
-            //Increase the probability with each miss to prevent long streaks
-            numMisses++;
+
+            remainingDrops--;
+            if(remainingDrops == 0) {
+                SetEnabled(false);
+            }
         }
 
         shakeDirection = Random.value > 0.5f ? 1 : -1;
         shakeTime = SHAKE_DURATION;
     }
 
+
+
     //Re-enable the ore if it has been destroyed
     protected override void OnRandomEventTriggered() {
-
+        SetEnabled(true);
+        remainingDrops = numDropsBeforeDestroy;
     }
 
     // Update is called once per frame
