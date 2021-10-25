@@ -10,6 +10,7 @@ public class SceneChangeConditional : SceneChange
         if (collision.name == "Player" && allowChange)
         {
             //Teleport the player
+            GameObject.Find("GameManager").GetComponent<TimeManager>().dungeonRemaining = 0;
             GameManager.instance.SaveState();
             string sceneName = sceneNames[Random.Range(0, sceneNames.Length)];
             sceneLoader.TransitionLevel(sceneName);

@@ -160,14 +160,14 @@ public class Gaurdian : MonoBehaviour
     {
         lootMuliplier = GameObject.Find("ThrowingWeapon").GetComponent<ThrowingWeapon>().lootDropChance;
 
-        if (gaurdianName == "")
+        if (gaurdianName == "One")
         {
             //TODO: Add loot to the first gaurdian as seen below
 
             //Collectable.Spawn(transform.position, "Gaurdianloot", 1 * lootMuliplier, 1.0f);
             //Collectable.Spawn(transform.position, "GoldCoin", Random.Range(5, 10) * lootMuliplier, 1.0f);
         }
-        else if (gaurdianName == "")
+        else if (gaurdianName == "Two")
         {
             //TODO: Add loot to the second gaurdian as seen below
 
