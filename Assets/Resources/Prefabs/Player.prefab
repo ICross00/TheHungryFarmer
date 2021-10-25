@@ -114,6 +114,8 @@ MonoBehaviour:
   ySpeed: 1.2
   interactionRadius: 1.2
   inventoryUI: {fileID: 0}
+  hotbarUI: {fileID: 0}
+  isInvOpen: 0
 --- !u!95 &3954170101240099473
 Animator:
   serializedVersion: 3
@@ -145,6 +147,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 210ab33925c2ad348827bc95084b0405, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
 --- !u!70 &421144382
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
