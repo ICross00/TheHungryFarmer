@@ -139,7 +139,7 @@ TextureImporter:
     second: tree_01_shadowless
   - first:
       213: -5060849815826022191
-    second: tree_02_shadow
+    second: tree_02_shadow_top
   - first:
       213: -4616171280885944119
     second: tree_02_shadowless
@@ -586,75 +586,6 @@ TextureImporter:
     second: item_iron
   - first:
       213: -6309460507781951149
-    second: pigDown_01
-  - first:
-      213: -2827424190132562319
-    second: pigDown_02
-  - first:
-      213: 3383709637648425264
-    second: pigDown_03
-  - first:
-      213: -6951105498613778591
-    second: pigDown_04
-  - first:
-      213: -6052785018477744946
-    second: pigUp_01
-  - first:
-      213: -5678722625188501042
-    second: pigUp_02
-  - first:
-      213: -4550198123356522338
-    second: pigUp_03
-  - first:
-      213: 404476181190356144
-    second: pigUp_04
-  - first:
-      213: -4660339566900146991
-    second: pigRight_01
-  - first:
-      213: 2141450126566809988
-    second: pigRight_02
-  - first:
-      213: -2654783198431068509
-    second: pigRight_03
-  - first:
-      213: 4397850611157708557
-    second: pigRight_04
-  - first:
-      213: -894667634384975802
-    second: rabbitLeft_01
-  - first:
-      213: 834845689770372016
-    second: rabbitLeft_02
-  - first:
-      213: -1975001378385590826
-    second: rabbitLeft_03
-  - first:
-      213: -4931341552061878440
-    second: rabbitLeft_04
-  - first:
-      213: 6802591490027339288
-    second: rabbitDown_01
-  - first:
-      213: -1673770766557975968
-    second: rabbitDown_02
-  - first:
-      213: 2765164321732216861
-    second: rabbitDown_03
-  - first:
-      213: -4244286738650640026
-    second: rabbitDown_04
-  - first:
-      213: 8890909965084044524
-    second: rabbitUp_01
-  - first:
-      213: 3853780269126567516
-    second: rabbitUp_02
-  - first:
-      213: 3789194873937846697
-    second: rabbitUp_03
-  - first:
-      213: 8170988261181495144
     second: tree_02_stump
   - first:
       213: -2827424190132562319
@@ -713,6 +644,45 @@ TextureImporter:
   - first:
       213: -4244286738650640026
     second: bridge_01
+  - first:
+      213: 3853780269126567516
+    second: windmill_tower_base
+  - first:
+      213: 3789194873937846697
+    second: windmill_tower_cap
+  - first:
+      213: 8170988261181495144
+    second: windmill_blades
+  - first:
+      213: -5166567149542907760
+    second: windmill_tower_top
+  - first:
+      213: -5233280587054980568
+    second: stone_panel_01
+  - first:
+      213: -1123827619753242152
+    second: stone_wall_1
+  - first:
+      213: 7541068221019473042
+    second: stone_wall_2
+  - first:
+      213: -7133528333142335732
+    second: stone_wall_3
+  - first:
+      213: -4017191401515020210
+    second: stone_wall_4
+  - first:
+      213: 292698089116893282
+    second: stone_wall_5
+  - first:
+      213: 1042464476900122285
+    second: stone_wall_6
+  - first:
+      213: -3346324733993764193
+    second: scarecrow_1
+  - first:
+      213: 5319037353708944749
+    second: item_wood
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -1831,13 +1801,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tree_02_shadow
+      name: tree_02_shadow_top
       rect:
         serializedVersion: 2
         x: 209
-        y: 736
+        y: 750
         width: 31
-        height: 37
+        height: 24
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4834,15 +4804,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pigDown_01
-      rect:
-        serializedVersion: 2
-        x: 644
-        y: 907
-        width: 19
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
       name: tree_02_stump
       rect:
         serializedVersion: 2
@@ -4864,15 +4825,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pigDown_02
-      rect:
-        serializedVersion: 2
-        x: 666
-        y: 907
-        width: 19
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
       name: tree_01_stump
       rect:
         serializedVersion: 2
@@ -4894,15 +4846,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pigDown_03
-      rect:
-        serializedVersion: 2
-        x: 687
-        y: 907
-        width: 19
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
       name: bush_01
       rect:
         serializedVersion: 2
@@ -4924,15 +4867,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pigDown_04
-      rect:
-        serializedVersion: 2
-        x: 708
-        y: 907
-        width: 19
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
       name: bush_02
       rect:
         serializedVersion: 2
@@ -4954,15 +4888,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pigUp_01
-      rect:
-        serializedVersion: 2
-        x: 645
-        y: 886
-        width: 19
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
       name: flowers_01
       rect:
         serializedVersion: 2
@@ -4984,15 +4909,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pigUp_02
-      rect:
-        serializedVersion: 2
-        x: 666
-        y: 886
-        width: 19
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
       name: flowers_02
       rect:
         serializedVersion: 2
@@ -5014,15 +4930,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pigUp_03
-      rect:
-        serializedVersion: 2
-        x: 687
-        y: 886
-        width: 19
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
       name: flowers_03
       rect:
         serializedVersion: 2
@@ -5044,15 +4951,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pigUp_04
-      rect:
-        serializedVersion: 2
-        x: 708
-        y: 886
-        width: 19
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
       name: grass_cliff_02
       rect:
         serializedVersion: 2
@@ -5074,15 +4972,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pigRight_01
-      rect:
-        serializedVersion: 2
-        x: 644
-        y: 864
-        width: 21
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
       name: grass_cliff_03
       rect:
         serializedVersion: 2
@@ -5104,15 +4993,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pigRight_02
-      rect:
-        serializedVersion: 2
-        x: 665
-        y: 864
-        width: 21
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
       name: grass_cliff_01
       rect:
         serializedVersion: 2
@@ -5134,15 +5014,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pigRight_03
-      rect:
-        serializedVersion: 2
-        x: 686
-        y: 864
-        width: 21
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
       name: grass_cliff_04
       rect:
         serializedVersion: 2
@@ -5164,15 +5035,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pigRight_04
-      rect:
-        serializedVersion: 2
-        x: 707
-        y: 864
-        width: 21
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
       name: grass_cliff_05
       rect:
         serializedVersion: 2
@@ -5194,15 +5056,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rabbitLeft_01
-      rect:
-        serializedVersion: 2
-        x: 353
-        y: 912
-        width: 15
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
       name: grass_cliff_06
       rect:
         serializedVersion: 2
@@ -5224,15 +5077,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rabbitLeft_02
-      rect:
-        serializedVersion: 2
-        x: 369
-        y: 912
-        width: 15
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
       name: grass_cliff_07
       rect:
         serializedVersion: 2
@@ -5254,15 +5098,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rabbitLeft_03
-      rect:
-        serializedVersion: 2
-        x: 385
-        y: 912
-        width: 15
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
       name: grass_cliff_08
       rect:
         serializedVersion: 2
@@ -5284,15 +5119,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rabbitLeft_04
-      rect:
-        serializedVersion: 2
-        x: 401
-        y: 912
-        width: 15
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
       name: grass_cliff_09
       rect:
         serializedVersion: 2
@@ -5314,15 +5140,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rabbitDown_01
-      rect:
-        serializedVersion: 2
-        x: 353
-        y: 863
-        width: 15
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
       name: grass_cliff_10
       rect:
         serializedVersion: 2
@@ -5344,15 +5161,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rabbitDown_02
-      rect:
-        serializedVersion: 2
-        x: 369
-        y: 863
-        width: 15
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
       name: grass_cliff_11
       rect:
         serializedVersion: 2
@@ -5374,15 +5182,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rabbitDown_03
-      rect:
-        serializedVersion: 2
-        x: 385
-        y: 863
-        width: 15
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
       name: grass_cliff_12
       rect:
         serializedVersion: 2
@@ -5404,13 +5203,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rabbitDown_04
-      rect:
-        serializedVersion: 2
-        x: 401
-        y: 863
-        width: 15
-        height: 15
       name: bridge_01
       rect:
         serializedVersion: 2
@@ -5419,7 +5211,7 @@ TextureImporter:
         width: 16
         height: 22
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5432,15 +5224,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rabbitUp_01
+      name: tree02_shadow_bottom
       rect:
         serializedVersion: 2
-        x: 353
-        y: 840
-        width: 15
-        height: 17
+        x: 212
+        y: 736
+        width: 26
+        height: 14
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5453,15 +5245,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rabbitUp_02
+      name: windmill_tower_base
       rect:
         serializedVersion: 2
-        x: 369
-        y: 840
-        width: 15
-        height: 17
+        x: 416
+        y: 1008
+        width: 47
+        height: 34
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5474,15 +5266,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rabbitUp_03
+      name: windmill_tower_cap
       rect:
         serializedVersion: 2
-        x: 385
-        y: 840
-        width: 15
-        height: 17
+        x: 436
+        y: 1072
+        width: 7
+        height: 2
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5495,15 +5287,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rabbitUp_04
+      name: windmill_blades
       rect:
         serializedVersion: 2
-        x: 401
-        y: 840
-        width: 15
-        height: 17
+        x: 768
+        y: 1124
+        width: 91
+        height: 91
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5515,7 +5307,216 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-
+    - serializedVersion: 2
+      name: windmill_tower_top
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 1042
+        width: 47
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 090ea471d8aac48b0800000000000000
+      internalID: -5166567149542907760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stone_panel_01
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 636
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 822e3ae7807af57b0800000000000000
+      internalID: -5233280587054980568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stone_wall_1
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 768
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d1d5dfebbc5760f0800000000000000
+      internalID: -1123827619753242152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stone_wall_2
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 768
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2944adcb79147a860800000000000000
+      internalID: 7541068221019473042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stone_wall_3
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 752
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0fdddba6cd900d90800000000000000
+      internalID: -7133528333142335732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stone_wall_4
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 752
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4091fd44b11048c0800000000000000
+      internalID: -4017191401515020210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stone_wall_5
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 736
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2608f3c7c5fdf0400800000000000000
+      internalID: 292698089116893282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stone_wall_6
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 736
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dae58942be3977e00800000000000000
+      internalID: 1042464476900122285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarecrow_1
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 786
+        width: 15
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9ab23f42677f81d0800000000000000
+      internalID: -3346324733993764193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: item_wood
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 608
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6dfadeaa4401d940800000000000000
+      internalID: 5319037353708944749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
