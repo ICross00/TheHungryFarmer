@@ -44,8 +44,15 @@ public class PlayerSkills {
     }
 
     public SkillType GetSkillRequirement (SkillType skillType) //This skill path where skills requirements are set
-    {
-        //add skill requirements
+    { //add skill requirements
+        switch (skillType)
+        {
+            case SkillType.healthMax_3: return SkillType.healthMax_2;
+            case SkillType.healthMax_2: return SkillType.healthMax_1;
+            case SkillType.MoveSpeed_3: return SkillType.MoveSpeed_2;
+            case SkillType.MoveSpeed_2: return SkillType.MoveSpeed_1;
+        }
+        return SkillType.None;
     }
 
     public bool TryUnlockSkill(SkillType skillType){

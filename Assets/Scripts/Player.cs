@@ -53,6 +53,26 @@ public class Player : Mover
     private void PlayerSkills_OnSkillUnlocked(object sender, PlayerSkills.OnSkillUnlockedEventArgs e)
     {
         //Add skills to unlock
+        switch(e.skillType)
+        {
+            case PlayerSkills.SkillType.healthMax_1:
+                
+                break;
+            case PlayerSkills.SkillType.healthMax_2:
+
+                break;
+            case PlayerSkills.SkillType.healthMax_3:
+
+                break;
+            case PlayerSkills.SkillType.MoveSpeed_1:
+
+                break;
+            case PlayerSkills.SkillType.MoveSpeed_2:
+
+                break;
+    
+
+        }
 
     }
 
