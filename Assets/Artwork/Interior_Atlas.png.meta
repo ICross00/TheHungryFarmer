@@ -167,6 +167,12 @@ TextureImporter:
   - first:
       213: -4606904485820418465
     second: decor_potted_plant_01
+  - first:
+      213: -4561885360655788757
+    second: dining_table_small_01
+  - first:
+      213: 7755555705789896491
+    second: kitchen_stove_white
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -619,7 +625,7 @@ TextureImporter:
         x: 844
         y: 912
         width: 20
-        height: 42
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -637,9 +643,9 @@ TextureImporter:
       name: kitchen_cupboard_wall_01
       rect:
         serializedVersion: 2
-        x: 785
+        x: 784
         y: 944
-        width: 15
+        width: 16
         height: 18
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1060,7 +1066,7 @@ TextureImporter:
         x: 784
         y: 912
         width: 16
-        height: 18
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1081,7 +1087,7 @@ TextureImporter:
         x: 800
         y: 912
         width: 16
-        height: 18
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1102,7 +1108,7 @@ TextureImporter:
         x: 816
         y: 912
         width: 16
-        height: 23
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1335,7 +1341,7 @@ TextureImporter:
         width: 16
         height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1343,6 +1349,48 @@ TextureImporter:
       bones: []
       spriteID: f56358057ccf010c0800000000000000
       internalID: -4606904485820418465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dining_table_small_01
+      rect:
+        serializedVersion: 2
+        x: 1231
+        y: 976
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b259e043f6de0b0c0800000000000000
+      internalID: -4561885360655788757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kitchen_stove_white
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 864
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b275c5fd2d441ab60800000000000000
+      internalID: 7755555705789896491
       vertices: []
       indices: 
       edges: []
