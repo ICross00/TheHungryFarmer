@@ -105,7 +105,8 @@ public class Collectable : MonoBehaviour
 
         //If this collision was caused by a player, then trigger collectable behaviour
         if(ply != null) { 
-            Collect(ply);
+            if(!ply.GetInventory().IsFull())
+                Collect(ply);
         }
     }
 
