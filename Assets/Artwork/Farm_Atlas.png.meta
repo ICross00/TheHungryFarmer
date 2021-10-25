@@ -5232,18 +5232,6 @@ TextureImporter:
         width: 26
         height: 14
       alignment: 0
-<<<<<<< HEAD
-=======
-      pivot: {x: 0, y: 0}
-      name: tree02_shadow_bottom
-      rect:
-        serializedVersion: 2
-        x: 212
-        y: 736
-        width: 26
-        height: 14
-      alignment: 0
->>>>>>> parent of aed4538 (Revert "Merge branch 'main' into Liams_branch_take3")
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -5265,18 +5253,6 @@ TextureImporter:
         width: 47
         height: 34
       alignment: 0
-<<<<<<< HEAD
-=======
-      pivot: {x: 0, y: 0}
-      name: windmill_tower_base
-      rect:
-        serializedVersion: 2
-        x: 416
-        y: 1008
-        width: 47
-        height: 34
-      alignment: 0
->>>>>>> parent of aed4538 (Revert "Merge branch 'main' into Liams_branch_take3")
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -5298,18 +5274,6 @@ TextureImporter:
         width: 7
         height: 2
       alignment: 0
-<<<<<<< HEAD
-=======
-      pivot: {x: 0, y: 0}
-      name: windmill_tower_cap
-      rect:
-        serializedVersion: 2
-        x: 436
-        y: 1072
-        width: 7
-        height: 2
-      alignment: 0
->>>>>>> parent of aed4538 (Revert "Merge branch 'main' into Liams_branch_take3")
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -5331,18 +5295,6 @@ TextureImporter:
         width: 91
         height: 91
       alignment: 0
-<<<<<<< HEAD
-=======
-      pivot: {x: 0, y: 0}
-      name: windmill_blades
-      rect:
-        serializedVersion: 2
-        x: 768
-        y: 1124
-        width: 91
-        height: 91
-      alignment: 0
->>>>>>> parent of aed4538 (Revert "Merge branch 'main' into Liams_branch_take3")
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -5355,10 +5307,6 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-<<<<<<< HEAD
-=======
-
->>>>>>> parent of aed4538 (Revert "Merge branch 'main' into Liams_branch_take3")
     - serializedVersion: 2
       name: windmill_tower_top
       rect:
