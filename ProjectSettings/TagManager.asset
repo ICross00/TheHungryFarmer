@@ -11,6 +11,7 @@ TagManager:
   - Spawns
   - Gaurdian
   - Ore
+  - Animal
   layers:
   - Default
   - TransparentFX

@@ -9,8 +9,7 @@ public class DungeonSpawns : MonoBehaviour
     public GameObject SpawnPoint;
     private List<GameObject> SpawnPointsChild = new List<GameObject>();
 
-    GameObject projectile;
-
+    GameObject enemySpawn;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,30 +25,28 @@ public class DungeonSpawns : MonoBehaviour
 
         for (int n = 0; n < SpawnPointsChild.Count; n++)
         {
-            enemySelect(n);
+            EnemySelect(n);
         }
-
-        
     }
 
-    private void enemySelect(int n)
+    private void EnemySelect(int n)
     {
         int randNum = Random.Range(1, 5);
 
         if (randNum == 1)
         {
             enemy = Resources.Load<GameObject>("Prefabs/SmallEnemy");
-            projectile = Instantiate(enemy, SpawnPointsChild[n].transform.position, Quaternion.identity);
+            enemySpawn = Instantiate(enemy, SpawnPointsChild[n].transform.position, Quaternion.identity);
         }
         else if (randNum == 2)
         {
             enemy = Resources.Load<GameObject>("Prefabs/SlimeEnemy");
-            projectile = Instantiate(enemy, SpawnPointsChild[n].transform.position, Quaternion.identity);
+            enemySpawn = Instantiate(enemy, SpawnPointsChild[n].transform.position, Quaternion.identity);
         }
         else if (randNum == 3)
         {
             enemy = Resources.Load<GameObject>("Prefabs/BatEnemy");
-            projectile = Instantiate(enemy, SpawnPointsChild[n].transform.position, Quaternion.identity);
+            enemySpawn = Instantiate(enemy, SpawnPointsChild[n].transform.position, Quaternion.identity);
         }
     }
 }

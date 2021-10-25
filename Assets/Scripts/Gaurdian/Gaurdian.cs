@@ -61,13 +61,13 @@ public class Gaurdian : MonoBehaviour
 
     private void Update()
     {
-        if (hitPoint > 75)
+        if (hitPoint > (hitPoint / 2))
         {
             anim.SetBool("Full", true);
             anim.SetBool("Half", false);
             anim.SetBool("None", false);
         }
-        else if (hitPoint > 0 && hitPoint < 76)
+        else if (hitPoint > 0 && hitPoint < ((hitPoint / 2) + 1))
         {
             anim.SetBool("Full", false);
             anim.SetBool("Half", true);

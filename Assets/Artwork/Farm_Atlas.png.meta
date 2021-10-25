@@ -139,7 +139,7 @@ TextureImporter:
     second: tree_01_shadowless
   - first:
       213: -5060849815826022191
-    second: tree_02_shadow
+    second: tree_02_shadow_top
   - first:
       213: -4616171280885944119
     second: tree_02_shadowless
@@ -644,6 +644,117 @@ TextureImporter:
   - first:
       213: -4244286738650640026
     second: bridge_01
+  - first:
+      213: 3853780269126567516
+    second: windmill_tower_base
+  - first:
+      213: 3789194873937846697
+    second: windmill_tower_cap
+  - first:
+      213: 8170988261181495144
+    second: windmill_blades
+  - first:
+      213: -5166567149542907760
+    second: windmill_tower_top
+  - first:
+      213: -5233280587054980568
+    second: stone_panel_01
+  - first:
+      213: -1123827619753242152
+    second: stone_wall_1
+  - first:
+      213: 7541068221019473042
+    second: stone_wall_2
+  - first:
+      213: -7133528333142335732
+    second: stone_wall_3
+  - first:
+      213: -4017191401515020210
+    second: stone_wall_4
+  - first:
+      213: 292698089116893282
+    second: stone_wall_5
+  - first:
+      213: 1042464476900122285
+    second: stone_wall_6
+  - first:
+      213: -3346324733993764193
+    second: scarecrow_1
+  - first:
+      213: 5319037353708944749
+    second: item_wood
+  - first:
+      213: 376795372907519648
+    second: pigDown_01
+  - first:
+      213: 2558739674840584357
+    second: pigDown_02
+  - first:
+      213: 4302855171325573132
+    second: pigDown_03
+  - first:
+      213: 2143766242624386951
+    second: pigDown_04
+  - first:
+      213: 1231876039270773882
+    second: pigUp_01
+  - first:
+      213: 3451219765383479096
+    second: pigUp_02
+  - first:
+      213: -3891342604567850552
+    second: pigUp_03
+  - first:
+      213: 5185953169508763497
+    second: pigUp_04
+  - first:
+      213: -124809212296527940
+    second: pigRight_01
+  - first:
+      213: 2757591044421592813
+    second: pigRight_02
+  - first:
+      213: -1446700800190734304
+    second: pigRight_03
+  - first:
+      213: 3546725345599414572
+    second: pigRight_04
+  - first:
+      213: 775404282890591050
+    second: rabbitLeft_01
+  - first:
+      213: -2972694652529620287
+    second: rabbitLeft_02
+  - first:
+      213: -6936070368963107806
+    second: rabbitLeft_03
+  - first:
+      213: 1825994040115278075
+    second: rabbitLeft_04
+  - first:
+      213: -2539983718668588949
+    second: rabbitDown_01
+  - first:
+      213: -8027948562312439818
+    second: rabbitDown_02
+  - first:
+      213: -2245365115027666564
+    second: rabbitDown_03
+  - first:
+      213: -3329055561336545886
+    second: rabbitDown_04
+  - first:
+      213: 1115088322998566904
+    second: rabbitUp_01
+  - first:
+      213: -1945446460988305261
+    second: rabbitUp_02
+  - first:
+      213: 4321011639700944564
+    second: rabbitUp_03
+  - first:
+      213: 6807531275411889725
+    second: rabbitUp_04
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -1762,13 +1873,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tree_02_shadow
+      name: tree_02_shadow_top
       rect:
         serializedVersion: 2
         x: 209
-        y: 736
+        y: 750
         width: 31
-        height: 37
+        height: 24
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5172,7 +5283,7 @@ TextureImporter:
         width: 16
         height: 22
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5180,6 +5291,804 @@ TextureImporter:
       bones: []
       spriteID: 661d3d9c2b34915c0800000000000000
       internalID: -4244286738650640026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree02_shadow_bottom
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 736
+        width: 26
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ceca0d6d18bd26b70800000000000000
+      internalID: 8890909965084044524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: windmill_tower_base
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 1008
+        width: 47
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c56c2bf8cb06b7530800000000000000
+      internalID: 3853780269126567516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: windmill_tower_cap
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 1072
+        width: 7
+        height: 2
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a1ebcd69ace59430800000000000000
+      internalID: 3789194873937846697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: windmill_blades
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1124
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8671c93288e256170800000000000000
+      internalID: 8170988261181495144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: windmill_tower_top
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 1042
+        width: 47
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 090ea471d8aac48b0800000000000000
+      internalID: -5166567149542907760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stone_panel_01
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 636
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 822e3ae7807af57b0800000000000000
+      internalID: -5233280587054980568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stone_wall_1
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 768
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d1d5dfebbc5760f0800000000000000
+      internalID: -1123827619753242152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stone_wall_2
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 768
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2944adcb79147a860800000000000000
+      internalID: 7541068221019473042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stone_wall_3
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 752
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0fdddba6cd900d90800000000000000
+      internalID: -7133528333142335732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stone_wall_4
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 752
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4091fd44b11048c0800000000000000
+      internalID: -4017191401515020210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stone_wall_5
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 736
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2608f3c7c5fdf0400800000000000000
+      internalID: 292698089116893282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stone_wall_6
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 736
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dae58942be3977e00800000000000000
+      internalID: 1042464476900122285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarecrow_1
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 786
+        width: 15
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9ab23f42677f81d0800000000000000
+      internalID: -3346324733993764193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: item_wood
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 608
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6dfadeaa4401d940800000000000000
+      internalID: 5319037353708944749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pigDown_01
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 907
+        width: 19
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0aed9233565aa3500800000000000000
+      internalID: 376795372907519648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pigDown_02
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 907
+        width: 19
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a0529f6d28728320800000000000000
+      internalID: 2558739674840584357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pigDown_03
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 907
+        width: 19
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0830d61bffc6bb30800000000000000
+      internalID: 4302855171325573132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pigDown_04
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 907
+        width: 19
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 787b91d1a0030cd10800000000000000
+      internalID: 2143766242624386951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pigUp_01
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 886
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a74bc002bb0881110800000000000000
+      internalID: 1231876039270773882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pigUp_02
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 886
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83f3d7d571235ef20800000000000000
+      internalID: 3451219765383479096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pigUp_03
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 886
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c1d363b48c2ff9c0800000000000000
+      internalID: -3891342604567850552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pigUp_04
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 886
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 967816a6ee438f740800000000000000
+      internalID: 5185953169508763497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pigRight_01
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 864
+        width: 21
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbf7e54cea6944ef0800000000000000
+      internalID: -124809212296527940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pigRight_02
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 864
+        width: 21
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de62c8ec17ee44620800000000000000
+      internalID: 2757591044421592813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pigRight_03
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 864
+        width: 21
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 020ab5489494cebe0800000000000000
+      internalID: -1446700800190734304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pigRight_04
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 864
+        width: 21
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c21e35419ef783130800000000000000
+      internalID: 3546725345599414572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rabbitLeft_01
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 911
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4b9207461ac2ca00800000000000000
+      internalID: 775404282890591050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rabbitLeft_02
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 911
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cac44aa6fddeb6d0800000000000000
+      internalID: -2972694652529620287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rabbitLeft_03
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 911
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22467d09fb02ebf90800000000000000
+      internalID: -6936070368963107806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rabbitLeft_04
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 911
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf03d0ba7eb375910800000000000000
+      internalID: 1825994040115278075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rabbitDown_01
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 863
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b68ab79e34a20ccd0800000000000000
+      internalID: -2539983718668588949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rabbitDown_02
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 863
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f75244015ff69090800000000000000
+      internalID: -8027948562312439818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rabbitDown_03
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 863
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c79c8b7035cd6d0e0800000000000000
+      internalID: -2245365115027666564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rabbitDown_04
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 863
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ad1ff4ea91dcc1d0800000000000000
+      internalID: -3329055561336545886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rabbitUp_01
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 840
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fff389fbe6997f00800000000000000
+      internalID: 1115088322998566904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rabbitUp_02
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 840
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 390504b40c26005e0800000000000000
+      internalID: -1945446460988305261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rabbitUp_03
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 840
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b6f3be413157fb30800000000000000
+      internalID: 4321011639700944564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rabbitUp_04
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 840
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3e994c80a5397e50800000000000000
+      internalID: 6807531275411889725
       vertices: []
       indices: 
       edges: []

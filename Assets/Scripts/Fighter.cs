@@ -26,17 +26,6 @@ public class Fighter : MonoBehaviour
 
             //Shows the effect of damage being taken via text on screen.
             GameManager.instance.ShowText(dmg.damageAmount.ToString(), 25, Color.red, transform.position, Vector3.up * 50, 3.0f);
-
-            if (hitPoint <= 0)
-            {
-                hitPoint = 0;
-                Death();
-            }
         }
-    }
-
-    protected virtual void Death()
-    {
-
     }
 }
