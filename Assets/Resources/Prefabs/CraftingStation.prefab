@@ -45,6 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0739674fc23f9144a9c0e644b9c28b9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  craftingUI: {fileID: 0}
   craftableItems: []
 --- !u!61 &8041746446577464869
 BoxCollider2D:

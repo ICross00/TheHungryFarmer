@@ -17,7 +17,7 @@ public abstract class Interactable : MonoBehaviour
 
     /**
         Finds all of the Interactable objects whose collider components overlap the provided circle,
-        defiend by the position and radius, and returns them all as a List<Interactable>
+        defined by the position and radius, and returns them all as a List<Interactable>
 
         @param position The position to check for Interactable objects at
         @param searchRadius The radius around the position to search for Interactable objects in
@@ -36,7 +36,7 @@ public abstract class Interactable : MonoBehaviour
                 }
             }
         }
-
+        //results.Sort();
         return results;
     }
 
