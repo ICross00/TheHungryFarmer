@@ -35309,10 +35309,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1343162297}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a889614e1fcdb44c9584106c2ee8d0a, type: 3}
+  m_Script: {fileID: 11500000, guid: cc61e725e80ef9743887fb97b19ab5b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  popupName: FishingCanvas Variant
+  popupName: 
 --- !u!61 &1343162300
 BoxCollider2D:
   m_ObjectHideFlags: 0
