@@ -124,5 +124,6 @@ public enum ItemType {
     Bacon,
     FishingRod,
     Pickaxe,
-    ThrowingKnife
+    ThrowingKnife,
+    Wood
 }
