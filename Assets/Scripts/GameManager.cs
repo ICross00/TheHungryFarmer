@@ -85,7 +85,6 @@ public class GameManager : MonoBehaviour
         ChangeGold(0);
 
         PlayerPrefs.SetString("SaveState", s);
-        Debug.Log("SaveState");
         initialLoad = false;
     }
 
@@ -105,20 +104,13 @@ public class GameManager : MonoBehaviour
         //Set Player Inventory
         List<Item> tempInventory = Inventory.FromString(data[2]);
 
-        Debug.Log("Initial Load: " + initialLoad);
         if (!initialLoad && !resetLoad)
         {
-            Debug.Log("Spawn at spawn point");
             SpawnPlayer();
         }
         else if (initialLoad || resetLoad)
         {
-            Debug.Log("Should spawn at bed");
             SpawnPlayer("Bed");
-        }
-        else
-        {
-            Debug.Log("Neither");
         }
         resetLoad = false;
     }

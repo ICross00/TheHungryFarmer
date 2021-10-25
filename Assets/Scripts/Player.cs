@@ -109,6 +109,11 @@ public class Player : Mover
         float y = Input.GetAxisRaw("Vertical");
 
         UpdateMotor(new Vector2(x, y));
+
+        if (hitPoint == 0)
+        {
+            Death();
+        }
     }
 
     void Update()
@@ -146,5 +151,10 @@ public class Player : Mover
                 i.Interact(this);
             }
         }
+    }
+
+    public void Death()
+    {
+        gameManager.ResetPlayer();
     }
 }
