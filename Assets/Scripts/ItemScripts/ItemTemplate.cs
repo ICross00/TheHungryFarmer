@@ -74,7 +74,7 @@ public class ItemTemplate : ScriptableObject
     //Access the set value of a tag from a given key
     public string GetTagValue(string key) {
         foreach(ItemTag tag in tags) {
-            if(tag.key == key) {
+            if(tag.key.ToLower() == key.ToLower()) {
                 return tag.value;
             }
         }
@@ -124,5 +124,6 @@ public enum ItemType {
     Bacon,
     FishingRod,
     Pickaxe,
-    ThrowingKnife
+    ThrowingKnife,
+    Wood
 }

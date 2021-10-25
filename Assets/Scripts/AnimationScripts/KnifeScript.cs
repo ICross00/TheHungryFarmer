@@ -34,6 +34,11 @@ public class KnifeScript : MonoBehaviour
                 collision.gameObject.GetComponent<Gaurdian>().hitPoint = collision.gameObject.GetComponent<Gaurdian>().hitPoint - knifeDamage;
                 GameManager.instance.ShowText(knifeDamage.ToString(), 25, Color.red, transform.position, Vector3.up * 50, 3.0f);
                 break;
+
+            case "Animal":
+                collision.gameObject.GetComponent<AnimalMovement>().hitPoint = collision.gameObject.GetComponent<AnimalMovement>().hitPoint - knifeDamage;
+                GameManager.instance.ShowText(knifeDamage.ToString(), 25, Color.red, transform.position, Vector3.up * 50, 3.0f);
+                break;
         }
     }
 }

@@ -7,6 +7,7 @@ using UnityEngine;
 */
 public class MinableObject : RandomEvent
 {
+    private static ContactFilter2D filter;
     private const float SHAKE_DURATION = 0.35f;      //Time in seconds to shake when struck
     private const float SHAKE_FREQUENCY = 4.5f;      //Number of shake oscillations to complete over SHAKE_DURATION
     private const float SHAKE_INTENSITY = 0.06f;     //Maximum displacement from origin during shake
@@ -19,17 +20,24 @@ public class MinableObject : RandomEvent
     public int numDropsBeforeDestroy = 6; //The maximum number of times that this object can drop an item
 
     private int remainingDrops;
-    private SpriteRenderer sr;
+    private GameObject sr;
     private int numMisses = 0;
     private float missIncrement; //How much the probability of mining should increment by with each miss
+    private bool isEnabled = true;
 
     /*
     Returns the first instance of a MinableObject object that overlaps a provided position
     @param position The position to check for a minable object at
     */
     public static MinableObject GetObjectAtPosition(Vector2 position) {
-        Collider2D colliderAtPoint = Physics2D.OverlapPoint(position);
-        if(colliderAtPoint != null) {
+        Collider2D[] results = new Collider2D[5];
+        filter.SetLayerMask(LayerMask.GetMask("Blocking"));
+        Physics2D.OverlapPoint(position, filter, results);
+
+        foreach(Collider2D colliderAtPoint in results) {
+            if(colliderAtPoint == null)
+                continue;
+
             MinableObject obj = colliderAtPoint.GetComponent<MinableObject>();
             if(obj != null)
                 return obj;
@@ -39,15 +47,16 @@ public class MinableObject : RandomEvent
     }
 
     protected override void Start() {
-        sr = spriteObject.GetComponent<SpriteRenderer>();
+        sr = spriteObject.gameObject;
         remainingDrops = numDropsBeforeDestroy;
-        missIncrement = dropProbability / 8;
+        missIncrement = dropProbability / 5;
         base.Start();
     }
 
     private void SetEnabled(bool enabled) {
         GetComponent<BoxCollider2D>().enabled = enabled;
-        sr.enabled = enabled;
+        sr.SetActive(enabled);
+        isEnabled = enabled;
     }
 
     /*
@@ -56,7 +65,7 @@ public class MinableObject : RandomEvent
     private void SpawnDrop() {
         Item drop = new Item { itemTemplate = dropType, amount = 1, activeItem = !dropType.isEquippable };
         Collectable spawnedDrop = Collectable.Spawn(transform.position, drop, 0.75f);
-        spawnedDrop.ApplyRandomForce(6.0f + Random.value * 3.0f);
+        spawnedDrop.ApplyRandomForce(2.0f + Random.value * 5.0f);
     }
 
     /*
@@ -86,8 +95,10 @@ public class MinableObject : RandomEvent
 
     //Re-enable the ore if it has been destroyed
     protected override void OnRandomEventTriggered() {
-        SetEnabled(true);
-        remainingDrops = numDropsBeforeDestroy;
+        if(!isEnabled) {
+            SetEnabled(true);
+            remainingDrops = numDropsBeforeDestroy;
+        }
     }
 
     // Update is called once per frame

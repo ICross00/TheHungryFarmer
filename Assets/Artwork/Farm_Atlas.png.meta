@@ -139,7 +139,7 @@ TextureImporter:
     second: tree_01_shadowless
   - first:
       213: -5060849815826022191
-    second: tree_02_shadow
+    second: tree_02_shadow_top
   - first:
       213: -4616171280885944119
     second: tree_02_shadowless
@@ -584,6 +584,105 @@ TextureImporter:
   - first:
       213: 1747881185522978305
     second: item_iron
+  - first:
+      213: -6309460507781951149
+    second: tree_02_stump
+  - first:
+      213: -2827424190132562319
+    second: tree_01_stump
+  - first:
+      213: 3383709637648425264
+    second: bush_01
+  - first:
+      213: -6951105498613778591
+    second: bush_02
+  - first:
+      213: -6052785018477744946
+    second: flowers_01
+  - first:
+      213: -5678722625188501042
+    second: flowers_02
+  - first:
+      213: -4550198123356522338
+    second: flowers_03
+  - first:
+      213: 404476181190356144
+    second: grass_cliff_02
+  - first:
+      213: -4660339566900146991
+    second: grass_cliff_03
+  - first:
+      213: 2141450126566809988
+    second: grass_cliff_01
+  - first:
+      213: -2654783198431068509
+    second: grass_cliff_04
+  - first:
+      213: 4397850611157708557
+    second: grass_cliff_05
+  - first:
+      213: -894667634384975802
+    second: grass_cliff_06
+  - first:
+      213: 834845689770372016
+    second: grass_cliff_07
+  - first:
+      213: -1975001378385590826
+    second: grass_cliff_08
+  - first:
+      213: -4931341552061878440
+    second: grass_cliff_09
+  - first:
+      213: 6802591490027339288
+    second: grass_cliff_10
+  - first:
+      213: -1673770766557975968
+    second: grass_cliff_11
+  - first:
+      213: 2765164321732216861
+    second: grass_cliff_12
+  - first:
+      213: -4244286738650640026
+    second: bridge_01
+  - first:
+      213: 3853780269126567516
+    second: windmill_tower_base
+  - first:
+      213: 3789194873937846697
+    second: windmill_tower_cap
+  - first:
+      213: 8170988261181495144
+    second: windmill_blades
+  - first:
+      213: -5166567149542907760
+    second: windmill_tower_top
+  - first:
+      213: -5233280587054980568
+    second: stone_panel_01
+  - first:
+      213: -1123827619753242152
+    second: stone_wall_1
+  - first:
+      213: 7541068221019473042
+    second: stone_wall_2
+  - first:
+      213: -7133528333142335732
+    second: stone_wall_3
+  - first:
+      213: -4017191401515020210
+    second: stone_wall_4
+  - first:
+      213: 292698089116893282
+    second: stone_wall_5
+  - first:
+      213: 1042464476900122285
+    second: stone_wall_6
+  - first:
+      213: -3346324733993764193
+    second: scarecrow_1
+  - first:
+      213: 5319037353708944749
+    second: item_wood
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -1702,13 +1801,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tree_02_shadow
+      name: tree_02_shadow_top
       rect:
         serializedVersion: 2
         x: 209
-        y: 736
+        y: 750
         width: 31
-        height: 37
+        height: 24
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4650,7 +4749,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4671,7 +4770,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4692,7 +4791,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4700,6 +4799,720 @@ TextureImporter:
       bones: []
       spriteID: 10e8fa47da8b14810800000000000000
       internalID: 1747881185522978305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_02_stump
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 688
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3511d4dd81b4078a0800000000000000
+      internalID: -6309460507781951149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_01_stump
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 688
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1765dcdeda8f2c8d0800000000000000
+      internalID: -2827424190132562319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bush_01
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 672
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 031a91fdcf955fe20800000000000000
+      internalID: 3383709637648425264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bush_02
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 672
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1677cd6a066b88f90800000000000000
+      internalID: -6951105498613778591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flowers_01
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 654
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecce3df3810300ca0800000000000000
+      internalID: -6052785018477744946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flowers_02
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 654
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec96aab0cdf1131b0800000000000000
+      internalID: -5678722625188501042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flowers_03
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 654
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e987faf2ae27ad0c0800000000000000
+      internalID: -4550198123356522338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass_cliff_02
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bc25fb91fcfc9500800000000000000
+      internalID: 404476181190356144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass_cliff_03
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dc083efad5235fb0800000000000000
+      internalID: -4660339566900146991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass_cliff_01
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 481ea325b85f7bd10800000000000000
+      internalID: 2141450126566809988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass_cliff_04
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ae37d52fb0582bd0800000000000000
+      internalID: -2654783198431068509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass_cliff_05
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 256
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0f2a4d74dd480d30800000000000000
+      internalID: 4397850611157708557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass_cliff_06
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 272
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 648c174d6808593f0800000000000000
+      internalID: -894667634384975802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass_cliff_07
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 272
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bb670d4bb7f59b00800000000000000
+      internalID: 834845689770372016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass_cliff_08
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 272
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d58b6ad5b26794e0800000000000000
+      internalID: -1975001378385590826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass_cliff_09
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 256
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85f6a3b5cfa509bb0800000000000000
+      internalID: -4931341552061878440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass_cliff_10
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81ebc232be8a76e50800000000000000
+      internalID: 6802591490027339288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass_cliff_11
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06ae0e71b5295c8e0800000000000000
+      internalID: -1673770766557975968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass_cliff_12
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 256
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d18ce66dc46df5620800000000000000
+      internalID: 2765164321732216861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bridge_01
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 749
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 661d3d9c2b34915c0800000000000000
+      internalID: -4244286738650640026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree02_shadow_bottom
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 736
+        width: 26
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ceca0d6d18bd26b70800000000000000
+      internalID: 8890909965084044524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: windmill_tower_base
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 1008
+        width: 47
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c56c2bf8cb06b7530800000000000000
+      internalID: 3853780269126567516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: windmill_tower_cap
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 1072
+        width: 7
+        height: 2
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a1ebcd69ace59430800000000000000
+      internalID: 3789194873937846697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: windmill_blades
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1124
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8671c93288e256170800000000000000
+      internalID: 8170988261181495144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: windmill_tower_top
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 1042
+        width: 47
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 090ea471d8aac48b0800000000000000
+      internalID: -5166567149542907760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stone_panel_01
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 636
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 822e3ae7807af57b0800000000000000
+      internalID: -5233280587054980568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stone_wall_1
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 768
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d1d5dfebbc5760f0800000000000000
+      internalID: -1123827619753242152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stone_wall_2
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 768
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2944adcb79147a860800000000000000
+      internalID: 7541068221019473042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stone_wall_3
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 752
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0fdddba6cd900d90800000000000000
+      internalID: -7133528333142335732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stone_wall_4
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 752
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4091fd44b11048c0800000000000000
+      internalID: -4017191401515020210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stone_wall_5
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 736
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2608f3c7c5fdf0400800000000000000
+      internalID: 292698089116893282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stone_wall_6
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 736
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dae58942be3977e00800000000000000
+      internalID: 1042464476900122285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarecrow_1
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 786
+        width: 15
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9ab23f42677f81d0800000000000000
+      internalID: -3346324733993764193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: item_wood
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 608
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6dfadeaa4401d940800000000000000
+      internalID: 5319037353708944749
       vertices: []
       indices: 
       edges: []

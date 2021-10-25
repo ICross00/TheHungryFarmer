@@ -149,6 +149,11 @@ public class ThrowingWeapon : MonoBehaviour
 
     public void LifeSteal()
     {
-        GameObject.Find("Player").GetComponent<Player>().hitPoint = 5;
+        GameObject.Find("Player").GetComponent<Player>().hitPoint += lifeSteal;
+
+        if (GameObject.Find("Player").GetComponent<Player>().hitPoint > GameObject.Find("Player").GetComponent<Player>().maxHitPoint)
+        {
+            GameObject.Find("Player").GetComponent<Player>().hitPoint = GameObject.Find("Player").GetComponent<Player>().maxHitPoint;
+        }
     }
 }
