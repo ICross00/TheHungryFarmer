@@ -12,6 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0663a7a81a5ce434eb6bfeba39c221bf, type: 3}
   m_Name: Bacon Recipe
   m_EditorClassIdentifier: 
-  craftingOutput: {fileID: 0}
+  craftingOutput: {fileID: 11400000, guid: 9ba014eb66b3cba42b87feb03b91fb1c, type: 2}
   outputAmount: 1
-  craftingIngredients: []
+  craftingIngredients:
+  - template: {fileID: 0}
+    amount: 0
+  - template: {fileID: 0}
+    amount: 0

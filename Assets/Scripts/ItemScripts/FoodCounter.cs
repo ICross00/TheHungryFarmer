@@ -21,7 +21,7 @@ public class FoodCounter : Interactable
             {
                 storedItem = triggerPlayer.GetSelectedItem();
                 placedFood.sprite = storedItem.GetSprite();
-                triggerPlayer.GetInventory().RemoveItem(triggerPlayer.GetSelectedItem());
+                //triggerPlayer.GetInventory().RemoveItem(triggerPlayer.GetSelectedItem());
             }
         }
     }

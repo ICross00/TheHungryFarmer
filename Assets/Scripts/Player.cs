@@ -145,11 +145,6 @@ public class Player : Mover
         {
             //Find all objects the player can interact with at this position
             List<Interactable> interactableObjects = Interactable.GetInteractablesInRadius(transform.position, interactionRadius);
-
-            foreach (Interactable i in interactableObjects)
-            {
-                i.Interact(this);
-            }
         }
     }
 
