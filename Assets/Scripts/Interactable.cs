@@ -36,7 +36,17 @@ public abstract class Interactable : MonoBehaviour
                 }
             }
         }
-        //results.Sort();
+
+        //Sort results
+        results.Sort((a, b) => {
+            Vector2 aPosition = a.transform.position;
+            Vector2 bPosition = b.transform.position;
+            float distToA = (position - aPosition).sqrMagnitude;
+            float distToB = (position - bPosition).sqrMagnitude;
+
+            return distToA.CompareTo(distToB);
+        });
+
         return results;
     }
 
