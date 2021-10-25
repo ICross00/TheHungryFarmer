@@ -6,7 +6,7 @@ public class BatAnimation : MonoBehaviour
 {
     private Animator anim;
     Vector2 direction;
-    [SerializeField] Transform target;
+    private Transform target;
 
     // Start is called before the first frame update
     void Start()
