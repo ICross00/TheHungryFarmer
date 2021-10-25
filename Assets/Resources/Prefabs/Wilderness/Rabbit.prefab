@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &991806646002947921
+--- !u!1 &2350948901239597960
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,13 +8,13 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 991806646002947914}
-  - component: {fileID: 991806646002947915}
-  - component: {fileID: 991806646002947924}
-  - component: {fileID: 991806646002947925}
-  - component: {fileID: 991806646002947926}
-  - component: {fileID: 991806646002947920}
-  - component: {fileID: 991806646002947927}
+  - component: {fileID: 2350948901239597953}
+  - component: {fileID: 2350948901239597954}
+  - component: {fileID: 2350948901239597955}
+  - component: {fileID: 2350948901239597964}
+  - component: {fileID: 2350948901239597965}
+  - component: {fileID: 2350948901239597966}
+  - component: {fileID: 2350948901239597967}
   m_Layer: 9
   m_Name: Rabbit
   m_TagString: Animal
@@ -22,27 +22,27 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &991806646002947914
+--- !u!4 &2350948901239597953
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 991806646002947921}
+  m_GameObject: {fileID: 2350948901239597960}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.477, y: 14.048, z: 0}
+  m_LocalPosition: {x: -4.072, y: 13.532, z: 0}
   m_LocalScale: {x: 0.8399, y: 0.8577, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &991806646002947915
+--- !u!212 &2350948901239597954
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 991806646002947921}
+  m_GameObject: {fileID: 2350948901239597960}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -77,7 +77,7 @@ SpriteRenderer:
   m_SortingLayerID: -220714063
   m_SortingLayer: 4
   m_SortingOrder: 15
-  m_Sprite: {fileID: 6802591490027339288, guid: 1884b98184089f34184916226ef1b1c5,
+  m_Sprite: {fileID: -2539983718668588949, guid: 1884b98184089f34184916226ef1b1c5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -89,14 +89,14 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &991806646002947924
+--- !u!95 &2350948901239597955
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 991806646002947921}
+  m_GameObject: {fileID: 2350948901239597960}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 98d767cfce620d441b1e6c2f8e1d0c56, type: 2}
@@ -108,17 +108,17 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!195 &991806646002947925
+--- !u!195 &2350948901239597964
 NavMeshAgent:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 991806646002947921}
+  m_GameObject: {fileID: 2350948901239597960}
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.46875
-  m_Speed: 5
+  m_Speed: 4
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -130,13 +130,13 @@ NavMeshAgent:
   m_BaseOffset: 0.46875006
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &991806646002947926
+--- !u!114 &2350948901239597965
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 991806646002947921}
+  m_GameObject: {fileID: 2350948901239597960}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 52d18aa042ae6a8429b2d3b7210ec3a9, type: 3}
@@ -147,17 +147,17 @@ MonoBehaviour:
   pushRecoverySpeed: 0.2
   xpValue: 1
   target: {fileID: 0}
-  EnemyDistance: 4
+  EnemyDistance: 15
   animalName: Rabbit
   activeChase: 1
---- !u!50 &991806646002947920
+--- !u!50 &2350948901239597966
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 991806646002947921}
+  m_GameObject: {fileID: 2350948901239597960}
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
@@ -171,13 +171,13 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!61 &991806646002947927
+--- !u!61 &2350948901239597967
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 991806646002947921}
+  m_GameObject: {fileID: 2350948901239597960}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}

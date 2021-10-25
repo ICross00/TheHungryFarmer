@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class PopupTrigger : MonoBehaviour
 {
-    private GameObject popupWindow;
-    private Popup popup;
+    protected GameObject popupWindow;
+    protected Popup popup;
     public string popupName;
 
-    public void OnTriggerEnter2D(Collider2D collide)
+    protected virtual void OnTriggerEnter2D(Collider2D collide)
     {
         Debug.Log("PopupTrigger Entered");
         if (collide.name == "Player")
