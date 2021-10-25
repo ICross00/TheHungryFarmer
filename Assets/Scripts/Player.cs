@@ -13,6 +13,7 @@ public class Player : Mover
     private InventoryUIController inventoryController;
     private GameManager gameManager;
     public bool isInvOpen = false;
+    private PlayerSkills playerSkills;
 
     public ItemBehaviour activeBehaviour; //Behaviour associated with the current item
 
@@ -43,6 +44,18 @@ public class Player : Mover
         inventoryController.SetUIListeners(); //Attach listeners
     }
 
+    private void Awake()
+    {
+        playerSkills = new PlayerSkills();
+        playerSkills.OnSkillUnlocked += PlayerSkills_OnSkillUnlocked;
+    }
+
+    private void PlayerSkills_OnSkillUnlocked(object sender, PlayerSkills.OnSkillUnlockedEventArgs e)
+    {
+        //Add skills to unlock
+
+    }
+
     /*
     Updates the held and equipped item animation states
     */
@@ -60,6 +73,12 @@ public class Player : Mover
     {
         inventoryController.SetUIListeners();
     }
+
+    public PlayerSkills GetPlayerSkills()
+    {
+        return playerSkills;
+    }
+
 
     //Returns the selected item
     public Item GetSelectedItem()
