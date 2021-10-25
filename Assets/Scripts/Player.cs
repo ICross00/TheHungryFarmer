@@ -109,6 +109,11 @@ public class Player : Mover
         float y = Input.GetAxisRaw("Vertical");
 
         UpdateMotor(new Vector2(x, y));
+
+        if (hitPoint == 0)
+        {
+            Death();
+        }
     }
 
     void Update()
@@ -140,11 +145,11 @@ public class Player : Mover
         {
             //Find all objects the player can interact with at this position
             List<Interactable> interactableObjects = Interactable.GetInteractablesInRadius(transform.position, interactionRadius);
-
-            foreach (Interactable i in interactableObjects)
-            {
-                i.Interact(this);
-            }
         }
+    }
+
+    public void Death()
+    {
+        gameManager.ResetPlayer();
     }
 }
