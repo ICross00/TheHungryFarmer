@@ -40,6 +40,8 @@ public class FishingGame : MonoBehaviour
     bool pause = false;
     [SerializeField] public float failTimer = 5f;
 
+    
+
     private void Start()
     {
         popup = GameObject.Find("FishingCanvas Variant(Clone)").GetComponent<Popup>();
