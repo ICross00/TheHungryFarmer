@@ -19,4 +19,8 @@ MonoBehaviour:
   sellPrice: 25
   sprite: {fileID: 7086507408647784198, guid: bafbaa935373caa44bec8652d82150a1, type: 3}
   isEquippable: 0
-  tags: []
+  tags:
+  - key: food_sprites
+    value: food_steak
+  - key: food_type
+    value: cooked

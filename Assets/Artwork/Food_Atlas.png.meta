@@ -11,6 +11,15 @@ TextureImporter:
   - first:
       213: -4220448646692293226
     second: food_bacon
+  - first:
+      213: 4551230655601369657
+    second: food_steak_plated
+  - first:
+      213: 1339590092986821962
+    second: food_chicken_plated
+  - first:
+      213: 9145017219304767882
+    second: food_bacon_plated
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -120,7 +129,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -137,11 +146,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 239
-        y: 33
+        y: 35
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -158,7 +167,28 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 171
-        y: 272
+        y: 273
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 695b0251154fd65c0800000000000000
+      internalID: -4220448646692293226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food_steak_plated
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 1
         width: 32
         height: 32
       alignment: 0
@@ -168,8 +198,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 695b0251154fd65c0800000000000000
-      internalID: -4220448646692293226
+      spriteID: 932ecf5fa28392f30800000000000000
+      internalID: 4551230655601369657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food_chicken_plated
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 35
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4dac15971e279210800000000000000
+      internalID: 1339590092986821962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food_bacon_plated
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 273
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a81cd7565b0a9ee70800000000000000
+      internalID: 9145017219304767882
       vertices: []
       indices: 
       edges: []

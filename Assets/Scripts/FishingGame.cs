@@ -31,7 +31,7 @@ public class FishingGame : MonoBehaviour
     float hookPullVelocity;
     [SerializeField] private const float hookPullPower = 0.01f;
     [SerializeField] private const float hookGravityPower = 0.005f;
-    [SerializeField] private const float hookProgressDegradationPower = 0.1f;
+    [SerializeField] private const float hookProgressDegradationPower = 0.5f;
 
     [SerializeField] public SpriteRenderer hookSpriteRenderer;
 
@@ -39,6 +39,8 @@ public class FishingGame : MonoBehaviour
 
     bool pause = false;
     [SerializeField] public float failTimer = 5f;
+
+    
 
     private void Start()
     {

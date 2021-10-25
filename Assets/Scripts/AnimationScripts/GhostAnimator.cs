@@ -5,8 +5,8 @@ using UnityEngine;
 public class GhostAnimator : MonoBehaviour
 {
     private Animator anim;
-    Vector2 direction;
-    [SerializeField] Transform target;
+    private Vector2 direction;
+    private Transform target;
 
     // Start is called before the first frame update
     void Start()
