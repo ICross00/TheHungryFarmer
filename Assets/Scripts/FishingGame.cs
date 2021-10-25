@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class FishingGame : MonoBehaviour
 {
+    //References
+    Popup popup;
+    GameManager gameManager;
+
     [SerializeField] Transform Top;
     [SerializeField] Transform Bottom;
     
@@ -27,7 +31,7 @@ public class FishingGame : MonoBehaviour
     float hookPullVelocity;
     [SerializeField] private const float hookPullPower = 0.01f;
     [SerializeField] private const float hookGravityPower = 0.005f;
-    [SerializeField] private const float hookProgressDegradationPower = 0.1f;
+    [SerializeField] private const float hookProgressDegradationPower = 0.5f;
 
     [SerializeField] public SpriteRenderer hookSpriteRenderer;
 
@@ -35,12 +39,14 @@ public class FishingGame : MonoBehaviour
 
     bool pause = false;
     [SerializeField] public float failTimer = 5f;
+
     
 
     private void Start()
     {
+        popup = GameObject.Find("FishingCanvas Variant(Clone)").GetComponent<Popup>();
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         pause = false;
-        Debug.Log("Let's go fishing");
     }
 
     private void Update()
@@ -126,12 +132,16 @@ public class FishingGame : MonoBehaviour
     private void Win()
     {
         pause = true;
-        Debug.Log("YOU WIN! CONGRATULATIONS, YOU CAUGHT THE FISH!");
+        popup.ExitPopup();
+        string message = "You caught a fish!";
+        gameManager.floatingTextManager.Show(message, 20, Color.blue, gameManager.player.transform.position, Vector3.zero, 1.0f);
     }
 
     private void Lose()
     {
         pause = true;
-        Debug.Log("YOU LOST THE FISH! :( ");
+        popup.ExitPopup();
+        string message = "The fish got away!";
+        gameManager.floatingTextManager.Show(message, 20, Color.blue, gameManager.player.transform.position, Vector3.zero, 1.0f);
     }
 }
