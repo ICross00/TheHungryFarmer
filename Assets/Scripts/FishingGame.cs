@@ -42,20 +42,9 @@ public class FishingGame : MonoBehaviour
 
     private void Start()
     {
-<<<<<<< Updated upstream
         popup = GameObject.Find("FishingCanvas Variant(Clone)").GetComponent<Popup>();
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         pause = false;
-=======
-        player = GameObject.Find("Player").GetComponent<Player>();
-        Debug.Log(player);
-        fishingrodcheck = player.GetSelectedItem().GetItemType().ToString();
-        if (fishingrodcheck == "FishingRod")
-        {
-            pause = false;
-            Debug.Log("Fishing Game start");
-        }
->>>>>>> Stashed changes
     }
 
     private void Update()
