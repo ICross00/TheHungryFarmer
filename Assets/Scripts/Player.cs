@@ -5,7 +5,7 @@ using UnityEngine.Events;
 
 public class Player : Mover
 {
-    public float interactionRadius = 1.2f;
+    public float interactionRadius = 1.5f;
     public UI_Inventory inventoryUI;
     public UI_Hotbar hotbarUI;
     private SpriteRenderer spriteRenderer;
@@ -145,6 +145,8 @@ public class Player : Mover
         {
             //Find all objects the player can interact with at this position
             List<Interactable> interactableObjects = Interactable.GetInteractablesInRadius(transform.position, interactionRadius);
+            if(interactableObjects.Count > 0)
+                interactableObjects[0].Interact(this);
         }
     }
 

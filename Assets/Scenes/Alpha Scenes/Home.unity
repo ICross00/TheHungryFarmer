@@ -596,12 +596,12 @@ PrefabInstance:
     - target: {fileID: 671243669677350677, guid: b069c17624560dd49bce2081d080c332,
         type: 3}
       propertyPath: xSpeed
-      value: 1.5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 671243669677350677, guid: b069c17624560dd49bce2081d080c332,
         type: 3}
       propertyPath: ySpeed
-      value: 1.2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 671243669677350677, guid: b069c17624560dd49bce2081d080c332,
         type: 3}
@@ -4528,6 +4528,7 @@ MonoBehaviour:
   seconds: 0
   hours: 0
   days: 0
+  dungeonRemaining: 0
 --- !u!1 &868580926
 GameObject:
   m_ObjectHideFlags: 0

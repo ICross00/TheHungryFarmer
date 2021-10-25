@@ -73,6 +73,9 @@ public class ItemTemplate : ScriptableObject
     }
     //Access the set value of a tag from a given key
     public string GetTagValue(string key) {
+        if(tags == null)
+            return null;
+
         foreach(ItemTag tag in tags) {
             if(tag.key.ToLower() == key.ToLower()) {
                 return tag.value;
