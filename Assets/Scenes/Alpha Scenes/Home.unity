@@ -4528,6 +4528,7 @@ MonoBehaviour:
   seconds: 0
   hours: 0
   days: 0
+  dungeonRemaining: 0
 --- !u!1 &868580926
 GameObject:
   m_ObjectHideFlags: 0
