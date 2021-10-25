@@ -6,6 +6,7 @@ public class Gaurdian : MonoBehaviour
 {
     //Public fields
     public int hitPoint = 150;
+    public int maxHitPoint;
     public float pushRecoverySpeed = 0.2f;
     Throwable knife;
     Pike pike1;
@@ -61,13 +62,13 @@ public class Gaurdian : MonoBehaviour
 
     private void Update()
     {
-        if (hitPoint > (hitPoint / 2))
+        if (hitPoint > (maxHitPoint / 2))
         {
             anim.SetBool("Full", true);
             anim.SetBool("Half", false);
             anim.SetBool("None", false);
         }
-        else if (hitPoint > 0 && hitPoint < ((hitPoint / 2) + 1))
+        else if (hitPoint > 0 && hitPoint < ((maxHitPoint / 2) + 1))
         {
             anim.SetBool("Full", false);
             anim.SetBool("Half", true);
@@ -160,14 +161,14 @@ public class Gaurdian : MonoBehaviour
     {
         lootMuliplier = GameObject.Find("ThrowingWeapon").GetComponent<ThrowingWeapon>().lootDropChance;
 
-        if (gaurdianName == "")
+        if (gaurdianName == "gaurdianOne")
         {
             //TODO: Add loot to the first gaurdian as seen below
 
             //Collectable.Spawn(transform.position, "Gaurdianloot", 1 * lootMuliplier, 1.0f);
             //Collectable.Spawn(transform.position, "GoldCoin", Random.Range(5, 10) * lootMuliplier, 1.0f);
         }
-        else if (gaurdianName == "")
+        else if (gaurdianName == "GaurdianTwo")
         {
             //TODO: Add loot to the second gaurdian as seen below
 
