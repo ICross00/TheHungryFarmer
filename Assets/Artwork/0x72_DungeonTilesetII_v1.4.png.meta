@@ -16,13 +16,13 @@ TextureImporter:
     second: Dagger
   - first:
       213: -1395916485779578574
-    second: dungeon_chest_1
+    second: Monster_IdleSlime1
   - first:
       213: -5321348085281630725
-    second: pillar_top
+    second: Monster_Fast2
   - first:
       213: -7148777005419144832
-    second: pillar_bottom
+    second: Monster_Fast3
   - first:
       213: -4254748507566664220
     second: Monster_Fast4
@@ -375,7 +375,7 @@ TextureImporter:
         width: 10
         height: 21
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -383,69 +383,6 @@ TextureImporter:
       bones: []
       spriteID: d195d1faa3aa5e900800000000000000
       internalID: 713163285030852893
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dungeon_chest_1
-      rect:
-        serializedVersion: 2
-        x: 304
-        y: 208
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2312ff02a55b0ace0800000000000000
-      internalID: -1395916485779578574
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pillar_top
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 408
-        width: 16
-        height: 21
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bf555923c16c626b0800000000000000
-      internalID: -5321348085281630725
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pillar_bottom
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 393
-        width: 16
-        height: 15
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 089d28d70317acc90800000000000000
-      internalID: -7148777005419144832
       vertices: []
       indices: 
       edges: []

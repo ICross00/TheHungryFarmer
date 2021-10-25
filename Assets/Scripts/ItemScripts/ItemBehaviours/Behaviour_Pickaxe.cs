@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Behaviour_Pickaxe : ItemBehaviour
 {
-    private const float PICKAXE_RANGE = 2f;
+    private const float PICKAXE_RANGE = 1.0f;
 
     public override void OnItemUsed(Item item, Player player, Inventory inventory) {
         MonoBehaviour plyAsMono = (MonoBehaviour)player; //Start a coroutine on the player's monobehaviour
