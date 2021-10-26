@@ -36,7 +36,15 @@ public abstract class Interactable : MonoBehaviour
                 }
             }
         }
-        //results.Sort();
+
+        //Sort results
+        results.Sort((a, b) => {
+            float distToA = (position - (Vector2)a.transform.position).sqrMagnitude;
+            float distToB = (position - (Vector2)b.transform.position).sqrMagnitude;
+
+            return distToA.CompareTo(distToB);
+        });
+
         return results;
     }
 
@@ -80,7 +88,7 @@ public abstract class Interactable : MonoBehaviour
 
                 float distance = interactableCollider.Distance(playerCollider).distance;
                 //If they are not, trigger the onclose behaviour
-                if(distance > 1.0f) {
+                if(distance > 0.5f) {
                     Close(interactingPlayer);
                 }
             }
