@@ -13,6 +13,8 @@ public class Player : Mover
     private InventoryUIController inventoryController;
     private GameManager gameManager;
     public bool isInvOpen = false;
+    public bool isSkillOpen = false;
+    public UI_SkillTree uiSkillTree;
     private PlayerSkills playerSkills;
    
 
@@ -81,7 +83,6 @@ public class Player : Mover
                 ySpeed = 1.9f;
                 break;
         }
-
     }
 
     /*
@@ -168,12 +169,16 @@ public class Player : Mover
         if (Input.GetKeyDown(KeyCode.E))
             inventoryController.UseSelectedItem();
 
+        if (Input.GetKeyDown(KeyCode.R))
+            uiSkillTree.ShowHideSkillTree();
+
         for (int i = 1; i <= UI_Inventory.ROW_SIZE; i++) //Keys 1-8 on the keyboard are used to access the hotbar
             if (Input.GetKeyDown(i.ToString()))
             {
                 inventoryController.SelectHotbarItem(i - 1);
                 break; //Only allow selecting one item
             }
+        
 
 
         /*Check for scrolling through hotbar slots

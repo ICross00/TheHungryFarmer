@@ -11,7 +11,6 @@ public class PlayerSkills {
         public SkillType skillType;
     }
 
-
     public enum SkillType //The player skills
     {
         None,
@@ -43,8 +42,9 @@ public class PlayerSkills {
         return unlockedSkillTypeList.Contains(skillType);
     }
 
-    public SkillType GetSkillRequirement (SkillType skillType) //This skill path where skills requirements are set
-    { //add skill requirements
+    //skill requirements
+    public SkillType GetSkillRequirement (SkillType skillType) //skill path to unlock.
+    { 
         switch (skillType)
         {
             case SkillType.healthMax_3: return SkillType.healthMax_2;
