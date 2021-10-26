@@ -132,5 +132,5 @@ public enum ItemType {
     Wood,
     BlackSwordHandle,
     BlackSwordBlade,
-    Leather
+    HealthPotion
 }

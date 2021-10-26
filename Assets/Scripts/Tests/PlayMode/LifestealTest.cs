@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using NUnit.Framework;
 using UnityEngine.TestTools;
-using System;
+
 public class LifestealTest
 {
     GameObject weaponObject;

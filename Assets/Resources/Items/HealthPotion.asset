@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9cbc7e85fa3738c458d90a5a408acd80, type: 3}
-  m_Name: Leather
+  m_Name: HealthPotion
   m_EditorClassIdentifier: 
-  itemName: Leather
+  itemName: 
   behaviourClassName: 
   type: 0
-  maxStack: 64
-  sellPrice: 10
-  sprite: {fileID: 4909722061150928451, guid: 1884b98184089f34184916226ef1b1c5, type: 3}
+  maxStack: 0
+  sellPrice: 0
+  sprite: {fileID: 0}
   isEquippable: 0
   tags: []
