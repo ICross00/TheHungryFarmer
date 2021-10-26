@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Steak
   behaviourClassName: 
-  type: 35
+  type: 36
   maxStack: 64
   sellPrice: 40
   sprite: {fileID: 7086507408647784198, guid: bafbaa935373caa44bec8652d82150a1, type: 3}

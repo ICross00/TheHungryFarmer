@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Raw Pork
   behaviourClassName: 
-  type: 41
+  type: 45
   maxStack: 8
   sellPrice: 5
   sprite: {fileID: -6414581771458565879, guid: e98eb85c11ee6704c9070e4c6537fc12, type: 3}

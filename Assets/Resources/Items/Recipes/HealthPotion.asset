@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0663a7a81a5ce434eb6bfeba39c221bf, type: 3}
   m_Name: HealthPotion
   m_EditorClassIdentifier: 
-  craftingOutput: {fileID: 0}
+  craftingOutput: {fileID: 11400000, guid: d518cc32680ce4d40befb29ebfdefb0d, type: 2}
   outputAmount: 1
-  craftingIngredients: []
+  craftingIngredients:
+  - template: {fileID: 11400000, guid: 2888c1822de828743ac3a53c26a8bb30, type: 2}
+    amount: 1

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Throwing Weapon
   behaviourClassName: Behaviour_ThrowingKnife
-  type: 39
+  type: 40
   maxStack: 1
   sellPrice: 0
   sprite: {fileID: -547464473201054382, guid: 0a0b0de405e53224d9e15edaec2a0be9, type: 3}

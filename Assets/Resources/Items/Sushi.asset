@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Sushi
   behaviourClassName: 
-  type: 44
+  type: 48
   maxStack: 4
   sellPrice: 25
   sprite: {fileID: -7830397429429979981, guid: bafbaa935373caa44bec8652d82150a1, type: 3}

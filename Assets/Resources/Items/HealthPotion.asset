@@ -12,11 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9cbc7e85fa3738c458d90a5a408acd80, type: 3}
   m_Name: HealthPotion
   m_EditorClassIdentifier: 
-  itemName: 
-  behaviourClassName: 
-  type: 0
-  maxStack: 0
-  sellPrice: 0
-  sprite: {fileID: 0}
-  isEquippable: 0
-  tags: []
+  itemName: Healing Potion
+  behaviourClassName: Behaviour_HealingPotion
+  type: 44
+  maxStack: 10
+  sellPrice: 25
+  sprite: {fileID: -5357951696099110594, guid: 0a0b0de405e53224d9e15edaec2a0be9, type: 3}
+  isEquippable: 1
+  tags:
+  - key: description
+    value: Heals the player to max health

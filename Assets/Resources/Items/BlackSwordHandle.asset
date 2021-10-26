@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Black Sword - HANDLE
   behaviourClassName: 
-  type: 41
+  type: 42
   maxStack: 1
   sellPrice: 300
   sprite: {fileID: 3559900268273746473, guid: 0a0b0de405e53224d9e15edaec2a0be9, type: 3}
