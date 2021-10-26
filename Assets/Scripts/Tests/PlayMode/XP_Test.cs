@@ -10,6 +10,8 @@ public class XP_Test
     GameObject experienceObject;
     XpManager xp;
     private int level;
+    private int skillPoint;
+    private int experience;
 
     [SetUp]
     public void Setup()
@@ -20,7 +22,7 @@ public class XP_Test
         xp.testing = true;
         xp.XPcap = 100;
         xp.currentXP = 0;
-        xp.currentSkillpoint =  0;
+        //xp.currentSkillpoint = 0;
     }
 
     [TearDown]
@@ -30,13 +32,25 @@ public class XP_Test
     }
 
     [UnityTest]
-    public IEnumerator UnityTest()
+    public IEnumerator LevelUp()
     {
         xp.addXP(100);
         level = xp.level;
-        Assert.AreEqual(1,level);
+        Assert.AreEqual(2,level);
 
         yield return null;
     }
+
+    [UnityTest]
+    public IEnumerator SkillPoints()
+    {
+        skillPoint = xp.currentSkillpoint;
+        Assert.AreEqual(1, skillPoint);
+
+        yield return null;
+    }
+
+    
+
 
 }
