@@ -54,8 +54,9 @@ public class TimeManager : MonoBehaviour
 
     public void NextDay()
     {
-        tick = 0;
+        tick = 480;
         hours = 8;
+        seconds = 0;
         days++;
         dungeonRemaining = 1;
     }
