@@ -1,28 +1,25 @@
 fileFormatVersion: 2
-guid: bafbaa935373caa44bec8652d82150a1
+guid: e98eb85c11ee6704c9070e4c6537fc12
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7086507408647784198
-    second: food_steak
+      213: 4889678242987506925
+    second: food_raw_fish
   - first:
-      213: 1691068108365520141
-    second: food_chicken
+      213: -6414581771458565879
+    second: food_raw_pork
   - first:
-      213: -4220448646692293226
-    second: food_bacon
+      213: -1248457724392452835
+    second: food_raw_steak
   - first:
-      213: 4551230655601369657
-    second: food_steak_plated
+      213: -8715640205685720955
+    second: food_raw_chicken
   - first:
-      213: 1339590092986821962
-    second: food_chicken_plated
+      213: 985082933801823651
+    second: food_raw_rabbit
   - first:
-      213: 9145017219304767882
-    second: food_bacon_plated
-  - first:
-      213: -7830397429429979981
-    second: food_sushi
+      213: -5016697858599230640
+    second: food_cooked_rabbit
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -86,7 +83,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -98,19 +95,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Windows Store Apps
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -124,11 +109,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: food_steak
+      name: food_raw_fish
       rect:
         serializedVersion: 2
-        x: 239
-        y: 1
+        x: 320
+        y: 128
         width: 32
         height: 32
       alignment: 0
@@ -138,18 +123,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 60700a631f4585260800000000000000
-      internalID: 7086507408647784198
+      spriteID: decf9339470abd340800000000000000
+      internalID: 4889678242987506925
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: food_chicken
+      name: food_raw_pork
       rect:
         serializedVersion: 2
-        x: 239
-        y: 35
+        x: 480
+        y: 128
         width: 32
         height: 32
       alignment: 0
@@ -159,18 +144,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d0d5e122c71e77710800000000000000
-      internalID: 1691068108365520141
+      spriteID: 90924816dd3daf6a0800000000000000
+      internalID: -6414581771458565879
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: food_bacon
+      name: food_raw_steak
       rect:
         serializedVersion: 2
-        x: 171
-        y: 273
+        x: 447
+        y: 96
         width: 32
         height: 32
       alignment: 0
@@ -180,18 +165,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 695b0251154fd65c0800000000000000
-      internalID: -4220448646692293226
+      spriteID: d1dce7470569caee0800000000000000
+      internalID: -1248457724392452835
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: food_steak_plated
+      name: food_raw_chicken
       rect:
         serializedVersion: 2
-        x: 273
-        y: 1
+        x: 192
+        y: 96
         width: 32
         height: 32
       alignment: 0
@@ -201,18 +186,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 932ecf5fa28392f30800000000000000
-      internalID: 4551230655601369657
+      spriteID: 5887dfd0963db0780800000000000000
+      internalID: -8715640205685720955
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: food_chicken_plated
+      name: food_raw_rabbit
       rect:
         serializedVersion: 2
-        x: 273
-        y: 35
+        x: 160
+        y: 96
         width: 32
         height: 32
       alignment: 0
@@ -222,39 +207,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a4dac15971e279210800000000000000
-      internalID: 1339590092986821962
+      spriteID: 3adae8785b7bbad00800000000000000
+      internalID: 985082933801823651
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: food_bacon_plated
+      name: food_cooked_rabbit
       rect:
         serializedVersion: 2
-        x: 205
-        y: 273
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a81cd7565b0a9ee70800000000000000
-      internalID: 9145017219304767882
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: food_sushi
-      rect:
-        serializedVersion: 2
-        x: 307
-        y: 1
+        x: 288
+        y: 160
         width: 32
         height: 32
       alignment: 0
@@ -264,8 +228,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3b4b1b07607d45390800000000000000
-      internalID: -7830397429429979981
+      spriteID: 053eab090eb116ab0800000000000000
+      internalID: -5016697858599230640
       vertices: []
       indices: 
       edges: []
