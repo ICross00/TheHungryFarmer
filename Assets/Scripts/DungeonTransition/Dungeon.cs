@@ -4,9 +4,8 @@ using UnityEngine;
 
 public class Dungeon : MonoBehaviour
 {
-    public GameObject dungeon;
-
-    public TimeManager dungeonRemain;
+    private GameObject dungeon;
+    private TimeManager dungeonRemain;
 
     private void Start()
     {

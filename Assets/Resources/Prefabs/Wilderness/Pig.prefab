@@ -141,12 +141,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52d18aa042ae6a8429b2d3b7210ec3a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitPoint: 6
-  maxHitPoint: 10
+  hitPoint: 5
+  maxHitPoint: 5
   pushRecoverySpeed: 0.2
   xpValue: 1
   target: {fileID: 0}
-  EnemyDistance: 15
+  EnemyDistance: 4
   animalName: Pig
   activeChase: 1
 --- !u!61 &4979795071248352062

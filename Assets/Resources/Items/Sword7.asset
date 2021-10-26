@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cbc7e85fa3738c458d90a5a408acd80, type: 3}
+  m_Name: Sword7
+  m_EditorClassIdentifier: 
+  itemName: Sword - Tier 7 - BLACK SWORD
+  behaviourClassName: Behaviour_Sword
+  type: 34
+  maxStack: 1
+  sellPrice: 800
+  sprite: {fileID: 2051385223110754156, guid: 0a0b0de405e53224d9e15edaec2a0be9, type: 3}
+  isEquippable: 1
+  tags:
+  - key: Damage
+    value: 25
+  - key: Knockback
+    value: 5
+  - key: prefab_name
+    value: swordT7
+  - key: description
+    value: '<br>Sword Damage: 25<br>Knife Damage: 15<br>Life Steal on Kill: 5<br>Loot
+      Drop Chance: x3<br>'

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Cooked Rabbit
   behaviourClassName: 
-  type: 46
+  type: 50
   maxStack: 4
   sellPrice: 22
   sprite: {fileID: -5016697858599230640, guid: e98eb85c11ee6704c9070e4c6537fc12, type: 3}
