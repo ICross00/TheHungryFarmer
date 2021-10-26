@@ -16,6 +16,7 @@ public class Player : Mover
     public bool isSkillOpen = false;
     private float currentXSpeed;
     private float currentYSpeed;
+    private Animator animator;
     public UI_SkillTree uiSkillTree;
     private PlayerSkills playerSkills;
     public XpManager xp;
@@ -31,6 +32,7 @@ public class Player : Mover
     protected override void Start()
     {
         base.Start();
+        animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         currentXSpeed = xSpeed;
         currentYSpeed = ySpeed;
@@ -175,12 +177,14 @@ public class Player : Mover
         currentYSpeed = ySpeed;
         ySpeed = 0;
         GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+        animator.speed = 0;
     }
 
     public void ResumePlayer()
     {
         xSpeed = currentXSpeed;
         ySpeed = currentYSpeed;
+        animator.speed = 1;
     }
 
     private void FixedUpdate()
