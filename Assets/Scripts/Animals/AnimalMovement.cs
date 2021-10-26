@@ -66,19 +66,19 @@ public class AnimalMovement : Fighter
         //Rabbit
         if (animalName == "Rabbit")
         {
-            //Collectable.Spawn(transform.position, "RABBIT LOOT", 1 * lootMuliplier, 1.0f);
+            Collectable.Spawn(transform.position, "Leather", 1 * lootMuliplier, 1.0f);
             Destroy(gameObject);
         }
         //Pig
         else if (animalName == "Pig")
         {
-            //Collectable.Spawn(transform.position, "PIG LOOT", 1 * lootMuliplier, 1.0f);
+            Collectable.Spawn(transform.position, "Bacon", 2 * lootMuliplier, 1.0f);
             Destroy(gameObject);
         }
         //No name
         else
         {
-            Debug.Log("Enemy name invalid. Please type a name in the 'Enemy' script ('Slime', 'Bat', or 'Ghost')");
+            Debug.Log("Animal name invalid.");
         }
         //Activates the life steal weapon perk when an animal is killed.
         GameObject.Find("ThrowingWeapon").GetComponent<ThrowingWeapon>().LifeSteal();
