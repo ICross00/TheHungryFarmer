@@ -132,5 +132,11 @@ public enum ItemType {
     Wood,
     BlackSwordHandle,
     BlackSwordBlade,
-    HealthPotion
+    HealthPotion,
+    Raw_Pork,
+    Raw_Beef,
+    Raw_Chicken,
+    Sushi,
+    Raw_Rabbit,
+    Cooked_Rabbit
 }

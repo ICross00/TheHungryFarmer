@@ -5,10 +5,11 @@ using System.Collections.Generic;
 public abstract class Interactable : MonoBehaviour
 {
     //Number of seconds between player collision checks
-    private static float COLLISION_CHECK_INTERVAL = 0.1f;
+    public static float COLLISION_CHECK_INTERVAL = 0.1f;
     private static float cCheckTime;
 
     protected Player interactingPlayer; //The player that this interactable is currently in interaction with
+    private Player plyTrigger;
 
     void OnEnable() {
         cCheckTime = Time.time + COLLISION_CHECK_INTERVAL;

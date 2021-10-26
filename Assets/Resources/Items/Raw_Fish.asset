@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9cbc7e85fa3738c458d90a5a408acd80, type: 3}
-  m_Name: Chicken
+  m_Name: Raw_Fish
   m_EditorClassIdentifier: 
-  itemName: Chicken
+  itemName: Raw Fish
   behaviourClassName: 
-  type: 34
+  type: 19
   maxStack: 64
   sellPrice: 10
-  sprite: {fileID: 1691068108365520141, guid: bafbaa935373caa44bec8652d82150a1, type: 3}
+  sprite: {fileID: 4889678242987506925, guid: e98eb85c11ee6704c9070e4c6537fc12, type: 3}
   isEquippable: 0
   tags: []

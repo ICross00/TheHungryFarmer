@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0663a7a81a5ce434eb6bfeba39c221bf, type: 3}
-  m_Name: Bacon Recipe
+  m_Name: Steak Recipe
   m_EditorClassIdentifier: 
-  craftingOutput: {fileID: 11400000, guid: 9ba014eb66b3cba42b87feb03b91fb1c, type: 2}
+  craftingOutput: {fileID: 11400000, guid: f4b3239d5c6c3f94c9ab05ed47ffcc84, type: 2}
   outputAmount: 1
   craftingIngredients:
-  - template: {fileID: 11400000, guid: e91745fd43eb6374fa47af6c429129b1, type: 2}
+  - template: {fileID: 11400000, guid: 30c2af82df22ac84399472cc8fbdcacb, type: 2}
     amount: 1
