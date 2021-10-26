@@ -16,6 +16,7 @@ public class Player : Mover
     public bool isSkillOpen = false;
     public UI_SkillTree uiSkillTree;
     private PlayerSkills playerSkills;
+    public XpManager xp;
    
 
     public ItemBehaviour activeBehaviour; //Behaviour associated with the current item
@@ -61,26 +62,32 @@ public class Player : Mover
             case PlayerSkills.SkillType.healthMax_1:
                 maxHitPoint = 15;
                 hitPoint = 15;
+                xp.currentSkillpoint = xp.currentSkillpoint - 1;
                 break;
             case PlayerSkills.SkillType.healthMax_2:
                 maxHitPoint = 20;
                 hitPoint = 20;
+                xp.currentSkillpoint = xp.currentSkillpoint - 1;
                 break;
             case PlayerSkills.SkillType.healthMax_3:
                 maxHitPoint = 25;
                 hitPoint = 25;
+                xp.currentSkillpoint = xp.currentSkillpoint - 1;
                 break;
             case PlayerSkills.SkillType.MoveSpeed_1:
                 xSpeed = 1.7f;
                 ySpeed = 1.5f;
+                xp.currentSkillpoint = xp.currentSkillpoint - 1;
                 break;
             case PlayerSkills.SkillType.MoveSpeed_2:
                 xSpeed = 1.9f;
                 ySpeed = 1.7f;
+                xp.currentSkillpoint = xp.currentSkillpoint - 1;
                 break;
             case PlayerSkills.SkillType.MoveSpeed_3:
                 xSpeed = 2.1f;
                 ySpeed = 1.9f;
+                xp.currentSkillpoint = xp.currentSkillpoint - 1;
                 break;
         }
     }

@@ -8,6 +8,8 @@ using TMPro;
 
 public class XpManager : MonoBehaviour
 {
+
+    public bool testing = false;
     public TextMeshProUGUI currentXPtext, leveltext, currentSkillpointtext;
     public int currentXP, XPcap, level, currentSkillpoint;
 
@@ -23,13 +25,16 @@ public class XpManager : MonoBehaviour
 
     public void Start()
     {
-        currentXPtext.text = "Experience: " + currentXP.ToString() +  " / " + XPcap.ToString();
-        leveltext.text = "Level: " + level.ToString();
-        currentSkillpointtext.text = "SP: " + currentSkillpoint.ToString();
+      if(testing == false)
+        {
+            currentXPtext.text = "Experience: " + currentXP.ToString() + " / " + XPcap.ToString();
+            leveltext.text = "Level: " + level.ToString();
+            currentSkillpointtext.text = "SP: " + currentSkillpoint.ToString();
+        }
     }
 
     //Adding xp togeather and level up
-    public void addXP(int xp) //xpManageer.instance.addXP(amount);
+    public void addXP(int xp) //xpManager.instance.addXP(amount);
     {
         currentXP += xp;
 
@@ -41,10 +46,15 @@ public class XpManager : MonoBehaviour
             currentSkillpoint++;
 
             XPcap += XPcap / 30; //How much the level exp increments each time player levels up.
-            leveltext.text = "Level: " + level.ToString();
-            currentSkillpointtext.text = "SP: " + currentSkillpoint.ToString();
+
+            if (testing == false)
+            {
+                leveltext.text = "Level: " + level.ToString();
+                currentSkillpointtext.text = "SP: " + currentSkillpoint.ToString();
+                currentXPtext.text = "Experience: " + currentXP.ToString() + " / " + XPcap.ToString();
+            }
         }
-        currentXPtext.text = "Experience: " + currentXP.ToString() + " / " + XPcap.ToString();
+        
     }
 
 
