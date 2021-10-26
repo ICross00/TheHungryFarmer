@@ -5,7 +5,7 @@ using UnityEngine.Events;
 
 public class Player : Mover
 {
-    public float interactionRadius = 1.2f;
+    public float interactionRadius = 1.4f;
     public UI_Inventory inventoryUI;
     public UI_Hotbar hotbarUI;
     private SpriteRenderer spriteRenderer;
@@ -14,6 +14,8 @@ public class Player : Mover
     private GameManager gameManager;
     public bool isInvOpen = false;
     public bool isSkillOpen = false;
+    private float currentXSpeed;
+    private float currentYSpeed;
     public UI_SkillTree uiSkillTree;
     private PlayerSkills playerSkills;
     public XpManager xp;
@@ -24,10 +26,15 @@ public class Player : Mover
     //Actions to store and select items. These may be temporarily overridden by other classes, so are stored so they may be reset
     private UnityAction<Item, int> dropItem;
     private UnityAction<Item, int> selectItem;
+    private float timeCheckInteractable;
+    private const float INTERACTABLE_DELAY = 0.1f;
+
     protected override void Start()
     {
         base.Start();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        currentXSpeed = xSpeed;
+        currentYSpeed = ySpeed;
 
         DontDestroyOnLoad(gameObject);
 
@@ -157,6 +164,26 @@ public class Player : Mover
         }
     }
 
+    public void ClearSelectedItem()
+    {
+        inventoryController.ClearSelectedItem();
+    }
+
+    public void PausePlayer()
+    {
+        currentXSpeed = xSpeed;
+        xSpeed = 0;
+        currentYSpeed = ySpeed;
+        ySpeed = 0;
+        GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+    }
+
+    public void ResumePlayer()
+    {
+        xSpeed = currentXSpeed;
+        ySpeed = currentYSpeed;
+    }
+
     private void FixedUpdate()
     {
         //Movement code
@@ -164,6 +191,11 @@ public class Player : Mover
         float y = Input.GetAxisRaw("Vertical");
 
         UpdateMotor(new Vector2(x, y));
+
+        if (hitPoint == 0)
+        {
+            Death();
+        }
     }
 
     void Update()
@@ -188,22 +220,23 @@ public class Player : Mover
         
 
 
-        /*Check for scrolling through hotbar slots
-        float scroll = Input.GetAxis("Mouse ScrollWheel");
-        if(scroll != 0f)
-            inventoryController.ChangeHotbarItem(scroll);
-        */
-
-        //Interactable keybinds
         if (Input.GetKeyDown(KeyCode.Space))
         {
             //Find all objects the player can interact with at this position
-            List<Interactable> interactableObjects = Interactable.GetInteractablesInRadius(transform.position, interactionRadius);
-
-            foreach (Interactable i in interactableObjects)
-            {
-                i.Interact(this);
-            }
+            List<Interactable> interactableObjects = Interactable.GetInteractablesInRadius((transform.position - new Vector3(0, 0.5f, 0)), interactionRadius);
+            if(interactableObjects.Count > 0)
+                interactableObjects[0].Interact(this);
         }
+
+        if(Time.realtimeSinceStartup - timeCheckInteractable > INTERACTABLE_DELAY) {
+            List<Interactable> interactableObjects = Interactable.GetInteractablesInRadius((transform.position - new Vector3(0, 0.5f, 0)), interactionRadius);
+            transform.Find("PInteractable").GetComponent<SpriteRenderer>().enabled = interactableObjects.Count > 0;
+            timeCheckInteractable = Time.realtimeSinceStartup + INTERACTABLE_DELAY;
+        }
+    }
+
+    public void Death()
+    {
+        gameManager.ResetPlayer();
     }
 }
