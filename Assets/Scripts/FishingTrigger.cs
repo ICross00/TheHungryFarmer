@@ -9,7 +9,6 @@ public class FishingTrigger : PopupTrigger
 
     protected override void OnTriggerEnter2D(Collider2D collide)
     {
-        Debug.Log("PopupTrigger Entered");
         if (collide.name == "Player")
         {
             player = collide.GetComponent<Player>();
