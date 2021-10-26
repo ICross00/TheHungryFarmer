@@ -169,6 +169,9 @@ public class Player : Mover
 
     public void Death()
     {
+        gameManager.floatingTextManager.Show("Gold lost: " + (((GetGold() / 100) * 15)), 30, Color.red, gameManager.player.transform.position, Vector3.zero, 5.0f);
+        ChangeGold(-((GetGold() / 100) * 15));
         gameManager.ResetPlayer();
+        hitPoint = maxHitPoint;
     }
 }
