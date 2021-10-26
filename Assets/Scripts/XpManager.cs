@@ -23,9 +23,9 @@ public class XpManager : MonoBehaviour
 
     public void Start()
     {
-        currentXPtext.text = currentXP.ToString() + XPcap.ToString();
-        leveltext.text = level.ToString();
-        currentSkillpointtext.text = currentSkillpoint.ToString();
+        currentXPtext.text = "Experience: " + currentXP.ToString() +  " / " + XPcap.ToString();
+        leveltext.text = "Level: " + level.ToString();
+        currentSkillpointtext.text = "SP: " + currentSkillpoint.ToString();
     }
 
     //Adding xp togeather and level up
@@ -44,7 +44,7 @@ public class XpManager : MonoBehaviour
             leveltext.text = "Level: " + level.ToString();
             currentSkillpointtext.text = "SP: " + currentSkillpoint.ToString();
         }
-        currentXPtext.text = currentXP.ToString() + " / " + XPcap.ToString();
+        currentXPtext.text = "Experience: " + currentXP.ToString() + " / " + XPcap.ToString();
     }
 
 
