@@ -195,7 +195,7 @@ public class Player : Mover
 
         UpdateMotor(new Vector2(x, y));
 
-        if (hitPoint == 0)
+        if (hitPoint <= 0)
         {
             Death();
         }
