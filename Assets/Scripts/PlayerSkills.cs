@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class PlayerSkills {
 
-    public event EventHandler <OnSkillUnlockedEventArgs> OnSkillUnlocked; //event to handle when skill is unlocked
+    public event EventHandler<OnSkillUnlockedEventArgs> OnSkillUnlocked; //event to handle when skill is unlocked
     public class OnSkillUnlockedEventArgs : EventArgs
     {
         public SkillType skillType;
