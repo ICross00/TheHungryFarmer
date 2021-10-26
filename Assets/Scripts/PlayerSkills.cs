@@ -4,8 +4,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerSkills {
-
-    public event EventHandler<OnSkillUnlockedEventArgs> OnSkillUnlocked; //event to handle when skill is unlocked
     public class OnSkillUnlockedEventArgs : EventArgs
     {
         public SkillType skillType;
@@ -23,6 +21,8 @@ public class PlayerSkills {
     }
 
     private List<SkillType> unlockedSkillTypeList; //List of unlocked skills
+    private Player player = GameObject.Find("Player").GetComponent<Player>();
+    private XpManager xp;
 
     public PlayerSkills()
     {
@@ -32,9 +32,12 @@ public class PlayerSkills {
 
     private void UnlockSkill(SkillType skillType)
     {
-        if(!IsSkillUnlocked(skillType))
-        unlockedSkillTypeList.Add(skillType);
-        OnSkillUnlocked?.Invoke(this, new OnSkillUnlockedEventArgs { skillType = skillType});
+        xp = XpManager.instance;
+        if (!IsSkillUnlocked(skillType) && xp.currentSkillpoint > 0)
+        {
+            unlockedSkillTypeList.Add(skillType);
+            player.PlayerSkills_OnSkillUnlocked(skillType.ToString());
+        }
     }
 
     public bool IsSkillUnlocked(SkillType skillType)
@@ -62,17 +65,16 @@ public class PlayerSkills {
             if (IsSkillUnlocked(skillRequirement)) {
                 UnlockSkill(skillType);
                 return true;
-            } else {
+            }
+            else
+            {
                 return false;
             }
-        } else {
+        }
+        else
+        {
             UnlockSkill(skillType);
             return true;
         }
     }
- 
 }
-
-
-
-

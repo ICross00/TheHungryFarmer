@@ -21,6 +21,11 @@ public class XpManager : MonoBehaviour
             instance = this;
         else
             Destroy(gameObject);
+
+        currentXP = 0;
+        XPcap = 100;
+        level = 1;
+        currentSkillpoint = 1;
     }
 
     public void Start()
@@ -46,20 +51,16 @@ public class XpManager : MonoBehaviour
             currentSkillpoint++;
 
             XPcap += XPcap / 30; //How much the level exp increments each time player levels up.
-
-            if (testing == false)
-            {
-                leveltext.text = "Level: " + level.ToString();
-                currentSkillpointtext.text = "SP: " + currentSkillpoint.ToString();
-                currentXPtext.text = "Experience: " + currentXP.ToString() + " / " + XPcap.ToString();
-            }
         }
-        
     }
 
-
-
-    
-
-
+    private void Update()
+    {
+        if (testing == false)
+        {
+            leveltext.text = "Level: " + level.ToString();
+            currentSkillpointtext.text = "SP: " + currentSkillpoint.ToString();
+            currentXPtext.text = "Experience: " + currentXP.ToString() + " / " + XPcap.ToString();
+        }
+    }
 }
