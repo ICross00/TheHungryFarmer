@@ -14,6 +14,7 @@ public class Player : Mover
     private GameManager gameManager;
     public bool isInvOpen = false;
     private PlayerSkills playerSkills;
+   
 
     public ItemBehaviour activeBehaviour; //Behaviour associated with the current item
 
@@ -56,22 +57,29 @@ public class Player : Mover
         switch(e.skillType)
         {
             case PlayerSkills.SkillType.healthMax_1:
-                
+                maxHitPoint = 15;
+                hitPoint = 15;
                 break;
             case PlayerSkills.SkillType.healthMax_2:
-
+                maxHitPoint = 20;
+                hitPoint = 20;
                 break;
             case PlayerSkills.SkillType.healthMax_3:
-
+                maxHitPoint = 25;
+                hitPoint = 25;
                 break;
             case PlayerSkills.SkillType.MoveSpeed_1:
-
+                xSpeed = 1.7f;
+                ySpeed = 1.5f;
                 break;
             case PlayerSkills.SkillType.MoveSpeed_2:
-
+                xSpeed = 1.9f;
+                ySpeed = 1.7f;
                 break;
-    
-
+            case PlayerSkills.SkillType.MoveSpeed_3:
+                xSpeed = 2.1f;
+                ySpeed = 1.9f;
+                break;
         }
 
     }

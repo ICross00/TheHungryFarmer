@@ -10,13 +10,10 @@ public class UI_SkillTree : MonoBehaviour
     private void Awake()
     {
         //add skill button functions
-        //transform.Find("Health1").gameObject.GetComponent<Button>.onClick = () =>
+        //transform.Find("Health1").GetComponent<Button>().onClick.AddListener();
         {
             playerSkills.TryUnlockSkill(PlayerSkills.SkillType.healthMax_1);
         };
-
-
-
     }
 
     public void SetPlayerSkills(PlayerSkills playerSkills)
@@ -24,5 +21,11 @@ public class UI_SkillTree : MonoBehaviour
         this.playerSkills = playerSkills;
     }
 
-    
+    public void Update()
+    {
+        if
+
+
+    }
+
 }
