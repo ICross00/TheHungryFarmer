@@ -66,7 +66,7 @@ public class CraftingRecipe : ScriptableObject
     public string FormatIngredientString(Inventory inventory) {
         string s = "";
         foreach(CraftingIngredient ingredient in craftingIngredients) {
-            string c = inventory.ContainsItem(ingredient.template, ingredient.amount)  ? "00FF00" : "FF0000";
+            string c = inventory.ContainsItem(ingredient.template, ingredient.amount)  ? "53E079" : "BF4D4D";
             s += "<color=#"+c+">"+ingredient + "</color>\n";
         }
 
