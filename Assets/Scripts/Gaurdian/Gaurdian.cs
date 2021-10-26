@@ -164,6 +164,7 @@ public class Gaurdian : MonoBehaviour
         if (gaurdianName == "One")
         {
             //TODO: Add loot to the first gaurdian as seen below
+            XpManager.instance.addXP(100);
 
             Collectable.Spawn(transform.position, "Ruby", 16 * lootMuliplier, 1.0f);
             Collectable.Spawn(transform.position, "Emerald", 8 * lootMuliplier, 1.0f);
@@ -178,6 +179,7 @@ public class Gaurdian : MonoBehaviour
         else if (gaurdianName == "Two")
         {
             //TODO: Add loot to the second gaurdian as seen below
+            XpManager.instance.addXP(200);
 
             Collectable.Spawn(transform.position, "Ruby", 20 * lootMuliplier, 1.0f);
             Collectable.Spawn(transform.position, "Emerald", 10 * lootMuliplier, 1.0f);

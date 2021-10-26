@@ -29,8 +29,8 @@ public class HUD : MonoBehaviour
 
     private void Update()
     {
-
         //Health Bar
+        health = GameManager.instance.player.hitPoint;
 
         //fillSpeed = 3f * Time.deltaTime;
         HealthBarFiller();
