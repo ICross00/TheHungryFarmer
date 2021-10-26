@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
     //public Inventory playerInventory;
     public int restaurantRating;
     public FloatingTextManager floatingTextManager;  //Referencing floating text for later use
-    private TimeManager timeManager;
+    public TimeManager timeManager;
 
     //Local Variables
     private string previousScene;
