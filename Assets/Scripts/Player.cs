@@ -102,6 +102,11 @@ public class Player : Mover
         }
     }
 
+    public void ClearSelectedItem()
+    {
+        inventoryController.ClearSelectedItem();
+    }
+
     private void FixedUpdate()
     {
         //Movement code
@@ -144,7 +149,7 @@ public class Player : Mover
         if (Input.GetKeyDown(KeyCode.Space))
         {
             //Find all objects the player can interact with at this position
-            List<Interactable> interactableObjects = Interactable.GetInteractablesInRadius(transform.position, interactionRadius);
+            List<Interactable> interactableObjects = Interactable.GetInteractablesInRadius((transform.position - new Vector3(0, 0.5f, 0)), interactionRadius);
             if(interactableObjects.Count > 0)
                 interactableObjects[0].Interact(this);
         }

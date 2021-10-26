@@ -10,7 +10,7 @@ public class FoodCounter : Interactable
 
     void Awake()
     {
-        placedFood = GameObject.Find("placed_food").GetComponent<SpriteRenderer>();
+        placedFood = transform.Find("placed_food").GetComponent<SpriteRenderer>();
     }
 
     protected override void OnInteract(Player triggerPlayer)
@@ -21,7 +21,7 @@ public class FoodCounter : Interactable
             {
                 storedItem = triggerPlayer.GetSelectedItem();
                 placedFood.sprite = storedItem.GetSprite();
-                //triggerPlayer.GetInventory().RemoveItem(triggerPlayer.GetSelectedItem());
+                ((PlayerInventory)triggerPlayer.GetInventory()).RemoveItemFromHotbar(triggerPlayer.GetSelectedItem());
             }
         }
     }
