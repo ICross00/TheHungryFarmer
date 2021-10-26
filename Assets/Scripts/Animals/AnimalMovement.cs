@@ -33,7 +33,7 @@ public class AnimalMovement : Fighter
 
         distance = Vector3.Distance(transform.position, target.transform.position);
 
-        if (hitPoint < 10)
+        if (hitPoint < maxHitPoint)
         {
             EnemyDistance = 15;
         }
