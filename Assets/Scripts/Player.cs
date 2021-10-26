@@ -5,7 +5,7 @@ using UnityEngine.Events;
 
 public class Player : Mover
 {
-    public float interactionRadius = 1.5f;
+    public float interactionRadius = 1.4f;
     public UI_Inventory inventoryUI;
     public UI_Hotbar hotbarUI;
     private SpriteRenderer spriteRenderer;
@@ -13,8 +13,12 @@ public class Player : Mover
     private InventoryUIController inventoryController;
     private GameManager gameManager;
     public bool isInvOpen = false;
+    public bool isSkillOpen = false;
     private float currentXSpeed;
     private float currentYSpeed;
+    public UI_SkillTree uiSkillTree;
+    private PlayerSkills playerSkills;
+    public XpManager xp;
 
     public ItemBehaviour activeBehaviour; //Behaviour associated with the current item
 
@@ -27,7 +31,6 @@ public class Player : Mover
     protected override void Start()
     {
         base.Start();
-
         spriteRenderer = GetComponent<SpriteRenderer>();
         currentXSpeed = xSpeed;
         currentYSpeed = ySpeed;
@@ -48,8 +51,51 @@ public class Player : Mover
             hotbarUI = hotbarUI
         };
 
-        timeCheckInteractable = Time.realtimeSinceStartup;
         inventoryController.SetUIListeners(); //Attach listeners
+    }
+
+    private void Awake()
+    {
+        playerSkills = new PlayerSkills();
+        playerSkills.OnSkillUnlocked += PlayerSkills_OnSkillUnlocked;
+    }
+
+    private void PlayerSkills_OnSkillUnlocked(object sender, PlayerSkills.OnSkillUnlockedEventArgs e)
+    {
+        //Add skills to unlock
+        switch(e.skillType)
+        {
+            case PlayerSkills.SkillType.healthMax_1:
+                maxHitPoint = 15;
+                hitPoint = 15;
+                xp.currentSkillpoint = xp.currentSkillpoint - 1;
+                break;
+            case PlayerSkills.SkillType.healthMax_2:
+                maxHitPoint = 20;
+                hitPoint = 20;
+                xp.currentSkillpoint = xp.currentSkillpoint - 1;
+                break;
+            case PlayerSkills.SkillType.healthMax_3:
+                maxHitPoint = 25;
+                hitPoint = 25;
+                xp.currentSkillpoint = xp.currentSkillpoint - 1;
+                break;
+            case PlayerSkills.SkillType.MoveSpeed_1:
+                xSpeed = 1.7f;
+                ySpeed = 1.5f;
+                xp.currentSkillpoint = xp.currentSkillpoint - 1;
+                break;
+            case PlayerSkills.SkillType.MoveSpeed_2:
+                xSpeed = 1.9f;
+                ySpeed = 1.7f;
+                xp.currentSkillpoint = xp.currentSkillpoint - 1;
+                break;
+            case PlayerSkills.SkillType.MoveSpeed_3:
+                xSpeed = 2.1f;
+                ySpeed = 1.9f;
+                xp.currentSkillpoint = xp.currentSkillpoint - 1;
+                break;
+        }
     }
 
     /*
@@ -69,6 +115,12 @@ public class Player : Mover
     {
         inventoryController.SetUIListeners();
     }
+
+    public PlayerSkills GetPlayerSkills()
+    {
+        return playerSkills;
+    }
+
 
     //Returns the selected item
     public Item GetSelectedItem()
@@ -155,21 +207,18 @@ public class Player : Mover
         if (Input.GetKeyDown(KeyCode.E))
             inventoryController.UseSelectedItem();
 
+        if (Input.GetKeyDown(KeyCode.R))
+            uiSkillTree.ShowHideSkillTree();
+
         for (int i = 1; i <= UI_Inventory.ROW_SIZE; i++) //Keys 1-8 on the keyboard are used to access the hotbar
             if (Input.GetKeyDown(i.ToString()))
             {
                 inventoryController.SelectHotbarItem(i - 1);
                 break; //Only allow selecting one item
             }
+        
 
 
-        /*Check for scrolling through hotbar slots
-        float scroll = Input.GetAxis("Mouse ScrollWheel");
-        if(scroll != 0f)
-            inventoryController.ChangeHotbarItem(scroll);
-        */
-
-        //Interactable keybinds
         if (Input.GetKeyDown(KeyCode.Space))
         {
             //Find all objects the player can interact with at this position
@@ -183,7 +232,6 @@ public class Player : Mover
             transform.Find("PInteractable").GetComponent<SpriteRenderer>().enabled = interactableObjects.Count > 0;
             timeCheckInteractable = Time.realtimeSinceStartup + INTERACTABLE_DELAY;
         }
-
     }
 
     public void Death()
