@@ -19,7 +19,6 @@ public class Player : Mover
     public UI_SkillTree uiSkillTree;
     private PlayerSkills playerSkills;
     public XpManager xp;
-   
 
     public ItemBehaviour activeBehaviour; //Behaviour associated with the current item
 
