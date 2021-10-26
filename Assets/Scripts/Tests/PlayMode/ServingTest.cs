@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using NUnit.Framework;
+using UnityEngine.TestTools;
 
 public class ServingTest
 {
@@ -12,6 +13,7 @@ public class ServingTest
     CraftingRecipe foodRecipe;
     XpManager xpManager;
     ItemTemplate rawPorkTemplate;
+    ItemTemplate baconTemplate;
 
     [SetUp]
     public void Setup()
@@ -22,7 +24,9 @@ public class ServingTest
         inventory = inventoryObject.AddComponent<Inventory>();
         foodRecipe = Resources.Load<CraftingRecipe>("Items/Recipes/Bacon Recipe");
         rawPorkTemplate = Resources.Load<ItemTemplate>("Items/Raw_Pork");
+        baconTemplate = Resources.Load<ItemTemplate>("Items/Cooked_Bacon");
         xpManager = experienceObject.AddComponent<XpManager>();
+        xpManager.testing = true;
         xpManager.currentXP = 0;
     }
 
@@ -31,6 +35,7 @@ public class ServingTest
 
     }
 
+    [UnityTest]
     public IEnumerator TestXPForCooking()
     {
         //Add raw pork to the inventory for crafting.
@@ -39,10 +44,14 @@ public class ServingTest
         //Craft the pork into the bacon.
         foodRecipe.Craft(inventory);
 
-        //bool hasBacon = inventory.ContainsItem
+        //Booleans to check if items have crafted.
+        bool hasRawPork = inventory.ContainsItem(rawPorkTemplate, 1, true);
+        bool hasBacon = inventory.ContainsItem(baconTemplate, 1, true);
 
         //Check if the player's experience has increased.
         Assert.AreNotEqual(0, xpManager.currentXP);
+        Assert.AreEqual(false, hasRawPork);
+        Assert.AreEqual(true, hasBacon);
 
         yield return null;
     }
