@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0663a7a81a5ce434eb6bfeba39c221bf, type: 3}
   m_Name: Sword7
   m_EditorClassIdentifier: 
-  craftingOutput: {fileID: 0}
+  craftingOutput: {fileID: 11400000, guid: 45c6e83dc82ffbb48a8d4c1195291f25, type: 2}
   outputAmount: 1
   craftingIngredients:
   - template: {fileID: 11400000, guid: 4436c50aaca8e154f957be4bd0e01954, type: 2}
