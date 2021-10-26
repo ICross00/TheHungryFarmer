@@ -10,13 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9cbc7e85fa3738c458d90a5a408acd80, type: 3}
-  m_Name: Chicken
+  m_Name: Raw_Chicken
   m_EditorClassIdentifier: 
-  itemName: Chicken
+  itemName: Raw Chicken
   behaviourClassName: 
-  type: 34
-  maxStack: 64
-  sellPrice: 10
-  sprite: {fileID: 1691068108365520141, guid: bafbaa935373caa44bec8652d82150a1, type: 3}
+  type: 47
+  maxStack: 8
+  sellPrice: 4
+  sprite: {fileID: -8715640205685720955, guid: e98eb85c11ee6704c9070e4c6537fc12, type: 3}
   isEquippable: 0
-  tags: []
+  tags:
+  - key: food_sprites
+    value: food_raw_chicken
+  - key: food_type
+    value: raw

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Wood
   behaviourClassName: 
-  type: 40
+  type: 41
   maxStack: 64
   sellPrice: 5
   sprite: {fileID: 5319037353708944749, guid: 1884b98184089f34184916226ef1b1c5, type: 3}

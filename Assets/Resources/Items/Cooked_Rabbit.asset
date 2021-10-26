@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9cbc7e85fa3738c458d90a5a408acd80, type: 3}
-  m_Name: Steak
+  m_Name: Cooked_Rabbit
   m_EditorClassIdentifier: 
-  itemName: Steak
+  itemName: Cooked Rabbit
   behaviourClassName: 
-  type: 35
-  maxStack: 64
-  sellPrice: 25
-  sprite: {fileID: 7086507408647784198, guid: bafbaa935373caa44bec8652d82150a1, type: 3}
+  type: 50
+  maxStack: 4
+  sellPrice: 22
+  sprite: {fileID: -5016697858599230640, guid: e98eb85c11ee6704c9070e4c6537fc12, type: 3}
   isEquippable: 0
   tags:
   - key: food_sprites
-    value: food_steak
+    value: food_cooked_rabbit
   - key: food_type
     value: cooked

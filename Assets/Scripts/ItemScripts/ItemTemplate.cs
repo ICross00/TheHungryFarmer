@@ -122,11 +122,21 @@ public enum ItemType {
     Sword4,
     Sword5,
     Sword6,
+    Sword7,
     Chicken,
     Steak,
     Bacon,
     FishingRod,
     Pickaxe,
     ThrowingKnife,
-    Wood
+    Wood,
+    BlackSwordHandle,
+    BlackSwordBlade,
+    HealthPotion,
+    Raw_Pork,
+    Raw_Beef,
+    Raw_Chicken,
+    Sushi,
+    Raw_Rabbit,
+    Cooked_Rabbit
 }
