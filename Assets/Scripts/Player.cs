@@ -31,6 +31,9 @@ public class Player : Mover
 
     protected override void Start()
     {
+        xp = XpManager.instance;
+        playerSkills = new PlayerSkills();
+        uiSkillTree.SetPlayerSkills(playerSkills);
         base.Start();
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -59,44 +62,51 @@ public class Player : Mover
     private void Awake()
     {
         playerSkills = new PlayerSkills();
-        playerSkills.OnSkillUnlocked += PlayerSkills_OnSkillUnlocked;
+        //playerSkills.OnSkillUnlocked += PlayerSkills_OnSkillUnlocked;
     }
 
-    private void PlayerSkills_OnSkillUnlocked(object sender, PlayerSkills.OnSkillUnlockedEventArgs e)
+    public void PlayerSkills_OnSkillUnlocked(string var)
     {
         //Add skills to unlock
-        switch(e.skillType)
+        switch(var)
         {
-            case PlayerSkills.SkillType.healthMax_1:
+            case "healthMax_1":
                 maxHitPoint = 15;
                 hitPoint = 15;
                 xp.currentSkillpoint = xp.currentSkillpoint - 1;
+                Debug.Log("healthMax_1");
                 break;
-            case PlayerSkills.SkillType.healthMax_2:
+                
+            case "healthMax_2":
                 maxHitPoint = 20;
                 hitPoint = 20;
                 xp.currentSkillpoint = xp.currentSkillpoint - 1;
+                Debug.Log("healthMax_2");
                 break;
-            case PlayerSkills.SkillType.healthMax_3:
+            case "healthMax_3":
                 maxHitPoint = 25;
                 hitPoint = 25;
                 xp.currentSkillpoint = xp.currentSkillpoint - 1;
+                Debug.Log("healthMax_3");
                 break;
-            case PlayerSkills.SkillType.MoveSpeed_1:
+            case "MoveSpeed_1":
                 xSpeed = 1.7f;
                 ySpeed = 1.5f;
                 xp.currentSkillpoint = xp.currentSkillpoint - 1;
+                Debug.Log("MoveSpeed_1");
                 break;
-            case PlayerSkills.SkillType.MoveSpeed_2:
+            case "MoveSpeed_2":
                 xSpeed = 1.9f;
                 ySpeed = 1.7f;
                 xp.currentSkillpoint = xp.currentSkillpoint - 1;
+                Debug.Log("MoveSpeed_2");
                 break;
-            case PlayerSkills.SkillType.MoveSpeed_3:
+            case "MoveSpeed_3":
                 xSpeed = 2.1f;
                 ySpeed = 1.9f;
                 xp.currentSkillpoint = xp.currentSkillpoint - 1;
-                break;
+                Debug.Log("MoveSpeed_3");
+                break; 
         }
     }
 
