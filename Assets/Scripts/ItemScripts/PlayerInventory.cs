@@ -8,6 +8,12 @@ public class PlayerInventory : Inventory
     public event EventHandler OnHotbarChanged;
     public static readonly int HOTBAR_MAX = UI_Inventory.ROW_SIZE;
     private List<Item> hotbar = new List<Item>();
+    private Player player;
+
+    private void Start()
+    {
+        player = GameObject.Find("Player").GetComponent<Player>();
+    }
 
     /*
     Forces the hotbar to refresh
@@ -38,6 +44,11 @@ public class PlayerInventory : Inventory
             Item rItem = hotbar[i];
             if(item.GetItemType() == rItem.GetItemType()) {
                 item.amount--;
+                if (item.amount == 0)
+                {
+                    player.ClearSelectedItem();
+                }
+                break;
             }
         }
 
