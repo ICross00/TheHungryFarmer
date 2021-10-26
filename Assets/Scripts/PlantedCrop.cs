@@ -5,6 +5,7 @@ using UnityEditor;
 
 public class PlantedCrop : RandomEvent
 {
+    public static SpriteListDictionary cropDict;
     public ItemTemplate cropTemplate;
     private int maxGrowthStage;
     private int growthStage = 1;
@@ -16,17 +17,19 @@ public class PlantedCrop : RandomEvent
 
     private int minYield;
     private int maxYield;
+    private int lootMuliplier;
 
     protected override void Start() {
         base.Start();
 
+        //Locate the array of sprites associated with crop growth stages
+        if(cropDict == null)
+            cropDict = Resources.Load<SpriteListDictionary>("Prefabs/Crop Sprite Dictionary");
+
         gameObject.tag = "Crop";
         //Set growth probabilities
         this.eventProbability = 0.1f;
-        this.period = 2.5f;
-
-        //Locate the array of sprites associated with crop growth stages
-        SpriteListDictionary cropDict = Resources.Load<SpriteListDictionary>("Prefabs/Crop Sprite Dictionary");
+        this.period = 5f;
 
         //Get the key associated with the appropriate crop sprites
         string cropType = cropTemplate.GetTagValue("crop_sprites");
@@ -72,11 +75,15 @@ public class PlantedCrop : RandomEvent
     */
     public void HarvestCrop() {
         //Only yield any items if the crop was fully grown
+        lootMuliplier = GameObject.Find("ThrowingWeapon").GetComponent<ThrowingWeapon>().lootDropChance;
+
+        //Only yield any items if the crop was fully grown
         if(growthStage >= maxGrowthStage) {
-            int numSpawnedCrops = Random.Range(minYield, maxYield);
+            int numSpawnedCrops = Random.Range(minYield * lootMuliplier, maxYield * lootMuliplier);
             Collectable spawnedItem = Collectable.Spawn(transform.position, cropTemplate.GetTagValue("grows_into"), numSpawnedCrops, 1.5f);
             spawnedItem.ApplyRandomForce(8.0f);
             Destroy(this.gameObject);
+
         }
     }
 

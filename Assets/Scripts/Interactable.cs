@@ -5,10 +5,11 @@ using System.Collections.Generic;
 public abstract class Interactable : MonoBehaviour
 {
     //Number of seconds between player collision checks
-    private static float COLLISION_CHECK_INTERVAL = 0.1f;
+    public static float COLLISION_CHECK_INTERVAL = 0.1f;
     private static float cCheckTime;
 
     protected Player interactingPlayer; //The player that this interactable is currently in interaction with
+    private Player plyTrigger;
 
     void OnEnable() {
         cCheckTime = Time.time + COLLISION_CHECK_INTERVAL;
@@ -17,7 +18,7 @@ public abstract class Interactable : MonoBehaviour
 
     /**
         Finds all of the Interactable objects whose collider components overlap the provided circle,
-        defiend by the position and radius, and returns them all as a List<Interactable>
+        defined by the position and radius, and returns them all as a List<Interactable>
 
         @param position The position to check for Interactable objects at
         @param searchRadius The radius around the position to search for Interactable objects in
@@ -36,6 +37,14 @@ public abstract class Interactable : MonoBehaviour
                 }
             }
         }
+
+        //Sort results
+        results.Sort((a, b) => {
+            float distToA = (position - (Vector2)a.transform.position).sqrMagnitude;
+            float distToB = (position - (Vector2)b.transform.position).sqrMagnitude;
+
+            return distToA.CompareTo(distToB);
+        });
 
         return results;
     }
@@ -80,7 +89,7 @@ public abstract class Interactable : MonoBehaviour
 
                 float distance = interactableCollider.Distance(playerCollider).distance;
                 //If they are not, trigger the onclose behaviour
-                if(distance > 1.0f) {
+                if(distance > 0.5f) {
                     Close(interactingPlayer);
                 }
             }

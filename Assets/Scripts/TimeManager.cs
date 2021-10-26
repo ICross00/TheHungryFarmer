@@ -14,6 +14,7 @@ public class TimeManager : MonoBehaviour
     public int seconds;
     public int hours;
     public int days;
+    public int dungeonRemaining;
 
     //This will determine where the tick will start before counting up.
     //This will allow saves of the current tick in future so the game can be started at a specific time.
@@ -21,6 +22,7 @@ public class TimeManager : MonoBehaviour
     {
         tick = currentTick;
 
+        dungeonRemaining = 1;
         seconds = tick % 60;
         hours = (currentTick - (currentTick % 60)) / 60;
     }
@@ -52,8 +54,10 @@ public class TimeManager : MonoBehaviour
 
     public void NextDay()
     {
-        tick = 0;
+        tick = 480;
         hours = 8;
+        seconds = 0;
         days++;
+        dungeonRemaining = 1;
     }
 }

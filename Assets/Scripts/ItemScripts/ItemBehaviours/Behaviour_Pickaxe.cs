@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Behaviour_Pickaxe : ItemBehaviour
 {
-    private const float PICKAXE_RANGE = 1.0f;
+    private const float PICKAXE_RANGE = 1.25f;
 
     public override void OnItemUsed(Item item, Player player, Inventory inventory) {
         MonoBehaviour plyAsMono = (MonoBehaviour)player; //Start a coroutine on the player's monobehaviour
@@ -30,6 +30,7 @@ public class Behaviour_Pickaxe : ItemBehaviour
 
         //Find ore in front of player
         MinableObject targetObj = MinableObject.GetObjectAtPosition(player.transform.position + offset);
+        Debug.Log(targetObj);
         if(targetObj != null)
             targetObj.Mine();
     }

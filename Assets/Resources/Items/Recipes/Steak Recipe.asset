@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0663a7a81a5ce434eb6bfeba39c221bf, type: 3}
+  m_Name: Steak Recipe
+  m_EditorClassIdentifier: 
+  craftingOutput: {fileID: 11400000, guid: f4b3239d5c6c3f94c9ab05ed47ffcc84, type: 2}
+  outputAmount: 1
+  craftingIngredients:
+  - template: {fileID: 11400000, guid: 30c2af82df22ac84399472cc8fbdcacb, type: 2}
+    amount: 1

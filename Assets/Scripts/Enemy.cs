@@ -15,8 +15,6 @@ public class Enemy : Mover
     public float chaseDistance = 20.0f;
     [SerializeField] string enemyName;
     GameObject knife;
-    int health;
-    Player player;
     private int lootMuliplier;
 
     protected override void Start()
@@ -54,7 +52,7 @@ public class Enemy : Mover
     }
 
     //This will destroy the enemy object and drop loot in its place.
-    protected override void Death()
+    void Death()
     {
         lootMuliplier = GameObject.Find("ThrowingWeapon").GetComponent<ThrowingWeapon>().lootDropChance;
 

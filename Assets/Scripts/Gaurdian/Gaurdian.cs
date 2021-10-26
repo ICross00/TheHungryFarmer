@@ -42,7 +42,7 @@ public class Gaurdian : MonoBehaviour
     //Push
     protected Vector3 pushDirection;
 
-    //Making sure everything classed as a fighter can receive damage and die.
+    //Making sure the gaurdian can be damaged.
     protected virtual void ReceiveDamage(Damage dmg)
     {
         if (Time.time - lastImmune > immuneTime)
@@ -59,15 +59,16 @@ public class Gaurdian : MonoBehaviour
         }
     }
 
+    //Controls the gaudians animations based on health.
     private void Update()
     {
-        if (hitPoint > 75)
+        if (hitPoint > (hitPoint / 2))
         {
             anim.SetBool("Full", true);
             anim.SetBool("Half", false);
             anim.SetBool("None", false);
         }
-        else if (hitPoint > 0 && hitPoint < 76)
+        else if (hitPoint > 0 && hitPoint < ((hitPoint / 2) + 1))
         {
             anim.SetBool("Full", false);
             anim.SetBool("Half", true);
@@ -81,6 +82,7 @@ public class Gaurdian : MonoBehaviour
         }
     }
 
+    //Controls the gaurdians functions including health and death.
     private void FixedUpdate()
     {
         distance = Vector3.Distance(transform.position, target.position);
@@ -98,32 +100,28 @@ public class Gaurdian : MonoBehaviour
 
             if (switchTimer == false && hitPoint > 0)
             {
-                blockModeEnabled();
+                BlockModeEnabled();
             }
             else if (switchTimer == true && hitPoint > 0)
             {
-                blockModeDisabled();
+                BlockModeDisabled();
             }
             else if (hitPoint <= 0 && gaurdianDead == false)
             {
-                blockModeDisabled();
-                lootDrop();
+                BlockModeDisabled();
+                LootDrop();
                 gaurdianDead = true;
             }
         }
         else
         {
-            blockModeDisabled();
+            BlockModeDisabled();
             GetComponent<BoxCollider2D>().enabled = false;
         }
     }
 
-    protected virtual void Death()
-    {
-        //TODO: Add death and dropping loot.
-    }
-
-    private void blockModeEnabled()
+    //Pikes changing to attack mode (player cannot attack)
+    private void BlockModeEnabled()
     {
         pike1.PikesOut();
         pike2.PikesOut();
@@ -133,7 +131,8 @@ public class Gaurdian : MonoBehaviour
         knife.enableFire = true;
     }
 
-    private void blockModeDisabled()
+    //Pikes changing to idle mode (player can attack)
+    private void BlockModeDisabled()
     {
         pike1.PiklesIdle();
         pike2.PiklesIdle();
@@ -143,6 +142,7 @@ public class Gaurdian : MonoBehaviour
         knife.enableFire = false;
     }
 
+    //Time between gaurdian phases
     private void Timer()
     {
         if (Time.time - lastUse > coolDown)
@@ -156,23 +156,38 @@ public class Gaurdian : MonoBehaviour
         }
     }
 
-    private void lootDrop()
+    private void LootDrop()
     {
         lootMuliplier = GameObject.Find("ThrowingWeapon").GetComponent<ThrowingWeapon>().lootDropChance;
+        int randNum = Random.Range(0, 100);
 
-        if (gaurdianName == "")
+        if (gaurdianName == "One")
         {
             //TODO: Add loot to the first gaurdian as seen below
 
-            //Collectable.Spawn(transform.position, "Gaurdianloot", 1 * lootMuliplier, 1.0f);
-            //Collectable.Spawn(transform.position, "GoldCoin", Random.Range(5, 10) * lootMuliplier, 1.0f);
+            Collectable.Spawn(transform.position, "Ruby", 16 * lootMuliplier, 1.0f);
+            Collectable.Spawn(transform.position, "Emerald", 8 * lootMuliplier, 1.0f);
+            Collectable.Spawn(transform.position, "Diamond", 4 * lootMuliplier, 1.0f);
+            Collectable.Spawn(transform.position, "GoldCoin", 200 * lootMuliplier, 1.0f);
+
+            if (randNum > 98 || randNum < 100)
+            {
+                Collectable.Spawn(transform.position, "BlackSwordHandle", 1, 1.0f);
+            }
         }
-        else if (gaurdianName == "")
+        else if (gaurdianName == "Two")
         {
             //TODO: Add loot to the second gaurdian as seen below
 
-            //Collectable.Spawn(transform.position, "Gaurdianloot", 1 * lootMuliplier, 1.0f);
-            //Collectable.Spawn(transform.position, "GoldCoin", Random.Range(5, 10) * lootMuliplier, 1.0f);
+            Collectable.Spawn(transform.position, "Ruby", 20 * lootMuliplier, 1.0f);
+            Collectable.Spawn(transform.position, "Emerald", 10 * lootMuliplier, 1.0f);
+            Collectable.Spawn(transform.position, "Diamond", 6 * lootMuliplier, 1.0f);
+            Collectable.Spawn(transform.position, "GoldCoin", 300 * lootMuliplier, 1.0f);
+
+            if (randNum > 93 || randNum < 100)
+            {
+                Collectable.Spawn(transform.position, "BlackSwordBlade", 1, 1.0f);
+            }
         }
     }
 }

@@ -4,54 +4,57 @@ using UnityEngine;
 
 public class FishingGame : MonoBehaviour
 {
-    [SerializeField] Transform Top;
-    [SerializeField] Transform Bottom;
-    
-    [SerializeField] RectTransform fish;
+    //References
+    Popup popup;
+    GameManager gameManager;
 
+    [SerializeField] Transform Top; //Top position of the hook bar which make the hook and fish move up
+    [SerializeField] Transform Bottom; //Bottom position of the hook bar which make the hook and fish move down
+    [SerializeField] RectTransform fish; //Fish object
+    [SerializeField] RectTransform hook; //hook object
+  
     float fishPosition;
     float fishDestination;
-
     float fishTimer;
-    [SerializeField] private const float timerMultiplicator = 6f;
-
-    float fishSpeed;
-    [SerializeField] private const float smoothMotion = 1.5f;
-
-    [SerializeField] RectTransform hook;
-    
-    float hookPosition;
-    [SerializeField] private const float hookSize = 0.1f;
-    [SerializeField] private const float hookPower = 0.5f;
+    float fishSpeed;    
     float hookProgress;
     float hookPullVelocity;
+    float hookPosition;
+
+    [SerializeField] private const float timerMultiplicator = 0.05f;
+    [SerializeField] private const float smoothMotion = 1f;
+    [SerializeField] private const float hookSize = 0.1f;
+    [SerializeField] private const float hookPower = 0.5f;
     [SerializeField] private const float hookPullPower = 0.01f;
     [SerializeField] private const float hookGravityPower = 0.005f;
-    [SerializeField] private const float hookProgressDegradationPower = 0.1f;
+    [SerializeField] private const float hookProgressDegradationPower = 0.5f;
 
-    [SerializeField] public SpriteRenderer hookSpriteRenderer;
-
-    [SerializeField] public Transform ProgressBarContainer;
+    [SerializeField] public SpriteRenderer hookSpriteRenderer; //Rendering the hook when trying to catch the fish.
+    [SerializeField] public Transform ProgressBarContainer; //Progess bar holding.
+    [SerializeField] public float failTimer; //Assign the fail time when the hook out of the fish.
 
     bool pause = false;
-    [SerializeField] public float failTimer = 5f;
-    
 
-    private void Start()
+    private void Start() //Game starts if ..
     {
+        popup = GameObject.Find("FishingCanvas Variant(Clone)").GetComponent<Popup>();
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         pause = false;
-        Debug.Log("Let's go fishing");
     }
 
-    private void Update()
+    private void Update() 
     {
-        if (pause) { return; }
+        if (pause) 
+        {
+            return;
+        }
+
         Fish();
         Hook();
         Progress();
     }
 
-    void Fish()
+    void Fish() //Fish object movement inside the hookbar.
     {
         fishTimer -= Time.unscaledDeltaTime;
         if (fishTimer < 0f)
@@ -65,7 +68,7 @@ public class FishingGame : MonoBehaviour
         fish.position = Vector3.Lerp(Bottom.position, Top.position, fishPosition);
     }
 
-    void Hook()
+    void Hook() //Hook movement by player left-click
     {
         if (Input.GetMouseButton(0))
         {
@@ -89,7 +92,7 @@ public class FishingGame : MonoBehaviour
         hook.position = Vector3.Lerp(Bottom.position, Top.position, hookPosition);
     }
 
-    private void Progress()
+    private void Progress() //progress bar calculate the success of hook
     {
         Vector3 ls = ProgressBarContainer.localScale;
         ls.y = hookProgress;
@@ -116,22 +119,26 @@ public class FishingGame : MonoBehaviour
         {
             Win();
             Vector3 position = GameObject.Find("Player").transform.position;
-            Collectable.Spawn(position, "Fish", 1);
+            Collectable.Spawn(position, "Raw_Fish", 1);
         }
 
         hookProgress = Mathf.Clamp(hookProgress, 0f, 1f);
 
     }
 
-    private void Win()
+    private void Win() //Print win methods
     {
         pause = true;
-        Debug.Log("YOU WIN! CONGRATULATIONS, YOU CAUGHT THE FISH!");
+        popup.ExitPopup();
+        string message = "You caught a fish!";
+        gameManager.floatingTextManager.Show(message, 25, Color.blue, gameManager.player.transform.position, Vector3.zero, 1.0f);
     }
 
-    private void Lose()
+    private void Lose() //Print lose methods
     {
         pause = true;
-        Debug.Log("YOU LOST THE FISH! :( ");
+        popup.ExitPopup();
+        string message = "The fish got away!";
+        gameManager.floatingTextManager.Show(message, 25, Color.blue, gameManager.player.transform.position, Vector3.zero, 1.0f);
     }
 }

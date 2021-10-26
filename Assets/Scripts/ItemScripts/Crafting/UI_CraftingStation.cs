@@ -64,6 +64,7 @@ public class UI_CraftingStation : MonoBehaviour
     protected virtual void OnButtonLeftClicked(Item item, int slotIndex) {
         CraftingRecipe clickedRecipe = craftingStation.craftableItems[slotIndex];
         clickedRecipe.Craft(craftingStation.GetInventory());
+        OnButtonHover(slotIndex);
     }
 
     /**
@@ -125,7 +126,7 @@ public class UI_CraftingStation : MonoBehaviour
 
             //Wrap around rows
             x++;
-            if(x > ROW_SIZE) {
+            if(x >= ROW_SIZE) {
                 x = 0;
                 y--;
             }
@@ -143,8 +144,12 @@ public class UI_CraftingStation : MonoBehaviour
 
         //Update width
         RectTransform rect = craftingContainer.GetComponent<RectTransform>();
-        int nwidth = 190 + 120 * (craftingStation.GetNumRecipes() - 1);
-        rect.sizeDelta = new Vector2(nwidth, rect.sizeDelta.y);
+        int nrecipes = craftingStation.GetNumRecipes();
+        int nwidth = 190 + 120 * (Mathf.Min(nrecipes, ROW_SIZE) - 1);
+        int nheight = 190 + 120 * (((nrecipes - 1) / ROW_SIZE));
+        Debug.Log(nrecipes + ", " + ROW_SIZE);
+        Debug.Log(nrecipes / ROW_SIZE);
+        rect.sizeDelta = new Vector2(nwidth, nheight);
 
         //Destroy old gameobjects
         tooltip.ShowTooltip(false);

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
-
+using System;
 public class ThrowingWeapon : MonoBehaviour
 {
     Player player;
@@ -18,26 +18,35 @@ public class ThrowingWeapon : MonoBehaviour
     private float lastSwing;
     public int lifeSteal;
     public int lootDropChance;
+    public bool isTesting = false;
 
     string swordCheck;
 
     //Array to check if a sword is equipped in a future if statement
-    private string[] swordTypes = {"Sword", "Sword2", "Sword3", "Sword4", "Sword5", "Sword6"};
+    private string[] swordTypes = {"Sword", "Sword2", "Sword3", "Sword4", "Sword5", "Sword6", "Sword7"};
 
     private void Start()
     {
         ThrowingKnife = Resources.Load<GameObject>("Prefabs/ThrowingKnife");
-        sceneCamera = Camera.main;
-        player = GameObject.Find("Player").GetComponent<Player>();
-        target = GameObject.Find("Player");
+
+        if (isTesting == false)
+        {
+            sceneCamera = Camera.main;
+
+            player = GameObject.Find("Player").GetComponent<Player>();
+            target = GameObject.Find("Player");
+        }
     }
 
     void Update()
     {
-        sceneCamera = Camera.main;
-        ProcessInputs();
-        //Calls the AimDirection method.
-        AimDirection();
+        if (isTesting == false)
+        {
+            sceneCamera = Camera.main;
+            ProcessInputs();
+            //Calls the AimDirection method.
+            AimDirection();
+        }
     }
 
     void FixedUpdate()
@@ -94,7 +103,7 @@ public class ThrowingWeapon : MonoBehaviour
 
     //Sets the sword cooldown based on what sword is equiped and sets the damage.
     //Will also set bonus perks such as life steal and extra loot for the sword.
-    private int CoolDownTime(string swordType)
+    public int CoolDownTime(string swordType)
     {
         if (swordType == "Sword")
         {
@@ -138,6 +147,13 @@ public class ThrowingWeapon : MonoBehaviour
             ThrowingKnife.GetComponent<KnifeScript>().knifeDamage = 10;
             return 1;
         }
+        else if (swordType == "Sword7")
+        {
+            lifeSteal = 5;
+            lootDropChance = 3;
+            ThrowingKnife.GetComponent<KnifeScript>().knifeDamage = 15;
+            return 1;
+        }
         else
         {
             lifeSteal = 0;
@@ -149,6 +165,11 @@ public class ThrowingWeapon : MonoBehaviour
 
     public void LifeSteal()
     {
-        GameObject.Find("Player").GetComponent<Player>().hitPoint = 5;
+        GameObject.Find("Player").GetComponent<Player>().hitPoint += lifeSteal;
+
+        if (GameObject.Find("Player").GetComponent<Player>().hitPoint > GameObject.Find("Player").GetComponent<Player>().maxHitPoint)
+        {
+            GameObject.Find("Player").GetComponent<Player>().hitPoint = GameObject.Find("Player").GetComponent<Player>().maxHitPoint;
+        }
     }
 }
