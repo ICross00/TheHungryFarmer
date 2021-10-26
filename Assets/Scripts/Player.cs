@@ -102,6 +102,11 @@ public class Player : Mover
         }
     }
 
+    public void ClearSelectedItem()
+    {
+        inventoryController.ClearSelectedItem();
+    }
+
     private void FixedUpdate()
     {
         //Movement code

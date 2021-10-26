@@ -82,6 +82,14 @@ public class InventoryUIController
     }
 
     /*
+    Deselects the selected item by entering a null value in its place.
+     */
+    public void ClearSelectedItem()
+    {
+        SelectItem(null);
+    }
+
+    /*
     The below functions should be passed in as parameters to the SetClickListeners function of a UI_Inventory class.
     They should not be called directly, as SetClickListeners will dynamically provide the parameters based on what the player
     clicked on in an inventory/hotbar
