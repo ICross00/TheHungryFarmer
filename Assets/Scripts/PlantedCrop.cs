@@ -17,6 +17,7 @@ public class PlantedCrop : RandomEvent
 
     private int minYield;
     private int maxYield;
+    private int lootMuliplier;
 
     protected override void Start() {
         base.Start();
@@ -74,11 +75,15 @@ public class PlantedCrop : RandomEvent
     */
     public void HarvestCrop() {
         //Only yield any items if the crop was fully grown
+        lootMuliplier = GameObject.Find("ThrowingWeapon").GetComponent<ThrowingWeapon>().lootDropChance;
+
+        //Only yield any items if the crop was fully grown
         if(growthStage >= maxGrowthStage) {
-            int numSpawnedCrops = Random.Range(minYield, maxYield);
+            int numSpawnedCrops = Random.Range(minYield * lootMuliplier, maxYield * lootMuliplier);
             Collectable spawnedItem = Collectable.Spawn(transform.position, cropTemplate.GetTagValue("grows_into"), numSpawnedCrops, 1.5f);
             spawnedItem.ApplyRandomForce(8.0f);
             Destroy(this.gameObject);
+
         }
     }
 
