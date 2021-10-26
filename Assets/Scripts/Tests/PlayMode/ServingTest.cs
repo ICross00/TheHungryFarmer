@@ -49,7 +49,7 @@ public class ServingTest
         bool hasBacon = inventory.ContainsItem(baconTemplate, 1, true);
 
         //Check if the player's experience has increased.
-        //Assert.AreNotEqual(0, xpManager.currentXP);
+        Assert.AreNotEqual(0, xpManager.currentXP);
         Assert.AreEqual(false, hasRawPork);
         Assert.AreEqual(true, hasBacon);
 
