@@ -7484,6 +7484,7 @@ MonoBehaviour:
     name: Bed
     sentences:
     - Do you want to sleep until the next day?
+  dialogueBoxName: SleepDialogueBox
 --- !u!1001 &2033171082
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7932,6 +7933,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SleepDialogueBox
+      objectReference: {fileID: 0}
+    - target: {fileID: 2120854589430697196, guid: 74398b2081f0ed94ebc283e17da26870,
+        type: 3}
+      propertyPath: m_PixelsPerUnitMultiplier
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2120854589430697197, guid: 74398b2081f0ed94ebc283e17da26870,
         type: 3}
