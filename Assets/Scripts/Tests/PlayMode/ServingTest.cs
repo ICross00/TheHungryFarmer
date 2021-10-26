@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using NUnit.Framework;
+using UnityEngine.TestTools;
 
 public class ServingTest
 {
@@ -23,8 +24,9 @@ public class ServingTest
         inventory = inventoryObject.AddComponent<Inventory>();
         foodRecipe = Resources.Load<CraftingRecipe>("Items/Recipes/Bacon Recipe");
         rawPorkTemplate = Resources.Load<ItemTemplate>("Items/Raw_Pork");
-        baconTemplate = Resources.Load<ItemTemplate>("Items/Bacon");
+        baconTemplate = Resources.Load<ItemTemplate>("Items/Cooked_Bacon");
         xpManager = experienceObject.AddComponent<XpManager>();
+        xpManager.testing = true;
         xpManager.currentXP = 0;
     }
 
@@ -33,7 +35,7 @@ public class ServingTest
 
     }
 
-    [Test]
+    [UnityTest]
     public IEnumerator TestXPForCooking()
     {
         //Add raw pork to the inventory for crafting.

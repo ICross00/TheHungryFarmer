@@ -9,10 +9,12 @@ public class PlayerInventory : Inventory
     public static readonly int HOTBAR_MAX = UI_Inventory.ROW_SIZE;
     private List<Item> hotbar = new List<Item>();
     private Player player;
+    public bool testing = false;
 
     private void Start()
     {
-        player = GameObject.Find("Player").GetComponent<Player>();
+        if (!testing)
+            player = GameObject.Find("Player").GetComponent<Player>();
     }
 
     /*
