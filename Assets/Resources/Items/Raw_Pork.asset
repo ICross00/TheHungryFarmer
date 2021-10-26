@@ -10,13 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9cbc7e85fa3738c458d90a5a408acd80, type: 3}
-  m_Name: Fish
+  m_Name: Raw_Pork
   m_EditorClassIdentifier: 
-  itemName: Fish
+  itemName: Raw Pork
   behaviourClassName: 
-  type: 19
-  maxStack: 64
-  sellPrice: 30
-  sprite: {fileID: 21300000, guid: c03d5aa94bf1cb941bd65c0cb4f03a87, type: 3}
+  type: 41
+  maxStack: 8
+  sellPrice: 5
+  sprite: {fileID: -6414581771458565879, guid: e98eb85c11ee6704c9070e4c6537fc12, type: 3}
   isEquippable: 0
-  tags: []
+  tags:
+  - key: food_sprites
+    value: food_raw_pork
+  - key: food_type
+    value: raw

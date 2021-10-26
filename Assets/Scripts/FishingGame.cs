@@ -122,7 +122,7 @@ public class FishingGame : MonoBehaviour
         {
             Win();
             Vector3 position = GameObject.Find("Player").transform.position;
-            Collectable.Spawn(position, "Fish", 1);
+            Collectable.Spawn(position, "Raw_Fish", 1);
         }
 
         hookProgress = Mathf.Clamp(hookProgress, 0f, 1f);

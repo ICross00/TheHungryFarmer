@@ -4496,13 +4496,7 @@ MonoBehaviour:
   - itemTemplate: {fileID: 11400000, guid: 1e653b5b209c7af478d2d70ce3328fdd, type: 2}
     amount: 5
     activeItem: 0
-  - itemTemplate: {fileID: 11400000, guid: 9ba014eb66b3cba42b87feb03b91fb1c, type: 2}
-    amount: 1
-    activeItem: 0
   - itemTemplate: {fileID: 11400000, guid: 93ad6e4bd08815345ac6e4d9ad556141, type: 2}
-    amount: 1
-    activeItem: 0
-  - itemTemplate: {fileID: 11400000, guid: f4b3239d5c6c3f94c9ab05ed47ffcc84, type: 2}
     amount: 1
     activeItem: 0
   - itemTemplate: {fileID: 11400000, guid: 8e38a6104d35ab645b44ba43e0a11580, type: 2}
@@ -7550,7 +7544,7 @@ PrefabInstance:
     - target: {fileID: 2778104347548870014, guid: c5c05c57b6e04634f90a22e7d335d162,
         type: 3}
       propertyPath: items.Array.size
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2778104347548870014, guid: c5c05c57b6e04634f90a22e7d335d162,
         type: 3}
@@ -7564,6 +7558,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2778104347548870014, guid: c5c05c57b6e04634f90a22e7d335d162,
         type: 3}
+      propertyPath: items.Array.data[2].amount
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2778104347548870014, guid: c5c05c57b6e04634f90a22e7d335d162,
+        type: 3}
+      propertyPath: items.Array.data[3].amount
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2778104347548870014, guid: c5c05c57b6e04634f90a22e7d335d162,
+        type: 3}
       propertyPath: items.Array.data[0].itemTemplate
       value: 
       objectReference: {fileID: 11400000, guid: 19f5f85c4bfae5e4982c19c83fc9d66d,
@@ -7573,6 +7577,18 @@ PrefabInstance:
       propertyPath: items.Array.data[1].itemTemplate
       value: 
       objectReference: {fileID: 11400000, guid: 1e653b5b209c7af478d2d70ce3328fdd,
+        type: 2}
+    - target: {fileID: 2778104347548870014, guid: c5c05c57b6e04634f90a22e7d335d162,
+        type: 3}
+      propertyPath: items.Array.data[2].itemTemplate
+      value: 
+      objectReference: {fileID: 11400000, guid: 30c2af82df22ac84399472cc8fbdcacb,
+        type: 2}
+    - target: {fileID: 2778104347548870014, guid: c5c05c57b6e04634f90a22e7d335d162,
+        type: 3}
+      propertyPath: items.Array.data[3].itemTemplate
+      value: 
+      objectReference: {fileID: 11400000, guid: e91745fd43eb6374fa47af6c429129b1,
         type: 2}
     - target: {fileID: 4837796657064691646, guid: c5c05c57b6e04634f90a22e7d335d162,
         type: 3}

@@ -128,5 +128,11 @@ public enum ItemType {
     FishingRod,
     Pickaxe,
     ThrowingKnife,
-    Wood
+    Wood,
+    Raw_Pork,
+    Raw_Beef,
+    Raw_Chicken,
+    Sushi,
+    Raw_Rabbit,
+    Cooked_Rabbit
 }
