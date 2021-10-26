@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class FishingTrigger : PopupTrigger
 {
+    //References
     string playerItemHeld;
     Player player;
 
     protected override void OnTriggerEnter2D(Collider2D collide)
     {
-        Debug.Log("PopupTrigger Entered");
         if (collide.name == "Player")
         {
             player = collide.GetComponent<Player>();

@@ -13,6 +13,8 @@ public class Player : Mover
     private InventoryUIController inventoryController;
     private GameManager gameManager;
     public bool isInvOpen = false;
+    private float currentXSpeed;
+    private float currentYSpeed;
 
     public ItemBehaviour activeBehaviour; //Behaviour associated with the current item
 
@@ -27,6 +29,8 @@ public class Player : Mover
         base.Start();
 
         spriteRenderer = GetComponent<SpriteRenderer>();
+        currentXSpeed = xSpeed;
+        currentYSpeed = ySpeed;
 
         DontDestroyOnLoad(gameObject);
 
@@ -110,6 +114,21 @@ public class Player : Mover
     public void ClearSelectedItem()
     {
         inventoryController.ClearSelectedItem();
+    }
+
+    public void PausePlayer()
+    {
+        currentXSpeed = xSpeed;
+        xSpeed = 0;
+        currentYSpeed = ySpeed;
+        ySpeed = 0;
+        GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+    }
+
+    public void ResumePlayer()
+    {
+        xSpeed = currentXSpeed;
+        ySpeed = currentYSpeed;
     }
 
     private void FixedUpdate()
