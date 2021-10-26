@@ -25,7 +25,7 @@ public class XpManager : MonoBehaviour
         currentXP = 0;
         XPcap = 100;
         level = 1;
-        currentSkillpoint = 1;
+        currentSkillpoint = 0;
     }
 
     public void Start()
