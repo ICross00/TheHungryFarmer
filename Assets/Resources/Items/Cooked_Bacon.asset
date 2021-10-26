@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Bacon
   behaviourClassName: 
-  type: 36
+  type: 37
   maxStack: 64
   sellPrice: 33
   sprite: {fileID: -4220448646692293226, guid: bafbaa935373caa44bec8652d82150a1, type: 3}

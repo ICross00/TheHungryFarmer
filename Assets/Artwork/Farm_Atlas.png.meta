@@ -776,6 +776,9 @@ TextureImporter:
   - first:
       213: 6736646038800123090
     second: water_ripple_07
+  - first:
+      213: 4909722061150928451
+    second: Leather
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -6257,6 +6260,27 @@ TextureImporter:
       bones: []
       spriteID: 2d4493841ef5d7d50800000000000000
       internalID: 6736646038800123090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leather
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 449
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34ebcc8a336d22440800000000000000
+      internalID: 4909722061150928451
       vertices: []
       indices: 
       edges: []

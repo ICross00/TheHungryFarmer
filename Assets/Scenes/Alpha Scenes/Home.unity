@@ -8484,7 +8484,7 @@ PrefabInstance:
     - target: {fileID: 8041746446577464868, guid: 602ca54520b2171469555aa18ee95df3,
         type: 3}
       propertyPath: craftableItems.Array.size
-      value: 4
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8041746446577464868, guid: 602ca54520b2171469555aa18ee95df3,
         type: 3}
@@ -8508,7 +8508,43 @@ PrefabInstance:
         type: 3}
       propertyPath: craftableItems.Array.data[3]
       value: 
-      objectReference: {fileID: 11400000, guid: 613551eb2f247df44a7d6c51611a68c4,
+      objectReference: {fileID: 11400000, guid: 8db67a77e77b4bd489d1034f8c12efce,
+        type: 2}
+    - target: {fileID: 8041746446577464868, guid: 602ca54520b2171469555aa18ee95df3,
+        type: 3}
+      propertyPath: craftableItems.Array.data[4]
+      value: 
+      objectReference: {fileID: 11400000, guid: 4319b5ef43d93484ca59a42a1f07a72d,
+        type: 2}
+    - target: {fileID: 8041746446577464868, guid: 602ca54520b2171469555aa18ee95df3,
+        type: 3}
+      propertyPath: craftableItems.Array.data[5]
+      value: 
+      objectReference: {fileID: 11400000, guid: 6ea6e0989ec7bd0429ea4a4df5ac01b5,
+        type: 2}
+    - target: {fileID: 8041746446577464868, guid: 602ca54520b2171469555aa18ee95df3,
+        type: 3}
+      propertyPath: craftableItems.Array.data[6]
+      value: 
+      objectReference: {fileID: 11400000, guid: b103f6d6d8570e54083d023d9b1cd822,
+        type: 2}
+    - target: {fileID: 8041746446577464868, guid: 602ca54520b2171469555aa18ee95df3,
+        type: 3}
+      propertyPath: craftableItems.Array.data[7]
+      value: 
+      objectReference: {fileID: 11400000, guid: 32c706406245d5a4d8e5f0001f25e854,
+        type: 2}
+    - target: {fileID: 8041746446577464868, guid: 602ca54520b2171469555aa18ee95df3,
+        type: 3}
+      propertyPath: craftableItems.Array.data[8]
+      value: 
+      objectReference: {fileID: 11400000, guid: 5d22d786b42a89d418aaf522b9075db1,
+        type: 2}
+    - target: {fileID: 8041746446577464868, guid: 602ca54520b2171469555aa18ee95df3,
+        type: 3}
+      propertyPath: craftableItems.Array.data[9]
+      value: 
+      objectReference: {fileID: 11400000, guid: 64975105516e4dd49b653cda3ff7f7c8,
         type: 2}
     - target: {fileID: 8041746446577464871, guid: 602ca54520b2171469555aa18ee95df3,
         type: 3}
