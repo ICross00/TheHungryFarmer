@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Pickaxe
   behaviourClassName: Behaviour_Pickaxe
-  type: 38
+  type: 39
   maxStack: 1
   sellPrice: 250
   sprite: {fileID: 21300000, guid: ac050742ed8ca3d49aebec50c65a0d53, type: 3}

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Raw Beef
   behaviourClassName: 
-  type: 42
+  type: 46
   maxStack: 8
   sellPrice: 5
   sprite: {fileID: -1248457724392452835, guid: e98eb85c11ee6704c9070e4c6537fc12, type: 3}

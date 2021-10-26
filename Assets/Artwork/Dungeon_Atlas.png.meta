@@ -13,7 +13,13 @@ TextureImporter:
     second: Sword_Black
   - first:
       213: 3559900268273746473
-    second: Golden_Sword
+    second: BlackSword_Handle
+  - first:
+      213: 8540197691981959766
+    second: BlackSword_Blade
+  - first:
+      213: -5357951696099110594
+    second: HealthPotion
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -153,7 +159,7 @@ TextureImporter:
         width: 10
         height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -161,6 +167,69 @@ TextureImporter:
       bones: []
       spriteID: c6f7001edfbf77c10800000000000000
       internalID: 2051385223110754156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackSword_Handle
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 161
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 922464ece6e476130800000000000000
+      internalID: 3559900268273746473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackSword_Blade
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 170
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 652123e8d80e48670800000000000000
+      internalID: 8540197691981959766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthPotion
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 65
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e319f4ee15bb4a5b0800000000000000
+      internalID: -5357951696099110594
       vertices: []
       indices: 
       edges: []

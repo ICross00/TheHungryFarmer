@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Raw Rabbit
   behaviourClassName: 
-  type: 45
+  type: 49
   maxStack: 8
   sellPrice: 4
   sprite: {fileID: 985082933801823651, guid: e98eb85c11ee6704c9070e4c6537fc12, type: 3}

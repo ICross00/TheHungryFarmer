@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class FishingTrigger : PopupTrigger
 {
+    //References
     string playerItemHeld;
     Player player;
 

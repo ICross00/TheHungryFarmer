@@ -9,7 +9,7 @@ public class AnimalMovement : Fighter
     [SerializeField] Transform target;
     NavMeshAgent agent;
     private int lootMuliplier;
-    public float EnemyDistance = 2.0f;
+    public float EnemyDistance = 4.0f;
     public string animalName;
     public bool activeChase = true;
     private Animator anim;
@@ -32,6 +32,11 @@ public class AnimalMovement : Fighter
         FollowTarget();
 
         distance = Vector3.Distance(transform.position, target.transform.position);
+
+        if (hitPoint < maxHitPoint)
+        {
+            EnemyDistance = 15;
+        }
 
         if (distance > EnemyDistance)
         {
@@ -66,19 +71,21 @@ public class AnimalMovement : Fighter
         //Rabbit
         if (animalName == "Rabbit")
         {
-            //Collectable.Spawn(transform.position, "RABBIT LOOT", 1 * lootMuliplier, 1.0f);
+            Collectable.Spawn(transform.position, "Raw_Rabbit", 1 * lootMuliplier, 1.0f);
+            Collectable.Spawn(transform.position, "Heart", 1 * lootMuliplier, 1.0f);
             Destroy(gameObject);
         }
         //Pig
         else if (animalName == "Pig")
         {
-            //Collectable.Spawn(transform.position, "PIG LOOT", 1 * lootMuliplier, 1.0f);
+            Collectable.Spawn(transform.position, "Raw_Pork", 2 * lootMuliplier, 1.0f);
+            Collectable.Spawn(transform.position, "Heart", 2 * lootMuliplier, 1.0f);
             Destroy(gameObject);
         }
         //No name
         else
         {
-            Debug.Log("Enemy name invalid. Please type a name in the 'Enemy' script ('Slime', 'Bat', or 'Ghost')");
+            Debug.Log("Animal name invalid.");
         }
         //Activates the life steal weapon perk when an animal is killed.
         GameObject.Find("ThrowingWeapon").GetComponent<ThrowingWeapon>().LifeSteal();
