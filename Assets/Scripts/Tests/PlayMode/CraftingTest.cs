@@ -19,6 +19,7 @@ public class CraftingTest
         //Initialize an inventory
         inventoryObject = new GameObject();
         inventory = inventoryObject.AddComponent<PlayerInventory>();
+        inventory.testing = true;
 
         //Get the crafting recipe for Trap3
         testRecipe = Resources.Load<CraftingRecipe>("Items/Recipes/Red Trap Recipe");
