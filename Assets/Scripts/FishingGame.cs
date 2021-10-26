@@ -30,8 +30,8 @@ public class FishingGame : MonoBehaviour
     [SerializeField] private const float hookProgressDegradationPower = 0.5f;
 
     [SerializeField] public SpriteRenderer hookSpriteRenderer; //Rendering the hook when trying to catch the fish.
-    [SerializeField] public Transform ProgressBarContainer; //Progess bar holding 
-    [SerializeField] public float failTimer;
+    [SerializeField] public Transform ProgressBarContainer; //Progess bar holding.
+    [SerializeField] public float failTimer; //Assign the fail time when the hook out of the fish.
 
     bool pause = false;
 
