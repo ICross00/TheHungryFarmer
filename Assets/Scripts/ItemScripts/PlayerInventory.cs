@@ -9,10 +9,6 @@ public class PlayerInventory : Inventory
     public static readonly int HOTBAR_MAX = UI_Inventory.ROW_SIZE;
     private List<Item> hotbar = new List<Item>();
 
-    void Start() {
-         OnHotbarChanged += Inventory_OnHotbarChanged;
-    }
-
     /*
     Forces the hotbar to refresh
     */
@@ -21,9 +17,6 @@ public class PlayerInventory : Inventory
         OnHotbarChanged?.Invoke(this, EventArgs.Empty);
     }
 
-    private void Inventory_OnHotbarChanged(object sender, System.EventArgs e) {
-        
-    }
 
     public Item GetItemFromHotbar(int slotIndex) {
         if(slotIndex >= hotbar.Count)
@@ -38,6 +31,17 @@ public class PlayerInventory : Inventory
 
     public bool IsHotbarFull() {
         return hotbar.Count >= HOTBAR_MAX;
+    }
+
+    public void RemoveItemFromHotbar(Item item) {
+        for(int i = 0; i < hotbar.Count; i++) {
+            Item rItem = hotbar[i];
+            if(item.GetItemType() == rItem.GetItemType()) {
+                item.amount--;
+            }
+        }
+
+        TriggerRefresh();
     }
 
     /*
