@@ -9,7 +9,7 @@ public class AnimalMovement : Fighter
     [SerializeField] Transform target;
     NavMeshAgent agent;
     private int lootMuliplier;
-    public float EnemyDistance = 2.0f;
+    public float EnemyDistance = 4.0f;
     public string animalName;
     public bool activeChase = true;
     private Animator anim;
@@ -32,6 +32,11 @@ public class AnimalMovement : Fighter
         FollowTarget();
 
         distance = Vector3.Distance(transform.position, target.transform.position);
+
+        if (hitPoint < 10)
+        {
+            EnemyDistance = 15;
+        }
 
         if (distance > EnemyDistance)
         {
