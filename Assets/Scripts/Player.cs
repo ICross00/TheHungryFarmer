@@ -19,9 +19,13 @@ public class Player : Mover
     //Actions to store and select items. These may be temporarily overridden by other classes, so are stored so they may be reset
     private UnityAction<Item, int> dropItem;
     private UnityAction<Item, int> selectItem;
+    private float timeCheckInteractable;
+    private const float INTERACTABLE_DELAY = 0.1f;
+
     protected override void Start()
     {
         base.Start();
+
         spriteRenderer = GetComponent<SpriteRenderer>();
 
         DontDestroyOnLoad(gameObject);
@@ -40,6 +44,7 @@ public class Player : Mover
             hotbarUI = hotbarUI
         };
 
+        timeCheckInteractable = Time.realtimeSinceStartup;
         inventoryController.SetUIListeners(); //Attach listeners
     }
 
@@ -153,6 +158,13 @@ public class Player : Mover
             if(interactableObjects.Count > 0)
                 interactableObjects[0].Interact(this);
         }
+
+        if(Time.realtimeSinceStartup - timeCheckInteractable > INTERACTABLE_DELAY) {
+            List<Interactable> interactableObjects = Interactable.GetInteractablesInRadius((transform.position - new Vector3(0, 0.5f, 0)), interactionRadius);
+            transform.Find("PInteractable").GetComponent<SpriteRenderer>().enabled = interactableObjects.Count > 0;
+            timeCheckInteractable = Time.realtimeSinceStartup + INTERACTABLE_DELAY;
+        }
+
     }
 
     public void Death()
