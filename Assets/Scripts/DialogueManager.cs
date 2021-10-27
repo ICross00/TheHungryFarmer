@@ -66,8 +66,7 @@ public class DialogueManager : MonoBehaviour
 
     public void Sleep()
     {
-        gameManager.timeManager.NextDay();
-        gameManager.ResetPlayer();
+        gameManager.NextDayOperations();
         EndDialogue();
     }
 }

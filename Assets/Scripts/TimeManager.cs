@@ -20,6 +20,8 @@ public class TimeManager : MonoBehaviour
     //This will allow saves of the current tick in future so the game can be started at a specific time.
     void Awake()
     {
+        gameManager = GetComponent<GameManager>();
+
         tick = currentTick;
 
         dungeonRemaining = 1;

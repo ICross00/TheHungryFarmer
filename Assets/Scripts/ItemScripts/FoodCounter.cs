@@ -6,12 +6,33 @@ public class FoodCounter : Interactable
 {
     //References
     SpriteRenderer placedFood;
-    Item storedItem;
+    private Item storedItem;
+    public int dayTracker = 0;
+    public TimeManager timeManager;
 
-    void Awake()
+    public static int moneyEarned;
+
+    public bool test;
+
+    void Start()
     {
-        placedFood = transform.Find("placed_food").GetComponent<SpriteRenderer>();
+        if (!test)
+        {
+            placedFood = transform.Find("placed_food").GetComponent<SpriteRenderer>();
+            timeManager = GameObject.Find("GameManager").GetComponent<TimeManager>();
+        }
         storedItem = null;
+        moneyEarned = 0;
+    }
+
+    private void Update()
+    {
+        if (dayTracker != timeManager.days)
+        {
+            dayTracker = timeManager.days;
+            ClearStoredItem();
+            moneyEarned = 0;
+        }
     }
 
     /*
@@ -31,8 +52,34 @@ public class FoodCounter : Interactable
                     storedItem = triggerPlayer.GetSelectedItem();
                     placedFood.sprite = storedItem.GetSprite();
                     ((PlayerInventory)triggerPlayer.GetInventory()).RemoveItemFromHotbar(triggerPlayer.GetSelectedItem());
+                    AddMoneyEarned();
                 }
             }
         }
+    }
+
+    public Item GetStoredItem()
+    {
+        if (this.storedItem != null)
+            return this.storedItem;
+        else
+            return null;
+    }
+
+    public void SetStoredItem(Item item)
+    {
+        this.storedItem = item;
+    }
+
+    public void AddMoneyEarned()
+    {
+        moneyEarned += storedItem.itemTemplate.sellPrice;
+    }
+
+    public void ClearStoredItem()
+    {
+        this.storedItem = null;
+        if (!test)
+            placedFood.sprite = null;
     }
 }

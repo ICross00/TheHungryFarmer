@@ -9,17 +9,26 @@ public class ServingTest
     //Declare variables for use in the tests
     GameObject inventoryObject;
     GameObject experienceObject;
+    GameObject managerObject;
+    GameObject foodCounterObject;
+
     Inventory inventory;
     CraftingRecipe foodRecipe;
     XpManager xpManager;
     ItemTemplate rawPorkTemplate;
     ItemTemplate baconTemplate;
 
+    FoodCounter foodCounter;
+    GameManager gameManager;
+    TimeManager timeManager;
+
     [SetUp]
     public void Setup()
     {
         inventoryObject = new GameObject();
         experienceObject = new GameObject();
+        managerObject = new GameObject();
+        foodCounterObject = new GameObject();
 
         inventory = inventoryObject.AddComponent<Inventory>();
         foodRecipe = Resources.Load<CraftingRecipe>("Items/Recipes/Bacon Recipe");
@@ -28,6 +37,14 @@ public class ServingTest
         xpManager = experienceObject.AddComponent<XpManager>();
         xpManager.testing = true;
         xpManager.currentXP = 0;
+
+        foodCounter = foodCounterObject.AddComponent<FoodCounter>();
+        gameManager = managerObject.AddComponent<GameManager>();
+        timeManager = managerObject.AddComponent<TimeManager>();
+        gameManager.gold = 0;
+        foodCounter.test = true;
+        gameManager.test = true;
+        foodCounter.timeManager = timeManager;
     }
 
     public void TearDown()
@@ -49,9 +66,33 @@ public class ServingTest
         bool hasBacon = inventory.ContainsItem(baconTemplate, 1, true);
 
         //Check if the player's experience has increased.
-        //Assert.AreNotEqual(0, xpManager.currentXP);
+        Assert.AreNotEqual(0, xpManager.currentXP);
         Assert.AreEqual(false, hasRawPork);
         Assert.AreEqual(true, hasBacon);
+
+        yield return null;
+    }
+
+    [UnityTest]
+    public IEnumerator TestGoldForServing()
+    {
+        //Set the food counter to have a food item stored.
+        foodCounter.SetStoredItem(Item.CreateItem("Cooked_Bacon", 1));
+
+        //Save value before going to the next day.
+        int goldBefore = gameManager.GetGold();
+
+        //Manually add money in place of player interaction.
+        foodCounter.AddMoneyEarned();
+
+        //Go to the next day.
+        gameManager.NextDayOperationsTest();
+
+        //Save value of gold after.
+        int goldAfter = gameManager.GetGold();
+
+        //Gold should not be equal if it has been earned.
+        Assert.AreNotEqual(goldBefore, goldAfter);
 
         yield return null;
     }

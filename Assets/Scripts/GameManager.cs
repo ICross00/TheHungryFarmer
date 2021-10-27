@@ -19,6 +19,8 @@ public class GameManager : MonoBehaviour
     public int gold = 0;
     private bool resetLoad = false;
 
+    public bool test;
+
     public static GameManager instance;
 
     private void Awake()
@@ -36,16 +38,22 @@ public class GameManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
 
         instance = this;
-        //Attach the inventory ui to the inventory component
-        UI_Inventory playerInventoryUI = GameObject.Find("Player Inventory UI").GetComponent<UI_Inventory>();
-        playerInventoryUI.SetInventory(GetComponent<Inventory>());
 
-        timeManager = GetComponent<TimeManager>();
-
-        GameObject.Find("Main Camera").transform.position = player.transform.position;
         ChangeGold(0);
 
         previousScene = "Bed"; //To prevent a null pointer exception when respawning the player if they haven't left home by middnight
+    }
+
+    private void Start()
+    {
+        //Attach the inventory ui to the inventory component
+        if (!test)
+        {
+            UI_Inventory playerInventoryUI = GameObject.Find("Player Inventory UI").GetComponent<UI_Inventory>();
+            playerInventoryUI.SetInventory(GetComponent<Inventory>());
+            GameObject.Find("Main Camera").transform.position = player.transform.position;
+        }
+        timeManager = GetComponent<TimeManager>();
     }
 
     public int GetGold() {
@@ -134,5 +142,18 @@ public class GameManager : MonoBehaviour
         player.transform.position = GameObject.Find(spawnName + "SpawnPoint").transform.position;
         GameObject.Find("Main Camera").transform.position = player.transform.position;
         player.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+    }
+
+    public void NextDayOperations()
+    {
+        gold += FoodCounter.moneyEarned;
+        timeManager.NextDay();
+        ResetPlayer();
+    }
+
+    public void NextDayOperationsTest()
+    {
+        gold += FoodCounter.moneyEarned;
+        timeManager.NextDay();
     }
 }
