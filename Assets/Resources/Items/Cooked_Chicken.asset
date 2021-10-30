@@ -24,3 +24,5 @@ MonoBehaviour:
     value: food_chicken
   - key: food_type
     value: cooked
+  - key: xp
+    value: 10

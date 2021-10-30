@@ -29,3 +29,5 @@ MonoBehaviour:
     amount: 15
   - template: {fileID: 11400000, guid: 45905d9766148f644b4dddbd20a1653c, type: 2}
     amount: 5
+  - template: {fileID: 11400000, guid: dfdf0ebd969daad43aa1e1368ec03365, type: 2}
+    amount: 5

@@ -5,7 +5,7 @@ using UnityEngine.Events;
 
 public class Player : Mover
 {
-    public float interactionRadius = 1.5f;
+    public float interactionRadius = 1.4f;
     public UI_Inventory inventoryUI;
     public UI_Hotbar hotbarUI;
     private SpriteRenderer spriteRenderer;
@@ -13,6 +13,13 @@ public class Player : Mover
     private InventoryUIController inventoryController;
     private GameManager gameManager;
     public bool isInvOpen = false;
+    public bool isSkillOpen = false;
+    private float currentXSpeed;
+    private float currentYSpeed;
+    private Animator animator;
+    public UI_SkillTree uiSkillTree;
+    private PlayerSkills playerSkills;
+    public XpManager xp;
 
     public ItemBehaviour activeBehaviour; //Behaviour associated with the current item
 
@@ -24,9 +31,14 @@ public class Player : Mover
 
     protected override void Start()
     {
+        xp = XpManager.instance;
+        playerSkills = new PlayerSkills();
+        uiSkillTree.SetPlayerSkills(playerSkills);
         base.Start();
-
+        animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        currentXSpeed = xSpeed;
+        currentYSpeed = ySpeed;
 
         DontDestroyOnLoad(gameObject);
 
@@ -44,8 +56,58 @@ public class Player : Mover
             hotbarUI = hotbarUI
         };
 
-        timeCheckInteractable = Time.realtimeSinceStartup;
         inventoryController.SetUIListeners(); //Attach listeners
+    }
+
+    private void Awake()
+    {
+        playerSkills = new PlayerSkills();
+        //playerSkills.OnSkillUnlocked += PlayerSkills_OnSkillUnlocked;
+    }
+
+    public void PlayerSkills_OnSkillUnlocked(string var)
+    {
+        //Add skills to unlock
+        switch(var)
+        {
+            case "healthMax_1":
+                maxHitPoint = 15;
+                hitPoint = 15;
+                xp.currentSkillpoint = xp.currentSkillpoint - 1;
+                Debug.Log("healthMax_1");
+                break;
+                
+            case "healthMax_2":
+                maxHitPoint = 20;
+                hitPoint = 20;
+                xp.currentSkillpoint = xp.currentSkillpoint - 1;
+                Debug.Log("healthMax_2");
+                break;
+            case "healthMax_3":
+                maxHitPoint = 25;
+                hitPoint = 25;
+                xp.currentSkillpoint = xp.currentSkillpoint - 1;
+                Debug.Log("healthMax_3");
+                break;
+            case "MoveSpeed_1":
+                xSpeed = 1.7f;
+                ySpeed = 1.5f;
+                xp.currentSkillpoint = xp.currentSkillpoint - 1;
+                Debug.Log("MoveSpeed_1");
+                break;
+            case "MoveSpeed_2":
+                xSpeed = 1.9f;
+                ySpeed = 1.7f;
+                xp.currentSkillpoint = xp.currentSkillpoint - 1;
+                Debug.Log("MoveSpeed_2");
+                break;
+            case "MoveSpeed_3":
+                xSpeed = 2.1f;
+                ySpeed = 1.9f;
+                xp.currentSkillpoint = xp.currentSkillpoint - 1;
+                Debug.Log("MoveSpeed_3");
+                break; 
+        }
     }
 
     /*
@@ -65,6 +127,12 @@ public class Player : Mover
     {
         inventoryController.SetUIListeners();
     }
+
+    public PlayerSkills GetPlayerSkills()
+    {
+        return playerSkills;
+    }
+
 
     //Returns the selected item
     public Item GetSelectedItem()
@@ -112,6 +180,23 @@ public class Player : Mover
         inventoryController.ClearSelectedItem();
     }
 
+    public void PausePlayer()
+    {
+        currentXSpeed = xSpeed;
+        xSpeed = 0;
+        currentYSpeed = ySpeed;
+        ySpeed = 0;
+        GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+        animator.speed = 0;
+    }
+
+    public void ResumePlayer()
+    {
+        xSpeed = currentXSpeed;
+        ySpeed = currentYSpeed;
+        animator.speed = 1;
+    }
+
     private void FixedUpdate()
     {
         //Movement code
@@ -120,7 +205,7 @@ public class Player : Mover
 
         UpdateMotor(new Vector2(x, y));
 
-        if (hitPoint == 0)
+        if (hitPoint <= 0)
         {
             Death();
         }
@@ -136,21 +221,18 @@ public class Player : Mover
         if (Input.GetKeyDown(KeyCode.E))
             inventoryController.UseSelectedItem();
 
+        if (Input.GetKeyDown(KeyCode.R))
+            uiSkillTree.ShowHideSkillTree();
+
         for (int i = 1; i <= UI_Inventory.ROW_SIZE; i++) //Keys 1-8 on the keyboard are used to access the hotbar
             if (Input.GetKeyDown(i.ToString()))
             {
                 inventoryController.SelectHotbarItem(i - 1);
                 break; //Only allow selecting one item
             }
+        
 
 
-        /*Check for scrolling through hotbar slots
-        float scroll = Input.GetAxis("Mouse ScrollWheel");
-        if(scroll != 0f)
-            inventoryController.ChangeHotbarItem(scroll);
-        */
-
-        //Interactable keybinds
         if (Input.GetKeyDown(KeyCode.Space))
         {
             //Find all objects the player can interact with at this position
@@ -164,11 +246,13 @@ public class Player : Mover
             transform.Find("PInteractable").GetComponent<SpriteRenderer>().enabled = interactableObjects.Count > 0;
             timeCheckInteractable = Time.realtimeSinceStartup + INTERACTABLE_DELAY;
         }
-
     }
 
     public void Death()
     {
+        gameManager.floatingTextManager.Show("Gold lost: " + (((GetGold() / 100) * 15)), 30, Color.red, gameManager.player.transform.position, Vector3.zero, 5.0f);
+        ChangeGold(-((GetGold() / 100) * 15));
         gameManager.ResetPlayer();
+        hitPoint = maxHitPoint;
     }
 }

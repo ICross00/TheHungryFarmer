@@ -11,17 +11,27 @@ public class FoodCounter : Interactable
     void Awake()
     {
         placedFood = transform.Find("placed_food").GetComponent<SpriteRenderer>();
+        storedItem = null;
     }
 
+    /*
+     * This function is an override from the Interactable class, and takes the item from the players
+     * selected item slot, if it is a valid cooked food item. 
+     * 
+     * @param triggerPlayer The player that is interacting with the food counter.
+     */
     protected override void OnInteract(Player triggerPlayer)
     {
-        if (triggerPlayer.GetSelectedItem() != null)
+        if (storedItem == null)
         {
-            if (triggerPlayer.GetSelectedItem().GetItemTagValue("food_type") == "cooked")
+            if (triggerPlayer.GetSelectedItem() != null)
             {
-                storedItem = triggerPlayer.GetSelectedItem();
-                placedFood.sprite = storedItem.GetSprite();
-                ((PlayerInventory)triggerPlayer.GetInventory()).RemoveItemFromHotbar(triggerPlayer.GetSelectedItem());
+                if (triggerPlayer.GetSelectedItem().GetItemTagValue("food_type") == "cooked")
+                {
+                    storedItem = triggerPlayer.GetSelectedItem();
+                    placedFood.sprite = storedItem.GetSprite();
+                    ((PlayerInventory)triggerPlayer.GetInventory()).RemoveItemFromHotbar(triggerPlayer.GetSelectedItem());
+                }
             }
         }
     }

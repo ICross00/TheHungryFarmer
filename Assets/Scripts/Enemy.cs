@@ -63,6 +63,7 @@ public class Enemy : Mover
         //Slime
         if (enemyName == "Slime")
         {
+            XpManager.instance.addXP(20);
             Collectable.Spawn(transform.position, "SlimeResidue", 1 * lootMuliplier, 1.0f);
             Collectable.Spawn(transform.position, "GoldCoin", Random.Range(5, 10) * lootMuliplier, 1.0f);
             Destroy(gameObject);
@@ -70,6 +71,7 @@ public class Enemy : Mover
         //Bat
         else if (enemyName == "Bat")
         {
+            XpManager.instance.addXP(20);
             Collectable.Spawn(transform.position, "BatWings", 1 * lootMuliplier, 1.0f);
             Collectable.Spawn(transform.position, "GoldCoin", Random.Range(1, 3) * lootMuliplier, 1.0f);
             Destroy(gameObject);
@@ -77,6 +79,7 @@ public class Enemy : Mover
         //Ghost
         else if (enemyName == "Ghost")
         {
+            XpManager.instance.addXP(20);
             Collectable.Spawn(transform.position, "GhostDust", 1 * lootMuliplier, 1.0f);
             Collectable.Spawn(transform.position, "GoldCoin", Random.Range(1, 3) * lootMuliplier, 1.0f);
             Destroy(gameObject);

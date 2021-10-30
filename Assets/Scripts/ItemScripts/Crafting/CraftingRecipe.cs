@@ -52,6 +52,14 @@ public class CraftingRecipe : ScriptableObject
             //Create the item and add it to the inventory
             Item craftedItem = new Item { itemTemplate = craftingOutput, amount = outputAmount }; 
             outputInv.AddItem(craftedItem);
+
+            //Check if crafted item grants xp
+            if (craftedItem.itemTemplate.GetTagValue("xp") != null)
+            {
+                int xpFromCraft = int.Parse(craftedItem.itemTemplate.GetTagValue("xp"));
+                XpManager.instance.addXP(xpFromCraft);
+            }
+
             return true;
         }
 
@@ -66,7 +74,7 @@ public class CraftingRecipe : ScriptableObject
     public string FormatIngredientString(Inventory inventory) {
         string s = "";
         foreach(CraftingIngredient ingredient in craftingIngredients) {
-            string c = inventory.ContainsItem(ingredient.template, ingredient.amount)  ? "00FF00" : "FF0000";
+            string c = inventory.ContainsItem(ingredient.template, ingredient.amount)  ? "53E079" : "BF4D4D";
             s += "<color=#"+c+">"+ingredient + "</color>\n";
         }
 

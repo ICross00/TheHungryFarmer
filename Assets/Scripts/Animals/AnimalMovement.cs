@@ -71,15 +71,21 @@ public class AnimalMovement : Fighter
         //Rabbit
         if (animalName == "Rabbit")
         {
-            Collectable.Spawn(transform.position, "Raw_Rabbit", 1 * lootMuliplier, 1.0f);
-            Collectable.Spawn(transform.position, "Heart", 1 * lootMuliplier, 1.0f);
+            XpManager.instance.addXP(8);
+            Collectable drop1 = Collectable.Spawn(transform.position, "Raw_Rabbit", 1 * lootMuliplier, 1.0f);
+            Collectable drop2 =Collectable.Spawn(transform.position, "Heart", 1 * lootMuliplier, 1.0f);
+            drop1.ApplyRandomForce(5.0f);
+            drop2.ApplyRandomForce(5.0f);
             Destroy(gameObject);
         }
         //Pig
         else if (animalName == "Pig")
         {
-            Collectable.Spawn(transform.position, "Raw_Pork", 2 * lootMuliplier, 1.0f);
-            Collectable.Spawn(transform.position, "Heart", 2 * lootMuliplier, 1.0f);
+            XpManager.instance.addXP(8);
+            Collectable drop1 = Collectable.Spawn(transform.position, "Raw_Pork", 2 * lootMuliplier, 1.0f);
+            Collectable drop2 = Collectable.Spawn(transform.position, "Heart", 2 * lootMuliplier, 1.0f);
+            drop1.ApplyRandomForce(5.0f);
+            drop2.ApplyRandomForce(5.0f);
             Destroy(gameObject);
         }
         //No name
